@@ -316,6 +316,30 @@ smallStaffDistance = {
  			 (stretchability . 0))
 }
 
+twoStanzaDistance = {
+	\override StaffGrouper.staffgroup-staff-spacing =
+		#'((basic-distance . 20)
+			 (minimum-distance . 20)
+			 (padding . -100)
+			 (stretchability . 0))
+	\override StaffGrouper.staff-staff-spacing =
+		#'((basic-distance . 15)
+       (minimum-distance . 15)
+       (padding . -100)
+			 (stretchability . 0)) }
+
+threeStanzaDistance = {
+	\override StaffGrouper.staffgroup-staff-spacing =
+		#'((basic-distance . 22)
+			 (minimum-distance . 22)
+			 (padding . -100)
+			 (stretchability . 0))
+	\override StaffGrouper.staff-staff-spacing =
+		#'((basic-distance . 18)
+       (minimum-distance . 18)
+       (padding . -100)
+			 (stretchability . 0)) }
+
 twofourtime = {
 	\overrideTimeSignatureSettings
 		2/4

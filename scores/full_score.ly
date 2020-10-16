@@ -55,14 +55,16 @@
 						\OMeineSeelViola
 					}
 				>>
-				\new ChoirStaff <<
+				\new ChoirStaff \with { \threeStanzaDistance } <<
 					\new Staff {
 						\set Staff.instrumentName = \SopranoIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
 						\new Voice = "Soprano" { \dynamicUp \OMeineSeelSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \OMeineSeelSopranoLyrics
+					\new Lyrics \lyricsto Soprano \OMeineSeelSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \OMeineSeelSopranoLyricsB
+					\new Lyrics \lyricsto Soprano \OMeineSeelSopranoLyricsC
 
 					\new Staff {
 						\set Staff.instrumentName = \AltoIncipit
@@ -70,7 +72,9 @@
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
 						\new Voice = "Alto" { \dynamicUp \OMeineSeelAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \OMeineSeelAltoLyrics
+					\new Lyrics \lyricsto Alto \OMeineSeelAltoLyricsA
+					\new Lyrics \lyricsto Alto \OMeineSeelAltoLyricsB
+					\new Lyrics \lyricsto Alto \OMeineSeelAltoLyricsC
 
 					\new Staff {
 						\set Staff.instrumentName = \TenoreIncipit
@@ -78,13 +82,17 @@
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
 						\new Voice = "Tenore" { \dynamicUp \OMeineSeelTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \OMeineSeelTenoreLyrics
+					\new Lyrics \lyricsto Tenore \OMeineSeelTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \OMeineSeelTenoreLyricsB
+					\new Lyrics \lyricsto Tenore \OMeineSeelTenoreLyricsC
 
 					\new Staff {
 						\set Staff.instrumentName = "Basso"
 						\new Voice = "Basso" { \dynamicUp \OMeineSeelBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \OMeineSeelBassoLyrics
+					\new Lyrics \lyricsto Basso \OMeineSeelBassoLyricsA
+					\new Lyrics \lyricsto Basso \OMeineSeelBassoLyricsB
+					\new Lyrics \lyricsto Basso \OMeineSeelBassoLyricsC
 				>>
 				\new StaffGroup <<
 					\new Staff {
@@ -96,7 +104,7 @@
 				\new FiguredBass { \OMeineSeelBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			% \midi { \tempo 2 = 90 }
 		}
 	}
 	% \bookpart {

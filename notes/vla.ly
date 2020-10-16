@@ -6,7 +6,24 @@
 
 OMeineSeelViola = {
 	\relative c' {
-		\clef treble
+		\clef alto
 		\key c \major \time 4/4 \tempoOMeineSeel
+    r2 g
+    g g
+    g e'
+    f g
+    f\fermata g
+    f g
+    g g
+    f a,
+    h\fermata c
+    c h
+    c h4 e
+    e2 e
+    c\fermata h
+    c h
+    c c
+    e f
+    <e g,>1\fermata \bar "|."
 	}
 }

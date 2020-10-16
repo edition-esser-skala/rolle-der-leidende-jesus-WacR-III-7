@@ -8,5 +8,22 @@ OMeineSeelOboeI = {
 	\relative c' {
 		\clef treble
 		\key c \major \time 4/4 \tempoOMeineSeel
+    r2 c'
+		d c
+		h c
+		d \afterGrace e { d16[ c] }
+		c2\fermata c %5
+		d e
+		f e
+		c d
+		e\fermata c
+		d d %10
+		e d
+		c h
+		a\fermata d
+		e d
+		c a4( h) %15
+		c2 d
+		c1\fermata \bar "|." %17 finis
 	}
 }
