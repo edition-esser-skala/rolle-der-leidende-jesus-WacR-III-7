@@ -27,3 +27,37 @@ OMeineSeelOboeI = {
 		c1\fermata \bar "|." %17 finis
 	}
 }
+
+DerHerrNeigetOboeI = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 4/4 \tempoDerHerrNeiget
+		R1*2
+		c'2\pE es
+		g2. g4
+		g1 %5
+		g2.\pocoPE g4\fE
+		g1
+		g~
+		g8 g g es16. c32 h4 r8 g'
+		g g g c, g4 d'8 d %10
+		d4 r r2
+		es,2\p es
+		es1\f
+		es2\fp es
+		f1\f %15
+		g4\fpE r r2
+		f2\f r
+		R1*5 %22
+		b2\fE r
+		as2. as4
+		as2\p as4 as %25
+		g2 fis\fE
+		g1
+		g
+		g2 fis
+		g g %30
+		g r
+		R1*2 \bar "|" %33 finis
+	}
+}

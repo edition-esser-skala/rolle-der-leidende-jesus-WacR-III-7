@@ -702,6 +702,10 @@ tocLabelLong = #(define-music-function
 
 
 tempoOMeineSeel = \tempoMarkup "[Tempo deest]"
+tempoDerHerrNeiget = \tempoMarkup "Non troppo lento"
+tempoJerusalem = \tempoMarkup "[Tempo deest]"
+	tempoJerusalemB = \tempoMarkup "Poco largo"
+	tempoJerusalemC = \tempoMarkup "Senza accompagnato"
 
 
 \include "notes/ob1.ly"
