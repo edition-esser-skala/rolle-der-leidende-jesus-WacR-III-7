@@ -94,3 +94,45 @@ JerusalemViola = {
 		R1\fermataMarkup \bar "||" %25 finiss
 	}
 }
+
+GerechterViola = {
+	\relative c' {
+		\clef alto
+		\key f \minor \time 4/4 \tempoGerechter
+		\partial 8 r8 as\fE as as as b b c f
+		f f f f f f r16 as f c
+		des8 des f f \appoggiatura f e4 r
+		r8 as,\p as as b b c f
+		f f f\f f\p f f f f %5
+		f f b, b c c\fE c c\pE
+		c c\fE c c\pE c c\fE c4
+		r8 es\pE es es f f f f
+		es4 r8 es d es es,4
+		r8 es f g as es r as %10
+		c as es' es, f4 r8 g
+		as des es es, as4 r
+		R1
+		es'8\f es es es es es, r f'
+		es d es es as, as' as,4 %15
+		r8 es'4\pE es8 es es es es
+		c c c c c c c,4
+		r16. c32\f c'16. c32 c8 r r16. c,32 c'16. c32 c8 b\p
+		as as b des c4 c,
+		r8 c' c c c b des b %20
+		es4 f r8 b, b4
+		r8 b b4 r8 c c c
+		b g c c c4 c,
+		r8 c' c c b b c f
+		f f f\f f\p f f f\f f\p %25
+		b, b b b c4 r16 c(-. c-. c-.)
+		d(-. d-. d-. d-.) d(-. d-. e-. e-.) f( f f f) c( c c c)
+		b8 b c c, des4~ des8 r
+		r g(-. g4-.) r8 g(-. g4)-.
+		r8 as b c des4 r8 e, %30
+		f b c4 f, r
+		c'8\fE c c c c c r f
+		g as16 f c8 c f,4 r8 c'
+		des b\pE c4 des8 f\fE f g
+		as f c c f,2\fermata \bar "|." %35 finis
+	}
+}

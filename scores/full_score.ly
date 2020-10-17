@@ -188,52 +188,105 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A C C O M P A G N A T O"
+	% 		number = "1.3"
+	% 		title = "Jerusalem! Welch eine Nacht"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "jerusalem" "1.3" "Accompagnato" "Jerusalem! Welch eine Nacht"
+	% 	\score {
+	% 		<<
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = \markup \center-column { "timp" "C–G" "(ad lib.)" }
+	% 				\JerusalemTimpani
+	% 			}
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\JerusalemViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\JerusalemViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\JerusalemViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \JerusalemAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \JerusalemAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\JerusalemOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \JerusalemBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "1.3"
-			title = "Jerusalem! Welch eine Nacht"
+			genre = "A R I A"
+			number = "1.4"
+			title = "Gerechter! Welche Qual erſchrecket"
 		}
 		\paper { systems-per-page = #2 }
-		% \tocLabelLong "jerusalem" "1.3" "Accompagnato" "Jerusalem! Welch eine Nacht"
+		\tocLabelLong "gerechter" "1.4" "Aria" "Gerechter! Welche Qual erschrecket"
 		\score {
 			<<
-				\new Staff {
-					\set Staff.instrumentName = \markup \center-column { "timp" "C–G" "(ad lib.)" }
-					\JerusalemTimpani
-				}
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+						\partcombine \GerechterOboeI \GerechterOboeII
+					>>
+				>>
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\JerusalemViolinoI
+							\GerechterViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\JerusalemViolinoII
+							\GerechterViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\JerusalemViola
+						\GerechterViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \JerusalemAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \GerechterAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \JerusalemAltoLyrics
+					\new Lyrics \lyricsto Alto \GerechterAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\JerusalemOrgano
+						\GerechterOrgano
 					}
 				>>
-				\new FiguredBass { \JerusalemBassFigures }
+				\new FiguredBass { \GerechterBassFigures }
 			>>
 			\layout { }
 			\midi { \tempo 4 = 60 }

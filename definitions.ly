@@ -706,6 +706,7 @@ tempoDerHerrNeiget = \tempoMarkup "Non troppo lento"
 tempoJerusalem = \tempoMarkup "[Tempo deest]"
 	tempoJerusalemB = \tempoMarkup "Poco largo"
 	tempoJerusalemC = \tempoMarkup "Senza accompagnato"
+tempoGerechter = \tempoMarkup "Largo"
 
 
 \include "notes/ob1.ly"

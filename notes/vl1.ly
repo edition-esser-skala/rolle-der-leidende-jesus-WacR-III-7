@@ -95,6 +95,48 @@ JerusalemViolinoI = {
 	}
 }
 
+GerechterViolinoI = {
+	\relative c' {
+		\clef treble
+		\key f \minor \time 4/4 \tempoGerechter
+		c8\fE f8.( g32 f) f16( c) f( as) g8.( as32 b) as8 c16. f,32
+		des'8( c16.)-. f,32 des'8( c16.)-. f,32 des'8( c16.)-. e32 f4~
+		f16 as g( f) es( des) c( h) \appoggiatura h8 c4 r
+		r8 f,\p f f g g as c
+		des( c16.)-. f,32\f des'8( c-.) des(\p c)-. des( c)-. %5
+		des des des des c g'16.\f b,32 b8 \appoggiatura b16 \tuplet 3/2 8 { as(\p g as) }
+		g8 g'16.\f b,32 b8\p as g <c e, g,>16.\f c,32 c4
+		as'8\p es'16( c) \appoggiatura c b( as) as8 r f'16( des) \appoggiatura des c( b) b8~
+		b es,16( g) \once \slurDashed b( des) f( des) des( c) b4 des16( c)
+		c( b) b( as) as( f) f( es) es( des) des( c) c8 as' %10
+		as as b b as f'4 f16( des)
+		c8 b as g as des16(\pocoF c) c( b) b( as)
+		as8 f16(\p es) es( des) des( c) c4 r8 es\f
+		c'8( b16.)-. es,32 c'8( b16.)-. es,32 c'8( b16.)-. es,32 des'8. b'16
+		as( g) as( c,) c8 b\trill as4 r %15
+		r8 c(\p des c) c b b b
+		b g'4 b,8 as g r16 c, e16.[ f32]
+		f8( g)-. r16 c, g'16.[ as32] as8( b)-. r16 b( as g)
+		c4 \tuplet 3/2 8 { des16([ c b)] as( g f) } \appoggiatura f8 e4 r8 c'
+		b4( a8) c16( es,) es8 des r des' %20
+		des( c16 b) a( ges) f( es) des( c) b( des) des( f) b( g)
+		f( e) e4 des'16( b) as( g) g8 c f,
+		e8.( f16) f8.(\trill e32 f) \appoggiatura f8 g4 r
+		r8 c, f as g g as c
+		des( c16.)-. f,32\f des'8( c)-. des(\p c16.)-. f,32\f des'8( c)-. %25
+		r des\p des des r16 c(-. c-. c-.) c(-. c-. c-. c-.)
+		c(-. c-. h-. h-.) h(-. h-. b-. b-.) b( b) a( a) a( a) as( as)
+		g8 g as g \appoggiatura g f4 r8 b16( g)
+		f( e) e4 b'16( g) f( e) e8~ e16 g( c e,)
+		f8. g16 g4\trill f8 des'4 des8 %30
+		c b as( g) f4 r8 c'\f
+		as'( g16.)-. c,32 as'8( g16.)-. c,32 as'8( g16.)-. c,32  b'8. g16
+		f( e f) as, as8 g\trill f b16( as) as( g) g( f)
+		f8 b16(\p as) as( g) g( f) f8 des'16(\f c) c( e) e( f)
+		f( c) as( f) as8 g\trill f c f4\fermata \bar "|." %35 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

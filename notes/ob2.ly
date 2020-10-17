@@ -61,3 +61,23 @@ DerHerrNeigetOboeII = {
 		R1*2 \bar "|" %33 finis
 	}
 }
+
+GerechterOboeII = {
+	\relative c' {
+		\clef treble
+		\key f \minor \time 4/4 \tempoGerechter
+		\partial 8 r8 f4\fE r8 f e4 f8 as
+		b( as)-. b([ as)]-. b( as16.)-. g32 as4~
+		as8 as f f \appoggiatura f e4 r
+		R1*9 %12
+		r2 r4 r8 es\fE
+		as( g)-. as([ g)]-. as( g)-. r as
+		b as4 g8 as4 r %15
+		R1*15 %30
+		r2 r4 r8 c\fE
+		f( e)-. f([ e)]-. f( e)-. r b
+		b as16( f) f8 e\trill f4 r
+		r2 r8 des'16( c) c8 b
+		as f f e\trill f4 r\fermata \bar "|." %35 finis
+	}
+}

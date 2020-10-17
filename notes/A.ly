@@ -227,6 +227,77 @@ JerusalemAltoLyrics = \lyricmode {
 	schla -- gen! %25 finis
 }
 
+GerechterAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key f \minor \time 4/4 \autoBeamOff \tempoGerechter
+		\partial 8 r8 R1*2
+		r2 r4 r8 c
+		f8.([ g32 f)] f8 r16 as g8.([ as32 b)] as8 c16. f,32
+		des'8([ c)]-. r c16. f,32 des'8([ c16.)] f,32 des'8 c16. f,32 %5
+		des'8. c16 b as g f c'4 r8 f,
+		c'8. c16 c g as f c'4 r
+		as as8 as16.([ c64 b)] b4 r8 b
+		es,4 des' \appoggiatura des8 c8 b r des16([ c)]
+		c([ b)] b([ as)] as([ f)] f([ es)] es4. des'16([ b)] %10
+		as4 b\trill as b8. c32([ des)]
+		c8 des16([ f,)] \appoggiatura as8 g8. as16 as4 r
+		r8 as4( g16) as as4 r
+		R1
+		r2 r4 r8 es %15
+		c'4( des8) c c16. b32 b8 r b
+		b8. c,16 c8 b' \appoggiatura b16 as8 g r16 c, e16. f32
+		\appoggiatura f8 g4 r16 c, g'16. as32 \appoggiatura as8 b4 r8 g
+		c4( \tuplet 3/2 8 { des16[ c b)] as([ g f)] } \appoggiatura f8 e4 r8 c'
+		b4( a8) c16([ es,)] es8 des r des' %20
+		des([ c16)] b a16([ ges)] f([ es)] des([ c)] b8 r b'16([ g)]
+		f([ e)] e8 r des'16([ b)] as([ g)] g8 c f,
+		e8.([ f16)] f8.([\trill e32 f)] \appoggiatura f8 g4 r8 c
+		f,8.([ g32 f)] f8 r16 as g8.([ as32 b)] as8 c16. f,32
+		des'8 c r c16. f,32 des'8 c r16 f, as c %25
+		des8. c16 b([ as)] g([ f)] c'4 r8 c
+		c8([ h)] r g b? a r f
+		des'8. b16 as([ g)] f([ e)] \appoggiatura e8 f4 r8 b16([ g)]
+		f([ e)] e8 r b'16([ g)] f([ e)] e8 r4
+		f8.([ g16)] g4\trill f g8.([ as32 b)] %30
+		as8 des16([ f,)] \appoggiatura f8 e8. f16 f4 r
+		R1*3
+		R1\fermataMarkup \bar "|." %35 finis
+	}
+}
+
+GerechterAltoLyrics = \lyricmode {
+	Ge -- %3
+	rech -- ter! Ge -- rech -- ter! Wel -- che
+	Qual, wel -- che Qual er -- ſchre -- cket den %5
+	ein -- ge -- beug -- ten Hel -- den -- muth, den
+	ein -- ge -- beug -- ten Hel -- den -- muth!
+	Du biſt ſtatt Schweiß mit
+	Blut be -- de -- cket, und
+	Thrä -- nen, Thrä -- nen flie -- ßen %10
+	in dein Blut, Thrä -- nen
+	flie -- ßen in dein Blut,
+	in __ dein Blut.
+
+	Ach, %15
+	weint __ der Hei -- lig -- ſte, der
+	Hei -- lig -- ſte ſelbſt Zäh -- ren, faßt Schre -- cken
+	ihn, faßt Schre -- cken ihn und
+	ban -- ger Schmerz, wer
+	wird __ mir Sün -- der, mir %20
+	Sün -- der Troſt ge -- wäh -- ren, wer
+	gie -- ßet, wer gie -- ßet Ruh in
+	die -- ſes __ Herz? Wie
+	ſoll __ ich, wie ſoll __ ich vor dem
+	Rich -- ter, vor dem Rich -- ter, wie ſoll ich %25
+	vor dem Rich -- ter ſtehn, vor
+	dem mein Je -- ſus, mein
+	Je -- ſus will ver -- gehn, mein
+	Je -- ſus, mein Je -- ſus
+	will __ ver -- gehn, mein __ %30
+	Je -- ſus will ver -- gehn? %31 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

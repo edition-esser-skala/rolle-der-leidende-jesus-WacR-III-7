@@ -184,6 +184,86 @@ JerusalemBassFigures = \figuremode {
 	r4 <[_!]>2. %25 finis
 }
 
+GerechterOrgano = {
+	\relative c {
+		\clef bass
+		\key f \minor \time 4/4 \tempoGerechter
+		\partial 8 r8 f\fE f f f f f f f
+		f f f f f f r16 as f c
+		des8 des des des c4 c,
+		r8 f'\p f f f f f f
+		f f f\f f\p f f f f %5
+		b, b b b c c\f c c\p
+		c c\f c\p c c c\f c4
+		r8 c\p c c des des des des
+		r es es es d es es,4
+		r8 es' f g as es as, f' %10
+		es es es es f4 r8 g
+		as des, es es, as4 r8 es'\pocoF
+		f des\p es4 as,8 as' as, r
+		es'\f es es es es es, r f'
+		es d es es as, as' as,4 %15
+		r8 as'(\p g as) es4 es
+		e8 e e e f c c,4
+		r16. c'32\f c'16. c32 c8 r r16. c,32 c'16. c32 c8 b\p
+		as as, b b c4 c,
+		r8 f' f f r b b,4 %20
+		es f r8 b b,4
+		r8 des16( c) c4 r8 b as as'
+		g c as f c4 c,
+		r8 f' f f r f f f
+		f f f\f f\p f f f\f f\p %25
+		b, b b b c c c c
+		c4 c c c
+		b8 b c c des4~ des8 r
+		r des16( c) c4 r8 des16( c) c8 b
+		r as b c des4 r8 e %30
+		f b, c4 f, r
+		c'8\f c c c c c r des
+		c h c c f,4 r8 c'
+		des b\p c4 des8 b'\f as g
+		f4 c8 c, f2\fermata \bar "|." %35 finis
+	}
+}
+
+GerechterBassFigures = \figuremode {
+	r8 r2 <7! 4 2>4 <8 3>
+	<6 4>8 <5 3> <6 4> <5 3> <6 4> <5 3> r16 <6 3>8 \bassFigureExtendersOn q16 \bassFigureExtendersOff
+	r4. <6!>8 <7! 4> <8 _!>4.
+	r2 <7! 4 2>4 <8 3>
+	<6 4>8 <5 3> <6 4> <5 3> <6 4> <5 3> <6 4> <5 3> %5
+	r2 <_!>8 <7 _!>4 <6 4>8
+	<5 _!> <7 _!>4 <6 4>8 <5 _!>2
+	r8 <6>4. <6 5>2
+	<4>8 <3> <7>4 q2
+	r4 <6>8 q r4. q8 %10
+	<6 4>4 <5 4>8 <\t 3> r4. <6 5>8
+	r <6> <6 4> <5 3> r2
+	r4 <6 4>8 <5 3> r2
+	<6 4>8 <5 3> <6 4> <5 3> <6 4> <5 3> r <6 4 3>
+	<7> q <6 4> <5 3> r2 %15
+	r4 <6 5> <6 4>8 <5 \t> <\t 3>4
+	<6 5>2 r8 <_!>4.
+	<4 2!>8 <5 _!>4. <6 4>8 <7 5 _!>4 <\t \t>8
+	<6>2 <6 4>8 <5 _!> <\t>4
+	<7- 4>8 <\t \t> <\t _!>4 <9 4>8 <8 3>4. %20
+	<7 _->4 <_!> r <5>8 <6!>
+	r <6 4! 2> <\t \t \t>4 r8 <4! 2> <6>4
+	<6!>8 <\t> <6>4 <6 4>8 <5 _!>4.
+	r2 <7! 4 2>8 <\t \t \t> <8 3>4
+	<6 4>8 <5 3> <6 4> <5 3> <6 4> <5 3> <6 4> <5 3> %25
+	r2 <_!>
+	<8 4 2!>8 <7! \t \t> <\t \t \t> <7- 5 _!> <\t \t 4> <\l 6! \t> <\l \t \t> <\l 6- 4>
+	<6 5>4 <6 4>8 <5 _!> <4 2!> <5 3>4.
+	r8 <6 4! 2> <\t \t \t>4 r8 <6 4! 2> <\t \t \t> <4! 2>
+	r <6> <6 5> <_!> <5> <6>4 <7>8 %30
+	r <6> <6 4> <5 _!> r2
+	<6 4>8 <5 _!> <6 4> <5 _!> <6 4> <5 _!>4 <6 4 3>8
+	<7 _!> q <6 4> <5 _!> r4. <_!>8
+	r4 <6 4>8 <5 _!> r4 <6>8 <6!>
+	r4 <6 4>8 <5 _!> r2 %35 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

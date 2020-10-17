@@ -94,3 +94,45 @@ JerusalemViolinoII = {
 		R1\fermataMarkup \bar "|." %25 finis
 	}
 }
+
+GerechterViolinoII = {
+	\relative c' {
+		\clef treble
+		\key f \minor \time 4/4 \tempoGerechter
+		\partial 8 c8\fE f8.( g32 f) f16( c) f8 e8.( f32 g) f8 as16. f32
+		b8( as16.)-. f32 b8( as16.)-. f32 b8( as16.)-. e'32 f4~
+		f16 as g( f) es( des) c( h) \appoggiatura h8 c4 r
+		r8 c,\p c c e e f as
+		b( as16.)-. f32\f b8( as)-. b(\p as)-. b( as)-. %5
+		b b f f e b'16.\f g32 g8 \appoggiatura g16 \tuplet 3/2 8 { f(\p e f) }
+		e8 b'16.\f g32 g8\p f e <c' e, g,>16.\f c,32 c4
+		r8 as'\p as as~ as as as as~
+		as g g16( b) des( b) b( as) g4 f16( es)
+		es( des) des( c) c( des) des( c) c( b) b( as) as4 %10
+		es'8 as4 g8 as des4 des16( f)
+		es8 des c b as f16(\pocoF es) es( des) des( c)
+		c8 des16(\p c) c( b) b( as) as4 r8 es'\f
+		as( g16.)-. es32 as8( g16.)-. es32 as8( g16.)-. es32 des'4~
+		des8 c16( b) as8 g\trill as4 r %15
+		r8 c(\p b as) as4( g8) g
+		g b4 g8 f e r c16. d32
+		d8( e)-. r e16. f32 f8( g)-. r16 g( f e)
+		f8 f f b, \appoggiatura as g4 r
+		r8 es'! es es es des f f %20
+		ges4 f8 a b4 r8 des,16( b)
+		as g g4 b'16( g) f( e) e8 f f
+		e8.( f16) f8.( e32 f) \appoggiatura f8 e4 r
+		r8 as, as f' e e f as
+		b( as16.)-. f32\f b8( as-.) b(\p as16.)-. f32\f b8( as)-. %25
+		r f\p f f r16 e(-. e-. e-.) e(-. e-. e-. e-.)
+		f(-. f-. f-. f-.) f(-. f-. g-. g-.) g( g) f( f) f( f) f( f)
+		f8 f4 e8 \appoggiatura e f4 r8 des16( b)
+		as( g) g4 des'16( b) as( g) g8 b4
+		r8 f'4 e8 f b4 b8 %30
+		as g f( e) f4 r8 c'\f
+		f( e16.)-. c32 f8( e16.)-. c32 f8( e16.)-. c32 b'8. g16
+		f( e f) f, f8 e\trill f des16( c) c( b) b( as)
+		as8 des16(\p c) c( b) b( as) as8 des'16(\f c) c8 b
+		as16( c) as( f) f8 e\trill f c as4\fermata \bar "|." %35 finis
+	}
+}
