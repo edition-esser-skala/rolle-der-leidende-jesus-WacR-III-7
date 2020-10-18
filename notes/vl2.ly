@@ -136,3 +136,127 @@ GerechterViolinoII = {
 		as16( c) as( f) f8 e\trill f c as4\fermata \bar "|." %35 finis
 	}
 }
+
+LabyrinthViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoLabyrinth
+		R1
+		\tempoLabyrinthB c1~\pE
+		c~
+		c2 des~
+		des c2~ %5
+		c1
+		es
+		r8 des(-. des4-.)~ des2~
+		des r8 es(-. es4)-.
+		r8 des(-. des-. des-.) des4 r %10
+		\tempoLabyrinthC r8 des4\f c b a!8
+		b b4\p b b b8~
+		b b4 b8 b2
+		c8\f c e!( g) b( g) r g\p
+		b( g) r g e!2 %15
+		r8 f f([ as)] as( f) r a
+		a( f) r a a2
+		r8 b b([ g)] g4 r
+		r8 b, b([ g)] r b b([ g)]
+		r h h([ g)] r d' f([ d)] %20
+		r c es([ c)] r b? b([ g)]
+		g4 r r8 a4 a8
+		g g'16\f( a) a( h!) h( c) c( h) fis( g) g( a) a( h)
+		a( g) g4 r8 r2
+		r8 g16( a) a( h) h( c) c( h) fis( g) g( a) a( h) %25
+		a( g) g4 r8 r2
+		R1
+		r8 d16( e) e( fis) fis( g) g( fis) cis( d) d( e) e( fis)
+		e( d) d8 r4 r2
+		R1*2 %31
+		r2\fermata \bar "|." %32 finis
+	}
+}
+
+SingtIhrViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 3/4 \tempoSingtIhr
+		h'4(\fE c) h
+		c h r
+		h( c) h
+		h( a)\trill g
+		a a2~ %5
+		a8 a16 gis a8 c e g
+		g4 a,2~
+		a8 a16 gis a8 cis e g
+		a,4 c8( a) g4
+		a c8( a) g4 %10
+		e8 a g4 fis\trill
+		g g, r
+		g2.\p
+		g4~ g8 g h d
+		g2. %15
+		d2 g,4
+		h'8.\f c16 d4 c
+		h( a)\trill g
+		e2\p d4
+		c2. %20
+		cis
+		d4 d8 c h a
+		g4 r r
+		R2.*3 %26
+		h'8.\f c16 d4 c
+		h( a)\trill g
+		R2.*4 %32
+		d2.\p
+		d4~ d8 d' a fis
+		d2 d4 %35
+		e fis g
+		r e g,
+		a2 a4
+		gis2.
+		a4 r cis %40
+		d e2
+		cis4 d d'~
+		d2 cis4
+		r8 d, h d a d
+		g,4 a2 %45
+		d8 d' a d fis, a
+		d,4 r r
+		R2.*13 %60
+		g,2.\p
+		g4~ g8 g h d
+		g2.
+		d2 g,4
+		h'8.\f c16 d4 c %65
+		h( a)\trill g
+		e2\p d4
+		c2.
+		cis
+		d4 d8 c h a %70
+		g4 r r
+		R2.*3
+		h'8.\f c16 d4 c %75
+		h( a)\trill g
+		R2.*5 %81
+		r8 d16\f cis d8-! fis-! a-! d,-!
+		c'2.~
+		c8 d,16 cis d8-! fis-! a-! d,-!
+		c'2.~ %85
+		c8 a16 g a8 c h4
+		c8 a g4 fis\trill
+		g2 r4
+		R2.*8 %96
+		r8 d16\fE cis d8-! fis-! a-! d,-!
+		c'2.~
+		c8 d,16 cis d8-! fis-! a-! d,-!
+		c'2.~ %100
+		c8 a16 g a8 c h4
+		c8 a g4 fis\trill
+		g2 r4
+		g-! g-! r
+		a-! g-! r %105
+		g'8 g, h d g h
+		d4 a,2\trill
+		g4 <g' h, d, g,> q
+		q r r\fermata \bar "|." %109 finis
+	}
+}

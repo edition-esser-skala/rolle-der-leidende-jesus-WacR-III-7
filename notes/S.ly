@@ -163,6 +163,154 @@ DerHerrNeigetSopranoLyrics = \lyricmode {
 	gen. %31 finis
 }
 
+SingtIhrSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 3/4 \autoBeamOff \tempoSingtIhr
+		R2.*12 %12
+		\mvTr d'4(\pE^\solo e) d
+		e d r
+		d( e) d %15
+		d( c)\trill h
+		\mvTr g'2\fE^\tutti e4
+		d( c)\trill h
+		\mvTr h(\pE^\solo c) d
+		e( fis) g~ %20
+		g h, d
+		h( a) r
+		R2.*4 %26
+		\mvTr g'2\fE^\tutti e4
+		d( c)\trill h
+		R2.*4 %32
+		\mvTr a4(\pE^\solo h) c
+		h a r
+		c8.([ d16] e4) d %35
+		d( c)\trill h
+		g'2 e4
+		d8([ cis)] cis2
+		d4( e) d
+		cis8([ h)] a4 r %40
+		h2 e8([ cis)]
+		a2 a'4
+		g2 e8.([ fis32 g)]
+		fis2 fis8.([\trill e32 fis)]
+		g4 fis( e)\trill %45
+		d2 r4
+		R2.*14 %60
+		d4( e) d
+		e d r
+		d( e) d
+		d( c)\trill h
+		\mvTr g'2\fE^\tutti e4 %65
+		d( c)\trill h
+		\mvTr h(\pE^\solo c) d
+		e( fis) g~
+		g h, d
+		h( a) r %70
+		R2.*4
+		\mvTr g'2\fE^\tutti e4 %75
+		d( c)\trill h
+		R2.*4 %80
+		r4 \mvTr d8([ fis)] fis([ a)]
+		a2 a4
+		a2.~
+		a~
+		a~ %85
+		a2 g4
+		e8([ c)] h4( a)\trill
+		g2 r4
+		\mvTr a4(\pE^\solo h) c
+		h8.([ c16)] d4 r %90
+		fis( g) h,
+		h a r
+		R2.*3 %95
+		r4 \mvTr d8([\fE^\tutti fis)] fis([ a)]
+		a2 a4
+		a2.~
+		a~
+		a~ %100
+		a2 g4
+		e8([ c)] h4( a)
+		g2 r4
+		e'-! d-! r
+		c-! h-! r %105
+		g'2.
+		a,\trill
+		g2 r4
+		R2.\fermataMarkup \bar "|." %109 finis
+	}
+}
+
+SingtIhrSopranoLyrics = \lyricmode {
+	\xE Singt, ihr %13
+	Him -- mel,
+	Gott iſt %15
+	Lie -- be,
+	Gott iſt
+	Lie -- be,
+	wun -- der --
+	bar -- lich __ %20
+	iſt ſein
+	Rath.
+
+	Gott iſt %27
+	Lie -- be,
+
+	Ihr Ge -- %33
+	ſchlech -- ter
+	der __ Er -- %35
+	lö -- ſten,
+	\x dem, der
+	lei -- det,
+	uns zu
+	trö -- ſten, %40
+	laßt uns
+	e -- wig,
+	laßt uns
+	e -- wig
+	\xE dank -- bar %45
+	ſeyn.
+
+	Singt, ihr %61
+	Him -- mel,
+	Gott iſt
+	Lie -- be,
+	Gott iſt %65
+	Lie -- be,
+	wun -- der --
+	bar -- lich __
+	iſt ſein
+	Rath. %70
+
+	Gott iſt %75
+	Lie -- be,
+
+	bey der %81
+	Tha -- ten
+	größ --
+
+	ten, %86
+	größ -- ten
+	That.
+	Singt, ihr
+	Him -- mel, %90
+	Gott iſt
+	Lie -- be,
+
+	bey der %96
+	Tha -- ten
+	größ --
+
+	ten, %101
+	größ -- ten __
+	That,
+	bey der
+	Tha -- ten %105
+	größ --
+	ten
+	That. %108 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

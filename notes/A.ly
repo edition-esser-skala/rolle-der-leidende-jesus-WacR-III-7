@@ -298,6 +298,154 @@ GerechterAltoLyrics = \lyricmode {
 	Je -- ſus will ver -- gehn? %31 finis
 }
 
+SingtIhrAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 3/4 \autoBeamOff \tempoSingtIhr
+		R2.*12 %12
+		\mvTr h'4(\pE^\solo c) h
+		c h r
+		h( c) h %15
+		h( a) g
+		\mvTr h2\fE^\tutti g4
+		g( fis) g
+		\mvTr g(\pE^\solo a) h
+		c( a) h~ %20
+		h g h
+		g( fis) r
+		R2.*4 %26
+		\mvTr h2\fE^\tutti g4
+		g( fis) g
+		R2.*4 %32
+		\mvTr fis4(\pE^\solo g) a
+		g fis r
+		a8.([ h16] c4) h %35
+		h( a) g
+		r r h~
+		h a g
+		fis8 a g4 fis
+		e8([ d)] cis4 a'~ %40
+		a g g
+		g8([ e)] fis2
+		r4 h cis
+		d2 d4
+		h d( cis)\trill %45
+		d2 r4
+		R2.*14 %60
+		h4( c) h
+		c h r
+		h( c) h
+		h( a)\trill g
+		\mvTr h2\fE^\tutti g4 %65
+		g( fis) g
+		\mvTr g(\pE^\solo a) h
+		c( a) h~
+		h g h
+		g( fis) r %70
+		R2.*4
+ 		\mvTr h2\fE^\tutti g4 %75
+		g( fis) g
+		R2.*4 %80
+		r4 fis8([ a)] a([ c)]
+		c2 c4
+		c2.~
+		c~
+		c~ %85
+		c2 h4
+		c8([ a)] g4( fis)\trill
+		g2 r4
+		\mvTr fis4(\pE^\solo g) a
+		g8.([ a16)] h4 r %90
+		a( h) g
+		g fis r
+		R2.*3 %95
+		r4 \mvTr fis8([\fE^\tutti a)] a([ c)]
+		c2 c4
+		c2.~
+		c~
+		c~ %100
+		c2 h4
+		c8([ a)] g4( fis)
+		g2 r4
+		g-! g-! r
+		a-! g-! r %105
+		h2.
+		fis\trill
+		g2 r4
+		R2.\fermataMarkup \bar "|." %109 finis
+	}
+}
+
+SingtIhrAltoLyrics = \lyricmode {
+	Singt, ihr %13
+	Him -- mel,
+	Gott iſt %15
+	Lie -- be,
+	\xE Gott iſt
+	Lie -- be, \x
+	wun -- der --
+	bar -- lich __ %20
+	iſt ſein
+	Rath.
+
+	\xE Gott iſt %27
+	Lie -- be, \x
+
+	Ihr Ge -- %33
+	ſchlech -- ter
+	der __ Er -- %35
+	lö -- ſten,
+	dem, __
+	_ der
+	lei -- det, uns zu
+	trö -- ſten, laßt __ %40
+	_ uns
+	e -- wig,
+	laßt uns
+	e -- wig
+	dank -- bar %45
+	ſeyn.
+
+	Singt, ihr %61
+	Him -- mel,
+	Gott iſt
+	Lie -- be,
+	\xE Gott iſt %65
+	Lie -- be, \x
+	wun -- der --
+	bar -- lich __
+	iſt ſein
+	Rath. %70
+
+	\xE Gott iſt %75
+	Lie -- be, \x
+
+	bey der %81
+	Tha -- ten
+	größ --
+
+	ten, %86
+	größ -- ten
+	That.
+	Singt, ihr
+	Him -- mel, %90
+	Gott iſt
+	Lie -- be,
+
+	bey der %96
+	Tha -- ten
+	größ --
+
+	ten, %101
+	größ -- ten __
+	That,
+	bey der
+	Tha -- ten %105
+	größ --
+	ten
+	That. %108 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

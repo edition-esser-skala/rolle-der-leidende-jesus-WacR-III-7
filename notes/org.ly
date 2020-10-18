@@ -264,6 +264,274 @@ GerechterBassFigures = \figuremode {
 	r4 <6 4>8 <5 _!> r2 %35 finis
 }
 
+LabyrinthOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoLabyrinth
+		h!2~\pE^\tenuto h4 r
+		\tempoLabyrinthB c1~
+		c~
+		c2 b~
+		b as~ %5
+		as1
+		a
+		r8 b(-. b4~-.) b2~
+		b r8 es(-. es4-.)
+		r8 e(-. e-. e-.) e4 r %10
+		\tempoLabyrinthC f4 ges\f f es
+		des des\p des des
+		des des des2
+		c4 c\f c c\p
+		c c c2 %15
+		f4 f f f
+		es es d!2
+		g,4 g g r
+		g g g g
+		f'! f h,! h %20
+		c c cis cis
+		cis? r d d
+		g, g'\f d d
+		g g, r2
+		g'4 g, d' d %25
+		g g, r2
+		cis\pE r
+		d4\fE d a' a,
+		d r r2
+		fis\pE g %30
+		r r4 a
+		d,2\fermata \bar "|." %32 finis
+	}
+}
+
+LabyrinthBassFigures = \figuremode {
+	<7- 5>1
+	<_->
+	r
+	r2 <6 4! 2->
+	r <6> %5
+	r1
+	<7- 5->
+	r8 <_-> r2.
+	r2 r8 <5- _->4.
+	r8 <7- 5- _!>2.. %10
+	r8 <8 6-> <\t \t> <6- 4> <\t \t> <6- 4-> <\t \t> <6 4!>
+	<6->1
+	r
+	<7- _!>
+	r1 %15
+	<_->
+	<4! 2>2 <7 _+>
+	<_->1
+	q
+	<4! 2>2 <7-> %20
+	<_-> <7->
+	r <4>4 <\t>8 <_+>
+	<_!>2 <_+>
+	r1
+	r2 <_+> %25
+	r1
+	<6>
+	<_+>2 q
+	q1
+	<6 5!> %30
+	r2. <_+>4
+	q2 %32 finis
+}
+
+SingtIhrOrgano = {
+	\relative c {
+		\clef bass
+		\key g \major \time 3/4 \tempoSingtIhr
+		\mvTr g2.\fE-\soloE
+		g4~ g8 g h d
+		g2.
+		d2 g,4
+		c8 c16 h c8 e a c %5
+		c4 c, r
+		cis8 cis16 h cis8 e a cis
+		cis4 cis, r
+		d2.
+		d2 e4 %10
+		c d d
+		g,~ g8 g' d h
+		g4\p r r
+		R2.*3 %16
+		\mvTr g8.\f-\tuttiE a16 h4 c
+		d d, g
+		R2.*4 %22
+		\mvTr g2.\p-\soloE
+		g4~ g8 g h d
+		g2. %25
+		d2 g4
+		\mvTr g,8.\f-\tuttiE a16 h4 c
+		d d, g
+		\mvTr e'2\p-\soloE d4
+		c2. %30
+		cis
+		d4~ d8 d' a fis
+		d4 r r
+		R2.*13 %46
+		d2\p c!4
+		h8 d f d h a
+		gis2.
+		a4 e'8 d c h %50
+		a2 r4
+		r8 a' d a f d
+		g2 r4
+		r8 g c g e g
+		c,2. %55
+		h
+		e
+		a,4 a' g
+		a h h,
+		e d8 c h a %60
+		g4 r r
+		R2.*3
+		\mvTr g8.\f-\tuttiE a16 h4 c %65
+		d d, g
+		R2.*4 %70
+		\mvTr g2.\pE-\soloE
+		g4~ g8 g h d
+		g2.
+		d2 g4
+		\mvTr g,8.\f-\tuttiE a16 h4 c %75
+		d d, g
+		\mvTr e'2\p-\soloE d4
+		c2 cis4
+		d2 d,4
+		g \mvTr g'8(\f-\tuttiE h) h( d) %80
+		d4 r r
+		d,2.
+		r8 d16 cis d8 fis a d
+		d2.
+		r8 d,16 cis d8 fis a d %85
+		d4 d, g
+		c, d d,
+		g g'8 d h g
+		\mvTr d'2.~\p-\soloE
+		d4~ d8 d' h g %90
+		d2 cis4
+		d~ d8 d a fis
+		\once \tieDashed d2.~
+		d4~ d8 d' h g
+		d2 cis'4 %95
+		d d, r
+		\mvTr d'2\f-\tuttiE r4
+		r8 d16 cis d8 fis a d
+		d2.
+		r8 d,16 cis d8 fis a d %100
+		d4 d, g
+		c, d d
+		e2 r4
+		c'-! h-! r
+		\parOn fis-\parenthesize-! \parOff g-\parenthesize-! r %105
+		d'2.
+		d,
+		g,8 g16 fis g8 h d g
+		g,4-\critnote r r\fermata \bar "|." %109 finis
+	}
+}
+
+SingtIhrBassFigures = \figuremode {
+	<5 3>4 <6 4> <5 3>
+	<6 4> <5 3>2
+	<5 3>4 <6 4> <5 3>
+	<8 6> <7 5>2
+	<6 5>2. \bassFigureExtendersOn %5
+	q
+	q
+	q4 q \bassFigureExtendersOff r
+	<7 5>2 <6 4>4
+	<7 5>2 <5 3>4 %10
+	<6> <6 4> <5 3>
+	r2.
+	r
+	r
+	r %15
+	r
+	r4 <6>2
+	<6 4>4 <5 3>2
+	r2.
+	r %20
+	r
+	r
+	<5 3>4 <6 4> <5 3>
+	<6 4> <5 3>2
+	<5 3>4 <6 4> <5 3> %25
+	<8 6> <7 5>2
+	r4 <6>2
+	<6 4>4 <5 3>2
+	<5 3>4 <6 4> <8 6>
+	<5 3> <2> <7> %30
+	<\t>2.
+	<6 4>4 <5 3>2
+	r2.*13 %45
+	r2.
+	<5 3>4 <6 4+> <8 6>
+	<5>2.
+	<7! 5>4 <6 4> <5 3>
+	r <_+>2 %50
+	r2.
+	r8 <5 3> <5 _!>4 <6>
+	r2.
+	r8 <6 4>2 \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<5>2 <6>4 %55
+	<7 4> <\t _+>2
+	<7! 4>4 <\t _+>2
+	r4 <4+ 3> <6>
+	q <6 4> <5 _+>
+	r2. %60
+	r
+	r
+	r
+	r
+	r4 <6>2 %65
+	<6 4>4 <5 3>2
+	r2.
+	r
+	r
+	r %70
+	<5 3>4 <6 4> <5 3>
+	<6 4> <5 3>2
+	<5 3>4 <6 4> <5 3>
+	<8 6> <7 5>2
+	r4 <6>2 %75
+	<6 4>4 <5 3>2
+	<5 3>4 <6 4> <8 6>
+	<5 3> <2> <7>
+	<6 4>2 <5 3>4
+	r2. %80
+	r2.
+	<7> \bassFigureExtendersOn
+	q
+	q
+	q %85
+	q4 q \bassFigureExtendersOff r
+	<6 5> <6 4> <5 3>
+	r2.
+	<5 3>4 <6 4> <7 5>
+	<6 4>2 \bassFigureExtendersOn q8 q \bassFigureExtendersOff %90
+	<5 3>4 <6 4> <7>
+	<6 4> <5 3>2
+	<5 3>4 <6 4> <7 5>
+	<6 4>2 \bassFigureExtendersOn q8 q \bassFigureExtendersOff
+	<5 3>4 <6 4> <7> %95
+	<6 4> <5 3>2
+	<7>2. \bassFigureExtendersOn
+	q
+	q
+	q %100
+	q4 q \bassFigureExtendersOff r
+	<6 5> <6 4> <5 3>
+	q2.
+	r4 <6>2
+	<6 5>2. %105
+	<6 4>
+	<7 3>
+	r
+	r %109 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

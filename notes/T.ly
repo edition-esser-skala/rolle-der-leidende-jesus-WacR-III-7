@@ -163,6 +163,152 @@ DerHerrNeigetTenoreLyrics = \lyricmode {
 	gen. %31 finis
 }
 
+SingtIhrTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \major \time 3/4 \autoBeamOff \tempoSingtIhr
+		R2.*16 %16
+		\mvTr d2\fE^\tutti c4
+		h( a) g
+		R2.*4 %22
+		\mvTr d'4(\pE^\solo e) d
+		e d r
+		d( e) d %25
+		d( c) h
+		\mvTr d2\fE^\tutti c4
+		h( a) g
+		\mvTr h4(\pE^\solo c) d
+		e( fis) g~ %30
+		g h, d
+		h( a) r
+		R2.*14 %46
+		a4( h) c!
+		d d2
+		d8.([ f16] e4) d
+		c h r %50
+		c( d) e
+		e( f) d
+		h( c) d
+		e8.([ d16)] e4 r
+		e8 dis e g fis! e %55
+		e4( dis) r
+		d8 cis d f e d
+		c4 dis e
+		c8([ a)] g4( fis)\trill
+		e r r %60
+		R2.*4
+		\mvTr d'2\fE^\tutti c4 %65
+		h( a) g
+		R2.*4 %70
+		\mvTr d'4(\pE^\solo e) d
+		e d r
+		d( e) d
+		d( c)\trill h
+		\mvTr d2\fE^\tutti c4 %75
+		h( a) g
+		\mvTr h(\pE^\solo c) d
+		e( fis) g~
+		g h, c8([ a)]
+		g4 \mvTr g8([\fE^\tutti h]) h([ d)] %80
+		d2.~
+		d2 d4
+		fis2.~
+		fis~
+		fis~ %85
+		fis2 g4
+		g d( c)
+		h2 r4
+		R2.*4 %92
+		\mvTr a4(\pE^\solo h) c
+		h8.([ c16)] d4 r
+		fis( g) h, %95
+		h a r
+		r \mvTr d\fE^\tutti d
+		fis2 fis4
+		fis2.~
+		fis~ %100
+		fis2 g4
+		g d( c)
+		h2 r4
+		c-! d-! r
+		d-! d-! r %105
+		d2.
+		c
+		h2 r4
+		R2.\fermataMarkup \bar "|." %109 finis
+	}
+}
+
+SingtIhrTenoreLyrics = \lyricmode {
+	\xE Gott iſt %17
+	Lie -- be,
+
+	Sing, o %23
+	Er -- de,
+	Gott ist %25
+	Lie -- be,
+	Gott ist
+	Lie -- be,
+	bey der
+	Tha -- ten __ %30
+	größ -- ten
+	That.
+
+	Je -- des %47
+	Herz, das
+	ihn __ ver --
+	ken -- net, %50
+	nicht für
+	ihn __ und
+	Tu -- gend
+	bren -- net,
+	\x faß einst e -- wig die -- se %55
+	Pein,
+	faß einst e -- wig die -- se
+	Pein, e -- wig
+	die -- se __
+	Pein. %60
+
+	\xE Gott iſt %65
+	Lie -- be,
+
+	Sing, o %71
+	Er -- de,
+	Gott ist
+	Lie -- be,
+	Gott ist %75
+	Lie -- be,
+	bey der
+	Tha -- ten __
+	größ -- ten
+	That, \x bey der %80
+	Tha --
+	ten
+	größ --
+
+	ten, %86
+	\xE größ -- ten
+	That.
+
+	Sing, o %93
+	Er -- de,
+	Gott ist %95
+	Lie -- be
+	bey der
+	Tha -- ten
+	größ --
+	%100
+	ten,
+	größ -- ten __
+	That,
+	bey der
+	Tha -- ten %105
+	größ --
+	ten
+	That. %108 finis
+}
+
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

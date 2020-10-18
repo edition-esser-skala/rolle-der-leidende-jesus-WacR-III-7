@@ -239,20 +239,141 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "1.4"
+	% 		title = "Gerechter! Welche Qual erſchrecket"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "gerechter" "1.4" "Aria" "Gerechter! Welche Qual erschrecket"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+	% 					\partcombine \GerechterOboeI \GerechterOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\GerechterViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\GerechterViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\GerechterViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \GerechterAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \GerechterAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\GerechterOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \GerechterBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A C C O M P A G N A T O"
+	% 		number = "1.5"
+	% 		title = "O Labyrinth! der der Natur gebot"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #35
+	% 		system-system-spacing.minimum-distance = #35
+	% 		systems-per-page = #2
+	% 	}
+	% 	\tocLabelLong "labyrinth" "1.5" "Accompagnato" "O Labyrinth! der der Natur gebot"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\LabyrinthViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\LabyrinthViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\LabyrinthViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \LabyrinthBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \LabyrinthBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\LabyrinthOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \LabyrinthBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "1.4"
-			title = "Gerechter! Welche Qual erſchrecket"
+			genre = "C O R O"
+			number = "1.6"
+			title = "Singt, ihr Himmel, Gott iſt Liebe"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "gerechter" "1.4" "Aria" "Gerechter! Welche Qual erschrecket"
+		\tocLabelLong "singtihr" "1.6" "Coro" "Singt, ihr Himmel, Gott ist Liebe"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
-						\partcombine \GerechterOboeI \GerechterOboeII
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\SingtIhrOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\SingtIhrOboeII
+						}
+					>>
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "fag"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\SingtIhrFagottoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\SingtIhrFagottoII
+						}
 					>>
 				>>
 				\new StaffGroup <<
@@ -260,36 +381,54 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\GerechterViolinoI
+							\SingtIhrViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\GerechterViolinoII
+							\SingtIhrViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\GerechterViola
+						\SingtIhrViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \GerechterAltoNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \SingtIhrSopranoNotes }
 					}
-					\new Lyrics \lyricsto Alto \GerechterAltoLyrics
+					\new Lyrics \lyricsto Soprano \SingtIhrSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \SingtIhrAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \SingtIhrAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \SingtIhrTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \SingtIhrTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \SingtIhrBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \SingtIhrBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\GerechterOrgano
+						\SingtIhrOrgano
 					}
 				>>
-				\new FiguredBass { \GerechterBassFigures }
+				\new FiguredBass { \SingtIhrBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 60 }
+			\midi { \tempo 4 = 100 }
 		}
 	}
 }

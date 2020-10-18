@@ -136,3 +136,129 @@ GerechterViola = {
 		as f c c f,2\fermata \bar "|." %35 finis
 	}
 }
+
+LabyrinthViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 4/4 \tempoLabyrinth
+		R1
+		\tempoLabyrinthB g1~\pE
+		g~
+		g~
+		g2 as~ %5
+		as1
+		c
+		r8 b(-. b4-.)~ b2~
+		b r8 b(-. b4-.)
+		r8 b(-. b-. b-.) b4 r %10
+		\tempoLabyrinthC f4 ges\fE f es
+		f f\pE f f
+		f f f2
+		g4 c\fE c c\pE
+		c c c2 %15
+		c4 f f f,
+		es es d!2
+		g4 g b r
+		g4 g g g
+		g g h! h %20
+		g c e! g,
+		b r r d
+		g, g'\fE d d
+		d~ d8 r r2
+		g4 g, d' d %25
+		d~ d8 r r2
+		R1
+		d4 d a a
+		a r r2
+		R1*2 %31
+		r2\fermata \bar "|." %32 finis
+	}
+}
+
+SingtIhrViola = {
+	\relative c' {
+		\clef alto
+		\key g \major \time 3/4 \tempoSingtIhr
+		g2.\fE
+		g4~ g8 g h d
+		g2.
+		d2 g,4
+		e' e r %5
+		e e r
+		e e r
+		e e r
+		d fis g
+		d fis g %10
+		c, d d
+		g,~ g8 g' d h
+		g2.\p
+		g4~ g8 g h d
+		g2. %15
+		d2 g,4
+		d'2\f g4
+		g fis g
+		e2\p d4
+		c2. %20
+		cis
+		d4 d8 c h a
+		g4 r r
+		R2.*3 %26
+		d'2\fE g4
+		g fis g
+		R2.*4 %32
+		d2.\p
+		d4~ d8 d' a fis
+		d2 d4 %35
+		e fis g
+		r e g,
+		a2 a4
+		gis2.
+		a4 a8( a) a( a) %40
+		a( a) a( a) a( a)
+		a( a) a( a) a( a)
+		a( a) a( a) a( a)
+		r d h d a d
+		g,4 a2 %45
+		d8 d' a d fis, a
+		d,4 r r
+		R2.*13 %60
+		g,2.\pE
+		g4~ g8 g h d
+		g2.
+		d2 g,4
+		d'2\fE g4 %65
+		g( fis) g
+		e2\pE d4
+		c2.
+		cis
+		d4 d8 c h a %70
+		g4 r r
+		R2.*3
+		d'4\fE g g %75
+		g fis g
+		R2.*3
+		r4 g,8(\fE h) h( d) %80
+		d4 r r
+		d,2.
+		r8 d'16 cis d8 fis a d
+		d2.
+		r8 d,16 cis d8 fis a d %85
+		d4 fis, g
+		g d c
+		h2 r4
+		R2.*8 %96
+		d2\f r4
+		r8 d16 cis d8 fis a d
+		d2.
+		r8 d,16 cis d8 fis a d %100
+		d4 fis, g
+		g d c
+		h2 r4
+		c-! d-! r
+		\parOn d-\parenthesize-! \parOff d-\parenthesize-! r %105
+		d2.
+		c
+		h8 g16 fis g8 h d g
+		g,4 r r\fermata \bar "|." %109 finis
+	}
+}

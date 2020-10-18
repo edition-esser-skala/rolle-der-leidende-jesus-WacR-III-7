@@ -137,6 +137,130 @@ GerechterViolinoI = {
 	}
 }
 
+LabyrinthViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoLabyrinth
+		R1
+		\tempoLabyrinthB es1~\pE
+		es~
+		es2 e~
+		e f~ %5
+		f1
+		ges
+		r8 f(-. f4~-.) f2~
+		f r8 ges(-. ges4)-.
+		r8 g(-. g-. g-.) g4 r %10
+		\tempoLabyrinthC r8 f4\f es des c8
+		b b4\p b b b8~
+		b b4 b8 b2
+		c8(\f e!) g( b) des( b) r b\p
+		des( b) r b g2 %15
+		r8 as as([ c)] c( as) r c
+		c( a) r c c2
+		r8 d d([ b)] g4 r
+		r8 d d([ b)] r d d([ b)]
+		r d d([ h)] r as' as([ f)] %20
+		r es g([ es)] r g g([ e)]
+		e4 r r8 g4 fis8
+		g h!16(\f c) c( d) d( e!) e( d) a( h) h( c) c( d)
+		c( h) h4 r8 r2
+		r8 h16( c) c( d) d( e) e( d) a( h) h( c) c( d) %25
+		c( h) h4 r8 r2
+		R1
+		r8 fis16( g) g( a) a( h) h( a) e( fis) fis( g) g( a)
+		g( fis) fis8 r4 r2
+		R1*2 %31
+		r2\fermata \bar "|." %32 finis
+	}
+}
+
+SingtIhrViolinoI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 3/4 \tempoSingtIhr
+		d'4(\fE e) d
+		e d r
+		d8.( g16 e4) d
+		d( c)\trill h
+		a a2~ %5
+		a8 a16 gis a8 c e g
+		g4 a,2~
+		a8 a16 gis a8 cis e g
+		g( fis) a( c,) h( g')
+		g( fis) a( c,) h4 %10
+		e,8 c' h4 a\trill
+		g g, r
+		g2.\p
+		g4~ g8 g h d
+		g2. %15
+		d2 g,4
+		g''2\f e4
+		d( c)\trill h
+		e,2\p d4
+		c2. %20
+		cis
+		d4 d8 c h a
+		g4 r r
+		R2.*3 %26
+		g''2\f e4
+		d( c)\trill h
+		R2.*4 %32
+		d,2.\p
+		d4~ d8 d' a fis
+		d2 d4 %35
+		e fis g
+		r e g,
+		a2 a4
+		gis2.
+		a4 a8( a) a( a) %40
+		a( a) a( a) a( a)
+		a( a) a( a) a( a)
+		a( a) a( a) a( a)
+		r d h d a d
+		g,4 a2 %45
+		d8 d' a d fis, a
+		d,4 r r
+		R2.*13 %60
+		g,2.\p
+		g4~ g8 g h d
+		g2.
+		d2 g,4
+		g''2\f e4 %65
+		d( c)\trill h
+		e,2\p d4
+		c2.
+		cis
+		d4 d8 c h a %70
+		g4 r r
+		R2.*3
+		g''2\f e4 %75
+		d( c)\trill h
+		R2.*5 %81
+		r8 fis16\f e fis8-! a-! d-! fis-!
+		a2.~
+		a8 fis,16 e fis8-! a-! d-! fis-!
+		a2.~ %85
+		a8 c,16 h c8 a' h, g'
+		e c h4 a\trill
+		g2 r4
+		R2.*8 %96
+		r8 fis16\fE e fis8-! a-! d-! fis-!
+		a2.~
+		a8 fis,16 e fis8-! a-! d-! fis-!
+		a2.~ %100
+		a8 c,16 h c8 a' h, g'
+		e c h4 a\trill
+		g2 r4
+		e'-! d-! r
+		c-! h-! r %105
+		g'8 g, h d g h
+		d4 a,2\trill
+		g4 <g' h, d, g,> q
+		q r r\fermata \bar "|." %109 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

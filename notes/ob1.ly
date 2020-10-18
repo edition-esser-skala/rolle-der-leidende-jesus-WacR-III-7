@@ -81,3 +81,81 @@ GerechterOboeI = {
 		f( c) as( f) \pd as8 g\trill \pao f4 r\fermata \bar "|." %35 finis
 	}
 }
+
+SingtIhrOboeI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 3/4 \tempoSingtIhr
+		R2.*12 %12
+		d'4(\pocoP e) d
+		e d r
+		d( e) d %15
+		d( c)\trill h
+		g'2\f e4
+		d( c)\trill h
+		h(\pocoP c) d
+		e( fis) g~ %20
+		g h, d
+		h( a) r
+		R2.*4 %26
+		g'2\fE e4
+		d( c)\trill h
+		R2.*4 %32
+		a4(\pocoPE h) c
+		h a r
+		c8.( d16 e4) d %35
+		d( c)\trill h
+		g'2 e4
+		d8( cis) cis2
+		d4( e) d
+		cis8 h a4 r %40
+		h2 e8( cis)
+		a4~ a8( d) fis( a)
+		g2 e8.( fis32 g)
+		fis2 fis8.(\trill e32 fis)
+		g4 fis e\trill %45
+		d2 r4
+		R2.*14 %60
+		d4(\pocoP e) d
+		e d r
+		d( e) d
+		d( c)\trill h
+		g'2\f e4 %65
+		d( c)\trill h
+		h(\pocoP c) d
+		e( fis) g~
+		g h, d
+		h a r %70
+		R2.*4
+		g'2\f e4 %75
+		d( c)\trill h
+		R2.*4 %80
+		r4 d8(\f fis) fis( a)
+		a2.~
+		a
+		a~
+		a~ %85
+		a4 c, h
+		e8( c) h4 a\trill
+		g2 r4
+		a(\pocoPE h) c
+		h8.( c16) d4 r %90
+		fis( g) h,
+		h a r
+		R2.*3 %95
+		r4 d8(\fE fis) fis( a)
+		a2.~
+		a
+		a~
+		a~ %100
+		a4 c, h
+		e8 c h4( a)\trill
+		g2 r4
+		e'-! d-! r
+		c-! h-! r %105
+		g'2.
+		a,\trill
+		g2 r4
+		R2.\fermataMarkup \bar "|." %109 finis
+	}
+}
