@@ -425,6 +425,87 @@ NochHerrschtTenoreLyrics = \lyricmode {
 	liegt. %27 finis
 }
 
+WachetStehetTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoWachetStehet
+		R1*3
+		\mvTr d4\fE^\tuttiE d r2
+		e e4 e %5
+		fis d r2
+		R1
+		r2 e
+		d4 fis e2
+		d4 d d d %10
+		d2 e4 e
+		e2 r
+		h h4 h
+		cis a r2
+		R1*3 %17
+		d2 cis
+		e d4 d
+		g2 fis4 fis %20
+		e2( d)
+		cis r
+		R1*3 %25
+		a2 a
+		h h4 h
+		d2 d4 d
+		d( cis) d h
+		fis'2 fis4 fis %30
+		e2 e4 e
+		d fis e2
+		d4 fis e2
+		d4 d d a
+		a2 r4 cis %35
+		d a r cis
+		d a r cis
+		d d g e
+		d r d2
+		fis e %40
+		d r
+		R1*2
+		R1\fermataMarkup \bar "|." %44 finis
+	}
+}
+
+WachetStehetTenoreLyrics = \lyricmode {
+	\xE Wa -- chet, %4
+	\x ſte -- het im %5
+	Glau -- ben,
+
+	\xE ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid %10
+	ſtark, \x und ſeid
+	ſtark,
+	ſte -- het im
+	Glau -- ben,
+
+	ſte -- het, %18
+	ſte -- het im
+	Glau -- ben, im %20
+	Glau --
+	ben,
+
+	\xE ſte -- het, %26
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- ben, im
+	Glau -- ben, im %30
+	Glau -- ben, ſeid
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid %35
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid
+	ſtark, ſeid %40
+	ſtark. %41 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

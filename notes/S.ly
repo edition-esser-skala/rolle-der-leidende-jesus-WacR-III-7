@@ -364,6 +364,91 @@ LiebeDieSopranoLyricsB = \lyricmode {
 	dacht, %8 finis
 }
 
+WachetStehetSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoWachetStehet
+		R1*3
+		\mvTr d'4\fE^\tuttiE a r2
+		R1 %5
+		d4 a r2
+		e' e4 e
+		fis d e2
+		fis4 d e2
+		fis4 fis fis fis %10
+		g2 gis4 gis
+		a2 r
+		R1
+		a,4 e r2
+		h' h4 h %15
+		cis a r2
+		e' e4 e
+		fis d r2
+		R1*3 %21
+		cis2 h
+		d cis4 cis
+		fis2 e4 e
+		d2 cis %25
+		d cis
+		e d4 d
+		g2 fis4 fis
+		e2 d
+		cis \once \tieDashed h~ %30
+		h a4 e'
+		fis d e2
+		fis4 d e2
+		fis4 g h, cis
+		d2 r4 e %35
+		fis d r e
+		fis d r e
+		fis g h, cis
+		d r gis2
+		a cis, %40
+		d r
+		R1*2
+		R1\fermataMarkup \bar "|." %44 finis
+	}
+}
+
+WachetStehetSopranoLyrics = \lyricmode {
+	\xE Wa -- chet, %4
+	%5
+	wa -- chet,
+	\x ſte -- het im
+	\xE Glau -- ben, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid %10
+	ſtark, und ſeid
+	ſtark,
+
+	wa -- chet,
+	\x ſte -- het \xE im %15
+	Glau -- ben,
+	\x ſte -- het im
+	Glau -- ben,
+
+	\xE ſte -- het, %22
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- ben, %25
+	ſte -- het,
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- _
+	_ _ %30
+	\x ben, \xE ſeid
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid %35
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid
+	ſtark, ſeid %40
+	ſtark. %41 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -424,6 +424,91 @@ LiebeDieBassoLyricsB = \lyricmode {
 	dacht, %8 finis
 }
 
+WachetStehetBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoWachetStehet
+		R1*3
+		\mvTr d'4\fE^\tuttiE d, d'2~
+		d cis4 cis %5
+		d d, r2
+		R1
+		r2 cis'
+		d4 d, cis'2
+		d4 d, c' c %10
+		h2 r
+		a4 e a2~
+		a gis4 gis
+		a a, r2
+		R1 %15
+		r2 d'~
+		d cis4 cis
+		d d, r2
+		R1*3 %21
+		a'2 gis
+		h a4 a
+		d2 cis4 cis
+		h2 a %25
+		d, a'
+		e h'4 h
+		g2 d'4 d
+		d( cis) d h
+		h( ais) h a %30
+		a( gis) a cis
+		d d, cis'2
+		d4 d, cis'2
+		d4 g, g a
+		d,2 r4 a' %35
+		d d, r a'
+		d d, r a'
+		d g, g a
+		h r h2
+		a a %40
+		d, r
+		R1*2
+		R1\fermataMarkup \bar "|." %44 finis
+	}
+}
+
+WachetStehetBassoLyrics = \lyricmode {
+	Wa -- chet, ſte -- %4
+	het im %5
+	Glau -- ben,
+
+	ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid %10
+	ſtark,
+	wa -- chet, ſte --
+	het im
+	Glau -- ben,
+	%15
+	ſte --
+	het im
+	Glau -- ben,
+
+	ſte -- het, %22
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- ben, %25
+	ſte -- het,
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- ben, im
+	Glau -- ben, im %30
+	Glau -- ben, ſeid
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid %35
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid
+	ſtark, ſeid %40
+	ſtark. %41 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

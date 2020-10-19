@@ -284,6 +284,55 @@ LiebeDieViolinoI = {
 	}
 }
 
+WachetStehetViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoWachetStehet
+		d8\fE cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		d'-! a-! d,2~
+		d cis %5
+		r8 d d e fis e fis d
+		g fis g e a g a a,
+		<d a'>4 a'16 d fis a a4 a,8. g'16
+		<fis a, d,>4 a,16 d fis a a4 a,8. g'16
+		<fis a, d,>4 d8. fis16 <fis a, d,>4 d8. fis16 %10
+		<g h, d,>4 d8. h'16 gis8 h h, d
+		cis4 e, a,2~
+		a gis
+		r8 a a h cis h cis a
+		d cis d h e d e e %15
+		a, e' a g! fis e fis d
+		g fis g e a g a a,
+		d4 r r2
+		R1*3 %21
+		r8 a' cis d e e e fis16 e
+		d8 h d e fis fis fis fis16 e
+		d8 d fis gis a a a a
+		a gis16 fis gis8 gis a e cis a %25
+		fis' a, fis'4 e8 a, e'4
+		g8 h, g'4 fis8 h, fis'4
+		h8 d, h'4 a8 d, a'4
+		g8 e g4 fis8 d fis4
+		e8 fis, e'4 d8 h d4~ %30
+		d8 e, d'4 cis a8. g'16
+		<fis a, d,>4 a,16 d fis a a4 a,8. g'16
+		<fis a, d,>4 a,16 d fis a a4 a,8. g'16
+		fis8. a16 g8. h16 h,4 cis
+		d a16 d fis a a4 a,8. g'16 %35
+		<fis a, d,>4 a,16 d fis a a4 a,8. g'16
+		<fis a, d,>4 a,16 d fis a a4 a,8. g'16
+		fis8. a16 g8. h16 h,4 cis
+		d r gis2
+		a r %40
+		d,,8 cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		d2 r\fermata \bar "|." %44 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

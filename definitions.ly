@@ -713,6 +713,7 @@ tempoLabyrinth = \tempoMarkup "Recitativo"
 tempoSingtIhr = \tempoMarkup "Larghetto"
 tempoLiebeDie = \tempoMarkup "[Tempo deest]"
 tempoNochHerrscht = \tempoMarkup "[Tempo deest]"
+tempoWachetStehet = \tempoMarkup "Allegro moderato"
 
 
 \include "notes/ob1.ly"

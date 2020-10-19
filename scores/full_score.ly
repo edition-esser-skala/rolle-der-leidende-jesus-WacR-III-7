@@ -505,38 +505,115 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "1.8"
+	% 		title = "Noch herrſcht um ihn ein ſchauervolles Schweigen"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "nochherrscht" "1.8" "Recitativo" "Noch herrscht um ihn ein schauervolles Schweigen"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \NochHerrschtTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \NochHerrschtTenoreLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\NochHerrschtOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \NochHerrschtBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "1.8"
-			title = "Noch herrſcht um ihn ein ſchauervolles Schweigen"
+			genre = "C O R O"
+			number = "1.9"
+			title = "Wachet, ſtehet im Glauben"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
-		}
-		\tocLabelLong "nochherrscht" "1.8" "Recitativo" "Noch herrscht um ihn ein schauervolles Schweigen"
+		\tocLabelLong "wachetstehet" "1.9" "Coro" "Wachet, stehet im Glauben"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WachetStehetOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WachetStehetOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WachetStehetViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WachetStehetViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WachetStehetViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \NochHerrschtTenoreNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \WachetStehetSopranoNotes }
 					}
-					\new Lyrics \lyricsto Tenore \NochHerrschtTenoreLyrics
+					\new Lyrics \lyricsto Soprano \WachetStehetSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \WachetStehetAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \WachetStehetAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \WachetStehetTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \WachetStehetTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WachetStehetBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \WachetStehetBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\NochHerrschtOrgano
+						\WachetStehetOrgano
 					}
 				>>
-				\new FiguredBass { \NochHerrschtBassFigures }
+				\new FiguredBass { \WachetStehetBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 60 }
+			\midi { \tempo 2 = 80 }
 		}
 	}
 }

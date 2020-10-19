@@ -182,3 +182,51 @@ LiebeDieOboeI = {
 		g1\fermata \bar "|." %16 finis
 	}
 }
+
+WachetStehetOboeI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoWachetStehet
+		R1*3
+		d'4-!\fE a-! r2
+		R1 %5
+		d4 a d2
+		e e
+		fis4 d e2
+		fis4 d e2
+		fis4 fis fis fis %10
+		g2 gis
+		a r
+		R1
+		a,4 e2 a4
+		h2 h %15
+		cis4 a r d
+		e2 e
+		fis e
+		g fis
+		h a %20
+		g fis
+		e4 a, h2
+		d cis
+		fis e
+		d cis4 a %25
+		fis'2 e
+		g fis
+		h a
+		g fis
+		e d %30
+		d cis4 e
+		fis d e2
+		fis4 d e2
+		fis4 g h, cis
+		d2 e %35
+		fis4 d e2
+		fis4 d e2
+		fis4 g h, cis
+		d r gis2
+		a cis,\trill %40
+		d r
+		R1*2
+		R1\fermataMarkup \bar "|." %44 finis
+	}
+}

@@ -638,6 +638,99 @@ NochHerrschtBassFigures = \figuremode {
 	r4 <_+> q2 %27 finis
 }
 
+WachetStehetOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoWachetStehet
+		\mvTr d8\fE-\unisonoE cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		d8 cis d e fis e fis d
+		g fis g e a g a a, %5
+		d4 r r2
+		R1
+		d8 fis a d cis h cis a
+		d, fis a d cis h cis a
+		d d, d d' c c, c c' %10
+		h h, h h' e,4 r
+		a,8 gis a h cis h cis a
+		d cis d h e d e e,
+		a2 r
+		R1*3 %17
+		r8 d fis g a a a h16 a
+		g8 e g a h h h h16 a
+		g8 g h cis d d d d %20
+		d cis16 h cis8 a d a fis d
+		a'2 e
+		h4 h' fis2
+		r4 d a a'
+		e2 a,4 r %25
+		r8 d fis g! a a a h16 a
+		g8 e g a h h h h16 a
+		g8 g h cis d d d d
+		d cis16 h cis8 cis d fis, h h
+		h ais16 gis ais8 fis h fis h a %30
+		a gis16 fis gis8 e a h cis a
+		d, fis a d cis h cis a
+		d, fis a d cis h cis a
+		d4 g,8. fis16 g4 a
+		d,8 fis a d cis h cis a %35
+		d, fis a d cis h cis a
+		d, fis a d cis h cis a
+		d4 g,8. fis16 g4 a
+		h r h2
+		a a, %40
+		d8-\unisonoE cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		d2 r\fermata \bar "|." %44 finis
+	}
+}
+
+WachetStehetBassFigures = \figuremode {
+	r1
+	r
+	r
+	<5 3>2 <6>
+	<6 5>1 %5
+	r
+	r
+	r2 <6>
+	r q
+	r <2> %10
+	<6> <_+>
+	r <6>
+	<6 5> <_+>
+	r1*4 %17
+	r1
+	<6>
+	r %20
+	<4 2>4 <\t \t>2.
+	r2 <_+>
+	r1
+	r
+	<7 4>4 <\t _+>2. %25
+	r1
+	<6>
+	r
+	<4 2>4 <\t \t>2.
+	<5 4 2>4 <6 5>2. %30
+	<5 4 2>4 <6 5>2.
+	r2 <6>
+	r q
+	r2. <7>4
+	r2 <6> %35
+	r q
+	r q
+	r2. <7>4
+	<5 3>2 <6\\>
+	<6 4> <5 3> %40
+	r1
+	r
+	r
+	r %44 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

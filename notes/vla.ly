@@ -285,3 +285,48 @@ LiebeDieViola = {
 		h1\fermata \bar "|." %16 finis
 	}
 }
+
+WachetStehetViola = {
+	\relative c' {
+		\clef alto
+		\key d \major \time 4/4 \tempoWachetStehet
+		d8\fE cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		<a fis'>-! q-! r a
+		h2 a %5
+		r8 d d e fis e fis d
+		g fis g e a g a a,
+		d8 fis a d cis h cis a
+		d, fis a d cis h cis a
+		d d, d d' d d, d d' %10
+		d d, d d' h4 e,
+		e2 r
+		R1
+		r8 a, a h cis h cis a
+		d cis d h e h e e %15
+		a, e' a g! fis e fis d
+		g fis g e a g a a,
+		d4 r r2
+		R1*7 %25
+		r8 d fis g! a a a h16 a
+		g8 e g a h h h h16 a
+		g8 g h cis d d d d
+		d cis16 h cis8 cis d fis, h h
+		g fis fis fis fis fis fis fis %30
+		e e e e e4 e8 cis
+		d fis a d cis h cis a
+		d, fis a d cis h cis a
+		a4 h g e
+		fis a8 d cis h cis a %35
+		d, fis a d cis h cis a
+		d, fis a d cis h cis a
+		d4 h g e
+		d r d2
+		fis e4 r %40
+		d8 cis d e fis d a cis
+		d cis d e fis d h d
+		g, g' fis e a4 a,
+		d2 r\fermata \bar "|." %44 finis
+	}
+}

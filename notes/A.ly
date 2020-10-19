@@ -499,6 +499,94 @@ LiebeDieAltoLyricsB = \lyricmode {
 	dacht, %8 finis
 }
 
+WachetStehetAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoWachetStehet
+		R1*3
+		\mvTr fis4\fE^\tuttiE fis r2
+		R1 %5
+		d'4 a d2~
+		d cis4 cis
+		d d, a'2
+		a4 a a2
+		a4 a a a %10
+		g2 h4 h
+		cis2 r
+		R1
+		a4 e a2~
+		a gis4 gis %15
+		a8.([ gis16)] a4 r2
+		R1
+		fis2 e
+		g fis4 fis
+		h2 a4 a %20
+		g2( fis)
+		e r
+		R1*3 %25
+		fis2 e
+		g fis4 fis
+		h2 a4 a
+		g2 fis
+		e d~ %30
+		d cis4 a'
+		a a a2
+		a4 a a2
+		a4 h h g
+		fis2 r4 a %35
+		a fis r a
+		a fis r a
+		a h h g
+		fis r d'2
+		d g, %40
+		fis r
+		R1*2
+		R1\fermataMarkup \bar "|." %44 finis
+	}
+}
+
+WachetStehetAltoLyrics = \lyricmode {
+	\xE Wa -- chet, %4
+	%5
+	\x wa -- chet, ſte --
+	het im
+	Glau -- ben, ſeid
+	\xE männ -- lich, ſeid
+	männ -- lich und ſeid %10
+	ſtark, und ſeid
+	ſtark,
+
+	\x wa -- chet, ſte --
+	het im %15
+	Glau -- ben,
+
+	\xE ſte -- het,
+	ſte -- het im
+	Glau -- ben, im %20
+	Glau --
+	ben,
+
+	\x ſte -- het, %26
+	ſte -- het im
+	Glau -- ben, im
+	Glau -- _
+	_ _ %30
+	\xE ben, ſeid
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid %35
+	männ -- lich, ſeid
+	männ -- lich, ſeid
+	männ -- lich und ſeid
+	ſtark, ſeid
+	ſtark, ſeid %40
+	ſtark. %41 finis
+
+	% wa -- chet, ſte -- het im Glau -- ben,
+	% ſeid männ -- lich und ſeid ſtark.
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
