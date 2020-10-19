@@ -361,6 +361,70 @@ LiebeDieTenoreLyricsB = \lyricmode {
 	dacht, %8 finis
 }
 
+NochHerrschtTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoNochHerrscht
+		r8 h h h e4 r8 e
+		fis a, c h g g r4
+		r8 d' d a h4 r8 g
+		h h h a16 g cis8 cis r cis16 d
+		e4 r8 g, a a r4 %5
+		r r16 a a a d4 r
+		r8 h h h e e e dis
+		e4 r8 h h e, d'4
+		d8 d d16 d e h c8 c r4
+		r c d8 d e f %10
+		\appoggiatura f e4 r r r8 c
+		c g g e' \appoggiatura d c8. c16 c8 r16 c
+		c8 g a b a4 r8 a
+		d d h c c g r4
+		r8 a d cis d4 r8 d %15
+		d d d cis d a c c16 h
+		h4 r r d
+		\appoggiatura c8 h4 h r d8 f!
+		e4 r r c
+		c8 g r e16 f g8. g16 g8 g %20
+		b b b d b b b c
+		a a r f c' c c d
+		\appoggiatura c h!4 r8 h d d d d16 e
+		f8 gis, gis a a4 e'
+		r e8 e e g, g a %25
+		fis r16 a d8 a h h cis d
+		a4 r r2\fermata \bar "|." %27 finis
+	}
+}
+
+NochHerrschtTenoreLyrics = \lyricmode {
+	Noch herrſcht um ihn ein
+	ſchau -- er -- vol -- les Schwei -- gen.
+	Kein Laut er -- tönt. Wo
+	ſeid ihr, Zeu -- gen der Wun -- der, die er
+	that? Wo ſeid ihr? %5
+	Seid ihr ent -- flohn?
+	Ver -- gaß ein je -- der ſchon den
+	Schwur, ſein Le -- ben hin
+	für den Gött -- li -- chen zu ge -- ben?
+	Wie hatt’ er euch ſo %10
+	lieb! Itzt
+	wen -- det ſich der Lie -- ben -- de und
+	ſuch -- et, Si -- mon, dich, und
+	euch, Ze -- be -- dä -- i -- den.
+	Mit die -- ſem Troſt, nur %15
+	euch zu ſehn, zu -- frie -- den, naht er ſich
+	euch.
+	Sie ſchlum -- mern, und er
+	ſpricht: Ach
+	Si -- mon, du ver -- magſt es nicht, auch %20
+	ei -- ne Stun -- de nur mit mir zu
+	wa -- chen! Zwar wil -- lig iſt der
+	Geiſt, doch drückt den Schwa -- chen das
+	Fleiſch zur Erd he -- rab! Ach,
+	wacht und be -- tet, daß ihr %25
+	ſingt und nicht der An -- fech -- tung er --
+	liegt. %27 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

@@ -574,6 +574,70 @@ LiebeDieBassFigures = \figuremode {
 	r1 %16 finis
 }
 
+NochHerrschtOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoNochHerrscht
+		e1~
+		e2 e4 fis~
+		fis2 g~
+		g e~
+		e r16 d fis a d a fis a %5
+		d,2 r16 d fis a d d, d' h
+		gis1~
+		gis~
+		gis2 r16 a, c e a e c e
+		a,2 h %10
+		r8 c e g c,2~
+		c1
+		e2 f
+		f4 r r g
+		fis1~ %15
+		fis2 fis
+		r8 g( fis g) h,4 r
+		r8 g'( fis g) h,2
+		r8 c'( h c) c,2~
+		c1~ %20
+		c2 e
+		f1
+		d
+		d2 c
+		cis1 %25
+		d2 g4 r
+		r a d,2\fermata \bar "|." %27 finis
+	}
+}
+
+NochHerrschtBassFigures = \figuremode {
+	r1
+	<7+ 4 2+>2 <5 3>4 <6>
+	r1
+	r2 <6\\>
+	r <_+> %5
+	r1
+	<6>
+	r
+	r
+	r2 <6!> %10
+	r1
+	r
+	<[6]>
+	<[4! 2]>
+	<[6]> %15
+	r
+	r2 <[6]>
+	r q
+	r1
+	r %20
+	\bo <[7-]>2 \bc <[\t]>
+	r1
+	<[6!]>
+	<[4+ 3]>2 <6>
+	\bo <[6]> \bc <[5!]> %25
+	<[_+]>1
+	r4 <_+> q2 %27 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

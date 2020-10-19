@@ -431,78 +431,112 @@
 	% 		\midi { \tempo 4 = 100 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "1.7"
+	% 		title = "Liebe, die du mich zum Bilde"
+	% 	}
+	% 	\tocLabelLong "liebedie" "1.7" "Choral" "Liebe, die du mich zum Bilde"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \LiebeDieOboeI \LiebeDieOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\LiebeDieViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\LiebeDieViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\LiebeDieViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \LiebeDieSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsA
+	% 				\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \LiebeDieAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsA
+	% 				\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \LiebeDieTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsA
+	% 				\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \LiebeDieBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsA
+	% 				\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsB
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\LiebeDieOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \LiebeDieBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "1.7"
-			title = "Liebe, die du mich zum Bilde"
+			genre = "R E C I T A T I V O"
+			number = "1.8"
+			title = "Noch herrſcht um ihn ein ſchauervolles Schweigen"
 		}
-		\tocLabelLong "liebedie" "1.7" "Choral" "Liebe, die du mich zum Bilde"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "nochherrscht" "1.8" "Recitativo" "Noch herrscht um ihn ein schauervolles Schweigen"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \LiebeDieOboeI \LiebeDieOboeII
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\LiebeDieViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\LiebeDieViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\LiebeDieViola
-					}
-				>>
-				\new ChoirStaff \with { \twoStanzaDistance } <<
-					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \LiebeDieSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsA
-					\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \LiebeDieAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsA
-					\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsB
-
+				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \LiebeDieTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \NochHerrschtTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsA
-					\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \LiebeDieBassoNotes }
-					}
-					\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsA
-					\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsB
+					\new Lyrics \lyricsto Tenore \NochHerrschtTenoreLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\LiebeDieOrgano
+						\NochHerrschtOrgano
 					}
 				>>
-				\new FiguredBass { \LiebeDieBassFigures }
+				\new FiguredBass { \NochHerrschtBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 60 }
 		}
 	}
 }
