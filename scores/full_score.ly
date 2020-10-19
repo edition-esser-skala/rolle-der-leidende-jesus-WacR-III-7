@@ -343,37 +343,107 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C O R O"
+	% 		number = "1.6"
+	% 		title = "Singt, ihr Himmel, Gott iſt Liebe"
+	% 	}
+	% 	\tocLabelLong "singtihr" "1.6" "Coro" "Singt, ihr Himmel, Gott ist Liebe"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "ob"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\SingtIhrOboeI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\SingtIhrOboeII
+	% 					}
+	% 				>>
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "fag"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\SingtIhrFagottoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\SingtIhrFagottoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\SingtIhrViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\SingtIhrViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\SingtIhrViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \SingtIhrSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \SingtIhrSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \SingtIhrAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \SingtIhrAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \SingtIhrTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \SingtIhrTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \SingtIhrBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \SingtIhrBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\SingtIhrOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \SingtIhrBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 100 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C O R O"
-			number = "1.6"
-			title = "Singt, ihr Himmel, Gott iſt Liebe"
+			genre = "C H O R A L"
+			number = "1.7"
+			title = "Liebe, die du mich zum Bilde"
 		}
-		\tocLabelLong "singtihr" "1.6" "Coro" "Singt, ihr Himmel, Gott ist Liebe"
+		\tocLabelLong "liebedie" "1.7" "Choral" "Liebe, die du mich zum Bilde"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "ob"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\SingtIhrOboeI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\SingtIhrOboeII
-						}
-					>>
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "fag"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\SingtIhrFagottoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\SingtIhrFagottoII
-						}
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \LiebeDieOboeI \LiebeDieOboeII
 					>>
 				>>
 				\new StaffGroup <<
@@ -381,54 +451,58 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\SingtIhrViolinoI
+							\LiebeDieViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\SingtIhrViolinoII
+							\LiebeDieViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\SingtIhrViola
+						\LiebeDieViola
 					}
 				>>
-				\new ChoirStaff <<
+				\new ChoirStaff \with { \twoStanzaDistance } <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \SingtIhrSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \LiebeDieSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \SingtIhrSopranoLyrics
+					\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \LiebeDieSopranoLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \SingtIhrAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \LiebeDieAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \SingtIhrAltoLyrics
+					\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsA
+					\new Lyrics \lyricsto Alto \LiebeDieAltoLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \SingtIhrTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \LiebeDieTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \SingtIhrTenoreLyrics
+					\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \LiebeDieTenoreLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \SingtIhrBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \LiebeDieBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \SingtIhrBassoLyrics
+					\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsA
+					\new Lyrics \lyricsto Basso \LiebeDieBassoLyricsB
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\SingtIhrOrgano
+						\LiebeDieOrgano
 					}
 				>>
-				\new FiguredBass { \SingtIhrBassFigures }
+				\new FiguredBass { \LiebeDieBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 100 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

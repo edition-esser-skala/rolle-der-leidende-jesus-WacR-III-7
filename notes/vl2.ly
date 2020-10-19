@@ -260,3 +260,26 @@ SingtIhrViolinoII = {
 		q r r\fermata \bar "|." %109 finis
 	}
 }
+
+LiebeDieViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoLiebeDie
+		g'2 d
+		d d
+		d cis
+		d d\fermata
+		h d %5
+		d g
+		g fis \noBreak
+		g1\fermata \bar ":|."
+		g2 g \noBreak
+		e d %10
+		e e
+		fis1\fermata
+		g2 fis
+		g g
+		g fis %15
+		d1\fermata \bar "|." %16 finis
+	}
+}

@@ -261,6 +261,29 @@ SingtIhrViolinoI = {
 	}
 }
 
+LiebeDieViolinoI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoLiebeDie
+		h'2 g
+		a d
+		g, a
+		fis d\fermata
+		e fis %5
+		g g
+		a d \noBreak
+		h1\fermata \bar ":|."
+		h2 h \noBreak
+		a d %10
+		d cis
+		d1\fermata
+		e2 d
+		c h
+		a a %15
+		g1\fermata \bar "|." %16 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

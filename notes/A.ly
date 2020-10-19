@@ -446,6 +446,59 @@ SingtIhrAltoLyrics = \lyricmode {
 	That. %108 finis
 }
 
+LiebeDieAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoLiebeDie
+		g'2 d
+		d d
+		d cis
+		d d\fermata
+		h d %5
+		d g
+		g fis
+		g1\fermata \bar ":|."
+		g2 g
+		e d %10
+		e e
+		fis1\fermata
+		g2 fis
+		g g
+		g fis %15
+		d1\fermata \bar "|." %16 finis
+	}
+}
+
+LiebeDieAltoLyricsA = \lyricmode {
+	Lie -- be,
+	die du
+	mich zum
+	Bil -- de
+	dei -- ner %5
+	Gott -- heit
+	haſt ge --
+	macht,
+	Lie -- be,
+	dir er -- %10
+	geb ich
+	mich,
+	dein zu
+	blei -- ben
+	e -- wig -- %15
+	lich. %16 finis
+}
+
+LiebeDieAltoLyricsB = \lyricmode {
+	Lie -- be,
+	die du
+	mich ſo
+	mil -- de
+	nach dem %5
+	Fall mit
+	Heil be --
+	dacht, %8 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

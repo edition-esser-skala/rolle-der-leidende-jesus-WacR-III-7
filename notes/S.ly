@@ -311,6 +311,59 @@ SingtIhrSopranoLyrics = \lyricmode {
 	That. %108 finis
 }
 
+LiebeDieSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoLiebeDie
+		h'2 g
+		a d
+		g, a
+		fis d\fermata
+		e fis %5
+		g g
+		a d
+		h1\fermata \bar ":|."
+		h2 h
+		a d %10
+		d cis
+		d1\fermata
+		e2 d
+		c h
+		a a %15
+		g1\fermata \bar "|." %16 finis
+	}
+}
+
+LiebeDieSopranoLyricsA = \lyricmode {
+	Lie -- be,
+	die du
+	mich zum
+	Bil -- de
+	dei -- ner %5
+	Gott -- heit
+	haſt ge --
+	macht,
+	Lie -- be,
+	dir er -- %10
+	geb ich
+	mich,
+	dein zu
+	blei -- ben
+	e -- wig -- %15
+	lich. %16 finis
+}
+
+LiebeDieSopranoLyricsB = \lyricmode {
+	Lie -- be,
+	die du
+	mich ſo
+	mil -- de
+	nach dem %5
+	Fall mit
+	Heil be --
+	dacht, %8 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

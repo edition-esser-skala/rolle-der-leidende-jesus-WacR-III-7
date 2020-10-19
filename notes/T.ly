@@ -308,6 +308,58 @@ SingtIhrTenoreLyrics = \lyricmode {
 	That. %108 finis
 }
 
+LiebeDieTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \major \time 4/4 \autoBeamOff \tempoLiebeDie
+		d2 h
+		a a
+		h a
+		a fis\fermata
+		g a %5
+		h h
+		d d
+		d1\fermata \bar ":|."
+		d2 d
+		cis a %10
+		h a
+		a1\fermata
+		c!2 a
+		g d'
+		e d4( c) %15
+		h1\fermata \bar "|." %16 finis
+	}
+}
+
+LiebeDieTenoreLyricsA = \lyricmode {
+	Lie -- be,
+	die du
+	mich zum
+	Bil -- de
+	dei -- ner %5
+	Gott -- heit
+	haſt ge --
+	macht,
+	Lie -- be,
+	dir er -- %10
+	geb ich
+	mich,
+	dein zu
+	blei -- ben
+	e -- wig -- %15
+	lich. %16 finis
+}
+
+LiebeDieTenoreLyricsB = \lyricmode {
+	Lie -- be,
+	die du
+	mich ſo
+	mil -- de
+	nach dem %5
+	Fall mit
+	Heil be --
+	dacht, %8 finis
+}
 
 % TenoreNotes = {
 % 	\relative c' {

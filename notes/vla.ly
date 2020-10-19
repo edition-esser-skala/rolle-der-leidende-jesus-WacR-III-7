@@ -262,3 +262,26 @@ SingtIhrViola = {
 		g,4 r r\fermata \bar "|." %109 finis
 	}
 }
+
+LiebeDieViola = {
+	\relative c' {
+		\clef alto
+		\key g \major \time 4/4 \tempoLiebeDie
+		d2 h
+		a a
+		h a
+		a fis\fermata
+		g a %5
+		h h
+		d d \noBreak
+		d1\fermata \bar ":|."
+		d2 d \noBreak
+		cis a %10
+		h a
+		a1\fermata
+		c!2 a
+		g d'
+		e d4 c %15
+		h1\fermata \bar "|." %16 finis
+	}
+}

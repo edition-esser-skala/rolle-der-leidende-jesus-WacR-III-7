@@ -532,6 +532,48 @@ SingtIhrBassFigures = \figuremode {
 	r %109 finis
 }
 
+LiebeDieOrgano = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoLiebeDie
+		g2 g'
+		fis fis
+		e a,
+		d d\fermata
+		d c %5
+		h e
+		d d \noBreak
+		g,1\fermata \bar ":|."
+		g2 g'\noBreak
+		g fis %10
+		g a
+		d,1\fermata
+		c!2 d
+		e4( fis) g2
+		c, d %15
+		g1\fermata \bar "|." %16 finis
+	}
+}
+
+LiebeDieBassFigures = \figuremode {
+	r1
+	<6>
+	<7>2 <_+>
+	r1
+	<4 2>2 q %5
+	<[6]>1
+	<4>2 <3>
+	r1
+	r
+	<4+ 2>2 <6> %10
+	<6 5> <_+>
+	r1
+	r
+	<[6]>
+	<6 5>2 <3> %15
+	r1 %16 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

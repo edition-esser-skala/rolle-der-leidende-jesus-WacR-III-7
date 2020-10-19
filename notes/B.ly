@@ -371,6 +371,59 @@ SingtIhrBassoLyrics = \lyricmode {
 	That. %108 finis
 }
 
+LiebeDieBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \autoBeamOff \tempoLiebeDie
+		g'2 g
+		fis fis
+		e a,
+		d d\fermata
+		d c %5
+		h e
+		d d \noBreak
+		g1\fermata \bar ":|."
+		g2 g\noBreak
+		g fis %10
+		g a
+		d,1\fermata
+		c!2 d
+		e4( fis) g2
+		c, d %15
+		g1\fermata \bar "|." %16 finis
+	}
+}
+
+LiebeDieBassoLyricsA = \lyricmode {
+	Lie -- be,
+	die du
+	mich zum
+	Bil -- de
+	dei -- ner %5
+	Gott -- heit
+	haſt ge --
+	macht,
+	Lie -- be,
+	dir er -- %10
+	geb ich
+	mich,
+	dein zu
+	blei -- ben
+	e -- wig -- %15
+	lich. %16 finis
+}
+
+LiebeDieBassoLyricsB = \lyricmode {
+	Lie -- be,
+	die du
+	mich ſo
+	mil -- de
+	nach dem %5
+	Fall mit
+	Heil be --
+	dacht, %8 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass
