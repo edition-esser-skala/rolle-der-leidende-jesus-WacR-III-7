@@ -669,75 +669,109 @@
 	% 		\midi { \tempo 2 = 65 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "1.11"
+	% 		title = "Wie iſt der Menſch ſo ſchwach!"
+	% 	}
+	% 	\paper { page-count = #3 }
+	% 	\tocLabelLong "wieist" "1.11" "Choral" "Wie ist der Mensch so schwach!"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \WieIstOboeI \WieIstOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WieIstViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WieIstViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WieIstViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \WieIstSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \WieIstSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \WieIstAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \WieIstAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \WieIstTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \WieIstTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WieIstBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WieIstBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WieIstOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WieIstBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "1.11"
-			title = "Wie iſt der Menſch ſo ſchwach!"
+			genre = "R E C I T A T I V O"
+			number = "1.12"
+			title = "Doch er verläßt die Schlummernden"
 		}
-		\paper { page-count = #3 }
-		\tocLabelLong "wieist" "1.11" "Choral" "Wie ist der Mensch so schwach!"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "docherverlaesst" "1.12" "Recitativo" "Doch er verläßt die Schlummernden"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \WieIstOboeI \WieIstOboeII
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\WieIstViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\WieIstViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\WieIstViola
-					}
-				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \WieIstSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \WieIstSopranoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \WieIstAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \WieIstAltoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \WieIstTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \WieIstTenoreLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WieIstBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \DochErVerlaesstBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \WieIstBassoLyrics
+					\new Lyrics \lyricsto Basso \DochErVerlaesstBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WieIstOrgano
+						\DochErVerlaesstOrgano
 					}
 				>>
-				\new FiguredBass { \WieIstBassFigures }
+				\new FiguredBass { \DochErVerlaesstBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 60 }
 		}
 	}
 }

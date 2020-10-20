@@ -1029,6 +1029,70 @@ WieIstBassFigures = \figuremode {
 	r1 %28 finis
 }
 
+DochErVerlaesstOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDochErVerlaesst
+		cis1
+		c~
+		c2 h~
+		h~ h4 r
+		h1 %5
+		f'!2 e~
+		e r
+		r e
+		r e~
+		e r8 f16. f,32 g8 f'16. g,32 %10
+		a2 r
+		R1
+		r8 b'16. b,32 c8 b'16. c,32 d2~
+		d4 r r8 es16. d32 es16( g) b( g)
+		e2 r4 r16 g( b g) %15
+		e!2 r4 f
+		b,8 b'16. b,32 c8 b'16. c,32 d!2~
+		d1
+		d~
+		d4 r r e %20
+		a,16 a' e c a4 r2
+		r dis~
+		dis e
+		gis a,~
+		a1 %25
+		a2 r4 h
+		e2\fermata \bar "|." %27 finis
+	}
+}
+
+DochErVerlaesstBassFigures = \figuremode {
+	<[6]>1
+	<4+ 2>
+	r2 <6>
+	r1
+	<6> %5
+	<2>2 <6>
+	r1
+	r2 <6 5->
+	r <6>
+	r2. <7>4 %10
+	<6>1
+	r
+	r4 <7 _-> <6->2
+	r r8 <5->4.
+	<7- 5->1 %15
+	<\t \t>
+	<8 _!>4 <7 _-> <6>2
+	r1
+	<[6!] 4+ 2>
+	r2. <_+>4 %20
+	r1
+	r2 <[6 _+]>
+	r <_!>
+	<6 5>1
+	r %25
+	<[6+] 4+ 2>2. <[5+ _+]>4
+	<_!>2 %27 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

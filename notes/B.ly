@@ -575,6 +575,69 @@ WieIstBassoLyrics = \lyricmode {
 	pfet. %28 finis
 }
 
+DochErVerlaesstBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoDochErVerlaesst
+		r8 e e e a e g fis
+		fis r16 fis fis8 g a4 r8 a
+		a a c h g4 r8 d
+		g8. g16 g4 r r8 d'
+		d g, r16 g g fis g8 g g a %5
+		h h h c c g r g
+		g c, r4 e8 e16 e e8 e16 f
+		g4 b r b8 a
+		b b b g c g e f
+		g a b b16 a a4 r %10
+		r r8 c, f8. f16 f4
+		c' c8 a f c d es
+		d4 r r r8 f
+		b b b f g g r4
+		r8 b b b des8. des16 des4 %15
+		r8 b a b b f r4
+		r2 r4 r8 f
+		b r16 b b8 c d b b a
+		\appoggiatura a gis4 r h h8 h
+		d h gis a e4 r %20
+		r r8 e a4 r8 e
+		a a a h16 c h4 r8 h,
+		fis' fis fis g16 a g8 r16 g g8 a
+		h h d! h c8. c16 c4
+		r r8 e, a a a fis %25
+		dis r16 dis dis8 e h4 r
+		r2\fermata \bar "|." %27 finis
+	}
+}
+
+DochErVerlaesstBassoLyrics = \lyricmode {
+	Doch er ver -- läßt die Schlum -- mern --
+	den und eilt aufs neu, in
+	das Ge -- richt zu gehn, denn
+	im -- mer noch, ich
+	ſtau -- ne, tönt ihm in ſei -- nem Ohr des %5
+	Welt -- ge -- richts Po -- ſau -- ne. Noch
+	im -- mer rich -- tet der Rich -- ter der
+	Welt den, der als
+	Mitt -- ler zwi -- ſchen Gott und das Ge --
+	ſchlecht der Men -- ſchen ſich ſtellt. %10
+	Em -- pfin -- dun -- gen,
+	ſtark wie der Tod, er -- ſchüt -- tern
+	ihn. Die
+	Erd er -- be -- bet wie -- der,
+	die Nacht hängt ſchreck -- li -- cher %15
+	vom Oel -- berg nie -- der.
+	Und
+	du, der du in Got -- tes Un -- ſchuld
+	prangſt, ringſt mit des
+	ew -- gen To -- des Angſt. %20
+	Doch ſchau, ein
+	Blitz zer -- thei -- let die Nacht, ein
+	Se -- raph ei -- let he -- rab und ſingt ein
+	Lied von dei -- nem Va -- ter dir,
+	der huld -- voll auf dich %25
+	ſieht, und ſtär -- ket dich. %26 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

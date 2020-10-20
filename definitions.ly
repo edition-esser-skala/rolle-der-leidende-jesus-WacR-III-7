@@ -716,6 +716,7 @@ tempoNochHerrscht = \tempoMarkup "[Tempo deest]"
 tempoWachetStehet = \tempoMarkup "Allegro moderato"
 tempoHerrErmuntre = \tempoMarkup "Allegretto"
 tempoWieIst = \tempoMarkup "[Tempo deest]"
+tempoDochErVerlaesst = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/fl1.ly"
