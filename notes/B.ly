@@ -638,6 +638,154 @@ DochErVerlaesstBassoLyrics = \lyricmode {
 	ſieht, und ſtär -- ket dich. %26 finis
 }
 
+WerDurchschautBassoNotes = {
+	\relative c {
+		\clef bass
+		\key e \minor \time 3/8 \autoBeamOff \tempoWerDurchschaut
+		R4.*7 %7
+		h'4 g16([ e)]
+		\appoggiatura d8 c4 a'16([ fis)]
+		\appoggiatura e8 dis4 h'16([ g)] %10
+		\appoggiatura fis8 e4 r8
+		c' h e,
+		a4 g16([ fis)]
+		g([ fis)] e8 r
+		R4.*2 %16
+		g4 d'16([ h)]
+		\appoggiatura h8 a4 h16([ g)]
+		\appoggiatura g8 fis4 g16([ e)]
+		d4 r8 %20
+		d fis a
+		g8.([ a16)] h8
+		d, g h
+		a8.([ h16)] c8
+		d, a' c %25
+		h[( fis g])
+		c, d4\trill
+		<g g,> r8
+		R4.*2 %30
+		r8 r h
+		h([ a)] c
+		h16.([ c32 d8)] e,
+		\appoggiatura g fis4 r8
+		d fis a %35
+		d([ a)] fis
+		d4.~
+		d~
+		d~
+		d~ %40
+		d16([ fis)] fis[( a)] a([ c)]
+		c4.~
+		c8 a h
+		e, g([ fis)]\trill
+		g4 r8 %45
+		R4.*6 %51
+		h4 d16([ h)]
+		\appoggiatura a8 gis4 d'16([ h)]
+		\appoggiatura a8 gis4 d8
+		c16([ h)] a8 r %55
+		c'4 a16([ fis!)]
+		\appoggiatura e8 dis4 h'8~
+		h a16([ fis)] g([ e)]
+		h'4.~
+		h~ %60
+		h4 r8
+		R4.*2
+		e,4 h'16([ gis)]
+		\appoggiatura gis8 fis4 cis'16([ a)] %65
+		a8([ gis)] fis
+		gis16.([ a32)] h8 r
+		e,4 cis'8
+		h([ dis,)] e
+		a gis([ fis)]\trill %70
+		e4 r8
+		R4.*2
+		r8 cis' e,
+		\appoggiatura e dis4 h'8~ %75
+		h ais16([ gis)] fis([ e)]
+		dis([ cis)] h8 r
+		r h' h
+		h4 h8
+		h4. %80
+		h,4 r8
+		r e cis'
+		\appoggiatura e, dis4 e8
+		cis'16([ a)] \appoggiatura gis8 fis4\trill
+		e4.~ %85
+		e4 r8
+		R4.*4 %90
+		R4.\fermataMarkup \bar "|." %91 finis
+	}
+}
+
+WerDurchschautBassoLyrics = \lyricmode {
+	Wer durch -- %8
+	ſchaut, wie
+	wun -- der -- %10
+	bar
+	Gott iſt in
+	ſei -- nen
+	Wer -- ken!
+
+	Ach! ein %17
+	En -- gel
+	muß ſo --
+	gar %20
+	den Herrn der
+	Wel -- ten,
+	den Herrn der
+	Wel -- ten,
+	den Herrn der %25
+	Wel --
+	ten ſtär --
+	ken,
+
+	ein %31
+	En -- gel
+	muß ſo --
+	gar
+	den Herrn der %35
+	Wel -- ten
+	ſtär --
+
+	ken, den %41
+	Herrn __
+	der Wel --
+	ten ſtär --
+	ken. %45
+
+	Wenn ich %52
+	einſt von
+	hin -- nen
+	ſchei -- de, %55
+	ſin -- gen
+	En -- gel __
+	mir zur
+	Ruh. __
+
+	Nun eilſt %64
+	du zu %65
+	unſ -- rer
+	Freu -- de
+	Got -- tes
+	Va -- ter --
+	ar -- men %70
+	zu,
+
+	nun eilſt %74
+	du zu __ %75
+	unſ -- rer
+	Freu -- de
+	Got -- tes
+	Va -- ter --
+	ar -- %80
+	men,
+	Got -- tes
+	Va -- ter --
+	ar -- men
+	zu. __ %85 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

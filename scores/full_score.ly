@@ -740,38 +740,89 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "1.12"
+	% 		title = "Doch er verläßt die Schlummernden"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "docherverlaesst" "1.12" "Recitativo" "Doch er verläßt die Schlummernden"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \DochErVerlaesstBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \DochErVerlaesstBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\DochErVerlaesstOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \DochErVerlaesstBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "1.12"
-			title = "Doch er verläßt die Schlummernden"
+			genre = "A R I A"
+			number = "1.13"
+			title = "Wer durchſchaut, wie wunderbar"
 		}
 		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
+			system-system-spacing.basic-distance = #35
+			system-system-spacing.minimum-distance = #35
+			systems-per-page = #2
 		}
-		\tocLabelLong "docherverlaesst" "1.12" "Recitativo" "Doch er verläßt die Schlummernden"
+		\tocLabelLong "werdurchschaut" "1.13" "Aria" "Wer durchschaut, wie wunderbar"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WerDurchschautViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WerDurchschautViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WerDurchschautViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \DochErVerlaesstBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \WerDurchschautBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \DochErVerlaesstBassoLyrics
+					\new Lyrics \lyricsto Basso \WerDurchschautBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\DochErVerlaesstOrgano
+						\WerDurchschautOrgano
 					}
 				>>
-				\new FiguredBass { \DochErVerlaesstBassFigures }
+				\new FiguredBass { \WerDurchschautBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 60 }
+			\midi { \tempo 4. = 50 }
 		}
 	}
 }

@@ -486,6 +486,104 @@ WieIstViolinoI = {
 	}
 }
 
+WerDurchschautViolinoI = {
+	\relative c' {
+		\clef treble
+		\key e \minor \time 3/8 \tempoWerDurchschaut
+		h'4\fE g16( e)
+		\appoggiatura d8 c4 a'16( fis)
+		\appoggiatura e8 dis4 h'16( g)
+		\appoggiatura fis8 e4 r8
+		c' h e, %5
+		a8. fis16 g8
+		g\trill fis r
+		h4\p g16( e)
+		\appoggiatura d8 c4 a'16( fis)
+		\appoggiatura e8 dis4 h'16( g) %10
+		\appoggiatura fis8 e4 r8
+		c' h e,
+		a4 g16 fis
+		g[ fis e8] h\f
+		a8. fis'16 fis( a,) %15
+		a8\trill g r
+		g'4\p d'16( h)
+		\appoggiatura h8 a4 h16( g)
+		\appoggiatura g8 fis4 g16( e)
+		d4 r8 %20
+		d fis a
+		g8.( a16) h8
+		d, g h
+		a8.( h16) c8
+		d, a' c %25
+		h a g~
+		g16[ c] h8 a\trill
+		g r16 g,\f h d
+		d8( e16) gis, a( g'?)
+		g8( fis16) ais, h( a'?) %30
+		a8( g16) h, c(\p h')
+		h8( a16) d, a'( c)
+		h16.([ c32)] d16( d,) e( c')
+		\appoggiatura h8 a4 r8
+		d, fis a %35
+		d( a) fis
+		d fis'8.([ g32 a)]
+		g16( d) d( a) c( h)
+		a8 fis8.([ g32 a)]
+		g16( d) d( a) \once \slurDashed c( h) %40
+		a8 fis' a
+		c16(\pocoF fis) fis( a) a( c,)
+		c8 a\p h~
+		h16[ c] h8 a\trill
+		g r16 g\f h d %45
+		d8( e16) fis, g16( e')
+		e8( d16) fis, g( d')
+		d8( c16) fis, g( c)
+		c8( h16) d g,( h)
+		e,([ g)] h,8 a\trill %50
+		g4 r8
+		h'4\p d16( h)
+		\appoggiatura a8 gis4 gis16( h)
+		\appoggiatura a8 gis4 d8
+		c16 h a8 r %55
+		c'4 a16( fis!)
+		\appoggiatura e8 dis4 h'8~
+		h a r
+		r dis8.( e32 fis)
+		e16( h) h( fis) a( g) %60
+		fis8 dis'8.([\f e32 fis)]
+		e16( h) h( fis) a( g)
+		\appoggiatura a g8 fis r
+		e4\p h'16( gis)
+		\appoggiatura gis8 fis4 cis'16( a) %65
+		a8 gis fis
+		gis16. a32 h4
+		e8( dis cis)
+		h4.
+		cis16([ a)] gis8 fis\trill %70
+		e4 h'16(\f gis)
+		\appoggiatura gis8 fis4 cis'16( a)
+		\appoggiatura a8 gis4 e'16( h)
+		\appoggiatura h8 ais4 r8
+		r fis\p dis'~ %75
+		dis cis e
+		r dis8.( e32 fis)
+		e16( h) h( fis) a( gis)
+		fis8 dis'8.([ e32 fis)]
+		e16( h) h( fis) a( gis) %80
+		fis8 dis'8.([ e32 fis)]
+		e4 cis8
+		h4 r8
+		R4.
+		r8 r e,16(\p d'!) %85
+		d8( cis16) e, e( cis')
+		cis8( h16) e, \once \slurDashed e(\f e')
+		cis([ a'32 fis)] e8 fis\trill
+		e16( cis) cis8.([ h32 a)]
+		\tuplet 3/2 8 { gis16( fis e) } \appoggiatura e8 fis4\trill %90
+		e r8\fermata \bar "|." %91 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

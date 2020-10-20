@@ -485,3 +485,100 @@ WieIstViolinoII = {
 		a1\fermata \bar "|." %28 finis
 	}
 }
+
+WerDurchschautViolinoII = {
+	\relative c' {
+		\clef treble
+		\key e \minor \time 3/8 \tempoWerDurchschaut
+		h'4\fE g16( e)
+		\appoggiatura d8 c4 a'16( fis)
+		\appoggiatura e8 dis4 h'16( g)
+		\appoggiatura fis8 e4 r8
+		c' h e, %5
+		a8. fis16 g8
+		g\trill fis r
+		h4\p g16( e)
+		\appoggiatura d8 c4 a'16( fis)
+		\appoggiatura e8 dis4 h'16( g) %10
+		\appoggiatura fis8 e4 r8
+		c' h e,
+		e4 dis8
+		e4 h8\f
+		a8. fis'16 fis( a,) %15
+		a8\trill g r
+		g'4\p d'16( h)
+		\appoggiatura h8 a4 h16( g)
+		\appoggiatura g8 fis4 g16( e)
+		d16( d) d( d) d( d) %20
+		d( d) d( d) d( d)
+		d( d) d( d) d( d)
+		d( d) d( d) d( d)
+		d( d) d( d) d( d)
+		d( d) d( d) d( d) %25
+		d8 fis g
+		e16[ a] g8 fis\trill
+		g r16 g,\f h d
+		d8( e16) gis, a( g'?)
+		g8( fis16) ais, h( a'?) %30
+		a8( g16) h, c(\p h')
+		h8( a16) d, a'( c)
+		h16.([ c32)] d16( d,) e( a)
+		\appoggiatura g8 fis4 r8
+		R4.*2 %36
+		d8 d'4~
+		d8 \once \slurDashed d16( a) a( g)
+		fis8 d4~
+		d8 d16( a) a( g) %40
+		a8 d fis
+		a\pocoF \once \slurDashed a16( c) c( a)
+		a8 fis\p g~
+		g16[ a] g8 fis\trill
+		g r16 g\f h d %45
+		d8( e16) fis, g16( e')
+		e8( d16) fis, g( d')
+		d8( c16) fis, g( c)
+		c8( h16) d g,( h)
+		e,([ g)] h,8 a\trill %50
+		g4 r8
+		d'4\p h16( d)
+		\appoggiatura c8 h4 h16( d)
+		\appoggiatura c8 h4 h8
+		a4 r8 %55
+		c'4 a16( fis!)
+		\appoggiatura e8 dis4 e8~
+		e4 r8
+		r dis'8.( e32 fis)
+		e16( h) h( fis) fis( e) %60
+		dis8 dis'8.([\f e32 fis)]
+		e16( h) h( fis) fis( e)
+		\appoggiatura fis e8 dis r
+		e4\p h'16( gis)
+		\appoggiatura gis8 fis4 fis8~ %65
+		fis e dis
+		e16.[ fis32] gis8 fis
+		e4.
+		dis8 fis e~
+		e e dis\trillE %70
+		e4 h'16(\f gis)
+		\appoggiatura gis8 fis4 cis'16( a)
+		\appoggiatura a8 gis4 e'16( h)
+		\appoggiatura h8 ais4 r8
+		r fis\p h~ %75
+		h ais cis
+		h dis8.([ e32 fis)]
+		e16( h) h( fis) fis( e)
+		dis8 dis'8.([ e32 fis)]
+		e16( h) h( fis) fis( e) %80
+		dis8 dis'8.([ e32 fis)]
+		e4 cis8
+		h4 r8
+		R4.
+		r8 r e,16(\p d'!) %85
+		d8( cis16) e, e( cis')
+		cis8( h16) e, \once \slurDashed e(\f e')
+		cis([ a'32 fis)] e8 dis\trill
+		e16( a,) a8.([ gis32 fis)]
+		e8 e[ dis]\trill %90
+		e4 r8\fermata \bar "|." %91 finis
+	}
+}

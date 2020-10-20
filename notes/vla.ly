@@ -483,3 +483,100 @@ WieIstViola = {
 		c1\fermata \bar "|." %28 finis
 	}
 }
+
+WerDurchschautViola = {
+	\relative c' {
+		\clef alto
+		\key e \minor \time 3/8 \tempoWerDurchschaut
+		h'4\fE g16( e)
+		\appoggiatura d8 c4 a'16( fis)
+		\appoggiatura e8 dis4 h'16( g)
+		\appoggiatura fis8 e4 r8
+		c' h e, %5
+		dis fis e
+		e\trill dis r
+		e\p g, e
+		r a fis
+		r h g %10
+		c, c' h
+		a g r
+		fis h h
+		e4 g,8\fE
+		a8. fis'16 fis( a,) %15
+		a8\trill g r
+		g\pE h r
+		c e d
+		r c h16( g)
+		a8 c h %20
+		a4 r8
+		h a g
+		h4 g8
+		fis g a
+		a4 a8 %25
+		g d e
+		c d4
+		g8 r16 g\fE h d
+		d8( e16) gis, a( g'?)
+		g8( fis16) ais, h( a'?) %30
+		a8( g) e\p
+		fis4 fis8
+		g h, c
+		d d, r
+		R4.*2 %36
+		r8 d' c
+		h fis g
+		d4 a'8
+		h fis g %40
+		d4 r8
+		d'\pocoF a fis
+		d4 g8\p
+		c d d,
+		g h g\f %45
+		r c g'
+		g h, g'
+		r e g
+		r g h,
+		c d d, %50
+		g4 r8
+		r f\pE f
+		e4 f8
+		e4 e8
+		a c e %55
+		r e c
+		r h h
+		c4.
+		h
+		h %60
+		h8 h'\fE a
+		g dis e
+		h4 r8
+		r h\pE gis
+		r cis a %65
+		h4 h8
+		e, e' dis
+		cis h a~
+		a a gis
+		a h h %70
+		e,4 e'8\fE
+		e4.
+		e
+		e4 e8\pE
+		fis4 r8 %75
+		fis4 fis,8
+		h4 h8
+		h4.
+		h
+		h %80
+		h8 fis' dis
+		h4 a8
+		r h h
+		cis16 fis \appoggiatura e8 dis4\trill
+		e4 r8 %85
+		e4.
+		e4 h'8\fE
+		a gis a
+		gis16( a) a8[ dis,]
+		e h a %90
+		gis4 r8\fermata \bar "|." %91 finis
+	}
+}

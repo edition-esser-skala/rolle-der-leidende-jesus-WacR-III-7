@@ -1093,6 +1093,196 @@ DochErVerlaesstBassFigures = \figuremode {
 	<_!>2 %27 finis
 }
 
+WerDurchschautOrgano = {
+	\relative c {
+		\clef bass
+		\key e \minor \time 3/8 \tempoWerDurchschaut
+		e8\fE g e
+		r a fis
+		r h g
+		r c h
+		a g r %5
+		fis dis e
+		h h'16 a g fis
+		e8\p g e
+		r a, fis
+		r h g %10
+		c, c' h
+		a g r
+		fis h h
+		e4 g8\f
+		fis dis h %15
+		e e,16 e' d c
+		h8\p g r
+		c c' h
+		a, a' g
+		fis a g %20
+		fis d r
+		h' a g
+		h4 g8
+		fis g a
+		fis4 d8 %25
+		g d e
+		c d4
+		g8 g, r
+		c\f c, c'
+		d d, d' %30
+		e e, e'\p
+		fis4 d8
+		g h, c
+		d d, r
+		R4.*2 %36
+		d'8 d' c
+		h fis g
+		d4 c8
+		h fis g %40
+		d4 r8
+		d'\pocoF a fis
+		d4 g8\p
+		c d d,
+		g h g\f %45
+		r c c'
+		h h, h'
+		r e,, e'
+		d d, d'
+		c d d, %50
+		g h d
+		r f\p f
+		e4 f8
+		e4 e,8
+		a c e %55
+		r a, a'~
+		a a, g
+		c4.
+		h8 h' a
+		g dis e %60
+		h h'\f a
+		g dis e
+		h' h, r
+		r gis'\p e
+		r a a, %65
+		h4 h8
+		e e' dis
+		cis h a~
+		a a, gis
+		a h h %70
+		e gis e\f
+		r a, a'
+		r h, h'
+		cis4 cis,8\p
+		h4 r8 %75
+		fis'4 fis,8
+		h h' a!
+		gis dis e
+		h h' a
+		gis dis e %80
+		h h' a
+		gis4 a8~
+		a a, gis
+		a h4
+		e8 e, gis' %85
+		a a, a'
+		gis gis, gis'\f
+		a h h,
+		cis4 dis8
+		e h' h, %90
+		e,4 r8\fermata \bar "|." %91 finis
+	}
+}
+
+WerDurchschautBassFigures = \figuremode {
+	r4.
+	<4>8 <3>4
+	<4>8 <_+>4
+	<4>8 <3>4
+	r8 <6>4 %5
+	<6\\>8 <6>4
+	<6 4>8 <5 _+>4
+	r4.
+	<4>8 <3>4
+	<4>8 <_+>4 %10
+	<4>8 <3> <\t>
+	r <6>4
+	<7>8 <7 4> <\t _+>
+	r4 <6>8
+	<6\\>4 \bassFigureExtendersOn q8 \bassFigureExtendersOff %15
+	<7+ 4>8 <8 3>4
+	<6>4.
+	<7>8 <6> q
+	<7> <6> q
+	q4. %20
+	q
+	q
+	q
+	<6 5>
+	q %25
+	r
+	<6>8 <6 4> <5 3>
+	r4.
+	<9>8 <6> <6 5>
+	<4> <3> <6 5> %30
+	<4> <3> <6 5>
+	<4> <3> <7>
+	r <6> q
+	<6 4> <5 3>4
+	r4.*2 %36
+	r4 <2>8
+	<6> <6 5>4
+	r <2>8
+	<6> <6 5>4 %40
+	r4.
+	<7> \bassFigureExtendersOn
+	q4 \bassFigureExtendersOff r8
+	<7 5>16 <8 6> <6 4>8 <5 3>
+	r4. %45
+	<9>8 <8>4
+	<6 4>8 <\t 3>4
+	<7>8 <6>4
+	<7 4>8 <6 \t>4
+	r8 <6 4> <5 3> %50
+	r4.
+	r8 <4 3>4
+	<6 4>8 <5 _+> <\t \t>
+	<6 4> <5 _+>4
+	r4. %55
+	r8 <5> <6\\>
+	<5 2>8 <4+ \t> <6>
+	<7> <6> <5>
+	<5 _+>4 <\t \t>8
+	<6> <6 5>4 %60
+	<5 _+>4 <\t \t>8
+	<6> <6 5>4
+	<6 4>8 <5 _+>4
+	r8 <6> <_+>
+	<7+ _+> <6 \t>4 %65
+	<7 _+>8 <6+ 4> <5 _+>
+	<_+>4 <6>8
+	<5 3> <\t \t> <_+>
+	<4+ 2>4 <6>8
+	<_+> <6+ 4> <5 _+> %70
+	<_+>4.
+	<7+>8 <6>4
+	<7 4>8 <6+ \t>4
+	<7 5+>8 <6\\>4
+	<4>8 <_+>4 %75
+	<6+ 4>8 <5+ _+> <7 5+ _+>
+	<_+>4 <\t>8
+	<6> <6 5> <_+>
+	q4 <\t>8
+	<6> <6 5> <_+> %80
+	q4 <\t>8
+	<6>4 <_+>8
+	<5 2> <4+ \t> <6>
+	<6 _+> <6+ 4> <5 _+>
+	<_+>4 <6 5!>8 %85
+	<4> <_+>4
+	<6 4+>8 <\t 3>4
+	<6 _+>8 <6+ 4> <5 _+>
+	<5+ 3> <6> <7>16 <6>
+	<_+>8 <4> <_+> %90
+	q4. %91 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
