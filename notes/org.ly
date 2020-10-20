@@ -1283,6 +1283,66 @@ WerDurchschautBassFigures = \figuremode {
 	q4. %91 finis
 }
 
+GestaerktErhebtOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoGestaerktErhebt
+		e1~
+		e~
+		e2 d~
+		d cis
+		d4 r r e %5
+		a,1~
+		a2 a
+		d1
+		c!
+		h16 g' h g d([ g32 d)] h16( d32 h) g2 %10
+		R1
+		g
+		c
+		c
+		b %15
+		e2 f~
+		f b,~
+		b1
+		b
+		es~ %20
+		es2 c
+		b1
+		es
+		as,
+		r4 b es2\fermata \bar "|." %25 finis
+	}
+}
+
+GestaerktErhebtBassFigures = \figuremode {
+	<_+>1
+	r
+	r2 <4+ 2>
+	r <6>
+	<_+>2. q4 %5
+	q1
+	r2 <7 _+>
+	<_+>1
+	<4+ 2>
+	<6> %10
+	r
+	<7!>
+	r
+	r
+	<2> %15
+	<6 5->
+	<8>4 <7->2.
+	r1
+	<7->
+	<5-> %20
+	r2 <6! _->
+	<8>2 <7->
+	<5->1
+	q2 <6>
+	r2 <5-> %25 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

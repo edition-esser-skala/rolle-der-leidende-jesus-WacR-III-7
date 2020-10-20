@@ -774,55 +774,89 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "1.13"
+	% 		title = "Wer durchſchaut, wie wunderbar"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #35
+	% 		system-system-spacing.minimum-distance = #35
+	% 		systems-per-page = #2
+	% 	}
+	% 	\tocLabelLong "werdurchschaut" "1.13" "Aria" "Wer durchschaut, wie wunderbar"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WerDurchschautViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WerDurchschautViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WerDurchschautViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WerDurchschautBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WerDurchschautBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WerDurchschautOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WerDurchschautBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4. = 50 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "1.13"
-			title = "Wer durchſchaut, wie wunderbar"
+			genre = "R E C I T A T I V O"
+			number = "1.14"
+			title = "Geſtärkt erhebt mein Jeſus ſich"
 		}
 		\paper {
-			system-system-spacing.basic-distance = #35
-			system-system-spacing.minimum-distance = #35
-			systems-per-page = #2
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
 		}
-		\tocLabelLong "werdurchschaut" "1.13" "Aria" "Wer durchschaut, wie wunderbar"
+		\tocLabelLong "gestaerkterhebt" "1.14" "Recitativo" "Gestärkt erhebt mein Jesus sich"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\WerDurchschautViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\WerDurchschautViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\WerDurchschautViola
-					}
-				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WerDurchschautBassoNotes }
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \GestaerktErhebtAltoNotes }
 					}
-					\new Lyrics \lyricsto Basso \WerDurchschautBassoLyrics
+					\new Lyrics \lyricsto Alto \GestaerktErhebtAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WerDurchschautOrgano
+						\GestaerktErhebtOrgano
 					}
 				>>
-				\new FiguredBass { \WerDurchschautBassFigures }
+				\new FiguredBass { \GestaerktErhebtBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4. = 50 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

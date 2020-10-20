@@ -650,6 +650,66 @@ WieIstAltoLyrics = \lyricmode {
 	pfet. %28 finis
 }
 
+GestaerktErhebtAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoGestaerktErhebt
+		r4 r8 e gis4 r8 gis
+		h h h gis \appoggiatura fis e4 r8 e
+		gis gis gis a h h r h
+		h h d cis a4 r16 a cis a
+		fis8. fis16 gis8 a e4 r %5
+		r r8 e a4 e
+		e8 e e fis g! g r a
+		fis4 r8 d' d8. a16 a4
+		r r8 a c! fis, fis g
+		g4 r r2 %10
+		g8 g16 g g8 fis g r16 g g8 d
+		f r16 h h8 c d f, f g
+		e e r4 g8 g16 g c8 h
+		c4 r8 c c g g g
+		e e r16 e e f g8 g g a %15
+		b b b a a4 r16 a a b
+		c8 r16 es, es8 f d4 r8 f
+		b b b c as4 as
+		r f8 g as as as g
+		g4 r b8 es, r16 es es f %20
+		g8 g g b a! r16 es es8 d
+		f r c'4 as as8 g
+		g4 r g8 g b des,
+		c c r f as8. as16 as8 g
+		es es r4 r2\fermata \bar "|." %25 finis
+	}
+}
+
+GestaerktErhebtAltoLyrics = \lyricmode {
+	Ge -- ſtärkt er --
+	hebt mein Je -- ſus ſich und
+	geht der Schaar ent -- ge -- gen, die
+	ihn voll Mord -- luſt ſucht, durch dich, Iſ --
+	cha -- ri -- oth ge -- führt. %5
+	Be -- küm -- mert
+	ſei -- ner Freun -- de we -- gen ſpricht
+	er: Wen ſuch -- et ihr?
+	und All -- macht iſt ſein
+	Blick. %10
+	Schnell ſtürzt die Schaar zu -- rück und ſinkt und
+	liegt, wie auf dem Schlacht -- feld Tod -- te
+	lie -- gen. Doch die Be -- täu -- bung
+	weicht, ſie ſchau -- en voll Ver --
+	gnü -- gen bey ih -- rer Fa -- ckeln Schein nach %15
+	dem Ver -- rä -- ther hin, der tritt zu
+	ihm und kü -- ßet ihn. Und
+	Je -- ſus blickt voll Mit -- leid,
+	vol -- ler Ruh auf ihn, und
+	ſagt: Ju -- da, ver -- rä -- theſt %20
+	du des Men -- ſchen Sohn mit ei -- nem
+	Kuß? So ſanft ſucht er
+	ihn, an des Ab -- grunds
+	Stu -- fen, zur Reu zu -- rück zu
+	ru -- fen. %25 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
