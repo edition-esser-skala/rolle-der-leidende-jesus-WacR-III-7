@@ -731,6 +731,238 @@ WachetStehetBassFigures = \figuremode {
 	r %44 finis
 }
 
+HerrErmuntreOrgano = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoHerrErmuntre
+		a4\fE a' cis a
+		a, a' cis a
+		a, a' cis a
+		a, a' gis e
+		a, a' cis a %5
+		a, a' gis e
+		a a, r cis8. a16
+		e'4 e, r e'
+		a a, r a'
+		d2 d, %10
+		e e8 d cis h
+		a4\p a' cis a
+		a, a' cis a
+		a, a' cis a
+		a, a' gis e %15
+		a, a' cis a
+		a, a' gis e
+		a a, r cis8. a16
+		e'4 e, r e'
+		a a,8 a' cis a e cis %20
+		a4 a' r gis
+		fis fis r e
+		dis dis cis cis
+		h h h h
+		cis cis dis dis %25
+		e e dis dis
+		cis cis dis dis
+		e e fis fis
+		gis gis a a
+		h h, r a' %30
+		r gis a fis
+		gis e a fis
+		gis e h2
+		e4 e, r2
+		e'4\f e fis fis %35
+		gis gis a a
+		h h, r2
+		r8 h16 cis dis e fis gis a8 fis h, a'
+		gis4 cis h h,
+		e2 r %40
+		e,4\p e' gis e
+		e, e' a e
+		dis dis dis dis
+		e e,8 e' gis h e h
+		g4 g g g %45
+		fis fis fis e
+		d d e e
+		fis2 r
+		r4 fis fis fis
+		fis'4. e8 d4 cis %50
+		d h r fis
+		fis'2 e
+		d4 cis8( h) \appoggiatura d cis4 h8( ais)
+		h4 h, r h
+		e e, e e' %55
+		a, a'8. gis16 a8 gis fis e
+		d4 d, r d'
+		gis, gis'8. a16 gis8 fis eis dis
+		cis2 cis
+		his his4\f his %60
+		cis1\p
+		fis,4 fis' e!8\f d cis h
+		a4 a' cis a
+		a, a' cis a
+		a, a' cis a %65
+		a, a' gis e
+		a,\p a' cis a
+		a, a' cis a
+		a, a' cis a
+		a, a' gis e %70
+		a a, r cis8. a16
+		e'4 e, r e'
+		a a,8 a' cis a e cis
+		a4 a g' g
+		fis fis e e %75
+		d2 d
+		e4 e, e e'
+		fis h, r h
+		e e, e e'
+		fis h, r h %80
+		e e, e e'
+		a a, r a
+		d d e e
+		fis fis gis gis
+		a a, r e' %85
+		a a, r e'
+		fis d cis d
+		e2 e,
+		a h4\f h
+		cis cis d d %90
+		cis r d\p r
+		e cis d r
+		e2 e,4 e'
+		r fis fis fis
+		e e e d! %95
+		cis cis h h
+		a a' d, e
+		cis a\f d h
+		cis a\p d e
+		fis fis\f e d %100
+		e1
+		a,4 a' cis a
+		a, a' cis a
+		a, a' cis a
+		a, a' gis e %105
+		a, a' cis a
+		gis e a a,
+		e'2 r
+		r8 e16 fis gis a h cis d8 h e, d
+		cis4 d e e, %110
+		a2 r\fermata \bar "|." %111 finis
+	}
+}
+
+HerrErmuntreBassFigures = \figuremode {
+	r1
+	r
+	r
+	r2 <6>4 <7>
+	r1 %5
+	r2 <6>4 <7>
+	r2. <6>4
+	<6 4> <5 3>2.
+	<9 4>4 <8 3>2.
+	r1 %10
+	<6 4>4 <5 3>2.
+	r1
+	r
+	r
+	r2 <6>4 <7> %15
+	r1
+	r2 <6>4 <7>
+	r2. <6>4
+	<6 4> <5 3>2.
+	<9 4>4 <8 3>2. %20
+	<8 3>1 \bassFigureExtendersOn
+	q2. q4 \bassFigureExtendersOff
+	<7>2 <4 3>
+	<7 4> <\t _+>
+	<5 3> <6>4 <5> %25
+	r2 <6>
+	<5>4 <6> <6 5>2
+	r <7>
+	<6>4 <5!>2.
+	<_+> <\t>4 %30
+	r <6>2 <6\\>4
+	<6>2. <6\\>4
+	<6>2 <6 4>4 <5 _+>
+	r1
+	r2 <7> %35
+	<6>1
+	<_+>
+	r8 <7 _+>2. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<6>4 <5> <5 4> <\t _+>
+	r1 %40
+	<5 3>2. \bassFigureExtendersOn q4
+	<6 4>2. q4 \bassFigureExtendersOff
+	<6 5>1
+	<9 4>4 <8 3>2.
+	<6>1 %45
+	<7 _+>2 <6 4>4 <6 4+>
+	<6>2 <_!>
+	<_+>1
+	<8 6>4 <\t \t>8 <7 5> <6 4>4 <5 _+>
+	<6 4> <5 _+>8 <\t \t> <6>4 <6\\> %50
+	<6>2. <7 _+>4
+	<6 4>2 <6 4+>
+	<6> <6\\>
+	r1
+	<7 5 4!>2 <\t \t _+> %55
+	r1
+	<7>
+	<5 3>
+	<7 _+>
+	<7 _+> %60
+	<6 4>2 <5 _+>
+	r1
+	r
+	r
+	r %65
+	r2 <6>4 <7>
+	r1
+	r
+	r
+	r2 <6>4 <7> %70
+	r2. <6>4
+	<6 4> <5 3>2.
+	<9 4>4 <8 2>2.
+	r2 <2>
+	<5 3> <6 _!> %75
+	<7>4 <8>2 <6>4
+	<6 4>2 <5 3>
+	<6\\>4 <7 _+>2.
+	r1
+	<6\\>4 <7 _+>2. %80
+	r2. <7!>4
+	q1
+	r2 <7 _+>
+	<6> <6 5>
+	r2. <7>4 %85
+	r2. q4
+	<5>2 <6>4 q
+	<6 4>2 <5 3>
+	r <7>
+	<6>1 %90
+	q
+	r4 <6>2.
+	<4>4 <3>2.
+	r4 <6\\ 4 3>2.
+	r <2>4 %95
+	<6>2 <6 4>4 <\t 3>
+	r1
+	<6>2. q4
+	q1
+	<6>2 <6 4>4 <6> %100
+	<6 4>2 <5 3>
+	r1
+	r
+	r
+	r2 <6>4 <7> %105
+	r1
+	<6 5>4 <7> <9 4> <8 3>
+	r1
+	r8 <7>2. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<6>2 <6 4>4 <5 3> %110
+	r1 %111 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

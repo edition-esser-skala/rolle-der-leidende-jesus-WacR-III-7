@@ -330,3 +330,121 @@ WachetStehetViola = {
 		d2 r\fermata \bar "|." %44 finis
 	}
 }
+
+HerrErmuntreViola = {
+	\relative c' {
+		\clef alto
+		\key a \major \time 4/4 \tempoHerrErmuntre
+		cis2\fE e4 a
+		cis2 cis
+		cis cis
+		cis \appoggiatura cis4 h2\trill
+		a4 r a2 %5
+		cis \appoggiatura cis4 h2
+		a4 a, r e'
+		e2 r4 e
+		e2 r4 a
+		d,2 d %10
+		e e8 d cis h
+		r4 a\p cis a
+		r a cis a
+		r a cis a
+		r a gis e %15
+		r a cis a
+		r a gis e
+		a a r e'
+		e-! e,-! r e'
+		e-! e8 cis a4 cis %20
+		e e e e
+		fis fis fis e
+		dis dis cis cis
+		h h h h
+		cis cis dis dis %25
+		e e dis dis
+		cis cis dis dis
+		e e fis fis
+		gis gis a a
+		h h, r h %30
+		r h cis a
+		h2 a4 a
+		h h2 a4
+		gis2 r
+		e'4\f e fis fis %35
+		gis gis a a
+		h h, r2
+		r8 h16 cis dis e fis gis a8 fis h, a'
+		gis4 cis, h h
+		e2 r %40
+		e1\p
+		e
+		dis4 dis h h
+		h2 r4 e8 h
+		g4 g g g %45
+		fis fis fis e
+		d d e e
+		fis2 r
+		r4 fis fis fis
+		fis'4. e8 d4 cis %50
+		d h r fis
+		fis'2 e
+		d4 \once \slurDashed cis8( h) \appoggiatura d cis4 \once \slurDashed h8( ais)
+		h4 h r h
+		e e, e e' %55
+		a,2 a'8 gis fis e
+		d4 d, r d'
+		gis,2 gis'8 fis eis dis
+		cis2 cis
+		his his4\fE his %60
+		cis1\pE
+		fis,4 fis' e!8\fE d cis h
+		cis2 e4 a
+		cis2 cis
+		cis cis %65
+		cis \appoggiatura cis4 h2\trillE
+		a4 r r2
+		r4 a,\p cis a
+		r a cis a
+		r a gis e %70
+		a2 r4 e'
+		e e, r e'
+		a a,8 a' cis a e cis
+		a4 a g' g
+		fis fis e e %75
+		d2 d
+		e4 e, e e'
+		r fis fis fis
+		r e e e
+		r fis fis fis %80
+		r e e e
+		r e e e
+		d d, e e
+		fis fis gis gis
+		a2 r4 e' %85
+		e2 r4 e
+		fis d cis d
+		e2 e,
+		a h4\f h
+		cis cis d d %90
+		cis r d\p r
+		e cis d r
+		e2 e,4 e'
+		dis~\fE dis2.\pE
+		e2. d4 %95
+		cis cis h h
+		a a' d, e
+		e r d\fE d
+		e r d\pE e
+		fis fis\fE e d %100
+		e2 r
+		cis e4 a
+		cis2 cis
+		cis cis
+		cis \appoggiatura cis4 h2\trillE %105
+		a2 a
+		gis4 e a a,
+		e'2 r
+		r8 e16 fis gis a h cis d8 h e, d
+		cis4 d e e, %110
+		a2 r\fermata \bar "|." %111 finis
+	}
+}

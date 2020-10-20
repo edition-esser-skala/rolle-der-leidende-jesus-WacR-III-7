@@ -506,6 +506,185 @@ WachetStehetTenoreLyrics = \lyricmode {
 	ſtark. %41 finis
 }
 
+HerrErmuntreTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key a \major \time 4/4 \autoBeamOff \tempoHerrErmuntre
+		R1*11 %11
+		a2 r4 a
+		e'2 e
+		e e
+		e2.( d4) %15
+		cis r r a
+		e'2.( d4)
+		cis r r a8 cis
+		cis4 h r h8 d
+		d4 cis r2 %20
+		cis4..( d16 cis4) cis
+		cis4..( d16 cis4) cis
+		cis( fis2) e4
+		e2( dis4) r
+		e2 \tuplet 3/2 4 { fis8([ e dis)] cis([ h a)] } %25
+		gis8.[ a16] h2 cis8[ dis]
+		e2 \tuplet 3/2 4 { fis8([ e dis)] cis([ h a)] }
+		gis4..( h16) a4..( cis16)
+		h4..( d!16) cis4..( e16)
+		dis2 r %30
+		e2. fis8([ dis)]
+		e2 r
+		e2. h8([ gis)]
+		e2 r
+		R1*6 %40
+		h'2 h4 e8([ h)]
+		h([ cis)] cis2.
+		fis a,4
+		\appoggiatura a gis2 r4 h
+		e2 e %45
+		e4.( fis16[ e] d4) cis
+		fis2( g4) h,
+		ais fis fis fis
+		fis'4. e8 d4 cis
+		d cis r fis, %50
+		fis'2 e
+		\appoggiatura e8 d4^\critnote \appoggiatura cis8 h4 \appoggiatura d8 cis4 h8([ ais)]
+		h4 fis r fis
+		d' d d2~
+		d4. e16[ fis] e4 d %55
+		cis2 r4 cis
+		fis4. e8 e([ d)] d([ cis)]
+		\appoggiatura cis4 h2 r4 h
+		eis2 r4 cis
+		fis2 r %60
+		cis eis,
+		fis r
+		R1*4 %66
+		a2 r4 a
+		e'2 e
+		e e
+		e2.( d4) %70
+		cis r r a8 cis
+		cis4 h r h8 d
+		d4 cis r2
+		cis4..( d16 cis4) cis
+		cis4..( d16 cis4) cis %75
+		cis( fis2) d4
+		cis2( h4) r
+		dis2 \tuplet 3/2 4 { fis8[ e dis] cis[ h a] }
+		gis8.[ a16] h2 e4
+		dis2 \tuplet 3/2 4 { fis8[ e dis] cis[ h a] } %80
+		gis8.[ a16] h2 d4
+		cis2 \tuplet 3/2 4 { e8[ d cis] h[ a g] }
+		fis4..( a16) gis4..( h16)
+		a4..( cis16) h4..( d16)
+		cis2 \tuplet 3/2 4 { e8[ d cis] d[ cis h] } %85
+		cis2 \tuplet 3/2 4 { e8[ d cis] d[ cis h] }
+		a4 fis' e d
+		cis16[ h] a4. h2\trill
+		a r
+		R1 %90
+		r4 e' fis a,
+		gis r8 e' fis4 a,
+		\appoggiatura a gis2 r
+		h4..( cis16 h4) h
+		h4..( cis16 h4) gis %95
+		a( e'2) d4
+		cis r fis gis,
+		a r r2
+		r fis'4 gis,
+		a r r2 %100
+		a h\trill
+		a r
+		R1*8 %110
+		R1\fermataMarkup \bar "|." %111 finis
+	}
+}
+
+HerrErmuntreTenoreLyrics = \lyricmode {
+	Herr, er -- %12
+	mun -- tre
+	du uns
+	Schwa -- %15
+	chen, uns
+	Schwa --
+	chen, daß wir
+	wa -- chen, daß wir
+	wa -- chen, %20
+	daß __ der
+	Geiſt __ ſich
+	zu __ dir
+	ſchwingt,
+	kämpft, __ _ _ %25
+	_ _ _
+	_ _ _
+	_ _
+	_ _
+	_ %30
+	kämpft und
+	ringt,
+	kämpft und
+	ringt.
+
+	Zeig unſ -- rem %41
+	Glau -- ben
+	je -- ne
+	Höhe, wo
+	wir ge -- %45
+	krönt __ einſt
+	vor __ dir
+	ſtehn, wenn wir hier
+	wa -- chend dich ge --
+	fun -- den, dir %50
+	nach -- ge --
+	kämpft und ü -- ber --
+	wun -- den, und
+	wo der En --
+	_ _ gel %55
+	Lied, der
+	En -- gel Lied den
+	ſingt, der
+	wacht, der
+	wacht, %60
+	wacht und
+	ringt.
+
+	Herr, er -- %67
+	mun -- tre
+	du uns
+	Schwa -- %70
+	chen, daß wir
+	wa -- chen, daß wir
+	wa -- chen,
+	daß __ der
+	Geiſt __ ſich %75
+	zu __ dir
+	ſchwingt,
+	kämpft, __ _ _
+	_ _ _
+	_ _ _ %80
+	_ _ _
+	_ _ _
+	_ _
+	_ _
+	_ _ _ %85
+	_ _ _
+	_ _ _ _
+	_ _ und
+	ringt,
+	%90
+	er -- mun -- tre
+	uns, er -- mun -- tre
+	uns,
+	daß __ der
+	Geiſt __ sich %95
+	zu __ dir
+	ſchwingt, kämpft und
+	ringt,
+	kämpft und
+	ringt, %100
+	kämpft und
+	ringt. %102 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

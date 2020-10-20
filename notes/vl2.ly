@@ -332,3 +332,121 @@ WachetStehetViolinoII = {
 		d2 r\fermata \bar "|." %44 finis
 	}
 }
+
+HerrErmuntreViolinoII = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoHerrErmuntre
+		a'2.\fE cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill
+		cis4 r e8.([ a16) gis8.( a16)] %5
+		e2 \appoggiatura e4 d2\trill
+		cis4 r a2
+		a4 gis gis~ gis8. h16
+		h4 a r cis
+		cis8( d) d( cis) cis( h) h( a) %10
+		a4( \scriptOut gis)-! gis8 fis e d
+		cis2\p e4 a
+		cis1
+		cis
+		cis2 \appoggiatura cis4 h2\trillE %15
+		a a
+		cis \appoggiatura cis4 h2\trill
+		a4 r a2
+		a4-! gis-! gis~ gis8. h16
+		h4-! a-! r2 %20
+		a4 a a h
+		a a a a
+		a a2 a4~
+		a a2 a4
+		gis2 fis4 fis %25
+		e h' h fis
+		gis a2 a4
+		gis2 a8.( cis32 h) a8 a
+		h2 cis8.( e32 d) cis8 cis
+		h8 h16 cis dis e fis gis a8 fis dis h %30
+		e2. fis8( dis)
+		e4 \tuplet 3/2 4 { gis,8( a h) cis([ dis e)] dis( e fis) }
+		e4 e,2 dis4
+		r e8\f h gis' e h' gis
+		e4 gis a8.( cis32 h) a8 a %35
+		h2 cis8.( e32 dis) cis8 cis
+		h8 h16 cis dis e fis gis a8 fis dis h
+		fis2-\tenuto dis'
+		e4 e2 dis4\trill
+		e h8 gis e2\trill %40
+		gis1\p
+		gis8( a) a2.~
+		a4 a a fis
+		fis4( e) r2
+		r4 h' h h %45
+		ais cis( h) ais
+		r h h g
+		fis r r fis
+		d'4. cis8 h4 ais
+		h ais h ais8.( h32 cis) %50
+		h4 d cis2
+		h4 fis fis fis
+		fis e8( d) \appoggiatura fis8 e4 d8( cis)
+		h4 d fis \once \slurDashed fis8( d)
+		h1 %55
+		a4 cis e a8( gis)
+		fis1
+		r4 gis2 gis4
+		r4 gis gis gis
+		r fis\f fis fis %60
+		fis2\p eis\trill
+		fis r
+		a2.\f cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)] %65
+		e2 \appoggiatura e4 d2\trill
+		cis4 r r a\p
+		cis1
+		cis
+		cis2 \appoggiatura cis4 h2\trillE %70
+		a4 r a2
+		a4-! gis-! gis~ gis8. h16
+		h4-! a-! r2
+		r4 a a a
+		r a a a %75
+		a d2 h4
+		a2( gis4) gis
+		r a a a
+		r gis gis gis
+		r a a a %80
+		r gis gis gis
+		r g g g
+		fis2 gis8.( h32 a) gis8 gis
+		a2 h8.( d32 cis) h8 h
+		cis4 cis2 h4 %85
+		a cis2 h4
+		a a2 h4
+		a2 gis\trill
+		a d8.(\f fis32 e) d8 d
+		e2 fis8.( a32 gis) fis8 fis %90
+		e4 cis8(\p a) fis'4 a,
+		e r8 e' \tuplet 3/2 4 { fis([ e d)] cis( h a) }
+		\appoggiatura a4 gis2 r
+		a4~\f a2.\p
+		gis1 %95
+		a2 gis
+		a4 r a gis
+		a \tuplet 3/2 4 { cis8([\f d e)] fis( gis a) gis([ a h)] }
+		a4 a,2\p gis4
+		a \tuplet 3/2 4 { a'8(\f fis d) cis([ e a)] fis( d h) } %100
+		e,2 r
+		a2. cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill %105
+		cis4 r e8.([ a16) gis8.( a16)]
+		h,2 \appoggiatura h4 a2\trillE
+		gis8 e16 fis gis a h cis d8 h gis e
+		h2 h'
+		a4 fis'8 d16 h a4 gis\trill %110
+		a e8 cis a2\fermata \bar "|." %111 finis
+	}
+}

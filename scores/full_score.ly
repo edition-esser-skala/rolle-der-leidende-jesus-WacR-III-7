@@ -539,26 +539,97 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C O R O"
+	% 		number = "1.9"
+	% 		title = "Wachet, ſtehet im Glauben"
+	% 	}
+	% 	\tocLabelLong "wachetstehet" "1.9" "Coro" "Wachet, stehet im Glauben"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "ob"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WachetStehetOboeI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WachetStehetOboeII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WachetStehetViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WachetStehetViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WachetStehetViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \WachetStehetSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \WachetStehetSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \WachetStehetAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \WachetStehetAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \WachetStehetTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \WachetStehetTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WachetStehetBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WachetStehetBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WachetStehetOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WachetStehetBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 80 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C O R O"
-			number = "1.9"
-			title = "Wachet, ſtehet im Glauben"
+			genre = "A R I A"
+			number = "1.10"
+			title = "Herr, ermuntre du uns Schwachen"
 		}
-		\tocLabelLong "wachetstehet" "1.9" "Coro" "Wachet, stehet im Glauben"
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "herrermuntre" "1.10" "Aria" "Herr, ermuntre du uns Schwachen"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "ob"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\WachetStehetOboeI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\WachetStehetOboeII
-						}
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
+						\partcombine \HerrErmuntreFlautoI \HerrErmuntreFlautoII
 					>>
 				>>
 				\new StaffGroup <<
@@ -566,54 +637,36 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\WachetStehetViolinoI
+							\HerrErmuntreViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\WachetStehetViolinoII
+							\HerrErmuntreViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\WachetStehetViola
+						\HerrErmuntreViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \WachetStehetSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \WachetStehetSopranoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \WachetStehetAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \WachetStehetAltoLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \WachetStehetTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \HerrErmuntreTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \WachetStehetTenoreLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WachetStehetBassoNotes }
-					}
-					\new Lyrics \lyricsto Basso \WachetStehetBassoLyrics
+					\new Lyrics \lyricsto Tenore \HerrErmuntreTenoreLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WachetStehetOrgano
+						\HerrErmuntreOrgano
 					}
 				>>
-				\new FiguredBass { \WachetStehetBassFigures }
+				\new FiguredBass { \HerrErmuntreBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 80 }
+			\midi { \tempo 2 = 65 }
 		}
 	}
 }

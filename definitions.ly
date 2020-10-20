@@ -714,8 +714,11 @@ tempoSingtIhr = \tempoMarkup "Larghetto"
 tempoLiebeDie = \tempoMarkup "[Tempo deest]"
 tempoNochHerrscht = \tempoMarkup "[Tempo deest]"
 tempoWachetStehet = \tempoMarkup "Allegro moderato"
+tempoHerrErmuntre = \tempoMarkup "Allegretto"
 
 
+\include "notes/fl1.ly"
+\include "notes/fl2.ly"
 \include "notes/ob1.ly"
 \include "notes/ob2.ly"
 \include "notes/fag1.ly"

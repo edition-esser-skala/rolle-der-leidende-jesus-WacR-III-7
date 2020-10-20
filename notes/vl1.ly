@@ -333,6 +333,124 @@ WachetStehetViolinoI = {
 	}
 }
 
+HerrErmuntreViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoHerrErmuntre
+		a'2.\fE cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill
+		cis4 r e8.([ a16) gis8.( a16)] %5
+		e2 \appoggiatura e4 d2\trill
+		cis4 r a~ a8. cis16
+		cis4 h h~ h8. d16
+		d4 cis e8( gis) a( e)
+		e( fis) fis( e) e( d) d( cis) %10
+		cis4( \scriptOut h)-! r2
+		a2.\p cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trillE %15
+		cis4 r e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill
+		cis4 r a~ a8. cis16
+		cis4-! h-! h~ h8. d16
+		d4-! cis-! r2 %20
+		cis4 cis cis cis
+		cis cis cis cis
+		fis fis2 fis4~
+		fis fis~ fis8 h fis( dis)
+		e4 cis h a %25
+		gis gis' fis h,
+		e2 fis4 r
+		e8.( gis32 fis) e8 e e2
+		e8.( gis32 fis) e8 e e2
+		dis8 h16 cis dis e fis gis a8 fis dis h %30
+		e2. fis8( dis)
+		e4 \tuplet 3/2 4 { gis,8( a h) cis([ dis e)] dis( e fis) }
+		e4 gis,2 fis4
+		r e8\f h gis' e h' gis
+		e'8.( gis32 fis) e8 e e2 %35
+		e8.( gis32 fis) e8 e e2
+		dis8 h16 cis dis e fis gis a8 fis dis h
+		a2-\tenuto fis'4.(\trill e16 fis)
+		h4. gis16( e) \appoggiatura e4 fis2\trill
+		e4 h8 gis e2\trill %40
+		h'1\p
+		h8( cis) cis4~ cis8.[ e16 dis8.( e16)]
+		fis8 h, dis( fis) a( fis) dis( a)
+		a4( gis) r2
+		r4 e' e e %45
+		r e( d) cis
+		fis2 \tuplet 3/2 4 { g8([ fis e)] d( cis h) }
+		ais4 fis fis fis
+		fis'4. e8 d4 cis
+		d cis r fis, %50
+		fis'2 e
+		\appoggiatura e8 d4 cis8( h) \appoggiatura d cis4 h8( ais)
+		h4 fis2 e4
+		d fis h d8( h)
+		a!2( gis4) r %55
+		r e cis'2~
+		cis4 cis8( e) e( d) d( cis)
+		cis h h2 h4
+		r h h h
+		r a\f a a %60
+		a2\p gis\trill
+		fis r
+		a2.\f cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)] %65
+		e2 \appoggiatura e4 d2\trill
+		cis4 r a\p cis8 a
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill %70
+		cis4 r a~ a8. cis16
+		cis4-! h-! h~ h8. d16
+		d4-! cis-! r2
+		r4 cis cis cis
+		r cis cis cis %75
+		fis fis2 d4
+		cis2( h4) e
+		r dis dis dis
+		r e e e
+		r dis dis dis %80
+		r e e h
+		r cis cis cis
+		d8.( fis32 e) d8 d d2
+		d8.( fis32 e) d8 d d2
+		cis4 a'2 gis4 %85
+		a e2 d4
+		cis fis e d
+		cis2 h\trill
+		a8 a'\f a a a2
+		a8.( cis32 h) a8 a a2 %90
+		a8( e) cis(\p a) fis'4 a,
+		e a'8( e) \tuplet 3/2 4 { fis([ e d)] cis( h a) }
+		\appoggiatura a4 gis2 r
+		h4~\f h2.\p
+		h1 %95
+		a8( cis) e2 d4
+		cis4 \tuplet 3/2 4 { cis8([ d e)] } fis4 gis,
+		a \tuplet 3/2 4 { cis8([\f d e)] fis( gis a) gis([ a h)] }
+		a4 \tuplet 3/2 4 { cis,8([\p d e)] } fis4 gis,
+		a \tuplet 3/2 4 { a'8(\f fis d) cis([ e a)] fis( d h) } %100
+		e,2 r
+		a2. cis8( a)
+		e'2 e8.([ a16) gis8.( a16)]
+		e2 e8.([ a16) gis8.( a16)]
+		e2 \appoggiatura e4 d2\trill %105
+		cis4 r e8.([ a16) gis8.( a16)]
+		d,2 \appoggiatura d4 cis2\trillE
+		h8 e,16 fis gis a h cis d8 h gis e
+		d2 gis'4.(\trill fis16 gis)
+		a4. fis16( d) cis4 h\trill %110
+		a e8 cis a2\fermata \bar "|." %111 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble
