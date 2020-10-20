@@ -451,6 +451,41 @@ HerrErmuntreViolinoI = {
 	}
 }
 
+WieIstViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \minor \time 4/4 \tempoWieIst
+		r2 a'
+		a h
+		c d
+		e1\fermata
+		r2 e %5
+		e d
+		c c
+		h1\fermata
+		r2 h
+		c d %10
+		e e
+		d1
+		e\fermata
+		r2 e
+		c d %15
+		e e
+		d1
+		c\fermata
+		r2 e
+		g e %20
+		e c
+		d1
+		d\fermata
+		r2 d
+		e d %25
+		c d
+		c h
+		a1\fermata \bar "|." %28 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

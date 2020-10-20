@@ -685,6 +685,72 @@ HerrErmuntreTenoreLyrics = \lyricmode {
 	ringt. %102 finis
 }
 
+WieIstTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key a \minor \time 4/4 \autoBeamOff \tempoWieIst
+		r2 c
+		e e
+		e a,
+		h1\fermata
+		r2 h %5
+		a e'
+		e e
+		e1\fermata
+		r2 e
+		e h %10
+		c c
+		c( h)
+		c1\fermata
+		r2 c
+		c h %15
+		c c
+		c( h)
+		g1\fermata
+		r2 c
+		d e %20
+		e e
+		d2.( c4)
+		h1\fermata
+		r2 h
+		c g'^\critnote %25
+		e f
+		e( d)
+		c1\fermata %28 finis
+	}
+}
+
+WieIstTenoreLyrics = \lyricmode {
+	Wie
+	iſt der
+	Menſch ſo
+	ſchwach!
+	So %5
+	viel ſein
+	Muth ver --
+	ſprach,
+	doch
+	liegt er %10
+	da im
+	Stau --
+	be.
+	Er --
+	lo -- ſchen %15
+	iſt ſein
+	Glau --
+	be,
+	ſein
+	küh -- ner %20
+	Muth ge --
+	däm --
+	pfet.
+	Ach,
+	Chri -- ſtus %25
+	wacht und
+	käm --
+	pfet. %28 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

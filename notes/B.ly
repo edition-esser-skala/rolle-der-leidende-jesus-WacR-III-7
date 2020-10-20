@@ -509,6 +509,72 @@ WachetStehetBassoLyrics = \lyricmode {
 	ſtark. %41 finis
 }
 
+WieIstBassoNotes = {
+	\relative c {
+		\clef bass
+		\key a \minor \time 4/4 \autoBeamOff \tempoWieIst
+		r2 a'
+		c, e
+		a f
+		e1\fermata
+		r2 e %5
+		fis gis
+		a a,
+		e'1\fermata
+		r2 e
+		a f %10
+		e c
+		g'1
+		c,\fermata
+		r2 c
+		f f %15
+		e a
+		f( g)
+		c,1\fermata
+		r2 c'
+		h c %20
+		gis a
+		fis( d)
+		g1\fermata
+		r2 g
+		c, g' %25
+		a d,
+		e1
+		a,\fermata \bar "|." %28 finis
+	}
+}
+
+WieIstBassoLyrics = \lyricmode {
+	Wie
+	iſt der
+	Menſch ſo
+	ſchwach!
+	So %5
+	viel ſein
+	Muth ver --
+	ſprach,
+	doch
+	liegt er %10
+	da im
+	Stau --
+	be.
+	Er --
+	lo -- ſchen %15
+	iſt ſein
+	Glau --
+	be,
+	ſein
+	küh -- ner %20
+	Muth ge --
+	däm --
+	pfet.
+	Ach,
+	Chri -- ſtus %25
+	wacht und
+	käm --
+	pfet. %28 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

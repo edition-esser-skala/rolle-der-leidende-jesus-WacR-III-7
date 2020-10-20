@@ -963,6 +963,72 @@ HerrErmuntreBassFigures = \figuremode {
 	r1 %111 finis
 }
 
+WieIstOrgano = {
+	\relative c {
+		\clef bass
+		\key a \minor \time 4/4 \tempoWieIst
+		r2 a
+		c e
+		a f
+		e1\fermata
+		r2 e %5
+		fis gis
+		a a,
+		e'1\fermata
+		r2 e
+		a f %10
+		e c
+		g'1
+		c,\fermata
+		r2 c
+		f f %15
+		e a
+		f g
+		c,1\fermata
+		r2 c'
+		h c %20
+		gis a
+		fis d
+		g1\fermata
+		r2 g
+		c, g' %25
+		a d,
+		e1
+		a,\fermata \bar "|." %28 finis
+	}
+}
+
+WieIstBassFigures = \figuremode {
+	r1
+	<6>2 <_+>
+	r <6>
+	<_+>1
+	r2 q %5
+	<7> <6 5>
+	<9> <8>
+	<[_+]>1
+	r2 q
+	r <4 2> %10
+	<[6]>1
+	\bo <[4]>2 \bc <[3]>
+	r1
+	r
+	r2 <4 2> %15
+	<6>1
+	<6 5>2 <3>
+	r1
+	r
+	<6> %20
+	q
+	q2 <[_+]>
+	r1
+	r
+	r %25
+	r
+	\bo <[6 4]>2 \bc <[5 _+]>
+	r1 %28 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

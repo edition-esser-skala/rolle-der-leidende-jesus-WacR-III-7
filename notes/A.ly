@@ -582,9 +582,72 @@ WachetStehetAltoLyrics = \lyricmode {
 	ſtark, ſeid
 	ſtark, ſeid %40
 	ſtark. %41 finis
+}
 
-	% wa -- chet, ſte -- het im Glau -- ben,
-	% ſeid männ -- lich und ſeid ſtark.
+WieIstAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \minor \time 4/4 \autoBeamOff \tempoWieIst
+		r2 e
+		a gis
+		a a
+		gis1\fermata
+		r2 gis %5
+		a h
+		h a
+		gis1\fermata
+		r2 gis?
+		a g %10
+		g g
+		g1
+		g\fermata
+		r2 g
+		a g %15
+		g a
+		a( g4 f)
+		e1\fermata
+		r2 g
+		g g %20
+		h a
+		a1
+		g\fermata
+		r2 g
+		g h %25
+		a a
+		a( gis)
+		a1\fermata \bar "|." %28 finis
+	}
+}
+
+WieIstAltoLyrics = \lyricmode {
+	Wie
+	iſt der
+	Menſch ſo
+	ſchwach!
+	So %5
+	viel ſein
+	Muth ver --
+	ſprach,
+	doch
+	liegt er %10
+	da im
+	Stau --
+	be.
+	Er --
+	lo -- ſchen %15
+	iſt ſein
+	Glau --
+	be,
+	ſein
+	küh -- ner %20
+	Muth ge --
+	däm --
+	pfet.
+	Ach,
+	Chri -- ſtus %25
+	wacht und
+	käm --
+	pfet. %28 finis
 }
 
 % AltoNotes = {

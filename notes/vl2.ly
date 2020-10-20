@@ -450,3 +450,38 @@ HerrErmuntreViolinoII = {
 		a e8 cis a2\fermata \bar "|." %111 finis
 	}
 }
+
+WieIstViolinoII = {
+	\relative c' {
+		\clef treble
+		\key a \minor \time 4/4 \tempoWieIst
+		r2 c
+		e gis
+		a a
+		gis1\fermata
+		r2 gis %5
+		a h~
+		h a
+		gis1\fermata
+		r2 gis
+		a h %10
+		c c~
+		c h
+		c1\fermata
+		r2 g
+		a h %15
+		c c~
+		c h
+		c1\fermata
+		r2 c
+		d c %20
+		h a
+		a1
+		h\fermata
+		r2 h
+		c h %25
+		a a
+		a gis
+		a1\fermata \bar "|." %28 finis
+	}
+}

@@ -448,3 +448,38 @@ HerrErmuntreViola = {
 		a2 r\fermata \bar "|." %111 finis
 	}
 }
+
+WieIstViola = {
+	\relative c' {
+		\clef alto
+		\key a \minor \time 4/4 \tempoWieIst
+		r2 e
+		e e
+		e a,
+		h1\fermata
+		r2 h %5
+		a e'
+		e e
+		e1\fermata
+		r2 e
+		e g! %10
+		g g
+		g1
+		g\fermata
+		r2 g
+		f d %15
+		g a
+		a g4 f
+		e1\fermata
+		r2 g
+		g g %20
+		e e
+		d fis
+		g1\fermata
+		r2 g
+		g g %25
+		e f
+		e d
+		c1\fermata \bar "|." %28 finis
+	}
+}

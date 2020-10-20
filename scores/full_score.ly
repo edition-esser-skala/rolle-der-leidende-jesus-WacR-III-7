@@ -616,20 +616,73 @@
 	% 		\midi { \tempo 2 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "1.10"
+	% 		title = "Herr, ermuntre du uns Schwachen"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "herrermuntre" "1.10" "Aria" "Herr, ermuntre du uns Schwachen"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
+	% 					\partcombine \HerrErmuntreFlautoI \HerrErmuntreFlautoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\HerrErmuntreViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\HerrErmuntreViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\HerrErmuntreViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \HerrErmuntreTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \HerrErmuntreTenoreLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\HerrErmuntreOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \HerrErmuntreBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 65 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "1.10"
-			title = "Herr, ermuntre du uns Schwachen"
+			genre = "C H O R A L"
+			number = "1.11"
+			title = "Wie iſt der Menſch ſo ſchwach!"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "herrermuntre" "1.10" "Aria" "Herr, ermuntre du uns Schwachen"
+		\paper { page-count = #3 }
+		\tocLabelLong "wieist" "1.11" "Choral" "Wie ist der Mensch so schwach!"
 		\score {
 			<<
 				\new StaffGroup <<
 					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
-						\partcombine \HerrErmuntreFlautoI \HerrErmuntreFlautoII
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \WieIstOboeI \WieIstOboeII
 					>>
 				>>
 				\new StaffGroup <<
@@ -637,36 +690,54 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\HerrErmuntreViolinoI
+							\WieIstViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\HerrErmuntreViolinoII
+							\WieIstViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\HerrErmuntreViola
+						\WieIstViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \HerrErmuntreTenoreNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \WieIstSopranoNotes }
 					}
-					\new Lyrics \lyricsto Tenore \HerrErmuntreTenoreLyrics
+					\new Lyrics \lyricsto Soprano \WieIstSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \WieIstAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \WieIstAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \WieIstTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \WieIstTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WieIstBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \WieIstBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\HerrErmuntreOrgano
+						\WieIstOrgano
 					}
 				>>
-				\new FiguredBass { \HerrErmuntreBassFigures }
+				\new FiguredBass { \WieIstBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 65 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }
