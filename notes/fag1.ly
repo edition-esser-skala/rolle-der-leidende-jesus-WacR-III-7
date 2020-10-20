@@ -92,3 +92,71 @@ SingtIhrFagottoI = {
 		g,4 r r\fermata \bar "|." %109 finis
 	}
 }
+
+GottMitBlickenFagottoI = {
+	\relative c {
+		\clef bass
+		\key es \major \time 4/4 \tempoGottMitBlicken
+		R1
+		b'2.\fE c8( as)
+		g4 as g f\trill
+		es8( es') es( c) c( as) as( f)
+		g( es') es( c) c( as) as( f) %5
+		g4. as8 g4 f\trill
+		\pao es2 r
+		R1*3 %10
+		r4 b'8(\fE es) es( d) d( f)
+		\pa es4 r r2 \pd
+		R1*3 %15
+		c2\p d
+		es d4 r
+		R1
+		r4 a8.( b16) c4 r
+		R1 %20
+		r4 a8.( b16) c4 r
+		R1
+		r4 a8.( b16) c4 r
+		R1*3 %26
+		r2 r8 es\fE es( c)
+		d4 es r8 es es( d)
+		d4 r r2
+		R1*3 %32
+		r4 d8(\pE f) f( d) d( b)
+		b4 r r2
+		R1*3 %37
+		d2.\fE es8( c)
+		f2. g8( es)
+		d4 es d c\trill %40
+		\pao b2 r8 es es( c)
+		d4 es r8 es es( c)
+		d4. es8 d4 c\trill
+		\pao b2 r
+		R1*7 %51
+		r2 b\p
+		c des
+		c r
+		R1 %55
+		r2 r4 d8.( es16)
+		es4( f8) g g( f) f( es)
+		d8.( es16) f4 r2
+		R1*5 %63
+		r2 es\f
+		es es %65
+		es es
+		es4 r r2
+		R1
+		r4 d8.( es16) f4 r
+		R1 %70
+		r2 r4 d8.( es16)
+		es4( f8) g g( f) f( es)
+		es( d) d4 r2
+		R1*7 %80
+		r4 c8(\p es) es( c) c( as)
+		b4 r r2
+		R1*4 %86
+		r4 es8(\fE c) c( as) as( f)
+		g( es') es( c) c( as) as( f)
+		g4. as8 g4 f\trill
+		\pao es2 r\fermata \bar "|." %90 finis
+	}
+}

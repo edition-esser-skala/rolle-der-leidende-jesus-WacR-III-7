@@ -580,3 +580,93 @@ WerDurchschautViola = {
 		gis4 r8\fermata \bar "|." %91 finis
 	}
 }
+
+GottMitBlickenViola = {
+	\relative c' {
+		\clef alto
+		\key es \major \time 4/4 \tempoGottMitBlicken
+		r4 es,\fE g b
+		r es, g d
+		es as b2
+		c4 as r b
+		es as, r b %5
+		b c b b
+		es b \appoggiatura as g2
+		r4 es\p g b
+		r es, g d
+		es c' b as %10
+		g \once \slurDashed b8(\fE es) es( d) d( f)
+		es4\p es, g b
+		r es, g d
+		es as r a
+		b b8. c16 d4 f8( d) %15
+		c2 d
+		es d
+		es4 es, r es'
+		f f, f2
+		r4 f' e e %20
+		f2 f,
+		r4 f e e
+		f2 f4 es
+		d8( d) d( d) d( d) d( d)
+		es( es) es( es) es( es) es( es) %25
+		f4 f f8( f) f( f)
+		b4 es\f r f
+		b, es r f
+		g2 r
+		R1*3 %32
+		r2 r4 d\pE
+		es es g g
+		f f f f %35
+		g2 es4 es
+		f f f, f
+		r b\f d f
+		r b, d a
+		b es f f, %40
+		g es' r f
+		b, es r f
+		b, es f f
+		b f \appoggiatura es d2
+		r4 b\pE d f %45
+		r b, d a
+		b g' f f,
+		b2 b8 as! g f
+		es4 es g b
+		r es, g d %50
+		es c' b b
+		es es des des
+		c c g g
+		as c b b
+		c c a2 %55
+		b r
+		R1*2
+		r4 b b b
+		es es g,8( g) g( g) %60
+		as( as) as( as) a( a) a( a)
+		b( b) as( as) b( b) c( c)
+		b( b) b( b) b( b) b( b)
+		g4 g8.\f as16 b4 b'
+		f f g g %65
+		as as b b
+		as as,\p as as
+		as as a a
+		b b b2
+		r4 b a a %70
+		b2 b
+		R1
+		r4 b as! as
+		g8( g) g( g) g( g) g( g)
+		as( as) as( as) as( as) as( as) %75
+		b( b) b( b) b( b) b( b)
+		es,2 r
+		R1*5 %82
+		as4 as as as
+		b b b b
+		c2 r %85
+		b\fermata b
+		es4 as,\f r b
+		es as, r b
+		es as, b b
+		es,2 r\fermata \bar "|." %90 finis
+	}
+}

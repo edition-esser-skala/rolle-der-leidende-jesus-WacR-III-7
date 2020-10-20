@@ -582,3 +582,100 @@ WerDurchschautViolinoII = {
 		e4 r8\fermata \bar "|." %91 finis
 	}
 }
+
+GottMitBlickenViolinoII = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \tempoGottMitBlicken
+		es2.\fE f8( d)
+		g2. as8( f)
+		es4 f es d\trill
+		es c'8( as) as( f) f( d)
+		es4 c'8( as) as( f) f( d) %5
+		es2. d4\trill
+		es2 r
+		es2.\p f8( d)
+		g2. as8( f)
+		es4 f es d %10
+		es b8(\f g') g( f) f( d)
+		es2.\p f8( d)
+		g2. as8( f)
+		es4 d8.( es16 f4) es
+		es d8. es16 f4 b~ %15
+		b8 g'16( a,) b8 b~ b d16( a) b8 b~
+		b es16( a,) b8 b~ b \once \slurDashed f'16( a,) b8 b~
+		b es es( d) d4( c8) b
+		b4( a) r f8. g16
+		g4( a8) b b( a) a( g) %20
+		f8.( g16) a4 r a,8. b16
+		b4( c8) d d( c) c( b)
+		a8.\trill g16 a4 r f'
+		f8( f) f( f) f( f) f( f)
+		es4 g2 c4 %25
+		b8( b) b( b) a4~ a8 r
+		b4 g'8(\f es) es( c) c( a)
+		b4 g'8( es) es( c) c( b)
+		b2 r
+		r4 d,(-.\p d-. d-.) %30
+		es(-. es-.) d(-. d-.)
+		es es8( g) g( es) es( c)
+		d4 r r2
+		g8( es') es( d) d( c) c( b)
+		b2 a %35
+		b4 es8( es) es( es) c( c)
+		b2 a4 r
+		b2.\f c8( a)
+		d2. es8( c)
+		b4 c b a\trill %40
+		b g'8( es) es( c) c( a)
+		b4 g'8( es) es( c) c( a)
+		b4 b2 a4\trill
+		b2 r
+		b2.\p c8( a) %45
+		d2. es8( c)
+		b4 c b a
+		b d,2 es8( d)
+		es2. f8( d)
+		g2. as8( f) %50
+		es4 f es d
+		es g r8 g16( d) es8 es~
+		es as16( d,) es8 es~ es b'16( d,) es8 es~
+		es c'16( d,) es8 es~ es c'16( d,) e8 e
+		f2 es %55
+		r4 b8.( c16) d4 r
+		R1
+		r4 b8.( c16) d4 d8. es16
+		es4( f8) as \slurDashed as( g) g( f) \slurSolid
+		f4 es des2~ %60
+		des4 c es2
+		d8( d) es( es) es( es) es( es)
+		es2 d\trill
+		es4 r r8 b''16(\f d,) es8 es~
+		es \slurDashed c'16( d,) es8 es~ es g16( d) es8 es~ %65
+		es as16( d,) es8 es~ es b'16( d,) es8 es \slurSolid
+		c4~ c2.~\p
+		c2 es,
+		es4( d) r d8. es16
+		es4( f8) g g( f) f( es) %70
+		d4 b8.( c16) d4 r
+		R1
+		r4 b8.( c16) d8( d) d( d)
+		es( es) es( es) es( es) es( es)
+		es( es) es( es) c( c) f( f) %75
+		es2 d\trill
+		es r
+		R1
+		r4 g,(-. g-. g-.)
+		as(-. as-.) g(-. g-.) %80
+		as r r2
+		r4 g8( b) b( g) g( b)
+		as4 as'8( g) g( f) f( es)
+		es2 d\trill
+		es r %85
+		es\fermata d4 r
+		r c'8(\f as) as( f) f( d)
+		es4 c'8( as) as( f) f( d)
+		es4 es2 d4\trill
+		es b \appoggiatura as g2\fermata \bar "|." %90 finis
+	}
+}

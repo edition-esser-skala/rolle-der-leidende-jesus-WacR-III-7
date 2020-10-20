@@ -825,38 +825,91 @@
 	% 		\midi { \tempo 4. = 50 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "1.14"
+	% 		title = "Geſtärkt erhebt mein Jeſus ſich"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "gestaerkterhebt" "1.14" "Recitativo" "Gestärkt erhebt mein Jesus sich"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \GestaerktErhebtAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \GestaerktErhebtAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\GestaerktErhebtOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \GestaerktErhebtBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "1.14"
-			title = "Geſtärkt erhebt mein Jeſus ſich"
+			genre = "A R I A"
+			number = "1.15"
+			title = "Gott, mit Blicken deiner Gnade"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
-		}
-		\tocLabelLong "gestaerkterhebt" "1.14" "Recitativo" "Gestärkt erhebt mein Jesus sich"
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "gottmitblicken" "1.15" "Aria" "Gott, mit Blicken deiner Gnade"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
+						\partcombine \GottMitBlickenFagottoI \GottMitBlickenFagottoII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\GottMitBlickenViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\GottMitBlickenViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\GottMitBlickenViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \GestaerktErhebtAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \GottMitBlickenAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \GestaerktErhebtAltoLyrics
+					\new Lyrics \lyricsto Alto \GottMitBlickenAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\GestaerktErhebtOrgano
+						\GottMitBlickenOrgano
 					}
 				>>
-				\new FiguredBass { \GestaerktErhebtBassFigures }
+				\new FiguredBass { \GottMitBlickenBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 4 = 100 }
 		}
 	}
 }

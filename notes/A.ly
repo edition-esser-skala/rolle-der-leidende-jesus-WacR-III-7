@@ -710,6 +710,167 @@ GestaerktErhebtAltoLyrics = \lyricmode {
 	ru -- fen. %25 finis
 }
 
+GottMitBlickenAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \autoBeamOff \tempoGottMitBlicken
+		R1*7 %7
+		g'2. as8([ f)]
+		b2. c8([ as)]
+		g4( \grace b16 as8) g16([ f)] es4( f)\trill %10
+		es2 r
+		\once \tieDashed g2. as8([ f)]
+		b2. c8([ as)]
+		g8.([ as32 g] f8.[ g16] as4) g
+		g f b r8. d,16 %15
+		es4 r8. es16 f4 r8. f16
+		g4 r b r8 b
+		g4 es'8([ d)] d4( c8) b
+		b4( a) r a8. b16
+		b4( c8) d d([ c)] c([ b)] %20
+		a8.([\trill b16)] c4 r f,8. g16
+		g4( a8) b b([ a)] a([ g)]
+		f8.([\trill e16)] f4 r f8 a
+		b4 b, as'8([ g)] as4
+		g r8 g c,4 c' %25
+		f,2 c'
+		b r
+		R1
+		r4 b b b
+		b2 b %30
+		b b
+		b1~
+		b2 b4 b
+		b2 b
+		f c' %35
+		b4 b g es'8([ c)]
+		b2 c\trill
+		b r
+		R1*6 %44
+		b2. c8([ a)] %45
+		d2. es8([ c)]
+		b4. a16([ g)] f4( es)
+		d2 r
+		g2. as8([ f)]
+		b2. c8([ as)] %50
+		g4( as8) g16([ f)] es4( f)\trill
+		es2 g4 r8. g16
+		as4 r8. as16 b4 r8. es,16
+		c'4 r c4. e,8
+		f4. c'8 \tuplet 3/2 4 { c([ b a)] g([ f es)] } %55
+		\appoggiatura es4 d2 r4 d8. es16
+		es4( f8) g g([ f)] f([ es)]
+		d8.([ es16)] f4 r f8. g16
+		g4( as8) c c([ b)] b([ as)]
+		as4 g b4. des,8 %60
+		des4 c c'4. es,8
+		d4 as' g c
+		b,2 f'\trill
+		es r
+		R1*2 %66
+		r4 c'2 c8 as
+		\appoggiatura g4 f2 c'4. es,8
+		\appoggiatura es4 d2 r4 b'8. c16
+		c4( d8) es es([ d)] d([ c)] %70
+		b8.([ a16)] b4 r d,8. es16
+		es4( f8) g g([ f)] f([ es)]
+		es([ d)] d4 r f8 b,
+		b'4 es, r des'
+		c( as2) f4 %75
+		b,2 f'\trill
+		es es
+		g b
+		es es,
+		es es %80
+		es1~
+		es2 es4 es
+		es2 es
+		es f\trill
+		es4 es'8([ c)] c([ a)] a([ b)] %85
+		\once \tieDashed es,4~ es\fermata f2\trill
+		es r
+		R1*2
+		R1\fermataMarkup \bar "|." %90 finis
+	}
+}
+
+GottMitBlickenAltoLyrics = \lyricmode {
+	Gott, mit %8
+	Bli -- cken
+	dei -- ner Gna -- %10
+	de,
+	hilf, daß
+	ich vom
+	Laſ -- ter --
+	pfa -- de bald den %15
+	Fuß zu -- rü -- cke
+	zieh, bald den
+	Fuß zu -- rü -- cke
+	zieh, mei -- nes
+	Va -- ters Stim -- me %20
+	hö -- re, wie -- der
+	reu -- end zu ihm
+	keh -- re und des
+	Ab -- grunds Tie -- fe
+	flieh, des Ab -- grunds %25
+	Tie -- fe
+	flieh.
+
+	Dann nimm den
+	Reu -- en -- %30
+	den mit
+	Va --
+	ter-, mit
+	Va -- ter --
+	bli -- cken %35
+	an, mit Va -- ter --
+	bli -- cken
+	an.
+
+	Gott, mit %45
+	Bli -- cken
+	dei -- ner Gna --
+	de,
+	hilf, daß
+	ich vom %50
+	Laſ -- ter --
+	pfa -- de bald den
+	Fuß zu -- rü -- cke
+	zieh, bald den
+	Fuß zu -- rü -- cke __ %55
+	zieh, mei -- nes
+	Va -- ters Stim -- me
+	hö -- re, wie -- der
+	reu -- end zu ihm
+	keh -- re und des %60
+	Ab -- grunds Tie -- fe
+	flieh, des Ab -- grunds
+	Tie -- fe
+	flieh.
+
+	Gott, hilf, daß %67
+	ich, hilf, daß
+	ich mei -- nes
+	Va -- ters Stim -- me %70
+	hö -- re, wie -- der
+	reu -- end zu ihm
+	keh -- re und des
+	Ab -- grunds, des
+	Ab -- grunds %75
+	Tie -- fe
+	flieh. Dann
+	nimm den
+	Reu -- en --
+	den mit %80
+	Va --
+	ter-, mit
+	Va -- ter --
+	bli -- cken
+	an, mit Va -- ter -- %85
+	bli -- cken
+	an. %87 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

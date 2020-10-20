@@ -584,6 +584,103 @@ WerDurchschautViolinoI = {
 	}
 }
 
+GottMitBlickenViolinoI = {
+	\relative c' {
+		\clef treble
+		\key es \major \time 4/4 \tempoGottMitBlicken
+		g'2.\fE as8( f)
+		b2. c8( as)
+		g4 as8( f) es4 f\trill
+		es8 es' es( c) c( as) as( f)
+		g es' es( c) c( as) as( f) %5
+		g4~ g16 as( c as) g4 f\trill
+		es2 r
+		g2.\p as8( f)
+		b2. c8( as)
+		g4 as g f %10
+		es b8(\f g') g( f) f( as)
+		g2.\p as8( f)
+		b2. c8( as)
+		g4 f8.( g16 as4) g
+		g f r8 f'16( a,) b8 b~ %15
+		b g'16( a,) b8 b~ b d16( a) b8 b~
+		b es16( a,) b8 b~ b \once \slurDashed f'16( a,) b8 b~
+		b g' g( f) f4( es8) d
+		d4( c) r a8. b16
+		b4( c8) d d( c) c( b) %20
+		a8.( b16) c4 r f,8. g16
+		g4( a8) b b( a) a( g)
+		f8.\trill e16 f4 r a
+		b2 b,
+		r4 b' es es %25
+		d8( d) d( d) c4~ c8 r
+		b b'\f b( g) g( es) es( c)
+		d( b') b( g) g( es) es( d)
+		d2 r
+		r4 f,(-.\p f-. f-.) %30
+		g(-. g-.) as!(-. as-.)
+		g g8( b) b( g) g( es)
+		f4 r r2
+		b8( g') g( f) f( es) es( d)
+		d2 c %35
+		b4 g'8( g) g( g) es( es)
+		d2 c4 r
+		d2.\f es8( c)
+		f2. g8( es)
+		d4 es8( c) b4 c\trill %40
+		b8( b') b( g) g( es) es( c)
+		d( b') b( g) g( es) es( c)
+		d4~ d16 es( g es) d4 c\trill
+		b2 r
+		d2.\p es8( c) %45
+		f2. g8( es)
+		d4 es d c
+		b f~ f8 d( es f)
+		g2. as8( f)
+		b2. c8( as) %50
+		g4 as g f
+		es b'~ b8 g16( d) es8 es~
+		es as16( d,) es8 es~ es b'16( d,) es8 es~
+		es c'16( d,) es8 es~ es c'16( d,) e8 e
+		f( as) as( c) c2 %55
+		r4 d,8.( es16) f4 r
+		R1
+		r4 d8.( es16) f4 f8. g16
+		g4( as8) c c( b) b( as)
+		as4 g8. as16 b2~ %60
+		b4 as c2
+		b8( b) as( as) g( g) f( f)
+		g2 f\trill
+		es4 r r8 b''16(\f d,) es8 es~
+		es \slurDashed c'16( d,) es8 es~ es g16( d) es8 es~ %65
+		es as16( d,) es8 es~ es b'16( d,) es8 es \slurSolid
+		es4~ es2.~\p
+		es2 f,
+		f r4 b8. c16
+		c4( d8) es es( d) d( c) %70
+		b4 d,8.( es16) f4 r
+		R1
+		r4 d8.( es16) f8( f) f( g16 as!)
+		b4 b,8( b) b( b) b( b)
+		c( c) c( c) f( f) as( as) %75
+		g2 f\trill
+		es r
+		R1
+		r4 b(-. b-. b-.)
+		c(-. c-.) des(-. des-.) %80
+		c r r2
+		r4 es8( g) g( es) es( b)
+		c4 c'8( b) b( as) as( g)
+		g2 f\trill
+		es r %85
+		g\fermata f4 r
+		r es'8(\f c) c( as) as( f)
+		g( es') es( c) c( as) as( f)
+		g4~ g16 as( c as) g4 f\trill
+		es b \appoggiatura as g2\fermata \bar "|." %90 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble
