@@ -795,6 +795,78 @@ SieBindenTenoreLyrics = \lyricmode {
 	ſchweigt. %17 finis
 }
 
+LammDasTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \minor \time 4/4 \autoBeamOff \tempoLammDas
+		b2 d
+		d b
+		d4( c) d2
+		d( c)
+		b1\fermata %5
+		d2 f!
+		f f
+		g f4( es) \noBreak
+		d1\fermata \bar ":|."
+		f2 f \noBreak %10
+		f f
+		d e
+		c a\fermata
+		a h
+		c a %15
+		g g
+		a1\fermata
+		d2 d
+		d c
+		d c %20
+		a a\fermata
+		b c
+		d c
+		d c
+		b1\fermata \bar "|." %25 finis
+	}
+}
+
+LammDasTenoreLyricsA = \lyricmode {
+	Lamm, das
+	von ver --
+	ruch -- ten
+	Zun --
+	gen %5
+	frech ver --
+	höh -- net
+	den -- noch
+	ſchwieg!
+	Muß ich %10
+	glei -- chen
+	Grimm em --
+	pfin -- den,
+	leh -- re
+	mich ge -- %15
+	la -- ßen
+	ſeyn,
+	und will
+	ſich mein
+	Zorn ent -- %20
+	zün -- den,
+	flöß mir
+	dei -- ne
+	Sanft -- muth
+	ein. %25 finis
+}
+
+LammDasTenoreLyricsB = \lyricmode {
+	Stil -- ler
+	Muth bey
+	Läſ -- te --
+	run --
+	gen, %5
+	welch ein
+	e -- del --
+	müth -- ger
+	Sieg! %9 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

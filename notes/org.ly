@@ -1577,6 +1577,66 @@ SieBindenBassFigures = \figuremode {
 	r4 <_+> <[_-]>2 %17 finis
 }
 
+LammDasOrgano = {
+	\relative c {
+		\clef bass
+		\key g \minor \time 4/4 \tempoLammDas
+		g'2 d
+		g g
+		b4 a g2
+		d1
+		g\fermata %5
+		g2 f!
+		b, d
+		es f \noBreak
+		b,1\fermata \bar ":|."
+		b'2 b, \noBreak %10
+		f' d
+		g c,
+		f f,\fermata
+		es'! d
+		c d %15
+		es es
+		d1\fermata
+		fis2 d
+		g c,
+		b c %20
+		d d,\fermata
+		b'' a
+		g es
+		d d,
+		g1\fermata \bar "|." %25 finis
+	}
+}
+
+LammDasBassFigures = \figuremode {
+	r2 <_+>
+	r1
+	\bo <[6]>4 \bc <[6\\]>2.
+	<4>2 <_+>
+	r1 %5
+	r
+	r2 <[6]>
+	<[6 5]>1
+	r
+	r %10
+	<4>2 <5>
+	<9> <7 _!>
+	r1
+	<6 4 2>2 <6!>
+	r <_+> %15
+	<7> <6>
+	<_+>1
+	<[6]>2 <_+>
+	r <[6]>
+	\bo q \bc q %20
+	<[_+]>1
+	<[6]>2 <6\\>
+	r <6>
+	<6 4> <5 _+>
+	r1 %25 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

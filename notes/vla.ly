@@ -670,3 +670,35 @@ GottMitBlickenViola = {
 		es,2 r\fermata \bar "|." %90 finis
 	}
 }
+
+LammDasViola = {
+	\relative c' {
+		\clef alto
+		\key g \minor \time 4/4 \tempoLammDas
+		b2 d
+		d b
+		d4 c d2
+		d c
+		b1\fermata %5
+		d2 f!
+		f f
+		g f4 es \noBreak
+		d1\fermata \bar ":|."
+		f2 f \noBreak %10
+		f f
+		d e
+		c a\fermata
+		a h
+		c a %15
+		g g
+		a1\fermata
+		d2 d
+		d c
+		d c %20
+		a a\fermata
+		b c
+		d c
+		d c
+		b1\fermata \bar "|." %25 finis
+	}
+}

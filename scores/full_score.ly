@@ -912,38 +912,112 @@
 	% 		\midi { \tempo 4 = 100 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "1.16"
+	% 		title = "Sie binden ihn"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #5
+	% 	}
+	% 	\tocLabelLong "siebinden" "1.16" "Recitativo" "Sie binden ihn"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \SieBindenTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \SieBindenTenoreLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\SieBindenOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \SieBindenBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "1.16"
-			title = "Sie binden ihn"
+			genre = "C H O R A L"
+			number = "1.17"
+			title = "Lamm, das von verruchten Zungen"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #5
-		}
-		\tocLabelLong "siebinden" "1.16" "Recitativo" "Sie binden ihn"
+		\tocLabelLong "lammdas" "1.17" "Choral" "Lamm, das von verruchten Zungen"
 		\score {
 			<<
-				\new ChoirStaff <<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \LammDasOboeI \LammDasOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\LammDasViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\LammDasViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\LammDasViola
+					}
+				>>
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \LammDasSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \LammDasAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \LammDasAltoLyricsA
+					\new Lyrics \lyricsto Alto \LammDasAltoLyricsB
+
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \SieBindenTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \LammDasTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \SieBindenTenoreLyrics
+					\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \LammDasBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \LammDasBassoLyricsA
+					\new Lyrics \lyricsto Basso \LammDasBassoLyricsB
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\SieBindenOrgano
+						\LammDasOrgano
 					}
 				>>
-				\new FiguredBass { \SieBindenBassFigures }
+				\new FiguredBass { \LammDasBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

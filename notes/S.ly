@@ -515,6 +515,78 @@ WieIstSopranoLyrics = \lyricmode {
 	pfet. %28 finis
 }
 
+LammDasSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \autoBeamOff \tempoLammDas
+		g'2 a
+		b d
+		g,4( a) b2
+		a1
+		g\fermata %5
+		b2 c
+		d d
+		c c \noBreak
+		b1\fermata \bar ":|."
+		d2 d \noBreak %10
+		c d
+		b c
+		a f\fermata
+		c' d
+		es d %15
+		d c
+		d1\fermata
+		a2 d
+		b a
+		g a %20
+		fis4( e) d2\fermata
+		g a
+		b c
+		b a
+		g1\fermata \bar "|." %25 finis
+	}
+}
+
+LammDasSopranoLyricsA = \lyricmode {
+	Lamm, das
+	von ver --
+	ruch -- ten
+	Zun --
+	gen %5
+	frech ver --
+	höh -- net
+	den -- noch
+	ſchwieg!
+	Muß ich %10
+	glei -- chen
+	Grimm em --
+	pfin -- den,
+	leh -- re
+	mich ge -- %15
+	la -- ßen
+	ſeyn,
+	und will
+	ſich mein
+	Zorn ent -- %20
+	zün -- den,
+	flöß mir
+	dei -- ne
+	Sanft -- muth
+	ein. %25 finis
+}
+
+LammDasSopranoLyricsB = \lyricmode {
+	Stil -- ler
+	Muth bey
+	Läſ -- te --
+	run --
+	gen, %5
+	welch ein
+	e -- del --
+	müth -- ger
+	Sieg! %9 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

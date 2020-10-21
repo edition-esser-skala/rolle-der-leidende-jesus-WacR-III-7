@@ -679,3 +679,35 @@ GottMitBlickenViolinoII = {
 		es b \appoggiatura as g2\fermata \bar "|." %90 finis
 	}
 }
+
+LammDasViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \tempoLammDas
+		d2 fis
+		g g
+		g4 fis g2
+		g fis
+		d1\fermata %5
+		g2 a
+		b b
+		b a \noBreak
+		f1\fermata \bar ":|."
+		b2 b \noBreak %10
+		b a
+		a g
+		f c\fermata
+		f f
+		g fis %15
+		g1
+		fis\fermata
+		a2 fis
+		g es
+		d es %20
+		d d\fermata
+		d fis
+		g g
+		g fis
+		g1\fermata \bar "|." %25 finis
+	}
+}

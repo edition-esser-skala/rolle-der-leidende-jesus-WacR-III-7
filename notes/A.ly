@@ -871,6 +871,78 @@ GottMitBlickenAltoLyrics = \lyricmode {
 	an. %87 finis
 }
 
+LammDasAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \autoBeamOff \tempoLammDas
+		d2 fis
+		g g
+		g4( fis) g2
+		g( fis)
+		d1\fermata %5
+		g2 a
+		b b
+		b a \noBreak
+		f1\fermata \bar ":|."
+		b2 b \noBreak %10
+		b a
+		a g
+		f f\fermata
+		f f
+		g fis %15
+		g g
+		fis1\fermata
+		a2 fis
+		g es
+		d es %20
+		d d\fermata
+		d fis
+		g g
+		g fis
+		d1\fermata \bar "|." %25 finis
+	}
+}
+
+LammDasAltoLyricsA = \lyricmode {
+	Lamm, das
+	von ver --
+	ruch -- ten
+	Zun --
+	gen %5
+	frech ver --
+	höh -- net
+	den -- noch
+	ſchwieg!
+	Muß ich %10
+	glei -- chen
+	Grimm em --
+	pfin -- den,
+	leh -- re
+	mich ge -- %15
+	la -- ßen
+	ſeyn,
+	und will
+	ſich mein
+	Zorn ent -- %20
+	zün -- den,
+	flöß mir
+	dei -- ne
+	Sanft -- muth
+	ein. %25 finis
+}
+
+LammDasAltoLyricsB = \lyricmode {
+	Stil -- ler
+	Muth bey
+	Läſ -- te --
+	run --
+	gen, %5
+	welch ein
+	e -- del --
+	müth -- ger
+	Sieg! %9 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

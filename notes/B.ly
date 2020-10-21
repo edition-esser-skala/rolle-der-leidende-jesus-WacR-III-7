@@ -786,6 +786,78 @@ WerDurchschautBassoLyrics = \lyricmode {
 	zu. __ %85 finis
 }
 
+LammDasBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \minor \time 4/4 \autoBeamOff \tempoLammDas
+		g'2 d
+		g g
+		b4( a) g2
+		d1
+		g\fermata %5
+		g2 f!
+		b d,
+		es f \noBreak
+		b,1\fermata \bar ":|."
+		b'2 b, \noBreak %10
+		f' d
+		g c,
+		f f\fermata
+		es! d
+		c d %15
+		es es
+		d1\fermata
+		fis2 d
+		g c,
+		b c %20
+		d d\fermata
+		b' a
+		g es
+		d d
+		g,1\fermata \bar "|." %25 finis
+	}
+}
+
+LammDasBassoLyricsA = \lyricmode {
+	Lamm, das
+	von ver --
+	ruch -- ten
+	Zun --
+	gen %5
+	frech ver --
+	höh -- net
+	den -- noch
+	ſchwieg!
+	Muß ich %10
+	glei -- chen
+	Grimm em --
+	pfin -- den,
+	leh -- re
+	mich ge -- %15
+	la -- ßen
+	ſeyn,
+	und will
+	ſich mein
+	Zorn ent -- %20
+	zün -- den,
+	flöß mir
+	dei -- ne
+	Sanft -- muth
+	ein. %25 finis
+}
+
+LammDasBassoLyricsB = \lyricmode {
+	Stil -- ler
+	Muth bey
+	Läſ -- te --
+	run --
+	gen, %5
+	welch ein
+	e -- del --
+	müth -- ger
+	Sieg! %9 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass
