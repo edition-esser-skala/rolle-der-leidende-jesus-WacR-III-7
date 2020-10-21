@@ -1637,6 +1637,50 @@ LammDasBassFigures = \figuremode {
 	r1 %25 finis
 }
 
+DochKaiphasOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDochKaiphas
+		e!1~
+		e2 e~
+		e4 r r16. c32 e16. g32 c4
+		r2 r16 f,, a c f a c a
+		f2 r %5
+		f1
+		a~
+		a2 b,~
+		b1
+		fis' %10
+		g
+		g
+		e
+		r2 e~
+		e fis %15
+		g~ g4 r
+		r a d,2\fermata \bar "|." %17 finis
+	}
+}
+
+DochKaiphasBassFigures = \figuremode {
+	<6>1
+	r
+	r
+	r
+	r %5
+	r
+	<6>
+	r
+	r
+	<6>2 <5> %10
+	<_!>1
+	r
+	<6\\>
+	r2 q
+	r <6> %15
+	r2 <4+ 2>
+	r4 <_+> q2 %17 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

@@ -587,6 +587,50 @@ LammDasSopranoLyricsB = \lyricmode {
 	Sieg! %9 finis
 }
 
+DochKaiphasSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoDochKaiphas
+		r4 r8 g' c8. c16 c8 r16 h
+		c8 c c e c c r c
+		e e e f g4 r8 g,
+		b b b a a4 r
+		r8 c c c f r16 f f8 c %5
+		a a r4 c8 f, r4
+		f' f8 f f8. c16 c4
+		r8 c d es d4 f,
+		b8 b b c d4 r8 d
+		d4 a c8 c c d %10
+		h! h r d g4 r16 d d h
+		g8 g r g d' d d e
+		cis r16 cis cis8 d e e e fis
+		g g g e \appoggiatura d16 cis8 r16 cis cis8 d
+		e e e16 e g fis d8 d r16 d d a %15
+		h4 r8 h cis cis cis d
+		d a r4 r2\fermata \bar "|." %17 finis
+	}
+}
+
+DochKaiphasSopranoLyrics = \lyricmode {
+	Doch Ka -- i -- phas, er --
+	grimmt durch die -- ſes Schwei -- gen, reißt
+	wü -- tend ſich her -- vor, und
+	ſchon glüht ihm die Wang:
+	Schweigſt du zu dem, was die -- ſe %5
+	zeu -- gen? ruft er:
+	Sprich, bey dem E -- wi -- gen
+	be -- ſchwör ich dich, ſprich,
+	biſt du Got -- tes Sohn? Und
+	Je -- ſus wür -- digt ihn, zu %10
+	ſa -- gen: Ich bins. Von die -- ſen
+	Ta -- gen, von nun an wirds ge --
+	ſchehn, daß ihr des Men -- ſchen Sohn zur
+	Rech -- ten Got -- tes ſehn und kom -- mend
+	in den Wol -- ken wer -- det ſe -- hen, wenn er da -- %15
+	her wird zum Ge -- rich -- te
+	ge -- hen. %17 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -700,7 +700,7 @@ tocLabelLong = #(define-music-function
 )
 
 
-
+% 1.1
 tempoOMeineSeel = \tempoMarkup "[Tempo deest]"
 tempoDerHerrNeiget = \tempoMarkup "Non troppo lento"
 tempoJerusalem = \tempoMarkup "[Tempo deest]"
@@ -710,18 +710,25 @@ tempoGerechter = \tempoMarkup "Largo"
 tempoLabyrinth = \tempoMarkup "Recitativo"
 	tempoLabyrinthB = \tempoMarkup "Accompagnato"
 	tempoLabyrinthC = \tempoMarkup "Andante di molto"
+
+%1.6
 tempoSingtIhr = \tempoMarkup "Larghetto"
 tempoLiebeDie = \tempoMarkup "[Tempo deest]"
 tempoNochHerrscht = \tempoMarkup "[Tempo deest]"
 tempoWachetStehet = \tempoMarkup "Allegro moderato"
 tempoHerrErmuntre = \tempoMarkup "Allegretto"
+
+%1.11
 tempoWieIst = \tempoMarkup "[Tempo deest]"
 tempoDochErVerlaesst = \tempoMarkup "[Tempo deest]"
 tempoWerDurchschaut = \tempoMarkup "[Tempo deest]"
 tempoGestaerktErhebt = \tempoMarkup "[Tempo deest]"
 tempoGottMitBlicken = \tempoMarkup "Affettuoso"
+
+%1.16
 tempoSieBinden = \tempoMarkup "[Tempo deest]"
 tempoLammDas = \tempoMarkup "[Tempo deest]"
+tempoDochKaiphas = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/fl1.ly"

@@ -946,78 +946,112 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "1.17"
+	% 		title = "Lamm, das von verruchten Zungen"
+	% 	}
+	% 	\tocLabelLong "lammdas" "1.17" "Choral" "Lamm, das von verruchten Zungen"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \LammDasOboeI \LammDasOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\LammDasViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\LammDasViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\LammDasViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \LammDasSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsA
+	% 				\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \LammDasAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \LammDasAltoLyricsA
+	% 				\new Lyrics \lyricsto Alto \LammDasAltoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \LammDasTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsA
+	% 				\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \LammDasBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \LammDasBassoLyricsA
+	% 				\new Lyrics \lyricsto Basso \LammDasBassoLyricsB
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\LammDasOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \LammDasBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "1.17"
-			title = "Lamm, das von verruchten Zungen"
+			genre = "R E C I T A T I V O"
+			number = "1.18"
+			title = "Doch Kaiphas, ergrimmt durch dieſes Schweigen"
 		}
-		\tocLabelLong "lammdas" "1.17" "Choral" "Lamm, das von verruchten Zungen"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #5
+		}
+		\tocLabelLong "dochkaiphas" "1.18" "Recitativo" "Doch Kaiphas, ergrimmt durch dieses Schweigen"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \LammDasOboeI \LammDasOboeII
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\LammDasViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\LammDasViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\LammDasViola
-					}
-				>>
-				\new ChoirStaff \with { \twoStanzaDistance } <<
+				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \LammDasSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \DochKaiphasSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsA
-					\new Lyrics \lyricsto Soprano \LammDasSopranoLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \LammDasAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \LammDasAltoLyricsA
-					\new Lyrics \lyricsto Alto \LammDasAltoLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \LammDasTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsA
-					\new Lyrics \lyricsto Tenore \LammDasTenoreLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \LammDasBassoNotes }
-					}
-					\new Lyrics \lyricsto Basso \LammDasBassoLyricsA
-					\new Lyrics \lyricsto Basso \LammDasBassoLyricsB
+					\new Lyrics \lyricsto Soprano \DochKaiphasSopranoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\LammDasOrgano
+						\DochKaiphasOrgano
 					}
 				>>
-				\new FiguredBass { \LammDasBassFigures }
+				\new FiguredBass { \DochKaiphasBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }
