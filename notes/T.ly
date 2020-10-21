@@ -751,6 +751,50 @@ WieIstTenoreLyrics = \lyricmode {
 	pfet. %28 finis
 }
 
+SieBindenTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoSieBinden
+		r8 b es d es4 r8 es
+		es es es b des des des c
+		c r16 as as8 b c c c c
+		des b e! f f c r4
+		r2 r4 r16 b b c %5
+		d8 d r4 d8 d16 d f8 d
+		b4 r8 b b b b f
+		g4 r16 b es d es8 r16 es es8 b
+		des4 r8 des des des des c
+		as as r f c'4 r8 c %10
+		f8. c16 c8 r16 c c8 c h! c
+		c g r4 r r8 g
+		c8. c16 c8 c c c es es16 d
+		b4 r16 g g a b8 b b c
+		d4 r8 d h8. h16 h8 r16 d %15
+		f8 h, h c c4 r8 b
+		\appoggiatura a g4 r r2\fermata \bar "|." %17 finis
+	}
+}
+
+SieBindenTenoreLyrics = \lyricmode {
+	Sie bin -- den ihn; er
+	reicht der Schaar die Hän -- de wil -- lig
+	dar, in -- deß die klei -- ne Zahl der
+	Freun -- de ſich zer -- ſtreu -- et.
+	Mit Höl -- len -- %5
+	freu -- den freu -- et ſich Ka -- i --
+	phas, ſetzt auf den Richt -- ſtuhl
+	ſich, und rich -- tet dich, der du voll
+	Ruh den Blick zum Him -- mel
+	len -- keſt, nur Gott, die %10
+	E -- wig -- keit, und die Er -- löſ -- ten
+	den -- keſt. Der
+	Hei -- lig -- ſte ſteht in der Sün -- der Ge --
+	richt, hört die er -- kauf -- ten Zeu -- gen
+	nicht, der Läſ -- te -- rung, des %15
+	Spot -- tes Stim -- me nicht, und
+	ſchweigt. %17 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

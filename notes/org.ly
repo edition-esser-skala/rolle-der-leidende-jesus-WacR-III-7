@@ -1533,6 +1533,50 @@ GottMitBlickenBassFigures = \figuremode {
 	r1 %90 finis
 }
 
+SieBindenOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoSieBinden
+		g'1
+		r2 g
+		as1
+		b,2 r4 c
+		f16 f32 g as16 f d! d32 es f16 d b2~ %5
+		b r
+		d1
+		es
+		e
+		f %10
+		as
+		r4 g c,2~
+		c fis
+		g1
+		f!~ %15
+		f2 es
+		r4 d g,2\fermata \bar "|." %17 finis
+	}
+}
+
+SieBindenBassFigures = \figuremode {
+	<6- [_-]>1
+	r2 <6 5- [_-]>
+	<5->1
+	<_->2. <_!>4
+	<_->1 %5
+	r
+	<6->
+	<5->
+	<7- 5->
+	<_-> %10
+	<6>
+	r4 <_!> <_->2
+	r <7->
+	<_->1
+	<4! 2> %15
+	r2 <6>
+	r4 <_+> <[_-]>2 %17 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

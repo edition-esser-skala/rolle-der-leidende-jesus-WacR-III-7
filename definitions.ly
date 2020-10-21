@@ -720,6 +720,7 @@ tempoDochErVerlaesst = \tempoMarkup "[Tempo deest]"
 tempoWerDurchschaut = \tempoMarkup "[Tempo deest]"
 tempoGestaerktErhebt = \tempoMarkup "[Tempo deest]"
 tempoGottMitBlicken = \tempoMarkup "Affettuoso"
+tempoSieBinden = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/fl1.ly"

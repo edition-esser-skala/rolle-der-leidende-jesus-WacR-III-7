@@ -859,57 +859,91 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "1.15"
+	% 		title = "Gott, mit Blicken deiner Gnade"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "gottmitblicken" "1.15" "Aria" "Gott, mit Blicken deiner Gnade"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
+	% 					\partcombine \GottMitBlickenFagottoI \GottMitBlickenFagottoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\GottMitBlickenViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\GottMitBlickenViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\GottMitBlickenViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \GottMitBlickenAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \GottMitBlickenAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\GottMitBlickenOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \GottMitBlickenBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 100 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "1.15"
-			title = "Gott, mit Blicken deiner Gnade"
+			genre = "R E C I T A T I V O"
+			number = "1.16"
+			title = "Sie binden ihn"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "gottmitblicken" "1.15" "Aria" "Gott, mit Blicken deiner Gnade"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #5
+		}
+		\tocLabelLong "siebinden" "1.16" "Recitativo" "Sie binden ihn"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
-						\partcombine \GottMitBlickenFagottoI \GottMitBlickenFagottoII
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\GottMitBlickenViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\GottMitBlickenViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\GottMitBlickenViola
-					}
-				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \GottMitBlickenAltoNotes }
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \SieBindenTenoreNotes }
 					}
-					\new Lyrics \lyricsto Alto \GottMitBlickenAltoLyrics
+					\new Lyrics \lyricsto Tenore \SieBindenTenoreLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\GottMitBlickenOrgano
+						\SieBindenOrgano
 					}
 				>>
-				\new FiguredBass { \GottMitBlickenBassFigures }
+				\new FiguredBass { \SieBindenBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 100 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }
