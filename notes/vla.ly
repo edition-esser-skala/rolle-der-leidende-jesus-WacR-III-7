@@ -702,3 +702,133 @@ LammDasViola = {
 		b1\fermata \bar "|." %25 finis
 	}
 }
+
+MeinIstDieViola = {
+	\relative c' {
+		\clef alto
+		\key d \major \time 4/4 \tempoMeinIstDie
+		d8\fE d16. cis32 d8 fis a4 fis
+		r8 d16. cis32 d8 fis a4 a
+		r8 d,16. cis32 d8 fis a4 a
+		a r r2
+		d,8 a16. d32 e8 a,16. e'32 fis8 a,16. fis'32 g8^[ a,16. g'32] %5
+		fis8 a,16. fis'32 e8 a,16. e'32 d8 a16. d32 cis8 a16. cis32
+		d8 d'16. cis32 d8 a fis4 d
+		a8 a'16. gis32 a8 e cis4 a
+		d8 d16. cis32 d8 a fis4 d
+		g8 g g' g fis fis g g %10
+		fis4 fis8 a d,4 r
+		R1
+		a\p
+		a
+		a %15
+		d,4 r r2
+		d'8\fE a16. d32 e8 a,16. e'32 fis8 a,16. fis'32 g8^[ a,16. g'32]
+		fis8 a,16. fis'32 e8 a,16. e'32 d8 a16. d32 cis8 a16. cis32
+		d4 d8\pE g, a4 a
+		h8 h h' h a a g g %20
+		a a a a a, a a a
+		d4 d'8\f a fis4 d
+		a8 d16. cis32 d8 a d4 r
+		a\p a a r
+		a a a r %25
+		a cis8 a e'4 e
+		a, a a r
+		a cis8 a h a h e,
+		a4 a8 h cis4 cis
+		d d cis cis %30
+		h h a a
+		gis gis' fis fis
+		e4 e8\fE e e4 r
+		r e\pE fis e
+		a, r h r %35
+		cis r d r
+		e8 e e e e e e e
+		e e e e e e e e
+		e e e e e e e e
+		a, a cis cis d d d d %40
+		e e e e e,2
+		a8 a'16.\f gis32 a8 e cis4 a
+		e'8 e16. dis32 e8 h' gis4 gis
+		a8 a16. gis32 a8 e cis4 a
+		d r r2 %45
+		a1\p
+		a2 e'4\f e
+		e r r2
+		e1\pE
+		a,4 r e'\fE e %50
+		e\pE e, r e'
+		a a, r a'
+		gis2 a8 a, cis d
+		e4 e, e r
+		r e' fis8 e fis gis %55
+		a4 a,8 h cis4 cis
+		d d cis cis
+		h a gis r
+		a r h r
+		cis r d r %60
+		cis cis d fis
+		e e e e
+		fis d\f r fis\pE
+		e2 r
+		r8 a16.\fE gis32 a8 e cis4 a %65
+		e'8 e16. dis?32 e8 gis e4 gis
+		a8 a16. gis32 a8 e cis4 a
+		d8 d d d e4 d
+		cis cis8 cis cis4 r
+		R1*2 %71
+		a8(\p e) a( e) a( e) gis( e)
+		a4\f-! e'-! r2
+		R1*4 %77
+		d8\p d d d d d d d
+		c c c c c c c c
+		b b b b b b b b %80
+		a a a a a a a a
+		g g g g g g g g
+		a2 r4 a
+		b1
+		a2 a %85
+		a\fermata r
+		R1
+		a1\p
+		a
+		a %90
+		a2 a4 a
+		d r r2
+		a1
+		a
+		a2. a4 %95
+		d fis8 e d4 d
+		r e2 a,4
+		r h2 a4
+		d r d r
+		d h a g %100
+		a2 a
+		r8 d16.\f cis32 d8 a' fis4 d
+		a8 a'16. gis32 a8 e cis4 cis
+		d8 d16. cis32 d8 a d4 fis
+		g r r2 %105
+		d1\p
+		d4 r8 d'16.\f cis32 d8 a fis d
+		a4 r r2
+		a1\p
+		d4 fis8 e d4 d %110
+		r e e2
+		r4 d h a
+		d8 d d d cis cis cis cis
+		h h h h a a a a
+		g g g g g g g g %115
+		a a a a a a a a
+		h4 h\fE h d
+		fis2\pE r
+		R1
+		a,8\fE d16. cis32 d8 fis a4 fis %120
+		r8 d16. cis32 d8 fis a4 a
+		r8 d,16. cis32 d8 fis a4 a
+		r8 d16. cis32 d8 a fis4 gis
+		a8 a a a a, a a a
+		d8 d'16. cis32 d8 a fis4 gis %125
+		a8 a a a a, a a a
+		d4 d8 d d4 r\fermata \bar "|." %127 finis
+	}
+}

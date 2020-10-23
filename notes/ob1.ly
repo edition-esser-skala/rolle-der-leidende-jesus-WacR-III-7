@@ -297,3 +297,55 @@ LammDasOboeI = {
 		g1\fermata \bar "|." %25 finis
 	}
 }
+
+MeinIstDieOboeI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoMeinIstDie
+		d'2\fE r
+		fis r
+		a a8 \once \slurDashed g16( fis) \appoggiatura a g8 fis16( e)
+		\pao d4 e fis g
+		a g fis e %5
+		\pao d e fis g
+		fis fis2 fis4
+		e e2 e4
+		fis a2 c,4
+		h h'16 g fis e d4 e\trill %10
+		\pao d r r2
+		R1*5 %16
+		r4 g\fE fis e
+		\pao d e fis g
+		fis r r2
+		R1*2 %21
+		r4 fis2\fE fis4~
+		fis fis fis-! r
+		R1*18 %41
+		r4 a2\fE a4
+		gis d2 d4
+		cis e2 e4
+		fis r r2 %45
+		R1*19 %64
+		r4 a2\fE a4 %65
+		gis d2 d4
+		cis g'2 g4
+		fis a16[ fis e d] cis4 h\trill
+		\pao a r r2
+		R1*16 %85
+		R1\fermataMarkup
+		R1*15 %101
+		r4 fis'2\fE fis4
+		e e2 g4
+		fis \partcombineChordsOnce a2 c,4
+		h r r2 %105
+		R1*14 %119
+		d2\f r %120
+		fis r
+		a r4 a8 g
+		fis4 fis2 fis4
+		fis g16( fis e d) \pao a4 e'\trill
+		fis fis2 fis4 %125
+		fis2 e\trill
+		\pao d r\fermata \bar "|." %127 finis
+	}
+}

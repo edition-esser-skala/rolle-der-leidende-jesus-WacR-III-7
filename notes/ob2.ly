@@ -297,3 +297,55 @@ LammDasOboeII = {
 		g1\fermata \bar "|." %25 finis
 	}
 }
+
+MeinIstDieOboeII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoMeinIstDie
+		fis2\fE r
+		d' r
+		fis fis8 e16( d) \appoggiatura fis e8 d16( cis)
+		d4 cis d e
+		fis e d cis %5
+		d cis d e
+		d d2 d4
+		cis cis2 cis4
+		d c2 a4
+		g d'2 cis4\trill %10
+		d r r2
+		R1*5 %16
+		r4 cis\fE d cis
+		d cis d e
+		d r r2
+		R1*2 %21
+		r4 d2\fE d4~
+		d d d-\parenthesize-! r
+		R1*18 %41
+		r4 cis2\fE cis4
+		h h2 h4
+		a cis2 cis4
+		d r r2 %45
+		R1*19 %64
+		r4 cis2\fE cis4 %65
+		h h2 h4
+		a cis e cis
+		d d8 cis16 h a4 gis\trill
+		a r r2
+		R1*16 %85
+		R1\fermataMarkup
+		R1*15 %101
+		r4 d2\fE d4
+		cis cis2 e4
+		d fis,2 a4
+		g r r2 %105
+		R1*14 %119
+		fis2\f r %120
+		d' r
+		fis r4 fis8 e
+		d4 d2 d4
+		d2 a4 cis\trill
+		d d2 d4 %125
+		d2 cis\trill
+		d r\fermata \bar "|." %127 finis
+	}
+}

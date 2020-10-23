@@ -1020,38 +1020,102 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "1.18"
+	% 		title = "Doch Kaiphas, ergrimmt durch dieſes Schweigen"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #5
+	% 	}
+	% 	\tocLabelLong "dochkaiphas" "1.18" "Recitativo" "Doch Kaiphas, ergrimmt durch dieses Schweigen"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \DochKaiphasSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \DochKaiphasSopranoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\DochKaiphasOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \DochKaiphasBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "1.18"
-			title = "Doch Kaiphas, ergrimmt durch dieſes Schweigen"
+			genre = "A R I A"
+			number = "1.19"
+			title = "Mein iſt die Unſterblichkeit"
 		}
 		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #5
+			system-system-spacing.basic-distance = #17
+			system-system-spacing.minimum-distance = #17
+			systems-per-page = #2
 		}
-		\tocLabelLong "dochkaiphas" "1.18" "Recitativo" "Doch Kaiphas, ergrimmt durch dieses Schweigen"
+		% \tocLabelLong "meinistdie" "1.19" "Aria" "Mein ist die Unsterblichkeit"
 		\score {
 			<<
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+						\partcombine \MeinIstDieOboeI \MeinIstDieOboeII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "cor (D)" "1, 2" }
+						\set Staff.soloText = \markup \medium \remark "cor 1"
+						\partcombine \MeinIstDieCornoI \MeinIstDieCornoII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\MeinIstDieViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\MeinIstDieViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\MeinIstDieViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \DochKaiphasSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \MeinIstDieSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \DochKaiphasSopranoLyrics
+					\new Lyrics \lyricsto Soprano \MeinIstDieSopranoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\DochKaiphasOrgano
+						\MeinIstDieOrgano
 					}
 				>>
-				\new FiguredBass { \DochKaiphasBassFigures }
+				\new FiguredBass { \MeinIstDieBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 70 }
+			\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+			% \midi { \tempo 4 = 120 }
 		}
 	}
 }

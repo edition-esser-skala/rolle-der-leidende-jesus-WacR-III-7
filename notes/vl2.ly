@@ -711,3 +711,137 @@ LammDasViolinoII = {
 		g1\fermata \bar "|." %25 finis
 	}
 }
+
+MeinIstDieViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoMeinIstDie
+		fis2~\fE fis8 d'16. cis32 d8 a
+		fis4 d'~ d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 e16( d) \appoggiatura fis e8 d16( cis)
+		d8 a16. d32 cis8 a16. cis32 d8 a16. d32 e8 a,16. e'32
+		fis8 a4 a a a8~ %5
+		a a4 a a a8
+		fis4 a,16 fis' a, fis' a, fis' a, fis' a, fis' a, fis'
+		e4-! a,16 e' a, e' a, e' a, e' a, e' a, e'
+		d4-\parenthesize-! d,16 c' d, c' d, c' d, c' d, c' d, c'
+		h4 h'16 g fis e d4 cis\trill %10
+		d8 d16. cis32 d8 a <d, a' fis'>4 r
+		R1
+		fis2~\p fis8 d'16. cis32 d8 a
+		d,4 d'~ d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 fis16. e32 fis8 a, %15
+		d4 cis d8 a16. d32 e8 a,16. e'32
+		fis8\fE a4 a a a8~
+		a a4 a a g8
+		fis4-! r8 h,\p a g fis e
+		d4 d' d d8( h) %20
+		fis fis fis fis g g g g
+		fis4 a16\f fis' a, fis' a, fis' a, fis' a, fis' a, fis'
+		a, fis' a, fis' a, fis' a, fis' <fis a, d,>4 r
+		cis8.([\p d16) cis8.( d16)] cis8( fis) e( d)
+		cis8.([ d16) cis8.( d16)] cis8( fis) e( d) %25
+		cis4. d8 cis4 h\trill
+		a a16( h cis d) cis8( fis) e( d)
+		cis4 a2 gis4
+		a r a a
+		a1 %30
+		fis~
+		fis4 e a2
+		r8 e'16\f dis e8 h <gis h e>4 r
+		a\p e16( a) cis( a) h2~
+		h4 a16( cis) e( cis) d2~ %35
+		d4 cis16( e) a( e) fis2
+		e4 a, gis fis
+		gis8 h \once \slurDashed d!16( cis h a) h4 cis16( h a gis)
+		a4 d16( cis h a) h4 cis16( h a gis)
+		a8 a a a a a h h %40
+		a2 gis8 gis gis gis
+		a4 e16\f cis' e, cis' e, cis' e, cis' e, cis' e, cis'
+		h4 e,16 d' e, d' e, d' e, d'e, d' e, d'
+		cis4 a16 e' a, e' a, e' a, e' a, e' a, e'
+		<fis a, d,>4 r r2 %45
+		fis2\p d
+		d4( cis) r8 a'16.\f gis32 a8 a,
+		gis4 r r2
+		h1\p
+		h4( a) r8 a'16.\f gis32 a8 a, %50
+		gis\p r h8.( cis16) h8( d) d( h)
+		cis8.([ d16) cis8.( d16)] \slurDashed cis8( e) e( cis) \slurSolid
+		d4 fis16( d8.) d4( cis)\trill
+		h \once \slurDashed gis8.( a16) gis8( a) a( h)
+		h( d) d( cis) cis4 h\trill %55
+		a2 r4 a
+		a1
+		fis2 h~
+		h4 a16( cis) e( cis) d2~
+		d4 cis16( e) a( e) fis2 %60
+		e4 e a, h
+		a2 gis\trill
+		a4 <d, a' fis'>\f r h'\p
+		a2 gis4 r
+		r e16\f cis' e, cis' e, cis' e, cis' e, cis' e, cis' %65
+		h4 e,16 d' e, d' e, d' e, d' e, d' e, d'
+		cis4 a16 e' a, e' a, e' a, e' a, e' a, e'
+		d4 d8 cis16 h a4 gis\trill
+		a8 a16. gis32 a8 e <cis e a>4 r
+		R1 %70
+		a'8(\p e) a( e) a( e) a( e)
+		c'( a) c( a) c4 h
+		a-!\f gis-! r2
+		a8\p a a a a a a a
+		a a a a gis gis gis gis %75
+		g g g g g g g g
+		g g g g f f f f
+		f f f f f f f f
+		e e e e e e e e
+		d d d d d d d d %80
+		c c c c c' c c c
+		b b b b b( b) g( g)
+		f4( e) r a
+		gis1
+		a4 cis, cis8( d) f( d) %85
+		a2\trill\fermata r
+		R1
+		fis'!2~\p fis8 d'16. cis32 d8 a
+		fis4 d'~ d8 d16. cis32 d8 a
+		fis4 fis'~ fis8( d) e( cis) %90
+		d4 r r2
+		R1
+		fis,2~ fis8 d'16. cis32 d8 a
+		fis4 d'~ d8 d16. cis32 d8 a
+		fis4 fis'~ \slurDashed fis8( d) e( cis) \slurSolid %95
+		d4 fis,8 g a2~
+		a4 g16( h) d( h) cis2~
+		cis4 h16( d) fis( d) e2
+		d4 fis16( e d cis) d4 fis16( e d cis)
+		d4 d2 e4 %100
+		a,2 g8 g g g
+		fis4 a16\f fis' a, fis' a, fis' a, fis' a, fis' a, fis'
+		e4 a,16 e' a, e' a, e' a, e'a, e' a, e'
+		d4 d,16 c' d, c' d, c' d, c' d, c' d, c'
+		h4 r r2 %105
+		g1\p
+		g4 fis r8 a\f a d
+		cis4 r r2
+		e1\p
+		d4 fis,8 g a2~ %110
+		a4 g16( h) d( h) cis2~
+		cis4 h16( d) fis( d) e2
+		d8 a a a a a a a
+		fis fis fis fis fis fis fis fis
+		g4 g'( fis) e %115
+		d2 cis
+		d4 d\f d d
+		d2\p r
+		R1
+		fis,2~\f fis8 d'16. cis32 d8 a %120
+		fis4 d'~ d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 fis16. e32 fis8 e
+		d4 d16 fis d fis d fis d fis d fis d fis
+		d4 g16 fis e d a4 cis\trill
+		d4 d16 fis d fis d fis d fis d fis d fis %125
+		a,4 \appoggiatura g'16 fis8 e16( d) cis2\trill
+		d8 d16. cis32 d8 a <d, a' fis'>4 r\fermata \bar "|." %127 finis
+	}
+}

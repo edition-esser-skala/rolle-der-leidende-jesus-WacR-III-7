@@ -713,6 +713,140 @@ LammDasViolinoI = {
 	}
 }
 
+MeinIstDieViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoMeinIstDie
+		d'2~\fE d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 fis16. e32 fis8 d
+		a4 a'~ a8 g16( fis) \appoggiatura a g8 fis16( e)
+		d8 a16. d32 e8 a,16. e'32 fis8 a,16. fis'32 g8 a,16. g'32
+		a8 a4 a a a8~ %5
+		a a4 a a a8
+		fis4 fis16 d' fis, d' fis, d' fis, d' fis, d' fis, d'
+		cis4-! a,16 g' a, g' a, g' a, g' a, g' a, g'
+		fis4-! c16 a' c, a' c, a' c, a' c, a'c, a'
+		h,4 h'16 g fis e d4 e\trill %10
+		d8 d16. cis32 d8 a <d, a' fis'>4 r
+		R1
+		d'2~\p d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 fis16. e32 fis8 d
+		a4 a'~ a8 a16. g32 a8 fis %15
+		d a e' a, fis' a,16. fis'32 g8 a,16. g'32
+		a8\f a4 a a a8~
+		a a4 a a g8
+		fis4-! a8\p g fis e d cis
+		d4 g fis e %20
+		d8 d d d cis cis cis cis
+		d4 fis16\f d' fis, d' fis, d' fis, d' fis, d' fis, d'
+		fis, d' fis, d' fis, d' fis, d' <d fis, d,>4 r
+		e,8.([\p fis16) e8.( fis16)] e8( a) gis( fis)
+		e8.([ fis16) e8.( fis16)] e8( a) gis( fis) %25
+		e4. fis8 e4 d\trill
+		cis cis16( d e fis) e8( a) gis( fis)
+		e4. fis8 e4 d\trill
+		cis cis8 d e4 e
+		fis2 e %30
+		d cis
+		h a
+		r8 e'16\f dis e8 h <gis h e>4 r
+		r a2\p gis16( h) d( h)
+		cis2. h16( d) fis( d) %35
+		e2. d16( fis) h( a)
+		gis4 fis e dis
+		e fis16( e d cis) d4 e16( d cis h)
+		cis4 fis16( e d cis) d4 e16( d cis h)
+		cis8 cis e e fis fis d d %40
+		cis2 h8 h h h
+		a4 cis16\f a' cis, a' cis, a' cis, a' cis, a' cis, a'
+		gis4 d16 h' d, h' d, h' d, h' d, h' d, h'
+		cis,4 a16 g' a, g' a, g' a, g' a, g' a, g'
+		<fis a, d,>4 r r2 %45
+		d'\p fis,
+		fis4( e) r8 a16.\f gis32 a8 cis,
+		h4 r r2
+		gis'1\p
+		a2 r8 a16.\f gis32 a8 cis, %50
+		h\p r gis'8.([ a16)] gis8( h) h( gis)
+		a8.([ h16) a8.( h16)] a8( cis) cis( a)
+		h4 d16( h8.) h4( a)\trill
+		gis h,8.( cis16) h8( cis) cis( d)
+		d( fis) fis( e) e4 d\trill %55
+		cis cis8 d e4 a,
+		fis'2 e
+		e8( cis) d4 r2
+		cis2. h16( d) fis( d)
+		e2. d16( fis) h( gis) %60
+		a4 a gis16( fis8.) e16( d8.)
+		cis2 h\trill
+		a4 <d, a' fis'>\f r d'\p
+		cis2 h4 r
+		r cis16\f a' cis, a' cis, a' cis, a' cis, a' cis, a' %65
+		gis4 d16 h' d, h' d, h' d, h' d, h' d, h'
+		a4 a,16 g' a, g' a, g' a, g' a, g' a, g'
+		fis4 a16 fis e d cis4 h\trill
+		a8 a16. gis32 a8 e <cis e a>4 r
+		r2 a'8(\p e) a( e) %70
+		c'( a) c( a) c( a) c( a)
+		e'( c) e( c) e4 d
+		c-!\f h-! r2
+		c8\p c c c c c c c
+		c c c c h h h h %75
+		b b b b b b b b
+		b b b b a a a a
+		b b b b b b b b
+		b b a a a a a a
+		a a a a g g g g %80
+		g g f f f f f f
+		g g g g e' e e e
+		d4( cis!) cis2
+		d1
+		cis8( a) a( e) e( f) f( d) %85
+		a2\trill\fermata r
+		R1
+		d'2~\p d8 d16. cis32 d8 a
+		fis!4 fis'~ fis8 fis16. e32 fis8 d
+		a4 a'~ a8( fis) g( e) %90
+		fis4 r r2
+		R1
+		d2~ d8 d16. cis32 d8 a
+		fis4 fis'~ fis8 fis16. e32 fis8 d
+		a4 a'~ a8( fis) g( e) %95
+		fis8. e16 d4 r a
+		h2. a16( cis) e( cis)
+		d2. cis16( e) g( e)
+		fis4 a16( g fis e) fis4 a16( g fis e)
+		fis4 g( fis) e %100
+		a,2 cis8 cis cis cis
+		d4 fis16\f d' fis, d' fis, d' fis, d' fis, d' fis, d'
+		cis4 a,16 g' a, g' a, g' a, g' a, g' a, g'
+		fis4 c16 a' c, a' c, a' c, a' c, a' c, a'
+		h,4 r r2 %105
+		h1\p
+		h4 a r8 a\f d fis
+		e4 r r2
+		cis'1\p
+		d4 d,2 a4 %110
+		h2. a16( cis) e( cis)
+		d2. cis16( e) g( e)
+		fis8 fis fis fis e e e e
+		d d d d cis cis cis cis
+		h4 h'( a) g %115
+		fis2 e
+		d4 gis8.(\f a16) gis8.([ a16) gis8.( a16)]
+		a,2\p r
+		R1
+		d2~\f d8 d16. cis32 d8 a %120
+		fis4 fis'~ fis8 fis16. e32 fis8 d
+		a4 a'~ a8 a16. g32 a8 g
+		fis4 fis16 d' fis, d' fis, d' fis, d' fis, d' fis, d'
+		fis,4 g16 fis e d a4 e'\trill
+		fis fis16 d' fis, d' fis, d' fis, d' fis, d' fis, d' %125
+		a,4 \appoggiatura g'16 fis8 e16( d) e2\trill
+		d8 d16. cis32 d8 a <d, a' fis'>4 r\fermata \bar "|." %127 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

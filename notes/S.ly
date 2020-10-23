@@ -631,6 +631,226 @@ DochKaiphasSopranoLyrics = \lyricmode {
 	ge -- hen. %17 finis
 }
 
+MeinIstDieSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoMeinIstDie
+		R1*11 %11
+		d'4 d d d
+		d1~
+		d~
+		d~ %15
+		d8.[ fis16 e8. g16] fis4 g4\trill
+		a2 r
+		R1
+		r4 a8 g fis e d cis
+		d4 g8 g fis4 e %20
+		a,2 e'\trillE
+		d r
+		R1
+		e8.([ fis16) e8.( fis16)] e8([ a)] gis([ fis)]
+		e8.([ fis16) e8.( fis16)] e8([ a)] gis([ fis)] %25
+		e4. a16([ fis)] e4( d)\trill
+		cis r e8([ a)] gis([ fis)]
+		e4. fis8 e4( d)\trill
+		cis r e a,
+		fis' \appoggiatura gis?16 fis[ e fis gis] a4 a16[ gis fis e] %30
+		d4 \appoggiatura e16 d[ cis d e] fis4 fis16[ e d cis]
+		h4 \appoggiatura cis16 h[ a h cis] d4 d16[( cis h a])
+		\appoggiatura a4 gis2 r4 e'8 gis,
+		a2 h
+		cis d %35
+		e fis
+		gis4 a16[ fis e dis] e4 a16[ fis e dis]
+		e4 fis16[ e d cis] d4 e16[ d cis h]
+		cis4 fis16[ e d cis] d4 e16[ d cis h]
+		cis4 a' fis d %40
+		cis2( h)\trill
+		a4 r r2
+		R1*2
+		fis'4 fis fis fis %45
+		fis4.( gis?8 a4) fis
+		\appoggiatura fis e2 r
+		d4 d d d
+		d4.( e8 fis4) \appoggiatura e8 d4
+		\appoggiatura d cis2 r %50
+		h8.([ cis16) h8.( cis16)] h8([ d)] d([ h)]
+		cis8.([ d16) cis8.( d16)] cis8([ e)] e([ cis)]
+		d16([ h8.)] fis'16([ d8.)] d4( cis)\trill
+		h2 h8([ cis)] cis([ d)]
+		d([ fis)] fis([ e)] e4( d)\trill %55
+		cis2 e4 a,
+		fis' \appoggiatura gis?16 fis[ e fis gis] a4 a16([ gis fis e)]
+		\appoggiatura e4 d2 e,4 d'
+		cis2 d
+		e fis %60
+		e4 a gis16([ fis8.)] e16([ d8.)]
+		cis2( h)\trill
+		a4 fis' e16([ d8.)] cis16([ h8.)]
+		e,2( h')\trill
+		a r %65
+		R1*4
+		a4 a a a %70
+		c2 a
+		e'2. e4
+		c h r2
+		f'2 e
+		\appoggiatura e4 dis2 e %75
+		e( g4) \appoggiatura f8 e4
+		\appoggiatura d4 cis!2 d
+		f8([ e)] d([ c)] b4 b
+		b a r2
+		d2( b4) g %80
+		g f f'2~
+		f4 e g \appoggiatura f8 e4
+		\appoggiatura d cis!2 a'4 cis,
+		d2 gis,
+		a r %85
+		R1\fermataMarkup
+		d4 d d d
+		d1~
+		d~
+		d4 fis! a g %90
+		fis8.([ e16)] d4 r2
+		d4 d d d
+		d2 d
+		d d
+		r4 fis a g %95
+		fis8.([ e16)] d4 r d8 a
+		h2 cis
+		d e
+		fis4 a16[ g fis e] fis4 a16[ g fis e]
+		fis4 g( fis) e %100
+		a,2 e'\trillE
+		d r
+		R1*2
+		h4 g h d %105
+		g4. g8 g4 h,
+		h a r2
+		a4 a cis e
+		g4. g8 g4 g
+		fis8([ e)] d4 r d8 a %110
+		h2 cis
+		d e
+		fis4 \appoggiatura g16 fis[ e fis g] a4 a16[ g fis e]
+		d4 \appoggiatura e16 d[ cis d e] fis4 fis16[ e d cis]
+		h4 g'( fis) e %115
+		d2 e
+		d r4 d
+		d1
+		e\trill
+		d2 r %120
+		R1*6 %126
+		R1\fermataMarkup \bar "|." %127 finis
+	}
+}
+
+MeinIstDieSopranoLyrics = \lyricmode {
+	Mein iſt die Un -- %12
+	ſterb --
+
+	_ lich -- %16
+	keit,
+
+	mein iſt die Un -- ſterb -- lich --
+	keit, die Un -- ſterb -- lich -- %20
+	keit iſt
+	mein.
+
+	Jauch -- _ ze
+	dei -- _ nem %25
+	Le -- ben, See --
+	le, dei -- nem
+	Le -- ben, See --
+	le, Gott wird
+	E -- _ _ _ %30
+	_ _ _ _
+	_ _ _ wig --
+	keit dir zur
+	Dau -- _
+	_ _ %35
+	_ _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _
+	er, zur Dau -- er %40
+	ge --
+	ben.
+
+	Mein iſt die Un -- %45
+	ſterb -- lich --
+	keit,
+	mein iſt die Un --
+	ſterb -- lich --
+	keit. %50
+	Jauch -- _ ze
+	dei -- _ nem
+	Le -- ben, See --
+	le, dei -- nem
+	Le -- ben, See -- %55
+	le, Gott wird
+	E -- _ _ wig --
+	keit dir zur
+	Dau -- _
+	_ er, %60
+	dir zur Dau -- er
+	ge --
+	ben, zur Dau -- er
+	ge --
+	ben. %65
+
+	Wenn euch wird das %70
+	na -- he
+	Grab er --
+	ſchre -- cken,
+	To -- des --
+	blä -- ße, %75
+	To -- des --
+	blä -- ße
+	eu -- re Wan -- gen
+	de -- cken,
+	wenn __ einſt %80
+	die -- ſe, die --
+	ſe Hüt -- te
+	ſinkt, die -- ſe
+	Hüt -- te
+	ſinkt, %85
+
+	ſchaut nach je -- nen
+	Wol --
+
+	ken dann, ihr %90
+	From -- men,
+	auf den -- ſel -- ben
+	wird der
+	Rich -- ter,
+	der Rich -- ter %95
+	kom -- men, wenn er
+	euch ins
+	Le -- _
+	_ _ _ _
+	ben, euch __ ins %100
+	Le -- ben
+	winkt,
+
+	ſchaut nach je -- nen %105
+	Wol -- ken dann, ihr
+	From -- men,
+	auf den -- ſel -- ben
+	wird der Rich -- ter
+	kom -- men, wenn er %110
+	euch ins
+	Le -- _
+	_ _ _ _
+	_ _ _ _
+	ben, euch __ ins %115
+	Le -- ben
+	winkt, ins
+	Le --
+	ben
+	winkt. %120 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
