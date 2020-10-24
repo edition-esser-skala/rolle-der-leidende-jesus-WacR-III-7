@@ -985,6 +985,60 @@ ChristusHatDemBassoLyrics = \lyricmode {
 	bracht. %64 finis
 }
 
+WennDortBassoNotes = {
+	\relative c {
+		\clef bass
+		\key h \minor \time 4/4 \autoBeamOff \tempoWennDort
+		r2 h'
+		g e
+		fis fis
+		d cis
+		h h' %5
+		ais( h)
+		fis\fermata fis
+		h g
+		fis h
+		g fis %10
+		cis d
+		a'1
+		d,2\fermata gis
+		ais h
+		fis a4( gis) %15
+		fis2 e
+		dis dis
+		e1
+		fis2\fermata dis
+		e h' %20
+		fis1
+		h,\fermata \bar "|." %22 finis
+	}
+}
+
+WennDortBassoLyrics = \lyricmode {
+	Wenn
+	dort, Herr
+	Je -- ſu,
+	wird vor
+	dei -- nem %5
+	Thro --
+	ne auf
+	mei -- nem
+	Haup -- te
+	ſtehn die %10
+	Eh -- ren --
+	kro --
+	ne, da
+	will ich
+	dir, wenn %15
+	al -- les
+	wird wohl --
+	klin --
+	gen, Lob
+	und Dank %20
+	ſin --
+	gen. %22 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

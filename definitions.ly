@@ -732,6 +732,9 @@ tempoDochKaiphas = \tempoMarkup "[Tempo deest]"
 tempoMeinIstDie = \tempoMarkup "Allegro moderato"
 tempoChristusHatDem = \tempoMarkup "Allegro moderato"
 
+%1.21
+tempoWennDort = \tempoMarkup "[Tempo deest]"
+
 
 \include "notes/fl1.ly"
 \include "notes/fl2.ly"

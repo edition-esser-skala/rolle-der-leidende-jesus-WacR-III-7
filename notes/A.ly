@@ -1074,6 +1074,60 @@ ChristusHatDemAltoLyrics = \lyricmode {
 	bracht. %64 finis
 }
 
+WennDortAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key h \minor \time 4/4 \autoBeamOff \tempoWennDort
+		r2 fis
+		fis g
+		fis fis
+		fis ais
+		h fis %5
+		fis1
+		fis2\fermata fis
+		fis a!
+		a fis
+		a a %10
+		a a
+		a( g)
+		fis\fermata h
+		fis fis
+		fis fis %15
+		fis fis
+		fis fis
+		e( g)
+		fis\fermata a!
+		g fis %20
+		fis( e)
+		d1\fermata \bar "|." %22 finis
+	}
+}
+
+WennDortAltoLyrics = \lyricmode {
+	Wenn
+	dort, Herr
+	Je -- ſu,
+	wird vor
+	dei -- nem %5
+	Thro --
+	ne auf
+	mei -- nem
+	Haup -- te
+	ſtehn die %10
+	Eh -- ren --
+	kro --
+	ne, da
+	will ich
+	dir, wenn %15
+	al -- les
+	wird wohl --
+	klin --
+	gen, Lob
+	und Dank %20
+	ſin --
+	gen. %22 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

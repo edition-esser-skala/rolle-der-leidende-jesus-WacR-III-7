@@ -2078,6 +2078,60 @@ ChristusHatDemBassFigures = \figuremode {
 	r %65 finis
 }
 
+WennDortOrgano = {
+	\relative c {
+		\clef bass
+		\key h \minor \time 4/4 \tempoWennDort
+		r2 h'
+		g e
+		fis fis
+		d cis
+		h h' %5
+		ais h
+		fis\fermata fis
+		h g
+		fis h
+		g fis %10
+		cis d
+		a' a,
+		d\fermata gis
+		ais h
+		fis a4 gis %15
+		fis2 e
+		dis dis
+		e1
+		fis2\fermata dis
+		e h' %20
+		fis fis,
+		h1\fermata \bar "|." %22 finis
+	}
+}
+
+WennDortBassFigures = \figuremode {
+	r1
+	<[7]>2 <6>
+	<[_+]>1
+	\bo <[6]>2 \bc <[6\\]>
+	r1 %5
+	<[6 5]>
+	<[_+]>
+	r2 <[2!]>
+	<[6]>1
+	<4 2>2 <6> %10
+	<[6 5]>1
+	\bo <[6 4]>2 \bc <[5 3]>
+	r <6 5>
+	q <3>
+	\bo <[_!]> \bc <[6]> %15
+	r <\t>
+	<6> <5>
+	<4> <3>
+	<[_+]> <6 5!>
+	r1 %20
+	<6 4>2 <5 _+>
+	r1 %22 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

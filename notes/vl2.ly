@@ -913,3 +913,32 @@ ChristusHatDemViolinoII = {
 		d2 r\fermata \bar "|." %65 finis
 	}
 }
+
+WennDortViolinoII = {
+	\relative c' {
+		\clef treble
+		\key h \minor \time 4/4 \tempoWennDort
+		r2 fis
+		fis g
+		fis fis
+		fis ais
+		h fis %5
+		fis1
+		fis2\fermata fis
+		fis a!
+		a fis
+		a a %10
+		a a
+		a g
+		fis\fermata h
+		fis fis
+		fis fis %15
+		fis fis
+		fis fis
+		e g
+		fis\fermata a!
+		g fis %20
+		fis e
+		d1\fermata \bar "|." %22 finis
+	}
+}

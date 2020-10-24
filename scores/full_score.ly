@@ -1118,34 +1118,104 @@
 	% 		% \midi { \tempo 4 = 120 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C O R O"
+	% 		number = "1.20"
+	% 		title = "Chriſtus hat dem Tode die Macht genommen"
+	% 	}
+	% 	\tocLabelLong "christushatdem" "1.20" "Coro" "Christus hat dem Tode die Macht genommen"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "ob"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\ChristusHatDemOboeI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\ChristusHatDemOboeII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "cor (D)" "1, 2" }
+	% 					\set Staff.soloText = \markup \medium \remark "cor 1"
+	% 					% \transpose c d
+	% 					\partcombine \ChristusHatDemCornoI \ChristusHatDemCornoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\ChristusHatDemViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\ChristusHatDemViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\ChristusHatDemViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \ChristusHatDemSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \ChristusHatDemSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \ChristusHatDemAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \ChristusHatDemAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \ChristusHatDemTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \ChristusHatDemTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \ChristusHatDemBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \ChristusHatDemBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\ChristusHatDemOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \ChristusHatDemBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 120 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C O R O"
-			number = "1.20"
-			title = "Chriſtus hat dem Tode die Macht genommen"
+			genre = "C H O R A L"
+			number = "1.21"
+			title = "Wenn dort, Herr Jeſu, wird vor deinem Throne"
 		}
-		\tocLabelLong "christushatdem" "1.20" "Coro" "Christus hat dem Tode die Macht genommen"
+		\tocLabelLong "wenndort" "1.21" "Choral" "Wenn dort, Herr Jesu, wird vor deinem Throne"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "ob"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\ChristusHatDemOboeI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\ChristusHatDemOboeII
-						}
-					>>
-				>>
-				\new StaffGroup <<
 					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "cor (D)" "1, 2" }
-						\set Staff.soloText = \markup \medium \remark "cor 1"
-						% \transpose c d
-						\partcombine \ChristusHatDemCornoI \ChristusHatDemCornoII
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \WennDortOboeI \WennDortOboeII
 					>>
 				>>
 				\new StaffGroup <<
@@ -1153,54 +1223,54 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\ChristusHatDemViolinoI
+							\WennDortViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\ChristusHatDemViolinoII
+							\WennDortViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\ChristusHatDemViola
+						\WennDortViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \ChristusHatDemSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \WennDortSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \ChristusHatDemSopranoLyrics
+					\new Lyrics \lyricsto Soprano \WennDortSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \ChristusHatDemAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \WennDortAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \ChristusHatDemAltoLyrics
+					\new Lyrics \lyricsto Alto \WennDortAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \ChristusHatDemTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \WennDortTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \ChristusHatDemTenoreLyrics
+					\new Lyrics \lyricsto Tenore \WennDortTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \ChristusHatDemBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \WennDortBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \ChristusHatDemBassoLyrics
+					\new Lyrics \lyricsto Basso \WennDortBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\ChristusHatDemOrgano
+						\WennDortOrgano
 					}
 				>>
-				\new FiguredBass { \ChristusHatDemBassFigures }
+				\new FiguredBass { \WennDortBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 120 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

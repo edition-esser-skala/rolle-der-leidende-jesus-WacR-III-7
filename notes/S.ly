@@ -982,6 +982,60 @@ ChristusHatDemSopranoLyrics = \lyricmode {
 	bracht. %64 finis
 }
 
+WennDortSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key h \minor \time 4/4 \autoBeamOff \tempoWennDort
+		r2 fis
+		h cis
+		ais fis
+		h cis
+		d h %5
+		e( d)
+		cis\fermata cis
+		d e
+		fis d
+		e fis %10
+		g fis
+		\appoggiatura fis e1
+		d2\fermata d
+		cis h
+		a! fis %15
+		a a
+		h a
+		a( g)
+		fis\fermata fis'
+		e d %20
+		d( cis)
+		h1\fermata \bar "|." %22 finis
+	}
+}
+
+WennDortSopranoLyrics = \lyricmode {
+	Wenn
+	dort, Herr
+	Je -- ſu,
+	wird vor
+	dei -- nem %5
+	Thro --
+	ne auf
+	mei -- nem
+	Haup -- te
+	ſtehn die %10
+	Eh -- ren --
+	kro --
+	ne, da
+	will ich
+	dir, wenn %15
+	al -- les
+	wird wohl --
+	klin --
+	gen, Lob
+	und Dank %20
+	ſin --
+	gen. %22 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

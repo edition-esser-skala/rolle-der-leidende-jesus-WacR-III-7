@@ -900,3 +900,32 @@ ChristusHatDemViola = {
 		d2 r\fermata \bar "|." %65 finis
 	}
 }
+
+WennDortViola = {
+	\relative c' {
+		\clef alto
+		\key h \minor \time 4/4 \tempoWennDort
+		r2 d
+		d e
+		cis ais
+		h e
+		fis d %5
+		cis h
+		ais\fermata ais
+		h cis
+		d d
+		cis d %10
+		e d
+		d cis
+		d\fermata e
+		e d
+		cis cis %15
+		cis cis
+		h h
+		h1
+		ais2\fermata h
+		h h %20
+		h ais
+		fis1\fermata \bar "|." %22 finis
+	}
+}

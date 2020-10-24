@@ -994,6 +994,60 @@ ChristusHatDemTenoreLyrics = \lyricmode {
 	bracht. %64 finis
 }
 
+WennDortTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key h \minor \time 4/4 \autoBeamOff \tempoWennDort
+		r2 d
+		d e
+		cis ais
+		h e
+		fis d %5
+		cis( h)
+		ais\fermata ais
+		h cis
+		d d
+		cis d %10
+		e d
+		d( cis)
+		d\fermata e
+		e d
+		cis cis %15
+		cis cis
+		h h
+		h1
+		ais2\fermata h
+		h h %20
+		h( ais)
+		fis1\fermata \bar "|." %22 finis
+	}
+}
+
+WennDortTenoreLyrics = \lyricmode {
+	Wenn
+	dort, Herr
+	Je -- ſu,
+	wird vor
+	dei -- nem %5
+	Thro --
+	ne auf
+	mei -- nem
+	Haup -- te
+	ſtehn die %10
+	Eh -- ren --
+	kro --
+	ne, da
+	will ich
+	dir, wenn %15
+	al -- les
+	wird wohl --
+	klin --
+	gen, Lob
+	und Dank %20
+	ſin --
+	gen. %22 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

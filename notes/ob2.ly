@@ -421,3 +421,32 @@ ChristusHatDemOboeII = {
 		R1\fermataMarkup \bar "|." %65 finis
 	}
 }
+
+WennDortOboeII = {
+	\relative c' {
+		\clef treble
+		\key h \minor \time 4/4 \tempoWennDort
+		r2 fis
+		h cis
+		ais fis
+		h cis
+		d h %5
+		e d
+		cis\fermata cis
+		d e
+		fis d
+		e fis %10
+		g fis
+		\appoggiatura fis e1
+		d2\fermata d
+		cis h
+		a! fis %15
+		a a
+		h a
+		a g
+		fis\fermata fis'
+		e d %20
+		d cis
+		h1\fermata \bar "|." %22 finis
+	}
+}
