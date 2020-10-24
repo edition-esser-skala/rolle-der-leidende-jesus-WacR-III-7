@@ -1065,7 +1065,7 @@
 	% 		system-system-spacing.minimum-distance = #17
 	% 		systems-per-page = #2
 	% 	}
-	% 	% \tocLabelLong "meinistdie" "1.19" "Aria" "Mein ist die Unsterblichkeit"
+	% 	\tocLabelLong "meinistdie" "1.19" "Aria" "Mein ist die Unsterblichkeit"
 	% 	\score {
 	% 		<<
 	% 			\new StaffGroup \with { \smallGroupDistance } <<
@@ -1115,7 +1115,7 @@
 	% 			\new FiguredBass { \MeinIstDieBassFigures }
 	% 		>>
 	% 		\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-	% 		% \midi { \tempo 4 = 120 }
+	% 		\midi { \tempo 4 = 120 }
 	% 	}
 	% }
 	% \bookpart {
@@ -1203,74 +1203,133 @@
 	% 		\midi { \tempo 4 = 120 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "1.21"
+	% 		title = "Wenn dort, Herr Jeſu, wird vor deinem Throne"
+	% 	}
+	% 	\tocLabelLong "wenndort" "1.21" "Choral" "Wenn dort, Herr Jesu, wird vor deinem Throne"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \WennDortOboeI \WennDortOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WennDortViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WennDortViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WennDortViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \WennDortSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \WennDortSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \WennDortAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \WennDortAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \WennDortTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \WennDortTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WennDortBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WennDortBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WennDortOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WennDortBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
+	% \bookpart {
+	% 	\paper { evenHeaderMarkup = {} oddHeaderMarkup = {} }
+	% 	\partTitle "II" "Z W E Y T E R   T H E I L"
+	% 	\tocLabel "zweytertheil" "2" "Zweyter Theil"
+	% 	\partMark
+	% 	\pageBreak
+	% 	\markup \null
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "1.21"
-			title = "Wenn dort, Herr Jeſu, wird vor deinem Throne"
+			genre = "A C C O M P A G N A T O"
+			number = "2.1"
+			title = "Wer iſt der Mann"
 		}
-		\tocLabelLong "wenndort" "1.21" "Choral" "Wenn dort, Herr Jesu, wird vor deinem Throne"
+		\paper {
+			system-system-spacing.basic-distance = #35
+			system-system-spacing.minimum-distance = #35
+			systems-per-page = #2
+		}
+		\tocLabelLong "weristder" "2.1" "Accompagnato" "Wer ist der Mann"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \WennDortOboeI \WennDortOboeII
-					>>
-				>>
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\WennDortViolinoI
+							\WerIstDerViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\WennDortViolinoII
+							\WerIstDerViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\WennDortViola
+						\WerIstDerViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \WennDortSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \WennDortSopranoLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \WennDortAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \WennDortAltoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \WennDortTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \WennDortTenoreLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WennDortBassoNotes }
-					}
-					\new Lyrics \lyricsto Basso \WennDortBassoLyrics
+					\new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WennDortOrgano
+						\WerIstDerOrgano
 					}
 				>>
-				\new FiguredBass { \WennDortBassFigures }
+				\new FiguredBass { \WerIstDerBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

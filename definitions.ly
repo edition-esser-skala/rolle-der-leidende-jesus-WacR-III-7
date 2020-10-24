@@ -735,6 +735,15 @@ tempoChristusHatDem = \tempoMarkup "Allegro moderato"
 %1.21
 tempoWennDort = \tempoMarkup "[Tempo deest]"
 
+%2.1
+tempoWerIstDerR = \tempoMarkup "Recitativo"
+	tempoWerIstDerL = \tempoMarkup "Largo"
+	tempoWerIstDerPv = \tempoMarkup "Poco vivace"
+	tempoWerIstDerV = \tempoMarkup "Vivace"
+
+
+
+
 
 \include "notes/fl1.ly"
 \include "notes/fl2.ly"

@@ -1128,6 +1128,169 @@ WennDortAltoLyrics = \lyricmode {
 	gen. %22 finis
 }
 
+WerIstDerAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoWerIstDerR
+		r8 fis fis fis h4 r8 h
+		h h h ais h fis16 fis fis8 h,
+		h r16 h' h8 fis g4 r16 g g e
+		a8 e fis g fis fis r4
+		r r8 a a d, r4 %5
+		a' r8 a d a c16 c c h
+		g8 g r16 g g d e8 e fis g
+		g d r4 r8 e a gis
+		h a r4 a8 r16 a a8 h
+		\appoggiatura a g!4 r8 e g g h a %10
+		fis fis r a a8. d,16 d4
+		d' d8 a h h g fis
+		d4 r r2
+		r4 r8 d gis4 r16 gis gis e
+		a8 r16 a a8 c h h gis a %15
+		e4 r r r8 e
+		a a a h c4 r8 a
+		\appoggiatura g! fis r16 a c8 b g g r g
+		b d d g, c fis, fis g
+		g d r4 r8 d g fis %20
+		g r16 g g8 a b4 r8 d
+		d4( b8) g \appoggiatura f e!8. e16 e8 r16 b'
+		\tempoWerIstDerL a4 r8 c \appoggiatura b a4 r8 c16([ a)]
+		\appoggiatura g8 f4 r8 c'16. f,32 h8 h r d16. f,32
+		e8 g r c \appoggiatura c g4 r8 g %25
+		\appoggiatura f e4 r8 c b'16. b32 b8 \tempoWerIstDerR r\fermata g
+		c g a b \tempoWerIstDerPv a a r4
+		r2 r4 c~
+		c8 c a b c es, es d
+		d4 r r2 %30
+		r4 r8 d f4 r8 f
+		as as as g \tempoWerIstDerL g4 r8 b
+		b16. es,32 es8 r es b' b c des
+		c c r es, as as as b
+		c4 r8 es, as as as g %35
+		es es r4 \tempoWerIstDerV r r8 c'
+		a! a r4 a8 a a f
+		b4 r16 b b f ges4 r8 es
+		a! a a b f4 r
+		\tempoWerIstDerPv R1*3 %42
+		r2 r4 a!8 f
+		b ges f e! f4 r8 f
+		des' b ges e! f4 f8 f16 f %45
+		ges4 a!8 a b f r a
+		b4 c8 es, des16([ c)] b8 r4
+		R1*2
+		c'4 r c c8 g %50
+		b b c g as4 c~
+		c\fermata h8 c c g r4
+		\tempoWerIstDerL r r8 c c g r4
+		r b16 b des c as4 r
+		r8 c d a \appoggiatura a b4 r8 d16([ b)] %55
+		\appoggiatura a8 g4 r8 d'16([ b)] g8 g r g
+		es'8. g,16 \appoggiatura g8 fis8. g16 g8 d r4
+		r d' \tempoWerIstDerR b8. b16 b8 a
+		a4 r16 f f g a8 a a g16 f
+		b4 r8 b b b a b %60
+		f4 r \tempoWerIstDerL r2
+		r r4 f
+		b8 b r f16 as \appoggiatura as8 g4 r16 f b a
+		b16.([ a32)] b8 r16 f b as as([ g)] g8 r b16 a
+		b16.([ a32)] b8 r4 \tempoWerIstDerR r b %65
+		r b8 b b f f g
+		as4 c \appoggiatura b8 as4 r8 f
+		f f f g as as c b
+		g r16 b es8 b g4 g
+		g8 g g b b es, r16 b' es b %70
+		\tempoWerIstDerL c8 c r4 c16([ as)] f8 r4
+		\tempoWerIstDerR h!8. h16 h8 c c g r4
+		r c fis,8 fis fis g
+		\appoggiatura g d4 r \tempoWerIstDerL r2
+		R1 %75
+		\tempoWerIstDerR r4 b' g8. g16 g4
+		r8 e! e f g g b a
+		f4 d' b8 b b r16 g
+		cis8 cis cis d a4 r
+		r2\fermata \bar "|." %80 finis
+	}
+}
+
+WerIstDerAltoLyrics = \lyricmode {
+	Wer iſt der Mann, der
+	un -- ter je -- nen Knech -- ten der Grau -- ſam --
+	keit ent -- ſchlo -- ßen ſteht, mit ih -- nen
+	eif -- rig ſcheint zu rech -- ten?
+	Sie ru -- fen: %5
+	Seht! auch die -- ſer war ein Ga -- li --
+	lä -- er, wir ſahn ihn bey dem Na -- za --
+	rä -- er. Biſt du es,
+	Si -- mon? Ach, du wirſt ihn
+	nicht, du wirſt ihn nicht ver -- %10
+	ken -- nen, den Gött -- li -- chen;
+	nein, ſo un -- e -- del biſt du
+	nicht!
+	O weh! er ſchwört und
+	ſpricht: Ich ken -- ne die -- ſen Men -- ſchen %15
+	nicht. Und
+	Je -- ſus blickt ihn an, voll
+	Ruh, voll Ernſt und Schmer -- zen, ein
+	Dolch dringt mit dem Blick zu Pe -- tri
+	Her -- zen. Er wen -- det %20
+	ſich, und geht hi -- naus, und
+	wei -- net bit -- ter -- lich und
+	klagt: Mein Freund, mein
+	Freund! Ach, was that ich? Ach, was
+	that ich? Ge -- liebt, ge -- %25
+	liebt, ge -- warnt von dir, ver --
+	läug -- net dich dein Si -- mon.
+	Töd --
+	tend drang ſein Blick in mein Ge --
+	bein. %30
+	Ich fühl, ich
+	füh -- le To -- des -- pein, du
+	Gött -- li -- cher, wirſt nun mich auch nicht
+	ken -- nen, vor dei -- nem Va -- ter
+	nicht, vor En -- geln mich nicht %35
+	nen -- nen. Ja,
+	nen -- ne, nen -- ne mich nur
+	nicht, ich habs ver -- dient, ver --
+	ſtoß mich im Ge -- richt!
+
+	Rauſcht, ihr %43
+	Schre -- cken die -- ſer Nacht, ihr
+	Schre -- cken die -- ſer Nacht, rau -- ſchet mir %45
+	Tod und Ver -- der -- ben, Tod,
+	Tod und Ver -- der -- ben.
+
+	Fluch, Fluch hab ich %50
+	auf mein Haupt ge -- bracht, ach, __
+	könnt ich ſter -- ben!
+	Mein Va -- ter,
+	die -- ſes Herz er -- bebt,
+	dies Au -- ge weint, er -- %55
+	barm, o Va -- ter, er --
+	barm, er -- barm dich mein -- er.
+	Viel ſün -- di -- gen an
+	ihm, der Reu -- e Pfeil fühl kei -- ner wie
+	ich, er grä -- bet Tod mir %60
+	ein!
+	Ach
+	laß mich, eh er ſtirbt, laß mich ihn
+	ſe -- hen, von ihm Ver -- zei -- hung zu er --
+	fle -- hen. Dann, %65
+	wenn er ſter -- bend mir ver --
+	zeiht, dann ſoll, ſo
+	lang der Herr zu le -- ben mir ge --
+	beut, vor al -- len Men -- ſchen
+	die -- ſer Mund ihn nen -- nen, ihn für den %70
+	theu -- ren, beſ -- ten,
+	gött -- lich -- ſten er -- ken -- nen,
+	dann wein ich auf ſein
+	Grab.
+	%75
+	So jam -- mert er,
+	und fühlt der hei -- ßen Reu -- e
+	Pein, Gott, Mitt -- ler, ach, er --
+	bar -- me du dich ſein. %79 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

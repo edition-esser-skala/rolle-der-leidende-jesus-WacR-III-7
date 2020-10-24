@@ -944,6 +944,68 @@ WennDortViolinoI = {
 	}
 }
 
+WerIstDerViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoWerIstDerR
+		R1*22 %22
+		\tempoWerIstDerL r8 \mvTr c'(\p-\markup \remark "con sordino" e f) r c( e f)
+		r c( e f) r f16.\f f32 f4
+		r8 g,(\p h! c) r g( h c) %25
+		r g( h c) r e16.\f e32 \tempoWerIstDerR e4~
+		e\p r \tempoWerIstDerPv r8 f,16.\f f32 f16. g32 a16. b32
+		c16. es32 es16. c32 a16. c32 c16. es,32 es4~ es~\p
+		es r r2
+		r8 b16.\f b32 b16. c32 d16. es32 f16. as32 as16. f32 d16. f32 f16. d32 %30
+		d4~ d2.~\p
+		d4 r \tempoWerIstDerL r8 b'( d es)
+		r b( d es) r2
+		r8 es( g as) r2
+		r8 es( g as) r2 %35
+		r4 d,\f \tempoWerIstDerV es16. a,!32 a16. a32 a4-!
+		r16. a32 a16. a32 a4-! r2
+		r16. b32 b16. b32 b4-! r16. b32 b16. b32 b4-!
+		R1
+		\tempoWerIstDerPv b,16(\f a b) b-! b( a b) b-! b(\p c) c( des) des( c) c( h) %40
+		c(\f h c) c-! c( h c) c-! c(\p des) des( es) es( des) des( c)
+		des(\f c des) des-! des( c des) des-! des(\p es) es( f) f( es) es( d)
+		es( f) f( ges) ges( f) f( e) f( f) f( f) es( es) es( es)
+		des( des) des( des) des( des) des( des) c(\f c) c( c) es( es) es( es)
+		des( des) des( des) des( des) des( des) c(\f c) c( c) c(\p c) c( c) %45
+		des\f des([\p des des)] es\f es([\p es es)] f( f) f( f) es( es) es( es)
+		des( des) des( des) c8 r b16(\f a b) b-! b( a b) b-!
+		b(\p c) c( des) des( c) c( h) h(\f a! h) h-! h( a h) h-!
+		h(\p c) c( d) d( c) c( h) c( d) d( es) es( d) d( es)
+		es( f) f( g) g( f) f( e) e4 r %50
+		r2 f4 r
+		a!2 r4 f
+		\tempoWerIstDerL es8 g' h,!( c) r g( h! c)
+		des16.\f des32 des8 r4 r8 c16(\f as') as( g) g( fis)
+		fis4~\p fis8 r r g( fis g) %55
+		r b,( a b) r b( a b)
+		a4 r r fis
+		g r \tempoWerIstDerR r2
+		R1*2 %60
+		r4 f-\tenuto \tempoWerIstDerL b,8 d'16( c) c( b) b( as)
+		as( g) es'( c) c( b) b( a?) b4 r
+		r8 d16( c) c( b) b( as) as( g) es'( c) c( b) b( a?)
+		b8 f'16( es) es( d) d( f) f( es) g( es) es( d) d( c)
+		d8 d16( c) d( es) es( f) \tempoWerIstDerR f2~ %65
+		f1~
+		f~
+		f
+		es~
+		es %70
+		\tempoWerIstDerL r8 es( g as) r c,( e f)
+		\tempoWerIstDerR f4 r r h,
+		c r c,2
+		r4 c \tempoWerIstDerL b8 d( fis g)
+		r d'( fis g) r2 %75
+		\tempoWerIstDerR R1*4
+		r2\fermata \bar "|."
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

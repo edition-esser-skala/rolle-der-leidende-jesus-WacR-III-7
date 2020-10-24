@@ -942,3 +942,65 @@ WennDortViolinoII = {
 		d1\fermata \bar "|." %22 finis
 	}
 }
+
+WerIstDerViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoWerIstDerR
+		R1*22 %22
+		\tempoWerIstDerL r8 \mvTr c'(\p-\markup \remark "con sordino" b a) r c( b a)
+		r c( b a) r h16.\f h32 h4
+		r8 g(\p f e) r g( f e) %25
+		r g( f e) r b'16.\f b32 \tempoWerIstDerR b4~
+		b\p r \tempoWerIstDerPv r8 f16.\f f32 f16. g32 a16. b32
+		c16. es32 es16. c32 a16. c32 c16. c,32 c4~ c~\p
+		c r r2
+		r8 b16.\f b32 b16. c32 d16. es32 f16. as32 as16. f32 d16. f32 f16. d32 %30
+		as4~ as2.~\p
+		as4 r \tempoWerIstDerL r8 b'( as g)
+		r b( as g) r2
+		r8 es'( des c) r2
+		r8 es( des c) r2 %35
+		r4 as\f \tempoWerIstDerV g16. es32 es16. es32 es4-!
+		r16. es32 es16. es32 es4-! r2
+		r16. f32 f16. f32 f4-! r16. ges32 ges16. ges32 ges4-!
+		R1
+		\tempoWerIstDerPv b,16(\f a b) b-! b( a b) b-! b(\p c) c( des) des( c) c( h) %40
+		c(\f h c) c-! c( h c) c-! c(\p des) des( es) es( des) des( c)
+		des(\f c des) des-! des( c des) des-! des(\p es) es( f) f( es) es( d)
+		es( f) f( ges) ges( f) f( e) f( f) f( f) c( c) c( c)
+		b( b) b( b) b( b) b( b) a(\f a) a( a) c(\p c) c( c)
+		b( b) b( b) b( b) b( b) a(\f a) a( a) a(\p a) a( a) %45
+		b\f b([\p b b)] c\f c([\p c c)] des( des) des( des) c( c) c( c)
+		b( b) b( b) a8 r b16(\f a b) b-! b( a b) b-!
+		b(\p c) c( des) des( c) c( h) h(\f a! h) h-! h( a h) h-!
+		h(\p c) c( d) d( c) c( h) c( h) h( c) c( h) h( c)
+		c( d) d( e!) e( d) d( c) c4 r %50
+		r2 c4 r
+		es2 r4 d
+		\tempoWerIstDerL c8 g'( f es) r g( f es)
+		b'16.\f b32 b8 r4 r8 c\f c c
+		c4~\p c8 r r b( a b) %55
+		r g( fis g) r g( fis g)
+		g4 r r c,
+		b? r \tempoWerIstDerR r2
+		R1*2 %60
+		r4 f'-\tenuto \tempoWerIstDerL b,8 f'16( es) es( d) d( f)
+		f( es) g( es) es( d) d( c) d4 r
+		r8 f16( es) es( d) d( f) f( es) g( es) es( d) d( c)
+		d8 d'16( c) c( b) b( as) as( g) es'( c) c( b) b( a?)
+		b8 f16( es) f( g) g( as) \tempoWerIstDerR as2~ %65
+		as1~
+		as~
+		as
+		g~
+		g %70
+		\tempoWerIstDerL r8 es'( des c) r c( b? as)
+		\tempoWerIstDerR g4 r r f
+		es r a,!2
+		r4 a \tempoWerIstDerL b8 d( c b)
+		r d'( c b) r2 %75
+		\tempoWerIstDerR R1*4
+		r2\fermata \bar "|." %80 finis
+	}
+}

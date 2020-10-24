@@ -929,3 +929,65 @@ WennDortViola = {
 		fis1\fermata \bar "|." %22 finis
 	}
 }
+
+WerIstDerViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 4/4 \tempoWerIstDerR
+		R1*22 %22
+		\tempoWerIstDerL r8 a'(\p g f) r a( g f)
+		r a( g f) r f16.\f f32 f4
+		r8 e(\p d c) r e( d c) %25
+		r e( d c) r g'16.\f g32 \tempoWerIstDerR g4~
+		g\p r \tempoWerIstDerPv r8 f16.\fE f32 f16. g32 a16. b32
+		c16. es32 es16. c32 a16. c32 c16. a,32 a4~ a~\p
+		a r r2
+		r8 b16.\fE b32 b16. c32 d16. es32 f16. as32 as16. f32 d16. f32 f16. d32 %30
+		b4~ b2.~\p
+		b4 r \tempoWerIstDerL r8 g'( f es)
+		r8 g( f es) r2
+		r8 c'( b as) r2
+		r8 c( b as) r2 %35
+		r4 f\f \tempoWerIstDerV es16. c32 c16. c32 c4-!
+		r16. c32 c16. c32 c4-! r2
+		r16. des32 des16. des32 des4-! r16. es32 es16. es32 es4-!
+		R1
+		\tempoWerIstDerPv b16(\f a b) b-! b( a b) b-! b(\p c) c( des) des( c) c( h) %40
+		c(\f h c) c-! c( h c) c-! c(\p des) des( es) es( des) des( c)
+		des(\f c des) des-! des( c des) des-! des(\p es) es( f) f( es) es( d)
+		es( f) f( ges) ges( f) f( e) f4 r
+		f, r f16(\f f) f( f) f4~\p
+		f2 r16 f(\f f f) f8 r %45
+		r4 f\p f r
+		r f b16(\f a b) b-! b( a b) b-!
+		b(\p c) c( des) des( c) c( h) h(\f a! h) h-! h( a h) h-!
+		h(\p c) c( d) d( c) c( h) c,2~
+		c~ c4 r %50
+		r2 f4 r
+		fis2 r4 h!
+		\tempoWerIstDerL c8 es( d c) r es( d c)
+		g16.\f g32 g8 r4 r8 f'\f f g
+		a4~\p a8 r g4~ g8 r %55
+		es4~ es8 r d4~ d8 r
+		c4 r r a
+		g r \tempoWerIstDerR r2
+		R1*2 %60
+		r4 f'^\tenuto \tempoWerIstDerL b, b
+		es, f b r
+		b b es, f
+		b b es f
+		b, b8 b \tempoWerIstDerR d2~\p %65
+		d1~
+		d~
+		d
+		b~
+		b %70
+		\tempoWerIstDerL r8 c'( b as) r as( g f)
+		\tempoWerIstDerR d4 r r d
+		c r r2
+		r4 d, \tempoWerIstDerL g8 b( a g)
+		r b'( a g) r2 %75
+		\tempoWerIstDerR R1*4
+		r2\fermata \bar "|." %80 finis
+	}
+}

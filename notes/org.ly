@@ -2132,6 +2132,176 @@ WennDortBassFigures = \figuremode {
 	r1 %22 finis
 }
 
+WerIstDerOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoWerIstDerR
+		dis1~
+		\once \tieDashed dis~
+		dis2 e
+		cis d8. d'16 a16. d32 a16. g32
+		fis1~ %5
+		fis
+		h,2 c4 r
+		r d cis2~
+		cis4 cis2.~
+		cis1 %10
+		d2 fis~
+		fis g4 r
+		r a d,16. d32 fis16. a32 d16. a32 fis16. d32
+		h1
+		c!2 d %15
+		r4 e a,2~
+		a a~
+		a b~
+		b es
+		r4 d g,2~ %20
+		g g~
+		g c
+		\tempoWerIstDerL f,4~\pE f8 r f4~ f8 r
+		f4~ f8 r r d'16.\f d32 d4
+		c4~\p c8 r c4~ c8 r %25
+		c4~ c8 r r c16.\f c32 \tempoWerIstDerR c4~
+		c\p r \tempoWerIstDerPv r8 f16.\fE f32 f16. g32 a16. b32
+		c16. es32 es16. c32 a16. c32 c16. f,32 f4~ f~\p
+		f r r2
+		r8 b,16.\fE b32 b16. c32 d16. es32 f16. as32 as16. f32 d16. f32 f16. d32 %30
+		b4~ b2.~\p
+		b4 r \tempoWerIstDerL es~ es8 r
+		es4~ es8 r r2
+		as,4~ as8 r r2
+		as4~ as8 r r2 %35
+		r4 b \tempoWerIstDerV es16. c32 c16. c32 c4-!
+		r16. c32 c16. c32 c4-! r2
+		r16. des32 des16. des32 des4-! r16. es32 es16. es32 es4-!
+		r2 r4 f
+		\tempoWerIstDerPv b,16(\f a b) b-! b( a b) b-! b(\p c) c( des) des( c) c( h) %40
+		c(\f h c) c-! c( h c) c-! c(\p des) des( es) es( des) des( c)
+		des(\f c des) des-! des( c des) des-! des(\p es) es( f) f( es) es( d)
+		es( f) f( ges) ges( f) f( e) f4 r
+		f r f,16(\f f) f( f) f4~\p
+		f2 r16 f(\f f f) f8 r %45
+		r4 f\p f r
+		r f b16(\f a b) b-! b( a b) b-!
+		b(\p c) c( des) des( c) c( h) h(\f a! h) h-! h( a h) h-!
+		h(\p c) c( d) d( c) c( h) c2~
+		c~ c4 r %50
+		r2 f4 r
+		fis2 r4 g,
+		\tempoWerIstDerL c~ c8 r c4~ c8 r
+		e!16.\f e32 e8 r4 f\p f8\f es
+		d4~\p d8 r g4~ g8 r %55
+		es4~ es8 r d4~ d8 r
+		c4 r r d
+		g,2 \tempoWerIstDerR e'!
+		es1
+		d4 e2. %60
+		r4 f^\tenuto \tempoWerIstDerL b, b
+		es f b, r
+		b b es f
+		b, b es f
+		b, b8 b \tempoWerIstDerR b2~ %65
+		b1~
+		b~
+		b
+		es~
+		es %70
+		\tempoWerIstDerL as4~ as8 r f4~ f8 r
+		\tempoWerIstDerR g4 r r g,
+		c r d2
+		r4 d \tempoWerIstDerL g,~ g8 r
+		g4~ g8 r r2 %75
+		\tempoWerIstDerR cis1~
+		cis
+		d2 g
+		g4 r r a
+		d,2\fermata \bar "|." %80 finis
+	}
+}
+
+WerIstDerBassFigures = \figuremode {
+	<6 _+>1
+	r
+	r
+	<6>2 <_+>
+	<6>1 %5
+	r
+	<6>
+	r4 <_+> <6>2
+	r4 <\t>2.
+	<5!>1 %10
+	<_+>2 <6>
+	r1
+	r4 <_+> q2
+	<6\\>1
+	<6>2 q %15
+	r4 <_+>2.
+	r1
+	<6\\>2 <[6]>
+	r <6>
+	r4 <[_+]> <_->2 %20
+	r1
+	r2 <7- _!>
+	r1
+	r2 r8 <6!>4.
+	r1 %25
+	r2 r8 <7->4.
+	r1
+	r2 <7->
+	r1
+	r %30
+	<7->
+	r2 <5->
+	r1
+	q
+	r %35
+	r4 <7-> <5->16. <6! _->32 r4.
+	r1
+	r16. <6- _->32 r4. r16. <5- _->32 r4.
+	r1
+	<_-> %40
+	<6 _->
+	<6- _->
+	<5- _->2 <5 _!>
+	<6- 4-> <5 _!>4 <7- 5>
+	<6- 4->2 <5 _!> %45
+	r4 <7- _!> <6- 4->2
+	r4 <5 _!> <_->2
+	r <6 _!>
+	r <_->
+	r <_!> %50
+	r <_->
+	<7- _!>2. <7! _!>4
+	<_->1
+	<7- 5->2 <_->4. <6>8
+	<7 5! _+>2 <_-> %55
+	<5- 3> <6- 4>
+	<6 5 _->2. <7 _+>4
+	<_->2 <6 5->
+	<4 2>1
+	<[6-]>4 <7- [5-]>2. %60
+	r2. <8>8 <7->
+	<5- 4->8 <6 3> <6 4-> <5 3> r2
+	r4 <8>8 <7-> <5- 4-> <6 3> <6 4-> <5 3>
+	r4 <8>8 <7-> <5- 4-> <6 3> <6 4-> <5 3>
+	r2 <7-> %65
+	r1
+	r
+	r
+	<5->
+	r %70
+	<5->2 <_->
+	<7 _!>2. <\t \t>4
+	<_->2 <7 _+>
+	r4 <7 _+> <_->2
+	r1 %75
+	<7->
+	r
+	r2 <_->
+	<4+ 2>2. <[_+]>4
+	r2 %80 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
