@@ -847,6 +847,74 @@ MeinIstDieViolinoI = {
 	}
 }
 
+ChristusHatDemViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoChristusHatDem
+		d'4\fE d,8. d16 d4 d
+		a' a2 a4
+		h h8. h16 h4 h8 d
+		d8.( cis32 h) a2 a4
+		a, g'8. g16 e'4 g, %5
+		fis8.( e32 d) d2 d4
+		fis16 d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a %10
+		fis d fis d d' a d a h g h g e gis h e
+		d4( cis16) e a e cis e cis a h8 d
+		d4( cis16) e a e cis e cis a e gis h d
+		d4( cis8) r r2
+		R1*3 %17
+		r2 fis4\fE d16 fis a fis
+		e4 cis16 e a e d4 h16 d fis d
+		cis a a a fis' a, a a d a a a h d cis h %20
+		e,8.[ e'16 cis8. a16] e4 r
+		a' a,8. a16 a4 a
+		e' e2 e4
+		fis fis8. fis16 fis4 d8( fis16 a)
+		a8.( gis32 fis) e2 a,4 %25
+		e d'8. d16 h'4 d,8 d
+		cis8.( h32 a) a2 r4
+		d d,8. d16 d4 d
+		a' a2 a4
+		h h8. h16 g'4 h,8 d %30
+		d8.( cis32 h) a2 a4
+		h, fis''8. fis16 fis4 a,
+		g8.( fis32 e) e2 e4
+		g16 e g e h' g h g e' h e h g' e g e
+		h fis h fis dis' h dis h fis' dis fis dis a' fis dis a %35
+		g e g e h' g h g e' h e h g' e g e
+		a, e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		h g h g d' h d h e h e h e, gis h d
+		d4( cis16) e a e cis e cis a h8 d %40
+		d4( cis16) e a e cis e cis a e gis h d
+		d4( cis8) r r2
+		R1*3 %45
+		r2 h4\fE g16 h d h
+		a4 fis16 a d a g'4 e16 g h g
+		fis d d d h' d, d d g d d d h g' fis e
+		d8.[ a'16 fis8. d16] a4 r
+		d d,8. d16 d4 d %50
+		cis16 a cis e a cis e cis a4 r8 a'
+		gis16 gis gis gis gis gis gis gis g g g g g g g g
+		fis fis fis fis fis fis fis fis e e e e e e e e
+		fis8 d fis g g4( fis)\trill
+		e2\fermata r %55
+		fis,16 d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d d' a d a d h d h g' e g e %60
+		fis d fis d a' fis e d a4 e'\trill
+		d d8 fis16( d) h8 d16( h) gis8 h16( gis)
+		a2 e'\trill
+		d4 d,8. d16 d4 d
+		d2 r\fermata \bar "|." %65 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

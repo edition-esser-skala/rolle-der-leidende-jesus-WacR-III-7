@@ -86,3 +86,72 @@ MeinIstDieCornoII = {
 		c c, c r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemCornoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoChristusHatDem
+		c'2\fE g4 e
+		c2 r
+		c' c
+		r4 c8. c16 c4 c
+		g2 g %5
+		r4 c8. c16 c4 c
+		c2 r
+		g g
+		c r
+		g g %10
+		c r
+		r4 g8. g16 g4-! r
+		r g8. g16 g4-! r
+		R1*4 %17
+		r2 r4 g8.\f g16
+		g2 r4 d'
+		g, c r2 %20
+		R1
+		g2 g4 g
+		g2 r
+		c4 c8. c16 c4 c
+		g g8. g16 g4 g %25
+		d'2 r4 d
+		g,2 r
+		c g4 e
+		c2 r
+		c' c %30
+		r4 c8. c16 c4 c
+		e2 r4 e
+		d2 r
+		r r4 d
+		e2 e %35
+		d r
+		g, g
+		c r4 c
+		c2 d
+		r4 g,8. g16 g4-! r %40
+		r g8. g16 g4 d'
+		g,2 r
+		r4 c2\p c4
+		c g r2
+		R1 %45
+		r2 c\fE
+		r4 c8. c16 g2
+		c r
+		R1
+		c4 c2 c4 %50
+		g2 r
+		g g
+		g g
+		g r4 c
+		g2\fermata r %55
+		R1
+		g2 g
+		c r
+		g g
+		c r %60
+		c g
+		c r
+		c g
+		e4 e2 e4
+		e2 r\fermata \bar "|." %65 finis
+	}
+}

@@ -1938,6 +1938,146 @@ MeinIstDieBassFigures = \figuremode {
 	r1 %127 finis
 }
 
+ChristusHatDemOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoChristusHatDem
+		\mvTr d2\fE-\tuttiE r
+		d8 fis a fis d fis a fis
+		d g h g d g h g
+		d fis a fis d fis a fis
+		cis e a e cis e a cis, %5
+		d fis a fis d fis a fis
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a %10
+		d4 fis g gis
+		a a, r8 a' gis e
+		a4 a, r8 a' gis e
+		a4 \mvTr a,\p-\soloE r8 a cis a
+		d fis h fis d fis16 e dis8 dis %15
+		e4 e, r8 h' gis e
+		a cis e a, h d gis h,
+		cis e a cis, \mvTr d\f-\tuttiE fis a d,
+		cis e a cis, gis' h e gis,
+		a4 d, fis d %20
+		e8 e e e e,4 e
+		a2 r
+		a8-\soloE cis e cis a cis e cis
+		a d fis d a d fis d
+		a cis e cis a cis e a, %25
+		gis h e h gis h e gis,
+		a4 a'8. h16 a8 g! fis e
+		d2-\tuttiE r
+		d8 fis a fis d fis a fis
+		d g h g d g h g %30
+		d fis a fis d fis a fis
+		dis fis h fis dis fis h dis,
+		e g h g e g h g
+		e4 e, r e'
+		dis8 h fis' h, h' h, dis h %35
+		e4 e, r e'
+		cis8 a e' a, a' a, cis a
+		d4 d, r d'
+		g, g' gis gis
+		a a, r8 a' gis e %40
+		a4 a, r8 a' gis e
+		a4 a, r8 \mvTr a\p-\soloE cis a
+		d fis a fis gis h d gis,
+		a4 a, r8 a cis a
+		d fis a d, e g! cis e, %45
+		fis a fis d \mvTr g\f-\tuttiE h d g,
+		fis a d fis, cis e a cis,
+		d4 g h g
+		a8 a a a a, a a a
+		d4 r8 d fis d h gis %50
+		a a' a, a a4 r
+		a'8 a, a' a a a, a' a
+		a a, a' a a a, a' a
+		a a, a' a gis4 gis,
+		a2\fermata r %55
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a
+		d4 fis g g %60
+		a8 a a a a, a a a
+		h4 h h' h
+		a2 a,
+		d a4 fis
+		d2 r\fermata \bar "|." %65 finis
+	}
+}
+
+ChristusHatDemBassFigures = \figuremode {
+	r1
+	<5 3>2.. \bassFigureExtendersOn q8
+	<6 4>2.. q8
+	<5 3>2.. q8
+	<6\! 5\!>2.. <6 5>8 %5
+	<5\! 3>2.. <5 3>8
+	r1
+	<6 5>2.. q8
+	r1
+	<6 5>2.. q8 \bassFigureExtendersOff %10
+	r4 <6> <5> <6>
+	<4> <3>2 <6>8 <7 _+>
+	<4>4 <3>2 <6>8 <7 _+>
+	<9 4>4 <8 3>2.
+	<9 7>8 <\t \t> <5 3>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff <7>4 %15
+	<6 4> <5 _+> r8 <6\\>4 \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<9 4>8 <\t \t> <6 4>4 <9 7>8 <\t \t> <6> <6\\>
+	<6>1
+	<6>2 <6 5>
+	r <6>4 <6 5> %20
+	<6 4>2 <7 _+>
+	r1
+	<5 3>2.. \bassFigureExtendersOn q8
+	<6 4>2.. q8
+	<5 3>2.. q8 %25
+	<6 5\!>2.. <6 5>8 \bassFigureExtendersOff
+	r2 r8 <2> <6> <6 _!>
+	r1
+	<5 3>2.. \bassFigureExtendersOn q8
+	<6 4>2.. q8 %30
+	<5 3>2.. q8
+	<6 5\!>2.. <6 5>8
+	<5\! 3>2.. <5 3>8
+	r1
+	<6 5>2.. q8 %35
+	r1
+	<6 5>2.. q8 \bassFigureExtendersOff
+	r1
+	r2 <6>4 <5>
+	<4> <3>2 <6>8 <7 _+> %40
+	<4>4 <3>2 <6>8 <7 _+>
+	<9 4>4 <8 3>2.
+	<7 2>8 <\t \t> <6 4> <\t \t> <7>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	<6 4>4 <5 3> r8 <7>4.
+	<9>8 <\t> <6 4>4 <7>8 <\t> <6> q %45
+	q1
+	<6>2 <6 5>
+	r <6>
+	<6 4> <7 3>
+	r2 <6>4 <5 3>8 <\t \t> %50
+	r1
+	<7+ 4 2>2 <7! 5 3>
+	<6 4> <5 3>
+	<6 4> <8! 6>4 <7 5>
+	r1 %55
+	r
+	<6 5>2.. \bassFigureExtendersOn q8
+	r1
+	<6 5>2.. q8 \bassFigureExtendersOff
+	r4 <6> <5> <6 5> %60
+	<6 4>2 <7 3>
+	<5> <6\\>
+	<6 4> <7 3>
+	r1
+	r %65 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

@@ -730,6 +730,7 @@ tempoSieBinden = \tempoMarkup "[Tempo deest]"
 tempoLammDas = \tempoMarkup "[Tempo deest]"
 tempoDochKaiphas = \tempoMarkup "[Tempo deest]"
 tempoMeinIstDie = \tempoMarkup "Allegro moderato"
+tempoChristusHatDem = \tempoMarkup "Allegro moderato"
 
 
 \include "notes/fl1.ly"

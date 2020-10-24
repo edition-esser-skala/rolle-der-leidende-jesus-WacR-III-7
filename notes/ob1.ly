@@ -349,3 +349,75 @@ MeinIstDieOboeI = {
 		\pao d r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemOboeI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoChristusHatDem
+		d'2\fE d,
+		a'4 a a a
+		h2 h4 d
+		d a2 a4
+		e' e e g, %5
+		fis8. e16 d4 r a'8 a
+		a4 a a a
+		a2 a
+		a a
+		a a4 a %10
+		a d8 a h4 e
+		d( cis) r8 cis h d
+		d4( cis) r2
+		r4 cis8.\p d16 e4 e
+		e8.( fis16 d2) cis4 %15
+		cis h8. cis16 d4 d
+		d cis2 h4
+		a8 gis a4 fis'2\f
+		e d
+		cis4 fis d h %20
+		a2 h
+		a r4 a
+		e'2 r4 e
+		fis2 r4 fis
+		e2 r4 cis %25
+		d2 r4 d
+		cis2 r
+		d d,
+		a'4 a a a
+		h h h d %30
+		d a2 a4
+		fis' fis fis a,
+		g8. fis16 e4 r h'8 h
+		h4 h h h
+		h2 h %35
+		h h4 h
+		a2 a
+		a a4 a
+		h h e d
+		d( cis) r8 cis h d %40
+		d4( cis) r2
+		r4 cis8.\p d16 e4 e
+		e8.( fis16 d2) d4
+		d cis8.( d16) e4 g,
+		fis fis8( a) g4 e %45
+		a2 h\f
+		a g'
+		fis4 d d d
+		d2 e\trill
+		d r %50
+		r a8 a a a
+		h4 h8 h cis4 cis8 cis
+		d4 d8 d e4 e8 e
+		fis4 fis8 g g4( fis)\trill
+		e2\fermata r4 a,8 a %55
+		a4 a a a
+		a2 a
+		a a
+		a a4 a
+		a2 h4 e %60
+		a,2 cis
+		d4 d h gis
+		a2 e'\trill
+		d r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}

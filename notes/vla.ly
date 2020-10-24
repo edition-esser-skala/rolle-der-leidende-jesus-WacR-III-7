@@ -832,3 +832,71 @@ MeinIstDieViola = {
 		d4 d8 d d4 r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemViola = {
+	\relative c' {
+		\clef alto
+		\key d \major \time 4/4 \tempoChristusHatDem
+		d2\fE r
+		d16 d d d d d d d d d d d d d d d
+		d d d d d d d d d d d d d d d d
+		d d d d d d d d d d d d d d d d
+		a a a a a a a a a a a a a a a a %5
+		a a a a a a a a a a a a d d d d
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a
+		d4 d, r d'
+		cis8 a e' a, a' a, cis a %10
+		d4 d8 d d4 e
+		e e r8 e e e
+		e4 e r8 e e e
+		e2 r
+		R1*3 %17
+		r2 a4\fE a8 a
+		a4 a8 a h4 gis8 e
+		e4 d d fis %20
+		cis2 d
+		cis r
+		a16 a a a a a a a a a a a a a a a
+		a a a a a a a a a a a a a a a a
+		a a a a a a a a a a a a a a a a %25
+		e' e e e e e e e e e e e e e e e
+		e4 e cis8 a h cis
+		d2 r
+		d16 d d d d d d d d d d d d d d d
+		d d d d d d d d d d d d d d d d %30
+		d d d d d d d d d d d d d d d d
+		dis dis dis dis dis dis dis dis dis dis dis dis dis dis dis dis
+		h h h h h h h h h h h h h h h h
+		e4 e, r e'
+		fis8 fis fis fis dis dis fis fis %35
+		e4 e, r e'
+		e8 e e e cis cis e e
+		d4 d, r d'
+		d d h e
+		e e r8 e e e %40
+		e4 e r8 e e e
+		e4 r r2
+		R1*3 %45
+		r2 d4\fE d8 d
+		d4 d8 d a4 a'8 a
+		a4 g g g
+		fis8 fis fis fis g g g g
+		fis4 r8 d fis d h gis %50
+		a a a a a cis cis cis
+		d16 d d d d d d d e e e e e e e e
+		a, a a a a a a a a a a a a a a a
+		a8 a a a gis4 gis
+		a2\fermata r %55
+		d4 d, r d'
+		e8 e e e cis cis e e
+		d4 d, r d'
+		e8 e e e cis cis e e
+		d4 d d h' %60
+		a2 g
+		fis4 fis d d
+		a2 g'
+		fis4 d a fis
+		d2 r\fermata \bar "|." %65 finis
+	}
+}

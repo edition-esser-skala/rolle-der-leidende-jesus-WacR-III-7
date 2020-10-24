@@ -943,6 +943,137 @@ LammDasAltoLyricsB = \lyricmode {
 	Sieg! %9 finis
 }
 
+ChristusHatDemAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoChristusHatDem
+		\mvTr fis2\fE^\tuttiE fis
+		fis4 fis fis fis8 fis
+		g4 r8 g g4 g
+		fis fis r fis
+		g g8 g g4 e %5
+		d d r fis8 fis
+		fis4 fis fis fis
+		g2 g
+		fis1(
+		g2) g4 g %10
+		fis a8 a h4 h
+		a2 r8 a h gis
+		a2 r
+		r4 \mvTr a8.\pE^\solo h16 cis4 cis
+		cis8.([ d16] h2) a8 a %15
+		a4 gis r2
+		R1
+		r2 \mvTr a\fE^\tutti
+		a4 r h2
+		a4 a a a %20
+		a2 gis
+		a r
+		R1*5 %27
+		fis2 fis
+		fis4 fis fis fis8 fis
+		g4 r8 g g4 g %30
+		fis fis r fis
+		a a8 a a4 fis
+		e e r2
+		r r4 e8 e
+		fis4 fis fis fis %35
+		e2 e
+		e1(
+		d2) fis4 fis
+		g g8 g h4 h
+		a2 r8 a h h %40
+		a2 r
+		r4 \mvTr e8.\pE^\solo fis16 g4 g
+		g8.([ a16] fis2) d8 d
+		d4 cis r2
+		R1 %45
+		r2 \mvTr h'\fE^\tutti
+		a4 r a2
+		a4 h g h
+		fis2 g
+		fis r %50
+		r e8 e e e
+		gis4 gis8 gis g4  g8 g
+		fis4 fis8 fis a4 a8 a
+		a4 fis gis2
+		a\fermata r4 a8 a %55
+		fis4 fis fis fis
+		g2 g
+		fis1(
+		g2) g4 g
+		fis2 h4 h %60
+		fis2 g
+		fis4 fis gis h
+		fis2 g
+		fis r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}
+
+ChristusHatDemAltoLyrics = \lyricmode {
+	\xE Chri -- ſtus
+	hat dem To -- de die
+	Macht, die Macht ge --
+	nom -- men, dem
+	To -- de die Macht ge -- %5
+	nom -- men \x und das
+	Le -- ben und ein
+	un -- ver --
+	gäng --
+	\xE li -- ches %10
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge --
+	bracht,
+	\x und ein un -- ver --
+	gäng -- li -- ches %15
+	We -- ſen
+
+	\xE ans
+	Licht, ans
+	Licht, ans Licht, ans %20
+	Licht ge --
+	bracht.
+
+	Chri -- ſtus %28
+	hat dem To -- de die
+	Macht, die Macht ge -- %30
+	nom -- men, dem
+	To -- de die Macht ge --
+	nom -- men
+	\x und das
+	\xE Le -- ben und ein %35
+	un -- ver --
+	gäng --
+	li -- ches
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge -- %40
+	bracht,
+	\x und ein un -- ver --
+	gäng -- li -- ches
+	We -- ſen
+	%45
+	\xE ans
+	Licht, ans
+	Licht, ans Licht, ans
+	Licht ge --
+	bracht. %50
+	Chri -- ſtus hat dem
+	To -- de die Macht, hat dem
+	To -- de, dem To -- de die
+	Macht ge -- nom --
+	men \x und das %55
+	Le -- ben und ein
+	un -- ver --
+	gäng --
+	li -- ches
+	\xE We -- ſen ans %60
+	Licht ge --
+	bracht, ans Licht, ans
+	Licht ge --
+	bracht. %64 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

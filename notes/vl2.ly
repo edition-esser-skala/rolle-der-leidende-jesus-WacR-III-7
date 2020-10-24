@@ -845,3 +845,71 @@ MeinIstDieViolinoII = {
 		d8 d16. cis32 d8 a <d, a' fis'>4 r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoChristusHatDem
+		<fis a,>4\fE q8. q16 q4 q
+		fis4 fis2 fis4
+		g g8. g16 g4 g
+		fis fis2 fis4
+		a, e'8. e16 g4 e %5
+		d d2 d4
+		fis16 d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a %10
+		fis d fis d d' a d a h g h g e gis h e
+		d4( cis16) e a e cis e cis a h8 d
+		d4( cis16) e a e cis e cis a e8 gis16( h)
+		h4( a8) r r2
+		R1*3 %17
+		r2 fis'4\fE d16 fis a fis
+		e4 cis16 e a e d4 h16 d fis d
+		cis a a a fis' a, a a d a a a h d cis h %20
+		e,8.[ e'16 cis8. a16] e4 r
+		<cis e> q8. q16 q4 q
+		cis' cis2 cis4
+		d d8. d16 d4 d
+		cis cis2 a4 %25
+		e h'8. h16 d4 h
+		a8( e) cis4~ cis8 cis d e
+		<fis a,>4 q8. q16 q4 q
+		fis fis2 fis4
+		g g8. g16 h4 g %30
+		fis fis2 fis4
+		h, a'8. a16 a4 fis
+		e8. h16 g2 e'4
+		g16 e g e h' g h g e' h e h g' e g e
+		h fis h fis dis' h dis h fis' dis fis dis a' fis dis a %35
+		g e g e h' g h g e' h e h g' e g e
+		a, e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		h g h g d' h d h e h e h e, gis h d
+		d4( cis16) e a e cis e cis a h8 d %40
+		d4( cis16) e a e cis e cis a e8 gis16( h)
+		h4( a8) r r2
+		R1*3 %45
+		r2 h4\fE g16 h d h
+		a4 fis16 a d a g'4 e16 g h g
+		fis d d d h' d, d d g d d d h g' fis e
+		d8.[ a'16 fis8. d16] a4 r
+		fis fis8. fis16 fis4 fis %50
+		e8 cis16 e a cis e cis a4 r8 a
+		h16 h h h h h h h cis cis cis cis cis cis cis cis
+		d d d d d d d d cis cis cis cis cis cis cis cis
+		d4 d8 e e4( d)\trill
+		cis2\fermata r %55
+		fis,16 d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d a' fis a fis d' a d a fis' d fis d
+		a e a e cis' a cis a e' cis e cis g' e cis a
+		fis d fis d d' a d a d h d h g' e g e %60
+		fis d fis d a' fis e d a4 cis\trill
+		d d8 fis16( d) h8 d16( h) gis8 h16( gis)
+		a2 cis\trill
+		d4 d,8. d16 d4 d
+		d2 r\fermata \bar "|." %65 finis
+	}
+}

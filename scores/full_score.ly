@@ -1054,68 +1054,153 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "1.19"
+	% 		title = "Mein iſt die Unſterblichkeit"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #17
+	% 		system-system-spacing.minimum-distance = #17
+	% 		systems-per-page = #2
+	% 	}
+	% 	% \tocLabelLong "meinistdie" "1.19" "Aria" "Mein ist die Unsterblichkeit"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+	% 					\partcombine \MeinIstDieOboeI \MeinIstDieOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "cor (D)" "1, 2" }
+	% 					\set Staff.soloText = \markup \medium \remark "cor 1"
+	% 					\partcombine \MeinIstDieCornoI \MeinIstDieCornoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\MeinIstDieViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\MeinIstDieViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\MeinIstDieViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \MeinIstDieSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \MeinIstDieSopranoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\MeinIstDieOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \MeinIstDieBassFigures }
+	% 		>>
+	% 		\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+	% 		% \midi { \tempo 4 = 120 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "1.19"
-			title = "Mein iſt die Unſterblichkeit"
+			genre = "C O R O"
+			number = "1.20"
+			title = "Chriſtus hat dem Tode die Macht genommen"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #17
-			system-system-spacing.minimum-distance = #17
-			systems-per-page = #2
-		}
-		% \tocLabelLong "meinistdie" "1.19" "Aria" "Mein ist die Unsterblichkeit"
+		\tocLabelLong "christushatdem" "1.20" "Coro" "Christus hat dem Tode die Macht genommen"
 		\score {
 			<<
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
-						\partcombine \MeinIstDieOboeI \MeinIstDieOboeII
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\ChristusHatDemOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\ChristusHatDemOboeII
+						}
 					>>
 				>>
-				\new StaffGroup \with { \smallGroupDistance } <<
+				\new StaffGroup <<
 					\new Staff <<
 						\set Staff.instrumentName = \markup \center-column { "cor (D)" "1, 2" }
 						\set Staff.soloText = \markup \medium \remark "cor 1"
-						\partcombine \MeinIstDieCornoI \MeinIstDieCornoII
+						% \transpose c d
+						\partcombine \ChristusHatDemCornoI \ChristusHatDemCornoII
 					>>
 				>>
-				\new StaffGroup \with { \smallGroupDistance } <<
+				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\MeinIstDieViolinoI
+							\ChristusHatDemViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\MeinIstDieViolinoII
+							\ChristusHatDemViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\MeinIstDieViola
+						\ChristusHatDemViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \MeinIstDieSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \ChristusHatDemSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \MeinIstDieSopranoLyrics
+					\new Lyrics \lyricsto Soprano \ChristusHatDemSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \ChristusHatDemAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \ChristusHatDemAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \ChristusHatDemTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \ChristusHatDemTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \ChristusHatDemBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \ChristusHatDemBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\MeinIstDieOrgano
+						\ChristusHatDemOrgano
 					}
 				>>
-				\new FiguredBass { \MeinIstDieBassFigures }
+				\new FiguredBass { \ChristusHatDemBassFigures }
 			>>
-			\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-			% \midi { \tempo 4 = 120 }
+			\layout { }
+			\midi { \tempo 4 = 120 }
 		}
 	}
 }

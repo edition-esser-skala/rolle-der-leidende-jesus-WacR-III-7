@@ -349,3 +349,75 @@ MeinIstDieOboeII = {
 		d r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemOboeII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoChristusHatDem
+		fis2\fE d
+		fis4 fis fis fis
+		g2 g4 g
+		fis fis2 fis4
+		g g g e %5
+		d2 r4 fis8 fis
+		fis4 fis fis fis
+		g2 g
+		fis fis
+		g g4 g %10
+		fis a g h
+		e,2 r8 e e e
+		e2 r
+		r4 a8.\p h16 cis4 cis
+		cis8.( d16 h2) a4 %15
+		a gis8. a16 h4 h
+		h a2 gis4
+		a8 gis a4 a2\f
+		a h
+		a4 a2 fis4 %20
+		e a gis2
+		a r4 a
+		cis2 r4 cis
+		d2 r4 d
+		cis2 r4 cis %25
+		h2 r4 h
+		a2 r
+		fis d
+		fis4 fis fis fis
+		g g g g %30
+		fis fis2 fis4
+		a a a fis
+		e2 r4 g8 g
+		g4 g g g
+		a2 a %35
+		g g4 g
+		g2 g
+		fis fis4 fis
+		d g h h
+		e,2 r8 e e e %40
+		e2 r
+		r4 e8.\p fis16 g4 g
+		g8.( a16 fis2) fis4
+		fis \once \slurDashed e8.( fis16) g4 e~
+		e d2 g8( e) %45
+		d2 d\f
+		d e'
+		d4 h g h
+		fis2 g
+		fis r %50
+		r a8 a a a
+		h4 h8 h cis4 cis8 cis
+		d4 d8 d cis4 cis8 cis
+		d4 d8 e e4( d)\trill
+		cis2\fermata r4 a8 a %55
+		fis4 fis fis fis
+		g2 g
+		fis fis
+		g g4 g
+		fis d2 g4 %60
+		fis2 g
+		fis4 fis gis gis
+		a2 g
+		fis r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}

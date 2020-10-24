@@ -867,6 +867,133 @@ LammDasTenoreLyricsB = \lyricmode {
 	Sieg! %9 finis
 }
 
+ChristusHatDemTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoChristusHatDem
+		\mvTr a2\fE^\tuttiE a
+		d4 d d d8 d
+		d4 r8 d d4 d
+		d d r d
+		a a8 a a4 a %5
+		a8.([ g16)] fis4 r2
+		r r4 d'8 d
+		e4 e e e
+		d2 d
+		e e4 e %10
+		d d8 d d4 e
+		e2 r8 e e e
+		e2 r
+		R1*2 %15
+		r4 \mvTr h8.\pE^\solo cis16 d4 d
+		d8.([ e16] cis2) h8 h
+		a([ gis)] a4 \mvTr d2\fE^\tutti
+		e4 r e2
+		e4 d d d %20
+		cis2 d
+		cis r
+		R1*5 %27
+		a2 a
+		d4 d d d8 d
+		d4 r8 d d4 d %30
+		d d r d
+		h h8 h h4 h
+		h8.([ a16)] g4 r g8 g
+		g4 g g g
+		a2 a %35
+		g g4 g
+		g2 g
+		fis d'4 d
+		d d8 d h4 e
+		e2 r8 e e e %40
+		e2 r
+		R1*2
+		r4 \mvTr cis8.\pE^\solo d16 e4 e
+		e( d2) cis8 cis %45
+		d([ cis)] d4 \mvTr d2\fE^\tutti
+		d4 r e2
+		d4 d d d
+		a2 cis
+		d r %50
+		r cis8 cis cis cis
+		d4 d8 d e4 e8 e
+		d4 d8 d cis4 cis8 cis
+		d4 d gis,2
+		a\fermata r %55
+		r r4 d8 d
+		e4 e e e
+		d2 d
+		e e4 e
+		d2 d4 d %60
+		d2 e
+		d4 d d d
+		d2 cis
+		a r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}
+
+ChristusHatDemTenoreLyrics = \lyricmode {
+	\xE Chri -- ſtus
+	hat dem To -- de die
+	Macht, die Macht ge --
+	nom -- men, dem
+	To -- de die Macht ge -- %5
+	nom -- men
+	und das
+	Le -- ben und ein
+	un -- ver --
+	gäng -- li -- ches %10
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge --
+	bracht,
+
+	und ein un -- ver -- %16
+	gäng -- li -- ches
+	We -- ſen ans
+	Licht, ans
+	Licht, ans Licht, ans %20
+	Licht ge --
+	bracht.
+
+	Chri -- ſtus %28
+	hat dem To -- de die
+	Macht, die Macht ge -- %30
+	nom -- men, dem
+	To -- de die Macht ge --
+	nom -- men \x und das
+	Le -- ben und ein
+	un -- ver -- %35
+	gäng -- li -- ches,
+	un -- ver --
+	gäng -- li -- ches
+	\xE We -- ſen ans Licht ge --
+	bracht, ans Licht ge -- %40
+	bracht,
+
+	und ein un -- ver -- %44
+	gäng -- li -- ches %45
+	We -- ſen ans
+	Licht, ans
+	Licht, ans Licht, ans
+	Licht ge --
+	bracht. %50
+	\x Chri -- ſtus hat dem
+	To -- de die Macht, hat dem
+	To -- de, dem To -- de die
+	\xE Macht ge -- nom --
+	men %55
+	und das
+	Le -- ben und ein
+	un -- ver --
+	gäng -- li -- ches
+	We -- ſen ans %60
+	Licht ge --
+	bracht, ans Licht, ans
+	Licht ge --
+	bracht. %64 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

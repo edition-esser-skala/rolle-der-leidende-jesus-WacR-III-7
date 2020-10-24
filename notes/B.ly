@@ -858,6 +858,133 @@ LammDasBassoLyricsB = \lyricmode {
 	Sieg! %9 finis
 }
 
+ChristusHatDemBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoChristusHatDem
+		\mvTr d2\fE^\tuttiE d
+		d4 d d d8 d
+		g4 r8 g g4 g
+		d d r d
+		cis cis8 cis cis4 cis %5
+		d d r2
+		r r4 d8 d
+		cis4 cis cis cis
+		d2 d
+		cis cis4 cis %10
+		d fis8 fis g4 gis
+		a2 r8 a gis e
+		a2 r
+		R1*2 %15
+		r4 \mvTr gis8.\pE^\solo a16 h4 h
+		h8.([ cis16] a2) gis8 gis
+		a([ gis)] a4 \mvTr d,2\fE^\tutti
+		cis4 r gis'2
+		a4 d, fis d %20
+		e2 e
+		a, r
+		R1*5 %27
+		d2 d
+		d4 d d d8 d
+		g4 r8 g g4 g %30
+		d d r d
+		dis dis8 dis dis4 dis
+		e e r2
+		r r4 e8 e
+		dis4 dis dis dis %35
+		e2 e
+		cis1(
+		d2) d4 d
+		g g8 g gis4 gis
+		a2 r8 a gis e %40
+		a2 r
+		R1*2
+		r4 \mvTr e8.\pE^\solo fis16 g4 g
+		fis2 g4 g %45
+		a a \mvTr g2\fE^\tutti
+		fis4 r cis'2
+		d4 g, h g
+		a2 a
+		d, r %50
+		R1
+		a'8 a a a a4 a8 a
+		a4 a8 a a4 a8 a
+		a4 a gis2
+		a\fermata r %55
+		r r4 d,8 d
+		cis4 cis cis cis
+		d2 d
+		cis cis4 cis
+		d2 g4 g %60
+		a2 a
+		h4 h h h
+		a2 a
+		d, r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}
+
+ChristusHatDemBassoLyrics = \lyricmode {
+	Chri -- ſtus
+	hat dem To -- de die
+	Macht, die Macht ge --
+	nom -- men, dem
+	To -- de die Macht ge -- %5
+	nom -- men
+	und das
+	Le -- ben und ein
+	un -- ver --
+	gäng -- li -- ches %10
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge --
+	bracht,
+
+	und ein un -- ver -- %16
+	gäng -- li -- ches
+	We -- ſen ans
+	Licht, ans
+	Licht, ans Licht, ans %20
+	Licht ge --
+	bracht.
+
+	Chri -- ſtus %28
+	hat dem To -- de die
+	Macht, die Macht ge -- %30
+	nom -- men, dem
+	To -- de die Macht ge --
+	nom -- men
+	und das
+	Le -- ben und ein %35
+	un -- ver --
+	gäng --
+	li -- ches
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge -- %40
+	bracht,
+
+	und ein un -- ver -- %44
+	gäng -- li -- ches %45
+	We -- ſen ans
+	Licht, ans
+	Licht, ans Licht, ans
+	Licht ge --
+	bracht. %50
+
+	Chri -- ſtus hat dem To -- de die
+	Macht, hat dem To -- de die
+	Macht ge -- nom --
+	men %55
+	und das
+	Le -- ben und ein
+	un -- ver --
+	gäng -- li -- ches
+	We -- ſen ans %60
+	Licht ge --
+	bracht, ans Licht, ans
+	Licht ge --
+	bracht. %64 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

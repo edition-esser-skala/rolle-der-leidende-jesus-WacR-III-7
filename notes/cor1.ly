@@ -96,3 +96,75 @@ MeinIstDieCornoI = {
 		\pa c c, c \pd r\fermata \bar "|." %127 finis
 	}
 }
+
+ChristusHatDemCornoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoChristusHatDem
+		c'2\fE g4 e
+		c2 r
+		c' c
+		r4 e8. e16 e4 e
+		d2 d %5
+		r4 e8. e16 e4 e
+		e2 r
+		d d
+		e r
+		d d %10
+		\pa e4 c2 d4 \pd
+		r d8. d16 d4-! r
+		r d8. d16 d4-! r
+		R1
+		e2\p e %15
+		d r4 d
+		d2 c
+		d4 r r g,8.\f g16
+		g2 r4 d'8. d16
+		d4 e r2 %20
+		R1
+		d2 d4 d
+		d2 r
+		e4 e8. e16 e4 e
+		d d8. d16 d4 d %25
+		\pao d2 r4 \pao d
+		d2 r
+		c g4 e
+		c2 r
+		c' c %30
+		r4 e8. e16 e4 e
+		e2 r4 e
+		d2 r
+		r4 d d d
+		e2 e %35
+		d r
+		d d
+		e r4 c
+		c2 d
+		r4 d8. d16 d4-! r %40
+		r d8. d16 d4 \pao d
+		d2 r
+		r4 e2\p e4
+		e d r2
+		R1 %45
+		r2 c\fE
+		r4 c8. c16 d2
+		e4 c r2
+		R1
+		\pao c4 e2 e4 %50
+		d2 r
+		g, g
+		g g
+		g r4 e'
+		d2\fermata r %55
+		R1
+		d2 d
+		e r
+		d d
+		\pao c r %60
+		e d
+		\pao c r
+		e d
+		c4 g2 g4
+		g2 r\fermata \bar "|." %65 finis
+	}
+}

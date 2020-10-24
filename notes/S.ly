@@ -851,6 +851,137 @@ MeinIstDieSopranoLyrics = \lyricmode {
 	winkt. %120 finis
 }
 
+ChristusHatDemSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoChristusHatDem
+		\mvTr d'2\fE^\tuttiE d,
+		a'4 a a a8 a
+		h4 r8 h h4 d
+		d a r a
+		e' e8 e e4 g, %5
+		fis8.([ e16)] d4 r a'8 a
+		a4 a a a
+		a2 a
+		a1~
+		a2 a4 a %10
+		a a8 a h4 e
+		d( cis) r8 cis h d
+		d4( cis) r2
+		r4 \mvTr cis8.\pE^\solo d16 e4 e
+		e8.([ fis16] d2) cis8 cis %15
+		cis4 h r2
+		R1
+		r2 \mvTr fis'\fE^\tutti
+		e4 r d2
+		cis4 fis d h %20
+		a2 h
+		a r
+		R1*5 %27
+		d2 d,
+		a'4 a a a8 a
+		h4 r8 h h4 d %30
+		d a r a
+		fis' fis8 fis fis4 a,
+		g8.([ fis16)] e4 r h'8 h
+		h4 h h h
+		h2 h %35
+		h h4 h
+		a2 a
+		a a4 a
+		h h8 h e4 d
+		d( cis) r8 cis h d %40
+		d4( cis) r2
+		r4 \mvTr cis8.\pE^\solo d16 e4 e
+		e8.([ fis16] d2) fis,8 fis
+		fis4 e r2
+		R1 %45
+		r2 \mvTr h'\fE^\tutti
+		a4 r g'2
+		fis4 d d d
+		d2 e
+		d r %50
+		r a8 a a a
+		h4 h8 h cis4 cis8 cis
+		d4 d8 d e4 e8 e
+		fis4 d gis,2
+		a\fermata r4 a8 a %55
+		a4 a a a
+		a2 a
+		a1~
+		a2 a4 a
+		a2 h4 e %60
+		a,2 cis
+		d4 d h gis
+		a2 e'\trill
+		d r
+		R1\fermataMarkup \bar "|." %65 finis
+	}
+}
+
+ChristusHatDemSopranoLyrics = \lyricmode {
+	\xE Chri -- ſtus
+	hat dem To -- de die
+	Macht, die Macht ge --
+	nom -- men, dem
+	To -- de die Macht ge -- %5
+	nom -- men und das
+	Le -- ben und ein
+	un -- ver --
+	gäng --
+	li -- ches %10
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge --
+	bracht,
+	und ein un -- ver --
+	gäng -- li -- ches %15
+	We -- ſen
+
+	ans
+	Licht, ans
+	Licht, ans Licht, ans %20
+	Licht ge --
+	bracht.
+
+	Chri -- ſtus %28
+	hat dem To -- de die
+	Macht, die Macht ge -- %30
+	nom -- men, dem
+	To -- de die Macht ge --
+	nom -- men \x und das
+	Le -- ben \xE und ein
+	un -- ver -- %35
+	gäng -- li -- ches,
+	un -- ver --
+	gäng -- li -- ches
+	We -- ſen ans Licht ge --
+	bracht, ans Licht ge -- %40
+	bracht,
+	und ein un -- ver --
+	gäng -- li -- ches
+	We -- ſen
+	%45
+	ans
+	Licht, ans
+	Licht, ans Licht, ans
+	Licht ge --
+	bracht. %50
+	Chri -- ſtus hat dem
+	To -- de die Macht, hat dem
+	To -- de, dem To -- de die
+	Macht ge -- nom --
+	men und das %55
+	Le -- ben und ein
+	un -- ver --
+	gäng --
+	li -- ches
+	We -- ſen ans %60
+	Licht ge --
+	bracht, ans Licht, ans
+	Licht ge --
+	bracht. %64 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
