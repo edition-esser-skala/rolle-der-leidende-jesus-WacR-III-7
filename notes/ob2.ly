@@ -450,3 +450,33 @@ WennDortOboeII = {
 		h1\fermata \bar "|." %22 finis
 	}
 }
+
+GottDuDonnerstOboeII = {
+	\relative c' {
+		\clef treble
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		R1
+		d2\fE d
+		b' a
+		g8 r b r a r a r
+		f r d r r2 %5
+		R1*2
+		r2 b'4-! b-!
+		g-! e8 e' d a b e,
+		d4-! r b'-\parenthesize-! b-! %10
+		a r8 a a f-! g-! a-!
+		d,4-\parenthesize-! r r2
+		R1*13 %25
+		R1\fermataMarkup
+		R1*17 %43
+		f2\fE r
+		f f %45
+		d' c
+		b8 r d r c r c r
+		a r f r r2
+		a8 r f r r4 c \noBreak
+		f r r2 \bar "|" %50
+		\time 3/4 \partialFourth r4 \noBreak R2.*22 %72
+		R2.\fermataMarkup \bar "|." %73 finis
+	}
+}

@@ -450,3 +450,33 @@ WennDortOboeI = {
 		h1\fermata \bar "|." %22 finis
 	}
 }
+
+GottDuDonnerstOboeI = {
+	\relative c' {
+		\clef treble
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		\pa d'2\fE d \pd
+		d d
+		d d
+		g8 r e r cis r \pao a r
+		\pao f r \pao d r r2 %5
+		R1*2
+		r2 g'8 b16( g) e8 g16( e)
+		cis8 e16( cis) a8 g' f d e cis
+		d4-! r d g8 b16( g) %10
+		e8 g16( e) cis8[ e16( cis)] \pa d8 f,-! g-! a-! \pd
+		d4-! r r2
+		R1*13 %25
+		R1\fermataMarkup
+		R1*17 %43
+		f2\fE \pao f
+		f1 %45
+		f2 f
+		b8 r g r e r \pao c r
+		\pao a r \pao f r r2
+		\pao a8 r \pao f r r4 \pao c \noBreak
+		\pao f r r2 \bar "|" %50
+		\time 3/4 \partialFourth r4 \noBreak R2.*22 %72
+		R2.\fermataMarkup \bar "|." %73 finis
+	}
+}

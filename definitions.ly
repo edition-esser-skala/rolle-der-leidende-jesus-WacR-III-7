@@ -740,10 +740,11 @@ tempoWerIstDerR = \tempoMarkup "Recitativo"
 	tempoWerIstDerL = \tempoMarkup "Largo"
 	tempoWerIstDerPv = \tempoMarkup "Poco vivace"
 	tempoWerIstDerV = \tempoMarkup "Vivace"
+tempoGottDuDonnerst = \tempoMarkup "Allegro"
 
 
 
-
+partialFourth = \set Timing.measurePosition = #(ly:make-moment -1/4)
 
 \include "notes/fl1.ly"
 \include "notes/fl2.ly"

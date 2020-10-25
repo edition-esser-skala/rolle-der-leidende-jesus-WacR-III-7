@@ -991,3 +991,83 @@ WerIstDerViola = {
 		r2\fermata \bar "|." %80 finis
 	}
 }
+
+GottDuDonnerstViola = {
+	\relative c' {
+		\clef alto
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		d'8\fE-! d,-! d-! d'-! c-! c,-! c-! c'-!
+		b b, b b' a a, a a'
+		g g, g g' f f, f f'
+		g4-! b-! a-! a16 b a g
+		f g f e d e d c b c b a g8 b %5
+		a4 a' b16 a g f e d cis h
+		a4 a' b16 a g f e d cis h
+		a4 r r g'8 b16( g)
+		e8 g16( e) cis8 a' a a g e
+		d4 r g8 b16( g) e8 g16( e) %10
+		cis8 e16( cis) a8 a' a f-! g-! a-!
+		d, e16 f g a h cis d4 r
+		r2 f,~\pE
+		f fis
+		g8 g, g g' f f, f f' %15
+		e4 g a a16 b a g
+		f g f e d e d c b2
+		a r4 a'16\f b a g
+		f g f e d e d c b c b a g8 b
+		a4 r r2 %20
+		r4 a'\f b16 a g f e d cis h
+		a4 r r2
+		r4 a'\f b16 a g f e d cis h
+		a4 a' b,\pE r
+		a8\f h16 cis d e fis gis a8 g16 f e d cis h %25
+		a2\trill\fermata r4 a8.\p b!16
+		c!4-! a-! fis-! d-!
+		b'-! g-! e-! c-!
+		f a8\fE a a4 r
+		r a16 a a a a4-! r %30
+		r a16 a a a a4-! r
+		r2 f'~\pE
+		f4 b,16\fE b b b b4 r
+		g2~\pE g4 r
+		c8\f d16 e f g a h c8 h16 a g f e d %35
+		c2 r4 g8.\pE a16
+		b4-! g-! e-! c-!
+		b'-! g-! e-! c-!
+		a' a a r
+		b8\f b\p b b h\f h\p h h %40
+		c\f c\p c c cis\f cis\p cis cis
+		d4 r r2
+		b4 r c r
+		f2\f es
+		d4 d8 d' a a, a a' %45
+		b b, b b' a a, a a'
+		g r d' r c4 c16 d c b
+		a b a g f e d c b8 a16 b c8 c
+		f4 f16 e d c b8 a16 b c8 c \noBreak
+		f,4 f8 f f4 r \bar "|" %50
+		\time 3/4 \partialFourth r4 \noBreak f8(\p f) b( b) h( h) \noBreak
+		c4 c8 b as g
+		\slurDashed f( f) b( b) h( h) \slurSolid
+		c( c) c( c) c( c)
+		c( c) c4 r %55
+		\once \slurDashed f8( f) f( f) f( f)
+		d( d) d4 r
+		g8( g) g( g) g( g)
+		f f g[ g g, g]
+		a( a) a( a) cis( cis) %60
+		d( d) d( d) d( d)
+		e( e) e( e) e( e)
+		\slurDashed  d( d) d( d) d( d) \slurSolid
+		d( d) g,( g) f( f)
+		e( e) g( g) b( b) %65
+		a( a) a( a) a( a)
+		g( g) a( a) a( a)
+		b( b) b( b) b( b)
+		g( g) g( g) g( g)
+		a4 a a %70
+		d d d
+		d g, a
+		a2.\fermata \bar "|." %73 finis
+	}
+}

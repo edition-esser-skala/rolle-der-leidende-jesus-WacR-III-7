@@ -1006,6 +1006,86 @@ WerIstDerViolinoI = {
 	}
 }
 
+GottDuDonnerstViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		d'8-!\fE d,-! d-! d'-! d-! d,-! d-! d'-!
+		d d, d d' d d, d d'
+		d d, d d' d d, d d'
+		g16 a g f e f e d cis d cis h a b a g
+		f g f e d e d c b c b a g8 b %5
+		a4 a' b16 a g f e d cis h
+		a4 a' b16 a g f e d cis h
+		a4 r g''8 b16( g) e8 g16( e)
+		cis8 e16( cis) a8 g' f d e cis
+		d4 r <g b, d, g,> g8 b16( g) %10
+		e8 g16( e) cis8 e16( cis) d8 f,-! g-! a-!
+		d, e16 f g a h cis d4-! r
+		d8\p d, d d' d d, d d'
+		d d, d d' d d, d d'
+		d d, d d' d d, d d' %15
+		g-! b-! e,-! g-! cis,-! e-! a,16 b a g
+		f g f e d e d c b2
+		a4 g''16\f f e d cis d cis h a b a g
+		f g f e d e d c b c b a g8 b
+		a4 r gis2\p %20
+		a4 a'\f b16 a g f e d cis h
+		a4 r gis2\p
+		a4 a'\f b16 a g f e d cis h
+		a4 a' b,\p r
+		a8\fE h16 cis d e fis gis a8 g16 f e d cis h %25
+		a2\trill\fermata r4 a'8.\p b!16
+		c!4 c8 es16( c) a8 c16( a) fis8 \once \slurDashed a16( fis)
+		d4 b'8 d16( b) g8 b16( g) e8 g16( e)
+		f8\f a16 f c8 f16 c a4 r
+		r f'16 f f f f4-! r %30
+		r f16 f f f f4-! r
+		r2 es'\p
+		d4 f,16\f f f f b4-! r
+		d2~\p d4 r
+		c,8\f d16 e f g a h c8 h16 a g f e d %35
+		c2 r4 g'8.\p a16
+		b4 b8 d16( b) g8 b16( g) e8 g16( e)
+		c4 b'8 d16( b) g8 b16( g) e8 g16( e)
+		f8 a16 f c8 f16 c a4 r
+		b16\f b[\p b b] b b b b h\f h[\p h h] h h h h %40
+		c\f c[\p c c] c c c c cis\f cis[\p cis cis] cis cis cis cis
+		d4 r r b'8 c
+		d4 b, c r
+		f'8-!\f f,-! f-! f'-! f f, f f'
+		f f, f f' f f, f f' %45
+		f f, f f' f f, f f'
+		b b16 a g a g f e f e d c d c b
+		a b a g f e d c b8 a16 b c8 c
+		a'16 g f e f e d c b8 a16 b c8 c \noBreak
+		f8 a,16 c f8 a,16 c f4 r \bar "|" %50
+		\time 3/4 \partialFourth a8.(\p b16) \noBreak c8( c) b( b) a( a) \noBreak
+		g( f) e[ g as b]
+		c( c) b( b) as( as)
+		g( g) g( g) g( g)
+		r f'16.\f c32 a!8 c\p c c %55
+		d( d) d( d) d( d)
+		r g16.\f d32 h8 d\p d d
+		e!( e) e( e) e( e)
+		f a g([ g) e( e)]
+		d( d) cis( cis) a( a) %60
+		h( h) h( h) h( h)
+		cis( cis) cis( cis) cis( cis)
+		c( c) c( c) c( c)
+		b( b) b( b) d( d)
+		d( d) d( d) d( d) %65
+		cis( cis) cis( cis) d( d)
+		d b16( g) f8( f) es( es)
+		d( d) f( f) f( f)
+		e!( e) e( e) e( e)
+		f( f) e2 %70
+		d4 g'8( e) cis( e)
+		d a b( g) e( g)
+		g( f) f2\fermata \bar "|." %73 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

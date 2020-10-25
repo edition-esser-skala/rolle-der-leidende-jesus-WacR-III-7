@@ -1004,3 +1004,83 @@ WerIstDerViolinoII = {
 		r2\fermata \bar "|." %80 finis
 	}
 }
+
+GottDuDonnerstViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		d'8-!\fE d,-! d-! d'-! d-! d,-! d-! d'-!
+		d-! d,-! d-! d'-! c c, c c'
+		b b, b b' a a, a d'
+		g16 a g f e f e d cis d cis h a b a g
+		f g f e d e d c b c b a g8 b %5
+		a4 a' b16 a g f e d cis h
+		a4 a' b16 a g f e d cis h
+		a4 r g''8 b16( g) e8 g16( e)
+		cis8 e16( cis) a8 g' f d e cis
+		d4 r <g b, d, g,> g8 b16( g) %10
+		e8 g16( e) cis8 e16( cis) d8 f,-! g-! a-!
+		d, e16 f g a h cis d4-! r
+		R1
+		d8\p d, d d' c c, c c'
+		b b, b b' a a, a a' %15
+		g4 b a a16 b a g
+		f g f e d e d c b2
+		a4 g''16\f f e d cis d cis h a b a g
+		f g f e d e d c b c b a g8 b
+		a4 r gis2\p %20
+		a4 a'\f b16 a g f e d cis h
+		a4 r gis2\p
+		a4 a'\f b16 a g f e d cis h
+		a4 a' b,\p r
+		a8\fE h16 cis d e fis gis a8 g16 f e d cis h %25
+		a2\trill\fermata r4 a'8.\p b!16
+		c!4 c8 es16( c) a8 c16( a) fis8 \once \slurDashed a16( fis)
+		d4 b'8 d16( b) g8 b16( g) e8 g16( e)
+		f8\f a16 f c8 f16 c a4 r
+		r c16 c c c c4-! r %30
+		r c16 c c c c4-! r
+		r2 c'\p
+		b4 d,16\f d d d d4-! r
+		f2~\p f4 r
+		c8\f d16 e f g a h c8 h16 a g f e d %35
+		c2 r4 g'8.\p a16
+		b4 b8 d16( b) g8 b16( g) e8 g16( e)
+		c4 b'8 d16( b) g8 b16( g) e8 g16( e)
+		f8 a16 f c8 f16 c a4 r
+		b16\f b[\p b b] b b b b h\f h[\p h h] h h h h %40
+		c\f c[\p c c] c c c c cis\f cis[\p cis cis] cis cis cis cis
+		d4 r r b'8 c
+		d4 b, c r
+		f'8-!\f f,-! f-! f'-! f f, f f'
+		f f, f f' es es, es es' %45
+		d d, d d' c c, c f'
+		b b16 a g a g f e f e d c d c b
+		a b a g f e d c b8 a16 b c8 c
+		a'16 g f e f e d c b8 a16 b c8 c \noBreak
+		f8 a,16 c f8 a,16 c f4 r \bar "|" %50
+		\time 3/4 \partialFourth f8.(\p g16) \noBreak a8( a) g( g) f( f) \noBreak
+		e( d) c[ e f g]
+		as( as) g( g) f( f)
+		e( e) e( e) e( e)
+		r f'16.\f c32 a!8 a\p a a %55
+		b( b) b( b) b( b)
+		r g'16.\f d32 h8 h\p h h
+		c( c) c( c) cis( cis)
+		d a b([ b) b( g)]
+		f( f) e( e) e( e) %60
+		gis( gis) gis( gis) gis( gis)
+		g( g) g( g) g( g)
+		fis( fis) fis( fis) fis( fis)
+		g( g) d( d) d( d)
+		e4 r g'8( g) %65
+		g( g) g( g) f( f)
+		e( e) d( d) c( c)
+		b( b) d,( d) d( d)
+		d( d) d( d) d( d)
+		d( d) d4 cis %70
+		d b'8( g) e( g)
+		f4 g8( e) cis( e)
+		e( d) d2\fermata \bar "|." %73 finis
+	}
+}

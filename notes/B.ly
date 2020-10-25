@@ -1039,6 +1039,130 @@ WennDortBassoLyrics = \lyricmode {
 	gen. %22 finis
 }
 
+GottDuDonnerstBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \minor \time 4/4 \autoBeamOff \tempoGottDuDonnerst
+		R1*11 %11
+		r2 d'4 d
+		d1~
+		d2 d,4 r
+		b'2 a %15
+		g4 b a h8([ cis)]
+		d4 d, g8([ f)] e([ d)]
+		a'2 r
+		R1
+		r4 a d d, %20
+		a'2 r
+		r4 a d d,
+		a'2 r
+		r d4 gis,
+		a2 r %25
+		r\fermata r4 a8. b!16
+		c!4 a fis d
+		b' r8 g e4 c
+		a'2 r4 c
+		c f, r c' %30
+		c8 a f4 r c'8 d
+		es4 c f, es'
+		d2 r4 b8 c
+		d4 d d f,
+		c2 r %35
+		r r4 g'8. a16
+		b4 g e c
+		b'2 r4 b8 g
+		a4 r r c8 f,
+		d'4 b, h h %40
+		c c' cis cis
+		d2 r4 b8 c
+		d4 b, c8([ b)] c4
+		f2 r \noBreak
+		R1*6 \bar "|" %50
+		\time 3/4 \partialFourth a8. b16 \noBreak c8 b16([ a)] g4. f8 \noBreak
+		e([ d)] c4 as'8. b16
+		c8 b16([ as)] g4. as16([ f)]
+		e8.([ d32 c)] c4 g'8 b
+		\appoggiatura b4 a!4. c16([ a)] f8 a %55
+		b8.([ a16)] b4 b8 d
+		\appoggiatura c4 h4. d16([ h)] g8 h
+		c8.([ h16)] c4 cis8 a
+		d4~ d8 b g e
+		a2 a4 %60
+		gis r d'
+		cis8.([ h16)] a4 r
+		a8 d, c'4. a8
+		b4 b a
+		\appoggiatura a g2 e8 d' %65
+		cis4. a8 d4~
+		d8 b16([ g)] f4( es)\trill
+		d2 d4
+		b'( g) e!
+		d2( \grace f16 \tuplet 3/2 4 { e8[ d e)] } %70
+		d2 r4
+		R2.
+		R\fermataMarkup \bar "|." %73 finis
+	}
+}
+
+GottDuDonnerstBassoLyrics = \lyricmode {
+	Gott, du %12
+	don --
+	nerſt
+	zu den %15
+	Sün -- dern dei -- nen
+	Fluch vom Rich -- ter --
+	ſtuhl,
+
+	du don -- nerſt, %20
+	Gott,
+	vom Rich -- ter --
+	ſtuhl
+	dei -- nen
+	Fluch %25
+	bis hi --
+	nab zum Feu -- er --
+	pfuhl, zum Feu -- er --
+	pfuhl, du
+	don -- nerſt vom %30
+	Rich -- ter -- ſtuhl zu den
+	Sün -- dern dei -- nen
+	Fluch, zu den
+	Sün -- dern dei -- nen
+	Fluch %35
+	bis hi --
+	nab zum Feu -- er --
+	pfuhl, bis hi --
+	nab, bis hi --
+	nab zum Feu -- er -- %40
+	pfuhl, zum Feu -- er --
+	pfuhl, bis hi --
+	nab zum Feu -- er --
+	pfuhl.
+
+	Ach, wenn %50
+	mei -- ne Zäh -- ren
+	flie -- ßen, wenn die
+	Reu mein Herz zer --
+	ri -- ßen, wenn das
+	ſtra -- fen -- de Ge -- %55
+	wiſ -- ſen, wenn das
+	ſtra -- fen -- de Ge --
+	wiſ -- ſen auf euch
+	gie -- ßet Höl -- len --
+	pein, ach, %60
+	Herr, Herr,
+	hö -- re,
+	hö -- re dann mein
+	Schreyn, gib mir
+	Troſt, gib mir %65
+	Troſt, die Angſt __
+	zu lin --
+	dern, die
+	Angſt zu
+	lin -- %70
+	dern. %71 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

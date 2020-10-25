@@ -2302,6 +2302,162 @@ WerIstDerBassFigures = \figuremode {
 	r2 %80 finis
 }
 
+GottDuDonnerstOrgano = {
+	\relative c {
+		\clef bass
+		\key d \minor \time 4/4 \tempoGottDuDonnerst
+		d'8\fE-! d,-! d-! d'-! c-! c,-! c-! c'-!
+		b b, b b' a a, a a'
+		g g, g g' f f, f f'
+		e4-! g-! a-! a16 b a g
+		f g f e d e d c b c b a g8 b %5
+		a4 a' b16 a g f e d cis h
+		a4 a' b16 a g f e d cis h
+		a4 r r g'8 b16( g)
+		e8 g16( e) cis8 a d f g a
+		b4 r g8 b16( g) e8 g16( e) %10
+		cis8 e16( cis) a8 g' f f g a
+		d, e16 f g a h cis d4 r
+		r2 c\p
+		b8 b, b b' a a, a a'
+		g g, g g' f f, f f' %15
+		e4 g a a16 b a g
+		f g f e d e d c b2
+		a r4 a'16\f b a g
+		f g f e d e d c b c b a g8 b
+		a4 r b2\p %20
+		a4 a'\f b16 a g f e d cis h
+		a4 r b2\p
+		a4 a'\f b16 a g f e d cis h
+		a4 a' b,2\p
+		a8\f h16 cis d e fis gis a8 g16 f e d cis h %25
+		a2\fermata r4 a'8.\p b!16
+		c!8 es16( c) a8 c16( a) fis8 a16( fis) d4
+		b'8 d16( b) g8 b16( g) e8 g16( e) c4
+		f f,8\f f f4 r
+		r a16 a a a a4-! r %30
+		r a16 a a a a4-! r
+		r2 a\p
+		b4 b16\f b b b b4 r
+		h2~\p h4 r
+		c8\f d16 e f g a h c8 h16 a g f e d %35
+		c2 r4 g'8.\pE a16
+		b8 d16( b) g8 b16( g) e8 g16( e) c4
+		b'8 d16( b) g8 b16( g) e8 g16( e) c4
+		f8 f f f a,4-! r
+		b8\f b\p b b h\f h\p h h %40
+		c\f c\p c c cis\f cis\p cis cis
+		d4 r r2
+		b4 r c r
+		f2\f es'
+		d8 d, d d' c c, c c' %45
+		b b, b b' a a, a a'
+		g4 b c c16 d c b
+		a b a g f e d c b8 a16 b c8 c
+		f4 f16 e d c b8 a16 b c8 c \noBreak
+		f,4 f8 f f4 r \bar "|" %50
+		\time 3/4 \partialFourth r4 \noBreak f\p b h \noBreak
+		c c8 b as g
+		f4 b h
+		c c c
+		es es\f es\p %55
+		d d d
+		f f\f f\p
+		e! e g
+		f g g
+		a, a a %60
+		a a a
+		a a a
+		d d d
+		g g f
+		e e e %65
+		a, a a
+		g^\critnote a a
+		b b b
+		g g g
+		a2. %70
+		d4 d d
+		d g, a
+		d d,2\fermata \bar "|." %73 finis
+	}
+}
+
+GottDuDonnerstBassFigures = \figuremode {
+	r2 <2>
+	<5> <4 3>
+	<5> <6>
+	<5>4 <6> <_+>2
+	<6> q %5
+	<_+>1
+	r
+	r2. <6>4
+	<6\\> <6 5>8 <7 _+> r <6> <6 5> <_+>
+	<5>2. <6\\>4 %10
+	<6> <_+>8 <\t> <6>4 <6 5>8 <_+>
+	r1
+	r2 <2>
+	<5> <6\\ 4 3>
+	<5> <6> %15
+	<5>4 <6> <_+>2
+	<6> q
+	<_+>1
+	<6>2 q
+	<_+> <6\\> %20
+	<_+>1
+	q2 <6\\>
+	r1
+	<_+>2 <6\\>
+	<_+>1 %25
+	q2. <1>8. q16
+	<6 _->4 <5-> <6> <_+>
+	<6>2 q
+	r1
+	r4 <6>2. %30
+	r4 r2.
+	r2 <6 5->
+	r1
+	<6 5>
+	r %35
+	r2. <1>8. q16
+	<2>1 \bassFigureExtendersOn
+	q2. q4 \bassFigureExtendersOff
+	r2 <6>
+	r <6> %40
+	r <6>
+	r1
+	<6>
+	r2 <2>
+	<5> <6 4 _-> %45
+	<5> <6>
+	<5>4 <6>2.
+	<6>2 <6 5>
+	r <6 5>
+	r1 %50
+	r4 r <8 6> <7 5>
+	<5 3>4. <\t \t>8 <6> <6!>
+	<_->4 <8 6 _-> <7 5 _!>
+	<5 _!>2.
+	<4! 2> %55
+	<6>
+	<4! 2>
+	<6>2 <4+ 2>4
+	<6> <5> <6>
+	<6 4> <5 _+>2 %60
+	<7+ 4 2!>2.
+	<7! 5 _+>
+	<7! _+>
+	r2 <6>4
+	<7>2. %65
+	<7 _+>2 <6 4>4
+	<6 5>4 <6 4> <6 5->
+	<5>2.
+	<6 5>
+	<6 4>4 <5 \t> <\t _+> %70
+	r4 <7+ 4 2>2
+	<8 3>4 <6 5> <_+>
+	<7+ 4> <8 3>2 %73 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

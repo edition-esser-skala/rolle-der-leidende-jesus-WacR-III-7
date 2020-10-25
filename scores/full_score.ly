@@ -1281,55 +1281,108 @@
 	% 	\pageBreak
 	% 	\markup \null
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A C C O M P A G N A T O"
+	% 		number = "2.1"
+	% 		title = "Wer iſt der Mann"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #35
+	% 		system-system-spacing.minimum-distance = #35
+	% 		systems-per-page = #2
+	% 	}
+	% 	\tocLabelLong "weristder" "2.1" "Accompagnato" "Wer ist der Mann"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WerIstDerViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WerIstDerViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WerIstDerViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WerIstDerOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WerIstDerBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "2.1"
-			title = "Wer iſt der Mann"
+			genre = "A R I A"
+			number = "2.2"
+			title = "Gott, du donnerſt zu den Sündern"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #35
-			system-system-spacing.minimum-distance = #35
-			systems-per-page = #2
-		}
-		\tocLabelLong "weristder" "2.1" "Accompagnato" "Wer ist der Mann"
+		\paper { systems-per-page = #2 }
+		% \tocLabelLong "gottdudonnerst" "2.2" "Aria" "Gott, du donnerst zu den Sündern"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+						\partcombine \GottDuDonnerstOboeI \GottDuDonnerstOboeII
+					>>
+				>>
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\WerIstDerViolinoI
+							\GottDuDonnerstViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\WerIstDerViolinoII
+							\GottDuDonnerstViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\WerIstDerViola
+						\GottDuDonnerstViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \GottDuDonnerstBassoNotes }
 					}
-					\new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
+					\new Lyrics \lyricsto Basso \GottDuDonnerstBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WerIstDerOrgano
+						\GottDuDonnerstOrgano
 					}
 				>>
-				\new FiguredBass { \WerIstDerBassFigures }
+				\new FiguredBass { \GottDuDonnerstBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 4 = 120 }
 		}
 	}
 }
