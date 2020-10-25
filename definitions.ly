@@ -742,6 +742,7 @@ tempoWerIstDerR = \tempoMarkup "Recitativo"
 	tempoWerIstDerV = \tempoMarkup "Vivace"
 tempoGottDuDonnerst = \tempoMarkup "Allegro"
 tempoAchSeele = \tempoMarkup "[Tempo deest]"
+tempoDerTagBricht = \tempoMarkup "[Tempo deest]"
 
 
 

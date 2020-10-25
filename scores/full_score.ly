@@ -1385,78 +1385,112 @@
 	% 		\midi { \tempo 4 = 120 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "2.3"
+	% 		title = "Ach Seele, ſchau um welchen Preis"
+	% 	}
+	% 	\tocLabelLong "achseele" "2.3" "Choral" "Ach Seele, schau um welchen Preis"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \AchSeeleOboeI \AchSeeleOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\AchSeeleViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\AchSeeleViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\AchSeeleViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \AchSeeleSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsA
+	% 				\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \AchSeeleAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsA
+	% 				\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \AchSeeleTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsA
+	% 				\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsB
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \AchSeeleBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsA
+	% 				\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsB
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\AchSeeleOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \AchSeeleBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "2.3"
-			title = "Ach Seele, ſchau um welchen Preis"
+			genre = "R E C I T A T I V O"
+			number = "2.4"
+			title = "Der Tag bricht an, der feſtliche"
 		}
-		\tocLabelLong "achseele" "2.3" "Choral" "Ach Seele, schau um welchen Preis"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "dertagbricht" "2.4" "Recitativo" "Der Tag bricht an, der festliche"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \AchSeeleOboeI \AchSeeleOboeII
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\AchSeeleViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\AchSeeleViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\AchSeeleViola
-					}
-				>>
-				\new ChoirStaff \with { \twoStanzaDistance } <<
-					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \AchSeeleSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsA
-					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \AchSeeleAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsA
-					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsB
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \AchSeeleTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsA
-					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsB
-
+				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \AchSeeleBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \DerTagBrichtBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsA
-					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsB
+					\new Lyrics \lyricsto Basso \DerTagBrichtBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\AchSeeleOrgano
+						\DerTagBrichtOrgano
 					}
 				>>
-				\new FiguredBass { \AchSeeleBassFigures }
+				\new FiguredBass { \DerTagBrichtBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

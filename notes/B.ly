@@ -1253,6 +1253,72 @@ AchSeeleBassoLyricsB = \lyricmode {
 	fet. %9 finis
 }
 
+DerTagBrichtBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoDerTagBricht
+		r8 d g fis g4 r8 g
+		h8. h16 h4 r8 d d h
+		g4 r8 d f f a g
+		e e r c g' g g g
+		c g16 g g8 a b4 r8 g %5
+		e e e f g g a e
+		f4 r8 d f f f a
+		fis4 fis a8 d, r d
+		c'8. c16 c8 c d a c b
+		\time 2/4 g g r b %10
+		\time 4/4 b f r d16 es f8 f f f
+		as as as g g4 r
+		r r16 es es f g8 g g16 g g as
+		b4 r16 b b c des4 r8 b
+		b des, f es c c r16 es es as %15
+		\appoggiatura as8 g4 g b8 b c des
+		c c r as f f g as
+		es4 r r8 b' b as
+		\appoggiatura g f4 r8 c' c8. f,16 f4
+		r8 a! a c \appoggiatura g fis4 fis %20
+		fis8 fis fis g g d r4
+		R1
+		r4 r8 es16 f g8 g g16 g g b
+		\time 2/4 b8 es, r b'16 f
+		\time 4/4 g4 r8 b16 f g4 c8 c16 g %25
+		as4 r8 c16 g as4 d8 d16 a
+		h!4 r8 g h h h c
+		c g r4 \bar "||" %28 finis
+	}
+}
+
+DerTagBrichtBassoLyrics = \lyricmode {
+	Der Tag bricht an, der
+	feſt -- li -- che, der gro -- ße
+	Tag, ge -- ſen -- det von der
+	Lie -- be. Ent -- flam -- met von dem
+	Trie -- be der Rach und Wuth, ver -- %5
+	ſam -- mel -- te der Prieſ -- ter Hau -- fe
+	ſich. Er -- fül -- let mir Ver --
+	der -- ben rief er: Auf
+	Gol -- ga -- tha, am Kreu -- ze ſoll er
+	ſter -- ben. Tri -- %10
+	umph -- voll rei -- ßen ſie ihn zu Pi --
+	la -- tus Richt -- ſtuhl fort.
+	Den fei -- gen Rö -- mer ſchreckt der Klä -- ger
+	Wort und ihr Ge -- ſchrey, da --
+	von das Richt -- haus be -- bet: Wenn durch dein %15
+	Mit -- leid die -- ſer Je -- ſus
+	le -- bet, biſt du des Kai -- ſers
+	Feind. Ihm ſinkt der
+	Muth, doch ruft er noch:
+	Ich bin un -- ſchul -- dig %20
+	an dem Blut des From -- men.
+
+	Da er -- tönt das Schre -- ckens -- wort der
+	Sün -- der: Ü -- ber
+	uns, ü -- ber uns kom -- me ſein %25
+	Blut, ü -- ber uns kom -- me ſein
+	Blut und ü -- ber unſ -- re
+	Kin -- der. %28 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

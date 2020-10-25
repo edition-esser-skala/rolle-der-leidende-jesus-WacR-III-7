@@ -2536,6 +2536,72 @@ AchSeeleBassFigures = \figuremode {
 	r1 %34 finis
 }
 
+DerTagBrichtOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDerTagBricht
+		h!1~
+		h2 r
+		h1
+		c~
+		c2 cis~ %5
+		cis1
+		d
+		c!2 fis,~
+		fis1
+		\time 2/4 g2 %10
+		\time 4/4 d'1~
+		d2 r16 es32 f g16 b g es32 f g16 b,
+		\once \tieDashed es1~
+		es2 g,~
+		g as~ %15
+		\once \tieDashed as1~
+		as2 des4 r
+		r es e2
+		f1
+		es2 d~ %20
+		d4 r r d
+		g16 g32 a b16 d b g32 a b16 e,! f f32 g as16 c as f32 g as16 d,!
+		es2 r
+		\time 2/4 r16 es32 f g16 es d4
+		\time 4/4 r16 es32 f g16 es d4 r16 es32 f g16 f e4 %25
+		r16 f32 g as16 f e!4 r16 f32 g as16 g fis4
+		r16 g32 a h!16 d, f4 r2
+		r4 g \bar "||" %28 finis
+	}
+}
+
+DerTagBrichtBassFigures = \figuremode {
+	<6>1
+	r
+	<6>2 <5>
+	r1
+	r2 <7-> %5
+	r1
+	r
+	<4+ 2>2 <6>
+	r1
+	<_->2 %10
+	<6->1
+	<6- 5->2 <5->
+	<5->1
+	r2 <6- 5- _->
+	r <5-> %15
+	<7 4- 2->1
+	<5- 3>2 <5->
+	r4 <5-> <6 5->2
+	<_->1
+	<4! [2]>2 <7 _+> %20
+	r2. <_+>4
+	<_->4.. <6>16 <_->4.. <6->16
+	<5->1
+	r16 <5->8. <6->4
+	r16 <5->8. <6->4 r16 <5->8. <6>4 %25
+	r16 <_->8. <6>4 r16 <_->8. <6 _!>4
+	r16 <_!>8. <4 2>2.
+	r4 <_!> %28 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
