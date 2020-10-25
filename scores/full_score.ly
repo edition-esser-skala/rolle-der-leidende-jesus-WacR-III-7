@@ -1459,38 +1459,123 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "2.4"
+	% 		title = "Der Tag bricht an, der feſtliche"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "dertagbricht" "2.4" "Recitativo" "Der Tag bricht an, der festliche"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \DerTagBrichtBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \DerTagBrichtBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\DerTagBrichtOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \DerTagBrichtBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "2.4"
-			title = "Der Tag bricht an, der feſtliche"
+			genre = "C O R O"
+			number = "2.5"
+			title = "Juda, Todesworte ſprichſt du aus"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
-		}
-		\tocLabelLong "dertagbricht" "2.4" "Recitativo" "Der Tag bricht an, der festliche"
+		% \tocLabelLong "todesworte" "2.5" "Coro" "Juda, Todesworte sprichst du aus"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TodesworteOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TodesworteOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "cor (E♭)" "1, 2" }
+						\set Staff.soloText = \markup \medium \remark "cor 1"
+						\transpose c es
+						\partcombine \TodesworteCornoI \TodesworteCornoII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TodesworteViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TodesworteViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\TodesworteViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \DerTagBrichtBassoNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \TodesworteSopranoNotes }
 					}
-					\new Lyrics \lyricsto Basso \DerTagBrichtBassoLyrics
+					\new Lyrics \lyricsto Soprano \TodesworteSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \TodesworteAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \TodesworteAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \TodesworteTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \TodesworteTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \TodesworteBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \TodesworteBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\DerTagBrichtOrgano
+						\transpose c c,
+						\TodesworteOrgano
 					}
 				>>
-				\new FiguredBass { \DerTagBrichtBassFigures }
+				\new FiguredBass { \TodesworteBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 70 }
+			% \layout { }
+			\midi { \tempo 4 = 100 }
 		}
 	}
 }

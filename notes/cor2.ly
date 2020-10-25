@@ -155,3 +155,46 @@ ChristusHatDemCornoII = {
 		e2 r\fermata \bar "|." %65 finis
 	}
 }
+
+TodesworteCornoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoTodesworte
+		c'2.
+		e
+		e2 r4
+		R2.
+		d %5
+		d2 r4
+		R2.
+		e
+		e
+		e %10
+		e4 e r
+		e e r\fermata
+		e, e8. e16 e8 e
+		g4 g8. g16 g8 g
+		c2 c8. c16 %15
+		c2 c8. c16
+		c2 r4
+		r r c8. c16
+		c4 c c8. c16
+		c2 c4 %20
+		c2 r4
+		R2.*10 %31
+		c2.
+		d
+		e2 r4
+		R2.*3 %37
+		e2\fermata r4
+		R2.*3 %41
+		c2.
+		e
+		e4 r r
+		R2.*2 %46
+		c2.
+		d
+		e2 e4
+		c r r\fermata \bar "|." %50 finis
+	}
+}

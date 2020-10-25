@@ -1125,3 +1125,60 @@ AchSeeleViolinoII = {
 		f1\fermata \bar "|." %34 finis
 	}
 }
+
+TodesworteViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \tempoTodesworte
+		es8-!\fE g-! es-! c-! g4-\tenuto
+		g'8-! h-! g-! d-! g,4-\tenutoE
+		g'16 g g g g g g g g g g g
+		c c c c c c c c b b b b
+		as8 c as f c4 %5
+		c'16 c c c c c c c c c c c
+		c c c c c c c c c c c c
+		h8 g d h g4
+		es'8 g es c g4
+		h'8 g d h g4 %10
+		g'-! g-! r
+		<c es, g,> <h d, g,> r\fermata
+		\tuplet 3/2 4 { es,8 b es es b es es b es }
+		\tuplet 3/2 4 { d b d d b d d b d }
+		es8. g16 g4\trill b8. g16 %15
+		es8. g16 g4\trill b8. g16
+		es4 g8 es g b
+		des b des b b g
+		\tuplet 3/2 4 { as c as } g es g b
+		des b des b g b %20
+		as4 c,16 c c c c c c c
+		as4 r r
+		c8 h c h c h
+		c4 r r
+		h8 c d d c h %25
+		c4 r r
+		g8 a16 h c d e fis g4
+		r8. c16[ c8. c16 c8. c16]
+		h8.[ h16 h8. h16 h8. h16]
+		c8.[ c16 c8. c16 c8. c16] %30
+		h8.[ h16 h8. h16 h8. h16]
+		c8-! g-! es-! c-! g4
+		as''8 f c as f4
+		es f d
+		g r g %35
+		f8 c as c f4
+		a c8.[ c16 c8. a16]
+		g8. h16 h4\fermata r
+		c g8 f es d
+		c4 c8.[ c16 c8. c16] %40
+		c2\p h4
+		es8-!\f g-! es-! c-! g4
+		g'8-! h-! g-! d-! g,4
+		es''16 es es es d d d d des des des des
+		c c c c c c c c h h h h %45
+		h h h h c c c c f f f f
+		es8 g es c g4
+		as'8 f c as f4
+		es'8. c16 g,4 <g d' h'>
+		<g es' c'> r r\fermata \bar "|." %50 finis
+	}
+}

@@ -1138,6 +1138,100 @@ AchSeeleTenoreLyricsB = \lyricmode {
 	fet. %9 finis
 }
 
+TodesworteTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \minor \time 3/4 \autoBeamOff \tempoTodesworte
+		\mvTr es4\fE^\tuttiE es r
+		d d r
+		c2 e4
+		f8 f c4 c
+		c r r %5
+		c2 c4
+		d8 d d4 d
+		g, r8 g g g
+		c4 r8 g g g
+		d'4 r r %10
+		c-! h-! r
+		c g r\fermata
+		R2.*2
+		es4 r r %15
+		b' r r
+		es, g b
+		des( b) g
+		as es r
+		des' b g %20
+		as8([ g)] as4 r
+		R2.
+		es'8 d es d es d
+		es4 r r
+		d8 es f f es d %25
+		es4 r r8 es
+		d2 r4
+		c2 r4
+		d2 r4
+		c2 es4 %30
+		d8. d16 d4 r
+		g2 r4
+		f2 r4
+		es8 es f4 d
+		c c c %35
+		c8. c16 c4 r
+		es2 r4
+		g,2\fermata r4
+		c4 c8 f es d
+		c2 r4 %40
+		c8 fis, g4 g
+		c2 r4
+		R2.*7 %49
+		R2.\fermataMarkup \bar "|." %50 finis
+	}
+}
+
+TodesworteTenoreLyrics = \lyricmode {
+	\xE Ju -- da,
+	Ju -- da,
+	To -- des --
+	wor -- te ſprichſt du
+	aus, %5
+	To -- des --
+	wor -- te ſprichſt du
+	aus, er -- bebſt du
+	nicht, er -- bebſt du
+	nicht, %10
+	Ju -- da,
+	Ju -- da!
+
+	Horch, %15
+	horch,
+	dir jauchzt des
+	Ab -- grunds
+	Pfor -- te,
+	des Ab -- grunds %20
+	Pfor -- te,
+
+	En -- gel wen -- den ihr Ge --
+	ſicht,
+	ſie ver -- la -- ßen dich und %25
+	fliehn, und
+	fliehn.
+	Weh,
+	weh,
+	weh dir %30
+	Iſ -- ra -- el,
+	Rom,
+	Rom
+	wird dein Wort voll --
+	ziehn, weh dir %35
+	Iſ -- ra -- el,
+	weh,
+	weh,
+	Rom wird dein Wort voll --
+	ziehn, %40
+	wird dein Wort voll --
+	ziehn. %42 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

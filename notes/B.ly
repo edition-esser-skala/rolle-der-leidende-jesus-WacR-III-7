@@ -1319,6 +1319,100 @@ DerTagBrichtBassoLyrics = \lyricmode {
 	Kin -- der. %28 finis
 }
 
+TodesworteBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \minor \time 3/4 \autoBeamOff \tempoTodesworte
+		\mvTr c'4\fE^\tuttiE c r
+		h h r
+		c2 b4
+		as8 as as4 g
+		f r r %5
+		as2 g4
+		f8 f f4 fis
+		g r8 g g g
+		c4 r8 g g g
+		d'4 r r %10
+		c-! g-! r
+		c g\fermata r
+		R2.*2
+		es4 r r %15
+		b' r r
+		es, g b
+		des( b) g
+		as es r
+		des' b g %20
+		as8([ g)] as4 r
+		R2.
+		c8 h c h c h
+		c4 r r
+		h8 c d d c h %25
+		c4 r r8 fis,
+		g2 r4
+		as2 r4
+		g2 r4
+		fis2 fis4 %30
+		f8. f16 f4 r
+		es2 r4
+		f2 r4
+		g8 g g4 g
+		e e e %35
+		f8. f16 f4 r
+		fis2 r4
+		g2\fermata r4
+		as4 g8 g g g
+		as2 g4 %40
+		fis8 fis g4 g
+		c,2 r4
+		R2.*7 %49
+		R2.\fermataMarkup \bar "|." %50 finis
+	}
+}
+
+TodesworteBassoLyrics = \lyricmode {
+	Ju -- da,
+	Ju -- da,
+	To -- des --
+	wor -- te ſprichſt du
+	aus, %5
+	To -- des --
+	wor -- te ſprichſt du
+	aus, er -- bebſt du
+	nicht, er -- bebſt du
+	nicht, %10
+	Ju -- da,
+	Ju -- da!
+
+	Horch, %15
+	horch,
+	dir jauchzt des
+	Ab -- grunds
+	Pfor -- te,
+	des Ab -- grunds %20
+	Pfor -- te,
+
+	En -- gel wen -- den ihr Ge --
+	ſicht,
+	ſie ver -- la -- ßen dich und %25
+	fliehn, und
+	fliehn.
+	Weh,
+	weh,
+	weh dir %30
+	Iſ -- ra -- el,
+	Rom,
+	Rom
+	wird dein Wort voll --
+	ziehn, weh dir %35
+	Iſ -- ra -- el,
+	weh,
+	weh,
+	Rom wird dein Wort voll --
+	ziehn, Rom %40
+	wird dein Wort voll --
+	ziehn. %42 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass
