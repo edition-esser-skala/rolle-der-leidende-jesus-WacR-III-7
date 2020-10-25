@@ -1071,3 +1071,44 @@ GottDuDonnerstViola = {
 		a2.\fermata \bar "|." %73 finis
 	}
 }
+
+AchSeeleViola = {
+	\relative c' {
+		\clef alto
+		\key f \major \time 4/4 \tempoAchSeele
+		r2 f
+		f f
+		f e
+		d d
+		d\fermata b %5
+		c d
+		e c
+		c2. b4
+		a1\fermata \bar ":|."
+		r2 a %10
+		c c
+		d c
+		c b
+		a\fermata c
+		c d %15
+		e d
+		f f
+		e\fermata c
+		d d
+		d c %20
+		d1
+		d2\fermata d
+		f! f
+		es c
+		d c %25
+		b\fermata c
+		c b
+		a g
+		g g
+		es\fermata c' %30
+		c b
+		c c
+		c2. b4
+		a1\fermata \bar "|." %34 finis
+	}
+}

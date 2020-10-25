@@ -1332,20 +1332,72 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "2.2"
+	% 		title = "Gott, du donnerſt zu den Sündern"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "gottdudonnerst" "2.2" "Aria" "Gott, du donnerst zu den Sündern"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+	% 					\partcombine \GottDuDonnerstOboeI \GottDuDonnerstOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\GottDuDonnerstViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\GottDuDonnerstViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\GottDuDonnerstViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \GottDuDonnerstBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \GottDuDonnerstBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\GottDuDonnerstOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \GottDuDonnerstBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 120 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "2.2"
-			title = "Gott, du donnerſt zu den Sündern"
+			genre = "C H O R A L"
+			number = "2.3"
+			title = "Ach Seele, ſchau um welchen Preis"
 		}
-		\paper { systems-per-page = #2 }
-		% \tocLabelLong "gottdudonnerst" "2.2" "Aria" "Gott, du donnerst zu den Sündern"
+		\tocLabelLong "achseele" "2.3" "Choral" "Ach Seele, schau um welchen Preis"
 		\score {
 			<<
 				\new StaffGroup <<
 					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
-						\partcombine \GottDuDonnerstOboeI \GottDuDonnerstOboeII
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \AchSeeleOboeI \AchSeeleOboeII
 					>>
 				>>
 				\new StaffGroup <<
@@ -1353,36 +1405,58 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\GottDuDonnerstViolinoI
+							\AchSeeleViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\GottDuDonnerstViolinoII
+							\AchSeeleViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\GottDuDonnerstViola
+						\AchSeeleViola
 					}
 				>>
-				\new ChoirStaff <<
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \AchSeeleSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \AchSeeleAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsA
+					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \AchSeeleTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsB
+
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \GottDuDonnerstBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \AchSeeleBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \GottDuDonnerstBassoLyrics
+					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsA
+					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsB
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\GottDuDonnerstOrgano
+						\AchSeeleOrgano
 					}
 				>>
-				\new FiguredBass { \GottDuDonnerstBassFigures }
+				\new FiguredBass { \AchSeeleBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 120 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

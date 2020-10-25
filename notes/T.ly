@@ -1048,6 +1048,96 @@ WennDortTenoreLyrics = \lyricmode {
 	gen. %22 finis
 }
 
+AchSeeleTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key f \major \time 4/4 \autoBeamOff \tempoAchSeele
+		r2 f
+		f f
+		f e
+		d d
+		d\fermata b %5
+		c d
+		e c
+		c2.( b4)
+		a1\fermata \bar ":|."
+		r2 a %10
+		c c
+		d c
+		c b
+		a\fermata c
+		c d %15
+		e d
+		f f
+		e\fermata c
+		d d
+		d c %20
+		d1
+		d2\fermata d
+		f! f
+		es c
+		d c %25
+		b\fermata c
+		c b
+		a g
+		g g
+		g\fermata c %30
+		c b
+		c c
+		c2.( b4)
+		a1\fermata \bar "|." %34 finis
+	}
+}
+
+AchSeeleTenoreLyricsA = \lyricmode {
+	Ach
+	See -- le,
+	ſchau um
+	wel -- chen
+	Preis dein %5
+	Hei -- land
+	dich er --
+	kau --
+	fet.
+	Ach %10
+	See -- le,
+	ſor -- ge,
+	daß dich
+	nie die
+	Sünd in %15
+	ih -- re
+	Net -- ze
+	zieh, o
+	Men -- ſchen --
+	furcht er -- %20
+	ſchütt --
+	re. Reizt
+	dich die
+	Welt, ach
+	hö -- re %25
+	nicht, ſchau
+	hin ins
+	furcht -- ba --
+	re Ge --
+	richt, das %30
+	Je -- ſum
+	traf, und
+	zitt --
+	re. %34 finis
+}
+
+AchSeeleTenoreLyricsB = \lyricmode {
+	Für
+	dich rang
+	er im
+	To -- des --
+	ſchweiß, für %5
+	dich im
+	Blut ge --
+	tau --
+	fet. %9 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

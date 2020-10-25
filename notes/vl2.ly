@@ -1084,3 +1084,44 @@ GottDuDonnerstViolinoII = {
 		e( d) d2\fermata \bar "|." %73 finis
 	}
 }
+
+AchSeeleViolinoII = {
+	\relative c' {
+		\clef treble
+		\key f \major \time 4/4 \tempoAchSeele
+		r2 a'
+		b b
+		f g
+		g g
+		f\fermata e %5
+		f f
+		g f
+		f e
+		f1\fermata \bar ":|."
+		r2 f %10
+		e f
+		f e
+		f e
+		f\fermata f
+		f f %15
+		g a
+		a g
+		g\fermata f
+		f a
+		g fis %20
+		g1
+		fis2\fermata a
+		g g
+		g fis
+		g fis %25
+		g g\fermata
+		d d
+		d d
+		c h
+		c\fermata c %30
+		f e
+		f f
+		f e
+		f1\fermata \bar "|." %34 finis
+	}
+}

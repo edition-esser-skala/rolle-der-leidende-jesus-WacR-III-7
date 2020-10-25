@@ -480,3 +480,44 @@ GottDuDonnerstOboeII = {
 		R2.\fermataMarkup \bar "|." %73 finis
 	}
 }
+
+AchSeeleOboeII = {
+	\relative c' {
+		\clef treble
+		\key f \major \time 4/4 \tempoAchSeele
+		r2 c'
+		d d
+		a c
+		b b
+		a\fermata g %5
+		a b
+		c a
+		g1
+		f\fermata \bar ":|."
+		r2 f %10
+		g a
+		b g
+		a g
+		f\fermata f
+		a h %15
+		c d
+		a h
+		c\fermata a
+		d c
+		b a %20
+		g1
+		a2\fermata d
+		d d
+		g, c
+		b a %25
+		g\fermata b
+		a g
+		f! g
+		es d
+		c\fermata c %30
+		f g
+		a c
+		a g
+		f1\fermata \bar "|." %34 finis
+	}
+}

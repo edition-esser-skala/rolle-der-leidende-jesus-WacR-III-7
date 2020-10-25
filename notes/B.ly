@@ -1163,6 +1163,96 @@ GottDuDonnerstBassoLyrics = \lyricmode {
 	dern. %71 finis
 }
 
+AchSeeleBassoNotes = {
+	\relative c {
+		\clef bass
+		\key f \major \time 4/4 \autoBeamOff \tempoAchSeele
+		r2 f
+		d b
+		d c
+		g' g
+		d\fermata g %5
+		f d
+		c f
+		c1
+		f\fermata \bar ":|."
+		r2 d %10
+		c f
+		b, c
+		f c
+		f\fermata a
+		f d %15
+		c f
+		d g
+		c,\fermata f
+		d fis
+		g a %20
+		b( g)
+		d\fermata d'
+		h h
+		c a
+		g d %25
+		g\fermata e!
+		fis g
+		d h
+		c g'
+		c,\fermata b'! %30
+		a g
+		f a,
+		c1
+		f\fermata \bar "|." %34 finis
+	}
+}
+
+AchSeeleBassoLyricsA = \lyricmode {
+	Ach
+	See -- le,
+	ſchau um
+	wel -- chen
+	Preis dein %5
+	Hei -- land
+	dich er --
+	kau --
+	fet.
+	Ach %10
+	See -- le,
+	ſor -- ge,
+	daß dich
+	nie die
+	Sünd in %15
+	ih -- re
+	Net -- ze
+	zieh, o
+	Men -- ſchen --
+	furcht er -- %20
+	ſchütt --
+	re. Reizt
+	dich die
+	Welt, ach
+	hö -- re %25
+	nicht, ſchau
+	hin ins
+	furcht -- ba --
+	re Ge --
+	richt, das %30
+	Je -- ſum
+	traf, und
+	zitt --
+	re. %34 finis
+}
+
+AchSeeleBassoLyricsB = \lyricmode {
+	Für
+	dich rang
+	er im
+	To -- des --
+	ſchweiß, für %5
+	dich im
+	Blut ge --
+	tau --
+	fet. %9 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

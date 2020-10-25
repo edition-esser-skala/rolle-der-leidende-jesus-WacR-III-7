@@ -2458,6 +2458,84 @@ GottDuDonnerstBassFigures = \figuremode {
 	<7+ 4> <8 3>2 %73 finis
 }
 
+AchSeeleOrgano = {
+	\relative c {
+		\clef bass
+		\key f \major \time 4/4 \tempoAchSeele
+		r2 f
+		d b
+		d c
+		g' g,
+		d'\fermata g %5
+		f d
+		c f
+		c1
+		f,\fermata \bar ":|."
+		r2 d' %10
+		c f
+		b, c
+		f c
+		f\fermata a
+		f d %15
+		c f
+		d g
+		c,\fermata f
+		d fis
+		g a %20
+		b g
+		d\fermata d'
+		h h
+		c a
+		g d %25
+		g,\fermata e'!
+		fis g
+		d h
+		c g'
+		c,\fermata b'! %30
+		a g
+		f a,
+		c1
+		f\fermata \bar "|." %34 finis
+	}
+}
+
+AchSeeleBassFigures = \figuremode {
+	r1
+	<6>
+	r
+	r
+	r2 <6> %5
+	r <6>
+	r1
+	<4>2 <3>
+	r1
+	r %10
+	r
+	r
+	r2 <7>
+	r <6>
+	r <6!> %15
+	r <6>
+	r <7 _!>
+	r1
+	r2 <6 5>
+	r <6\\> %20
+	<6>1
+	<_+>
+	<6 5!>
+	<_->2 <6\\>
+	r <_+> %25
+	r <6 5>
+	q1
+	<_!>2 <6>
+	<_-> <_!>
+	<_-> <4! 2> %30
+	<6> q
+	r q
+	<6 4> <5 3>
+	r1 %34 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

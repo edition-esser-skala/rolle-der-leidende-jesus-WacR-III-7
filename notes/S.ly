@@ -1036,6 +1036,96 @@ WennDortSopranoLyrics = \lyricmode {
 	gen. %22 finis
 }
 
+AchSeeleSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key f \major \time 4/4 \autoBeamOff \tempoAchSeele
+		r2 c'
+		d d
+		a c
+		b b
+		a\fermata g %5
+		a b
+		c a
+		g1
+		f\fermata \bar ":|."
+		r2 f %10
+		g a
+		b g
+		a g
+		f\fermata f
+		a h %15
+		c d
+		a h
+		c\fermata a
+		d c
+		b a %20
+		g1
+		a2\fermata d
+		d d
+		g, c
+		b a %25
+		g\fermata b
+		a g
+		f! g
+		es d
+		c\fermata c %30
+		f g
+		a c
+		a( g)
+		f1\fermata \bar "|." %34 finis
+	}
+}
+
+AchSeeleSopranoLyricsA = \lyricmode {
+	Ach
+	See -- le,
+	ſchau um
+	wel -- chen
+	Preis dein %5
+	Hei -- land
+	dich er --
+	kau --
+	fet.
+	Ach %10
+	See -- le,
+	ſor -- ge,
+	daß dich
+	nie die
+	Sünd in %15
+	ih -- re
+	Net -- ze
+	zieh, o
+	Men -- ſchen --
+	furcht er -- %20
+	ſchütt --
+	re. Reizt
+	dich die
+	Welt, ach
+	hö -- re %25
+	nicht, ſchau
+	hin ins
+	furcht -- ba --
+	re Ge --
+	richt, das %30
+	Je -- ſum
+	traf, und
+	zitt --
+	re. %34 finis
+}
+
+AchSeeleSopranoLyricsB = \lyricmode {
+	Für
+	dich rang
+	er im
+	To -- des --
+	ſchweiß, für %5
+	dich im
+	Blut ge --
+	tau --
+	fet. %9 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

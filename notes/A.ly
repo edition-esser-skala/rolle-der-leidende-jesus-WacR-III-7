@@ -1291,6 +1291,96 @@ WerIstDerAltoLyrics = \lyricmode {
 	bar -- me du dich ſein. %79 finis
 }
 
+AchSeeleAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key f \major \time 4/4 \autoBeamOff \tempoAchSeele
+		r2 a'
+		b b
+		f g
+		g g
+		f\fermata e %5
+		f f
+		g f
+		f( e)
+		c1\fermata \bar ":|."
+		r2 d %10
+		e f
+		f e
+		f e
+		c\fermata f
+		f f %15
+		g a
+		a g
+		g\fermata f
+		f a
+		g fis %20
+		g1
+		fis2\fermata a
+		g g
+		g fis
+		g fis %25
+		d g\fermata
+		d d
+		d d
+		c h
+		c\fermata c %30
+		f e
+		f f
+		f( e)
+		c1\fermata \bar "|." %34 finis
+	}
+}
+
+AchSeeleAltoLyricsA = \lyricmode {
+	Ach
+	See -- le,
+	ſchau um
+	wel -- chen
+	Preis dein %5
+	Hei -- land
+	dich er --
+	kau --
+	fet.
+	Ach %10
+	See -- le,
+	ſor -- ge,
+	daß dich
+	nie die
+	Sünd in %15
+	ih -- re
+	Net -- ze
+	zieh, o
+	Men -- ſchen --
+	furcht er -- %20
+	ſchütt --
+	re. Reizt
+	dich die
+	Welt, ach
+	hö -- re %25
+	nicht, ſchau
+	hin ins
+	furcht -- ba --
+	re Ge --
+	richt, das %30
+	Je -- ſum
+	traf, und
+	zitt --
+	re. %34 finis
+}
+
+AchSeeleAltoLyricsB = \lyricmode {
+	Für
+	dich rang
+	er im
+	To -- des --
+	ſchweiß, für %5
+	dich im
+	Blut ge --
+	tau --
+	fet. %9 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
