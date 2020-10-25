@@ -1381,6 +1381,100 @@ AchSeeleAltoLyricsB = \lyricmode {
 	fet. %9 finis
 }
 
+TodesworteAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \autoBeamOff \tempoTodesworte
+		\mvTr g'4\fE^\tuttiE g r
+		g g r
+		g2 g4
+		as8 as f4 e
+		f r r %5
+		f2 g4
+		as8 as as4 a
+		g r8 g g g
+		c4 r8 g g g
+		d'4 r r %10
+		g,-! g-! r
+		c g\fermata r
+		R2.*2
+		es4 r r %15
+		b' r r
+		es, g b
+		des( b) g
+		as es r
+		des' b g %20
+		as8([ g)] as4 r
+		as8 g as g as g
+		as4 r r
+		c8 h c c h c
+		g2 r4 %25
+		c8 h c c h c
+		h2 r4
+		c2 r4
+		h2 r4
+		a2 a4 %30
+		h8. h16 h4 r
+		c2 r4
+		c2 r4
+		c8 c h4 g
+		g b g %35
+		f8. f16 f4 r
+		a2 r4
+		g2\fermata r4
+		f g8 g g f
+		es2 r4 %40
+		c'8 fis, g4 g
+		c,2 r4
+		R2.*7 %49
+		R2.\fermataMarkup \bar "|." %50 finis
+	}
+}
+
+TodesworteAltoLyrics = \lyricmode {
+	\xE Ju -- da,
+	Ju -- da,
+	To -- des --
+	wor -- te ſprichſt du
+	aus, %5
+	To -- des --
+	wor -- te ſprichſt du
+	aus, er -- bebſt du
+	nicht, er -- bebſt du
+	nicht, %10
+	Ju -- da,
+	Ju -- da!
+
+	Horch, %15
+	horch,
+	dir jauchzt des
+	Ab -- grunds
+	Pfor -- te,
+	des Ab -- grunds %20
+	Pfor -- te,
+	\x En -- gel wen -- den ihr Ge --
+	ſicht,
+	ſie ver -- la -- ßen dich und
+	fliehn, %25
+	ſie ver -- la -- ßen dich und
+	fliehn.
+	\xE Weh,
+	weh,
+	weh dir %30
+	Iſ -- ra -- el,
+	Rom,
+	Rom
+	wird dein Wort voll --
+	ziehn, weh dir %35
+	Iſ -- ra -- el,
+	weh,
+	weh,
+	Rom wird dein Wort voll --
+	ziehn, %40
+	wird dein Wort voll --
+	ziehn. %42 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

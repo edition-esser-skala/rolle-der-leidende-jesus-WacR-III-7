@@ -1127,6 +1127,63 @@ AchSeeleViolinoI = {
 	}
 }
 
+TodesworteViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \tempoTodesworte
+		c'8-!\f g-! es-! c-! g4-\tenuto
+		d''8-! h-! g-! d-! g,4-\tenutoE
+		es''16 es es es es es es es e e e e
+		f f f f c' c c c e, e e e
+		f8 c as f c4 %5
+		f'16 f f f f f f f es! es es es
+		d d f f as as as as c, c c c
+		h8 g d h g4
+		c'8 g es c g4
+		d''8 h d, h g4 %10
+		es''-! d-! r
+		<c es, g,> <h d, g,> r\fermata
+		\tuplet 3/2 4 { es,8 b es es b es es b es }
+		\tuplet 3/2 4 { f b, f' f b, f' f b, f' }
+		g8. b16 b4\trill es8. b16 %15
+		g8. b16 b4\trill es8. b16
+		g8-! es-! b'-! g-! es' b
+		b' des, b' des, des b
+		\tuplet 3/2 4 { c as c } b g es' b
+		b' des, b' des, b des %20
+		c4 es,16 es es es c c c c
+		as4 r r
+		es'8 d es d es d
+		es4 r r
+		d8 es f f es d %25
+		es4 r r
+		g,8 a16 h c d e fis g4
+		r8. fis'16[ fis8. fis16 fis8. fis16]
+		f8.[ f16 f8. f16 f8. f16]
+		es8.[ es16 es8. es16 es8. es16] %30
+		d8.[ d16 d8. d16 d8. d16]
+		c8-! g-! es-! c-! g4
+		as''8 f c as f4
+		es8 c' d4 h
+		c r b %35
+		as8 f c as c f
+		c'8.[ a'16 a8. a16 a8. c,16]
+		h8. g'16 g4\fermata r
+		f8 f es d c h
+		c4 es,8.[ es16 es8. es16] %40
+		es2\p d4
+		c'8-!\f g-! es-! c-! g4
+		d''8 h g d g,4
+		es''16 es es es d d d d e e e e
+		f f f f fis fis fis fis g g g g %45
+		as as as as g g g g h h h h
+		c8 g es c g4
+		as'8 f c as f4
+		es'8. c16 g,4 <g d' h'>
+		<g es' c'> r r\fermata \bar "|." %50 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

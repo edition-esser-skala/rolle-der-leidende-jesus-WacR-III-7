@@ -521,3 +521,57 @@ AchSeeleOboeI = {
 		f1\fermata \bar "|." %34 finis
 	}
 }
+
+TodesworteOboeI = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \tempoTodesworte
+		c'4\fE g r
+		d' g, r
+		es'2 des4
+		c c b
+		as2 r4 %5
+		f'2 es!4
+		d! d c
+		h2.
+		c
+		d %10
+		es4-! d-! r
+		c-! h-! r\fermata
+		R2.*2
+		es,2 g4 %15
+		b es b
+		b2.
+		b
+		c4 b r
+		b2. %20
+		c4 r r
+		c8 h c h c h
+		c4 r r
+		c8 d es es d c
+		g'2 r4 %25
+		c,8 d es es d c
+		g'2 r4
+		fis2.
+		f
+		es %30
+		d
+		c2 r4
+		as'2 r4
+		g8 c, d4 h
+		c g' b, %35
+		as r r
+		c2.
+		h2\fermata r4
+		R2.*3 %41
+		c4 g r
+		d' g, r
+		es'-! d-! e-!
+		f-! fis-! g-! %45
+		as-! g-! h-!
+		c2 r4
+		as2 r4
+		es c h
+		c r r\fermata \bar "|." %50 finis
+	}
+}

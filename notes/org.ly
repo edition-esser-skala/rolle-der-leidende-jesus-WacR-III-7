@@ -2602,6 +2602,116 @@ DerTagBrichtBassFigures = \figuremode {
 	r4 <_!> %28 finis
 }
 
+TodesworteOrgano = {
+	\relative c {
+		\clef bass
+		\key c \minor \time 3/4 \tempoTodesworte
+		\mvTr c4\fE-\tuttiE c'8-! g-! es-! c-!
+		h4 h'8 g d h
+		c8.[ c16 c'8. c16 b8. b16]
+		as8.[ as16 as8. as16 g8. g16]
+		f4 f8-! c-! as-! f-! %5
+		as'4 as8.[ as16 g8. g16]
+		f8.[ f16 f8. f16 fis8. fis16]
+		g4 g8 d h g
+		g4 g'8 es c g
+		g4 g'8 d h g %10
+		c4-! g'-! r
+		c,-! g-! r\fermata
+		es'2 r4
+		b2 r4
+		\tuplet 3/2 4 { es8 b es es b es es b es } %15
+		\tuplet 3/2 4 { es b es es b es es b es }
+		\tuplet 3/2 4 { es b es es b es es b es }
+		\tuplet 3/2 4 { es b es es b es es b es }
+		as4 \tuplet 3/2 4 { es8 b es es b es }
+		\tuplet 3/2 4 { es b es es b es es b es } %20
+		as4 as,8 as as as
+		as2 r4
+		as as' g
+		fis2 r4
+		g2 r4 %25
+		fis2 r4
+		g,8 a?16 h c d e fis g4
+		as! as8.[ as16 as8. as16]
+		g4 g8.[ g16 g8. g16]
+		fis4 fis8.[ fis16 fis8. fis16] %30
+		f4 f8.[ f16 f8. f16]
+		es4 c'8 g es c
+		f4 as8 f c f,
+		g4 g g'
+		e2 e4 %35
+		f4 f8 c as f
+		fis'4 fis8.[ fis16 fis8. fis16]
+		g4 g,\fermata r4
+		as' g g,
+		as as' g %40
+		fis\pE g r
+		c,\fE c'8 g es c
+		h4 h'8-! g-! d h
+		c8.[ c'16 h8. h16 b8. b16]
+		a8.[ a16 as8. as16 g8. g16] %45
+		f8.[ f16 es8. es16 d8. d16]
+		c4 c'8 g es c
+		f,4 as'8 f as, f
+		g2 g4
+		c r r\fermata \bar "|." %50 finis
+	}
+}
+
+TodesworteBassFigures = \figuremode {
+	r2.
+	<6>
+	r2 <4! _->4
+	<6>2 <6!>4
+	r2. %5
+	<6>2 <6- 4>4
+	<6! 5>2 <6 5 _!>4
+	<5 _!>2 \bassFigureExtendersOn q8 q
+	<6 4>2 q8 q
+	<5 _!>2 q8 q \bassFigureExtendersOff %10
+	r4 <_!>2
+	r4 q2
+	r2.
+	r
+	r %15
+	r
+	r
+	<7->
+	r
+	<7-> %20
+	r
+	r
+	<5 3>2 <\t \t>4
+	<7 _!>2.
+	<_!> %25
+	<7 _!>
+	<_!>
+	<6\\>
+	<7! _!>
+	<7 _!> %30
+	<4! 2>
+	<6>
+	r
+	<6 4>4 <5 _!>2
+	<6>4 <5-> <\t> %35
+	r2.
+	<7 _!>
+	<_!>
+	<6>4 <8>8 <7> <6 4> <5 _!>
+	<5 3>2 <\t \t>4 %40
+	<7 _!> <6 4> <5 _!>
+	r2.
+	<6>
+	r4 <6> <4! _->
+	<6> <6\\> <_!> %45
+	<4! 3> <6> <6!>
+	r2.
+	r
+	<6 4>2 <5 _!>4
+	r2. %50 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

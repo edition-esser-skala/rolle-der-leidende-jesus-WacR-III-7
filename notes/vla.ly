@@ -1112,3 +1112,60 @@ AchSeeleViola = {
 		a1\fermata \bar "|." %34 finis
 	}
 }
+
+TodesworteViola = {
+	\relative c' {
+		\clef alto
+		\key c \minor \time 3/4 \tempoTodesworte
+		<g es'>4-!\fE q-! q-!
+		<g d'>-! q-! q-!
+		c16 c c c c' c c c des des des des
+		c c c c f, f f f g g g g
+		as4 c8-! as-! f4 %5
+		as16 as as as as as as as g g g g
+		as as as as f f f f d d d d
+		d4 g8 d h g
+		g4 g'8 es c g
+		g4 g'8 d h g %10
+		c4-! h-! r
+		<g es'>-! <g d'>-! r\fermata
+		g2 r4
+		b2 r4
+		\tuplet 3/2 4 { es8 b es es b es es b es } %15
+		\tuplet 3/2 4 { es b es es b es es b es }
+		\tuplet 3/2 4 { es b es es b es es b es }
+		\tuplet 3/2 4 { g es g g es g g es g }
+		es4 \tuplet 3/2 4 { g8 es g g es g }
+		\tuplet 3/2 4 { es b es es b es es b es } %20
+		es4 as,8 as as as
+		as2 r4
+		as2 g4
+		fis2 r4
+		g2 r4 %25
+		fis2 r4
+		g8 a?16 h c d e fis g4
+		as! as8.[ as16 as8. as16]
+		g4 g8.[ g16 g8. g16]
+		a4 a8.[ a16 a8. a16] %30
+		h4 g8.[ g16 g8. g16]
+		g4 c8 g es c
+		c4 as'8 f c as
+		g4 g g
+		e' r c %35
+		c4 f8 c as c
+		es!4 es8.[ es16 es8. es16]
+		d8. d16 d4\fermata r
+		f g g8 f
+		es4 as, g %40
+		fis\p g r
+		<g es'>\f q q
+		<g d'> q q
+		g'8 g g g g g
+		f f c c d d %45
+		d d g g g g
+		g4 c8 g es c
+		c4 as'8 f c as
+		g2 g4
+		<g c,> r r\fermata \bar "|." %50 finis
+	}
+}

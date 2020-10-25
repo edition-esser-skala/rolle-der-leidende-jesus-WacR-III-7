@@ -1126,6 +1126,100 @@ AchSeeleSopranoLyricsB = \lyricmode {
 	fet. %9 finis
 }
 
+TodesworteSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \autoBeamOff \tempoTodesworte
+		\mvTr c'4\fE^\tuttiE g r
+		d' g, r
+		es'2 des4
+		c8 c c4 b
+		as r r %5
+		f'2 es!4
+		d!8 d d4 c
+		g r8 g g g
+		c4 r8 g g g
+		d'4 r r %10
+		es-! d-! r
+		c g r\fermata
+		R2.*2
+		es4 r r %15
+		b' r r
+		es, g b
+		des( b) g
+		as es r
+		des' b g %20
+		as8([ g)] as4 r
+		c8 h c h c h
+		c4 r r
+		c8 d es es d c
+		g'2 r4 %25
+		c,8 d es es d c
+		g'2 r4
+		fis2 r4
+		f2 r4
+		es2 c4 %30
+		g'8. g,16 g4 r
+		c2 r4
+		as'2 r4
+		g8 c, d4 h
+		c g' b, %35
+		as8. g16 f4 r
+		c'2 r4
+		g2\fermata r4
+		f'4 es8 d c h
+		c2 r4 %40
+		c8 fis, g4 g
+		c2 r4
+		R2.*7 %49
+		R2.\fermataMarkup \bar "|." %50 finis
+	}
+}
+
+TodesworteSopranoLyrics = \lyricmode {
+	\xE Ju -- da,
+	Ju -- da,
+	To -- des --
+	wor -- te ſprichſt du
+	aus, %5
+	To -- des --
+	wor -- te ſprichſt du
+	aus, er -- bebſt du
+	nicht, er -- bebſt du
+	nicht, %10
+	Ju -- da,
+	Ju -- da!
+
+	Horch, %15
+	horch,
+	dir jauchzt des
+	Ab -- grunds
+	Pfor -- te,
+	des Ab -- grunds %20
+	Pfor -- te,
+	En -- gel wen -- den ihr Ge --
+	ſicht,
+	ſie ver -- la -- ßen dich und
+	fliehn, %25
+	ſie ver -- la -- ßen dich und
+	fliehn.
+	Weh,
+	weh,
+	weh dir %30
+	Iſ -- ra -- el,
+	Rom,
+	Rom
+	wird dein Wort voll --
+	ziehn, weh dir %35
+	Iſ -- ra -- el,
+	weh,
+	weh,
+	Rom wird dein Wort voll --
+	ziehn, %40
+	wird dein Wort voll --
+	ziehn. %42 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
