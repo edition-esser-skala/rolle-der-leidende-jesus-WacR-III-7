@@ -1578,38 +1578,91 @@
 	% 		\midi { \tempo 4 = 100 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "2.6"
+	% 		title = "Und Jeſus wird gegeißelt"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "undjesus" "2.6" "Recitativo" "Und Jesus wird gegeißelt"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \UndJesusTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \UndJesusTenoreLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\UndJesusOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \UndJesusBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "2.6"
-			title = "Und Jeſus wird gegeißelt"
+			genre = "A R I A"
+			number = "2.7"
+			title = "Weint nicht, ſagt der Menſchenfreund"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
-		}
-		\tocLabelLong "undjesus" "2.6" "Recitativo" "Und Jesus wird gegeißelt"
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "weintnicht" "2.7" "Aria" "Weint nicht, sagt der Menschenfreund"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
+						\partcombine \WeinetNichtFagottoI \WeinetNichtFagottoII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = \markup \center-column { "vl" "[fl]" }
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WeinetNichtViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WeinetNichtViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WeinetNichtViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \UndJesusTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \WeinetNichtTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \UndJesusTenoreLyrics
+					\new Lyrics \lyricsto Tenore \WeinetNichtTenoreLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\UndJesusOrgano
+						\WeinetNichtOrgano
 					}
 				>>
-				\new FiguredBass { \UndJesusBassFigures }
+				\new FiguredBass { \WeinetNichtBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 4 = 60 }
 		}
 	}
 }

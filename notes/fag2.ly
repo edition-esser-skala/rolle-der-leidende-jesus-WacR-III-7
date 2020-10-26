@@ -161,3 +161,36 @@ GottMitBlickenFagottoII = {
 		es2 r\fermata \bar "|." %90 finis
 	}
 }
+
+WeinetNichtFagottoII = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoWeinetNicht
+		h'8([\fE c-.)] c-! r a([ h-.)] h-! r
+		g a16.( h32) c8 \appoggiatura h16 a8 g( fis) r a
+		g( fis) r a g( fis) r4
+		r g fis8([ g-.)] g-! r
+		g g4 fis8\trill g4 r %5
+		h8([\p c-.)] c-! r a([ h-.)] h-! r
+		R1*3
+		h8([ c-.)] c-! r a([ h-.)] h-! r %10
+		R1*2
+		r2 r4 r8 e\fE
+		d( cis) r e d( cis) r4
+		r d cis8([ d-.)] d-! r %15
+		d d4 cis8 d4 r
+		fis,8([\p g-.)] g-! r e([ fis-.)] fis-! r
+		R1*3 %20
+		h8([ c-.)] c-! r a([ h-.)] h-! r
+		R1*2
+		r2 r4 r8 a\fE
+		g( fis) r a g( fis) r4 %25
+		R1*2
+		h8([\pE c-.)] c-! r a([ h-.)] h-! r
+		r4 g\fE fis8([ g-.)] g-! r
+		g g4 fis8\trill g([ c)] c r %30
+		h c16( h32 a) g8 fis\trill g4 r\fermata
+		R1*7 \bar "|" %38
+		\time 3/8 R4.*49 \markDaCapo \bar "||" %87 finis
+	}
+}

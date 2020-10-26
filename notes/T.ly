@@ -1267,6 +1267,168 @@ UndJesusTenoreLyrics = \lyricmode {
 	Zi -- ons, wei -- net nicht. %12 finis
 }
 
+WeinetNichtTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \major \time 4/4 \autoBeamOff \tempoWeinetNicht
+		R1*5 %5
+		d8([ e)] e r fis([ g)] g r
+		h, c16.([ d32)] e8 \appoggiatura d16 c8 \appoggiatura h a4 d8 fis,
+		g h a c c( h4 c8
+		d) dis e g, g fis r4
+		d'8([ e)] e r fis([ g)] g r %10
+		h, cis16.([ d32)] e8 d \appoggiatura d cis4 e16([ cis)] h([ a)]
+		d4. \appoggiatura fis16 e([ d)] d4. g16([ e)]
+		d4( e)\trill d r
+		R1*3 %16
+		a8([ h)] h r cis([ d)] d r
+		c h16([ a)] d8 e16([ c)] \appoggiatura h8 a4 d8 fis,
+		g h a c c( h4 c8
+		d) dis e g, g fis r4 %20
+		d'8([ e)] e r fis([ g)] g r
+		d d16([ e)] \appoggiatura g f8 \appoggiatura e16 d8 \appoggiatura d e4 e8 g16([ e)]
+		d8([ dis e]) g16([ e)] d8([ dis e)] d16([ c)]
+		h4( a)\trill g r
+		r2 r4 r8 d' %25
+		d cis16.([ d32)] e8 g, \appoggiatura g fis4 r8 d'
+		d16([ dis)] dis([ e)] e8 g, g fis r4
+		d'8([ e)] e r fis([ g)] g r
+		R1*2 %30
+		r2 r4\fermata r8 h,
+		h4( c8) h h4( c8) h
+		e4 \appoggiatura e8 d4\trill c r
+		a( h8) a a4( h8) a
+		d4 \appoggiatura d8 c4 h8 g d'8. c32([ h)] %35
+		c8 a e'8. dis32([ cis)] dis4 h8 e
+		e d16([ c)] h8 a \appoggiatura a g4 r \noBreak
+		R1 \bar "|"
+		\time 3/8 \newSpacingSection fis8 h h \noBreak
+		h([ d)] eis %40
+		eis([ fis)] g
+		\appoggiatura h, ais4 r8
+		fis g! ais
+		ais([ h)] cis
+		cis([ d)] e %45
+		\appoggiatura e d4 r8
+		d4 d8
+		d([ cis)] \tuplet 3/2 8 { d16([ e fis)] }
+		e4 g,8
+		\appoggiatura g fis4 r8 %50
+		r a c!
+		c([ h)] d
+		d([ cis)] e
+		\appoggiatura e d4 r8
+		r e g %55
+		fis([ cis)] d
+		d4.~
+		d~
+		d~
+		d4 cis8 %60
+		d4 r8
+		R4.*3
+		a8 d d %65
+		d([ es)] fis!
+		fis([ g)] b,
+		\appoggiatura b a4 r8
+		a b cis
+		cis([ d)] c %70
+		e([ d)] c
+		\appoggiatura c h!4 r8
+		d4 d8
+		d([ c)] d
+		e4 g,8 %75
+		\appoggiatura g fis!4 r8
+		fis'4 a,8
+		g([ h)] e
+		e4.~
+		e~ %80
+		e~
+		e4 dis8
+		e d16([ c)] h([ a)]
+		g4.
+		fis %85
+		e4 r8
+		R4. \markDaCapo \bar "||" %87 finis
+	}
+}
+
+WeinetNichtTenoreLyrics = \lyricmode {
+	Weint nicht, weint nicht, %6
+	ſagt der Men -- ſchen -- freund Zi -- ons
+	Töch -- tern, die ihn kla --
+	gen, die ihn kla -- gen.
+	Weint nicht, weint nicht, %10
+	ſagt der Men -- ſchen -- freund uns in
+	kum -- mer -- vol -- len
+	Ta -- gen.
+
+	Weint nicht, weint nicht, %17
+	ſagt der Men -- ſchen -- freund Zi -- ons
+	Töch -- tern, die ihn kla --
+	gen, die ihn kla -- gen. %20
+	Weint nicht, weint nicht,
+	ſagt der Men -- ſchen -- freund uns in
+	kum -- mer -- vol -- len
+	Ta -- gen.
+	Uns %25
+	ſagt der Men -- ſchen -- freund in
+	kum -- mer -- vol -- len Ta -- gen:
+	Weint nicht, weint nicht.
+
+	Der %31
+	ſchma -- le Weg __ zur
+	Herr -- lich -- keit
+	iſt __ mit Blu -- men
+	nicht be -- ſtreut, mit Blu -- men %35
+	nicht, mit Blu -- men nicht, iſt mit
+	Blu -- men nicht be -- ſtreut.
+
+	Steil iſt der
+	Pfad und %40
+	rauh die
+	Bahn,
+	nur müh -- ſam
+	klim -- men
+	wir hin -- %45
+	an,
+	We -- ge,
+	die den
+	Sinn er --
+	freun, %50
+	la -- den
+	zum Ent --
+	ſchlum -- mern
+	ein,
+	la -- den %55
+	zum Ent --
+	ſchlum --
+
+	mern %60
+	ein.
+
+	Steil iſt der %65
+	Pfad und
+	rauh die
+	Bahn,
+	nur müh -- ſam
+	klim -- men %70
+	wir hin --
+	an,
+	We -- ge,
+	die den
+	Sinn er -- %75
+	freun,
+	la -- den
+	zum Ent --
+	ſchlum --
+
+	mern %82
+	ein, zum Ent --
+	ſchlum --
+	mern %85
+	ein. %86 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

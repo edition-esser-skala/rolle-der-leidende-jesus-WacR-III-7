@@ -1169,3 +1169,94 @@ TodesworteViola = {
 		<g c,> r r\fermata \bar "|." %50 finis
 	}
 }
+
+WeinetNichtViola = {
+	\relative c' {
+		\clef alto
+		\key g \major \time 4/4 \tempoWeinetNicht
+		g4\fE r8 g' g,4 r8 g'
+		g,4 r8 c d4 r8 c
+		h( a) r c h( a) r4
+		h8 r c16 e c a d8 r g,16 h g' fis
+		g8 g4 fis8\trill g d g,4 %5
+		g\p r8 g' g,4 r8 g'
+		g,4 r8 c d4 r8 d,
+		e4 fis g e'
+		h c d d16 c h a
+		g4 r8 g' g,4 r8 g' %10
+		g,4 g a r8 g'
+		fis4 g fis g
+		a8 a a, a d d'16.\f cis32 h8 g
+		fis( e) r g fis( e) r4
+		a8 r h g16 e a8 r d, d'~ %15
+		d d4 cis8 d a d,4
+		r2 e8([\pE d-.)] d-! r
+		r c! h c d4 r8 c
+		h4 d g, e'
+		h c d d16 c h a %20
+		g4 r8 g' g,4 r8 g'
+		g,4 g' g r8 c,
+		h4 c h c8 c
+		d d d, d g g'16.\f fis32 e8 c
+		\once \slurDashed h( a) r c h( a) r4 %25
+		r cis\pE d d,8 c'
+		h4 c d d16 c h a
+		g4 r r2
+		h8\fE r c16 e c a d8 r g, g'~
+		g g4 fis8\trill g4 r16 c, e fis %30
+		g8 c, d c h4\fermata r
+		r8 e\pE e, e' dis dis dis, d'
+		c c h e a,4 e'8 fis16. e32
+		d8 d d d cis cis cis c
+		h h a d g,4 r8 e' %35
+		e4 r8 fis fis4 g8 e
+		a,4 h e e8\fE h' \noBreak
+		c4 h16. a32 g16. fis32 e8. g16 fis16. e32 d!16. cis32 \bar "|"
+		\time 3/8 \newSpacingSection d4\pE r8 \noBreak
+		d h cis %40
+		d4 e8
+		fis fis, fis
+		fis4 r8
+		fis4 r8
+		fis4 fis'8 %45
+		h, d fis
+		h gis r
+		a a, h
+		cis a cis
+		d, d' e %50
+		fis4 fis,8
+		g4.
+		a
+		h
+		cis %55
+		d8( cis) d
+		g,4.\ppE
+		a
+		h4 g8
+		a4 a8 %60
+		d,4.
+		r8 a' g
+		fis4.~
+		fis4 r8
+		R4. %65
+		d4\pE r8
+		r r cis
+		d d d
+		d4 r8
+		R4. %70
+		r8 r d'
+		g, g a
+		h4 h8
+		c4 r8
+		cis4 cis8 %75
+		d4 r8
+		dis4 dis8
+		e4 g,8
+		a4.\pp
+		h %80
+		c8 a r
+		h4.
+		h4 r8
+		R4.*4 \markDaCapo \bar "||" %87 finis
+	}
+}

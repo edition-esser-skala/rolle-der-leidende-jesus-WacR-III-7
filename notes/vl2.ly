@@ -1182,3 +1182,96 @@ TodesworteViolinoII = {
 		<g es' c'> r r\fermata \bar "|." %50 finis
 	}
 }
+
+WeinetNichtViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoWeinetNicht
+		h'8([\fE c-.)] c-! r a([ h-.)] h-! r
+		g8 a16.( h32) c8 \appoggiatura h16 a8 g( fis) c'16( e) e,( a)
+		g8( fis) c'16( e) e,( a) g8( fis) r4
+		r4 g fis8([ g-.)] g-! r
+		c16.([ d32)] e16( d32 c) h8 a\trill g d g,4 %5
+		r2 a'8([\p h)] h-! r
+		g a16.( h32) c8 \appoggiatura h16 a8 \appoggiatura g fis4 d~
+		d d~ d8 g4 g8~
+		g g4 e16( c) h8( a) r4
+		r2 a'8([ h-.)] h-! r %10
+		d, e16.( fis32) g8 fis \appoggiatura fis e4 r
+		a8( ais) h4 a8( ais) h e
+		d4 cis\trill d g16(\f h) h,( e)
+		d8( cis) g'16( h) h,( e) d8( cis) r4
+		r d cis8([ d-.)] d-! r %15
+		g16.([ a32)] h16( a32 g) fis8 e\trill d a d,4
+		r2 g8([\p fis-.)] fis-! r
+		fis g16( fis) g8 c16( a) \appoggiatura g8 fis4 d~
+		d8 g fis a \once \slurDashed a( g4) g8~
+		g g4 e16( c) h8( a) r4 %20
+		r2 a'8([ h-.)] h-! r
+		h h16( c) \appoggiatura e d8 \appoggiatura c16 h8 \appoggiatura h c4 r8 g
+		g2 g4. a8
+		g4 fis\trill g c16(\f e) e,( a)
+		g8( fis) \slurDashed c'16( e) e,( a) \slurSolid g8( fis) r4 %25
+		g'4.\p e,8 e \once \slurDashed d16.( e32) fis8 r
+		r g4 e16( c) h8 a r4
+		R1
+		r4 g'\f fis8([ g-.)] g-! r
+		c16.([ d32)] e16( d32 c) h8 a\trill g([ c-.)] c-! r %30
+		h c16( h32 a) g8 fis\trill g4\fermata g\p
+		g2 fis4. gis8
+		a4 a8 gis a e c'16. h32 a16. g32
+		fis4( g8) fis e4. fis8
+		g g4 fis8 g4 r8 h %35
+		a4 r8 cis h dis, e4
+		e( dis8) fis fis(\trill e) h'[\f g']~ \noBreak
+		g fis16. e32 dis16. c!32 h16. a32 g16. fis32 e8 r4 \bar "|"
+		\time 3/8 \newSpacingSection fis8\p h h \noBreak
+		h( d) eis %40
+		eis( fis) h,
+		\appoggiatura h ais4 r8
+		ais,( h) cis
+		cis( d) ais
+		ais( h) cis %45
+		\appoggiatura cis h4 r8
+		d' \tuplet 3/2 8 { h'16([ a gis)] fis([ e d)] }
+		d8([ cis)] d
+		e \tuplet 3/2 8 { e16([ d cis)] h([ a g!)] }
+		g8 \tuplet 3/2 8 { fis16([ g a)] g([ a h)] } %50
+		a8 a, c!
+		c( h) d
+		d( cis) e
+		e( d) fis
+		fis( e) g %55
+		fis( e) d
+		r h'(\ppE g)
+		fis( d) e
+		d4 g8
+		fis( d) e %60
+		d( a) cis
+		d( fis) e
+		d4.~
+		d4 r8
+		R4. %65
+		fis8(\pE g) a
+		a( b) g
+		\once \slurDashed g( fis) r
+		\once \slurDashed fis( g) e
+		e( fis) a %70
+		c( h!) a
+		\appoggiatura a g4 r8
+		g4 \tuplet 3/2 8 { a16( g f) }
+		f8( e) r
+		g4 \tuplet 3/2 8 { h16( a g) } %75
+		g8( fis!) r
+		a4 \tuplet 3/2 8 { a16( g fis) }
+		e4 r8
+		r c'(\ppE a)
+		g( e) fis %80
+		e e( c)
+		h g'( fis)
+		e4 r8
+		R4.*4 \markDaCapo \bar "||" %87 finis
+	}
+}
+
+WeinetNichtFlautoII = \WeinetNichtViolinoII

@@ -160,3 +160,36 @@ GottMitBlickenFagottoI = {
 		\pao es2 r\fermata \bar "|." %90 finis
 	}
 }
+
+WeinetNichtFagottoI = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoWeinetNicht
+		d'8([\fE e-.)] e-! r fis([ g-.)] g-! r
+		h, c16.( d32) e8 \appoggiatura d16 c8 h( a) r c
+		h( a) r c h( a) r4
+		\pa g8([ a-.)] a-! r \pd a([ h-.)] h-! r
+		\once \slurDashed c16.( d32) e16([ d32 c)] h8 a\trill \pao g4 r %5
+		d'8([\p e-.)] e-! r fis([ g-.)] g-! r
+		R1*3
+		d8([ e-.)] e-! r fis([ g-.)] g-! r %10
+		R1*2
+		r2 r4 r8 g\fE
+		fis( e) r g fis( e)r4
+		\pa d8([ e-.)] e-! r \pd e([ fis-.)] fis-! r %15
+		g4 fis8 e\trill \pao d4 r
+		a8([\p h-.)] h-! r cis([ d-.)] d-! r
+		R1*3 %20
+		d8([ e-.)] e-! r fis([ g-.)] g-! r
+		R1*2
+		r2 r4 r8 c,\fE
+		h( a) r c h( a) r4 %25
+		R1*2
+		d8([\pE e-.)] e-! r fis([ g-.)] g-! r
+		\pa g,([\fE a-.)] a-! r \pd a([ h-.)] h-! r
+		c16.([ d32)] e16( d32 c) h8 a\trill \pa g([ e')] \pd e-! r %30
+		d e16( d32 c) h8 a\trill \pao g4 r\fermata
+		R1*7 \bar "|" %38
+		\time 3/8 R4.*49 \markDaCapo \bar "||" %87 finis
+	}
+}

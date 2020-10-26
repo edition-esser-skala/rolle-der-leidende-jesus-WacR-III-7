@@ -747,10 +747,15 @@ tempoTodesworte = \tempoMarkup "Allegro moderato"
 
 %2.6
 tempoUndJesus = \tempoMarkup "[Tempo deest]"
+tempoWeinetNicht = \tempoMarkup "Andante grazioso"
 
 
 
 partialFourth = \set Timing.measurePosition = #(ly:make-moment -1/4)
+markDaCapo = {
+	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+	\mark \markup { \remark "da capo" }
+}
 
 \include "notes/fl1.ly"
 \include "notes/fl2.ly"
