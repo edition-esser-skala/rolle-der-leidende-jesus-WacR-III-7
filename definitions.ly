@@ -745,6 +745,9 @@ tempoAchSeele = \tempoMarkup "[Tempo deest]"
 tempoDerTagBricht = \tempoMarkup "[Tempo deest]"
 tempoTodesworte = \tempoMarkup "Allegro moderato"
 
+%2.6
+tempoUndJesus = \tempoMarkup "[Tempo deest]"
+
 
 
 partialFourth = \set Timing.measurePosition = #(ly:make-moment -1/4)

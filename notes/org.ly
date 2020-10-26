@@ -2712,6 +2712,42 @@ TodesworteBassFigures = \figuremode {
 	r2. %50 finis
 }
 
+UndJesusOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoUndJesus
+		fis1
+		r4 g fis2~
+		fis g~
+		g r4 a
+		d,1~ %5
+		d
+		d2 e
+		f1~
+		f4 r r g
+		fis1 %10
+		g,8 h16 d g h g d h4 r
+		c r r d
+		g,2\fermata \bar "|." %13 finis
+	}
+}
+
+UndJesusBassFigures = \figuremode {
+	<7->1
+	r2 <6>
+	r <_->
+	<4+ 2>2. <[_+]>4
+	r1 %5
+	r
+	<6>2 <[6]>
+	r1
+	<4 2>
+	<[6]> %10
+	r2 q
+	r2. <[_+]>4
+	r2 %13 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

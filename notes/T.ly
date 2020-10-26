@@ -1232,6 +1232,41 @@ TodesworteTenoreLyrics = \lyricmode {
 	ziehn. %42 finis
 }
 
+UndJesusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoUndJesus
+		r4 r8 c c c h c
+		c g r4 r r8 d'
+		d a a b b4 r8 g
+		cis cis cis d d a r4
+		r r8 a d d d cis %5
+		d d r4 d8 d d f
+		h,4 h8 d c c r c16 g
+		a8. a16 a4 r8 c f d
+		h h h c g4 r
+		r8 a d a c8. c16 c8 r16 h %10
+		h4 r r8 d d g,
+		e' c c h g4 r
+		r2\fermata \bar "|." %13 finis
+	}
+}
+
+UndJesusTenoreLyrics = \lyricmode {
+	Und Je -- ſus wird ge --
+	gei -- ßelt. Nun
+	trä -- get er ſein Kreuz, mit
+	ihm der Men -- ſchen Sün -- den.
+	Die wei -- chern Töch -- ter %5
+	Zi -- ons fol -- gen und em --
+	pfin -- den ſein Lei -- den, und ein
+	Zäh -- ren -- ſtrom fließt von der
+	From -- men An -- ge -- ſicht.
+	Er ſieht ſich trö -- ſtend um, und %10
+	ſpricht: Ihr Töch -- ter
+	Zi -- ons, wei -- net nicht. %12 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
