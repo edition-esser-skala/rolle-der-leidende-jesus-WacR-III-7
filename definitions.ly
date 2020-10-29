@@ -761,6 +761,9 @@ tempoDerMitgekreuzigte = \tempoMarkup "[Tempo deest]"
 	tempoDerMitgekreuzigteC = \tempoMarkup "Recitativo"
 	tempoDerMitgekreuzigteD = \tempoMarkup "Arioso"
 tempoTheuresWort = \tempoMarkup "Allegretto"
+tempoUndGott = \tempoMarkup "[Tempo deest]"
+	tempoUndGottB = \tempoMarkup "[Arioso]"
+	tempoUndGottC = \tempoMarkup "[Recitativo]"
 
 
 

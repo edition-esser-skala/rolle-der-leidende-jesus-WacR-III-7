@@ -3544,6 +3544,52 @@ TheuresWortBassFigures = \figuremode {
 	r2. %152 finis
 }
 
+UndGottOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoUndGott
+		fis1~
+		fis2 fis
+		r8 g,16. g'32 g8 g,16. f'32 f2~
+		f r
+		r gis %5
+		r8 a,16. a'32 a4 r8 g,!16. g'32 g4
+		r8 f,16. f'32 f4 d r
+		r8 e,16. e'32 e4 r8 a,16. a'32 c16. b32 a16. g!32
+		fis2 r
+		r r8 g,16. g'32 b16. g32 d16 g %10
+		e!2 \tempoUndGottB f,8 f' a f
+		b a r f b a16. g32 a8 f
+		b g c c, f f16. e32 d16. c'32 h16. a32
+		gis2 a,8 a' c a
+		d,4 e f8 d e e %15
+		f4 d8 d e4 e,
+		a8 a' e c \tempoUndGottC a4 r
+		a'2 r4 h \bar "|" %18 finis
+	}
+}
+
+UndGottBassFigures = \figuremode {
+	<6>1
+	r2 <7->
+	r8 <[_-]>4. <4! 2>2
+	r1
+	r2 <6! _!> %5
+	r2 r8 <6>4.
+	r8 <7> <6>4 q2
+	r8 <_+>2..
+	<6>1
+	r2 r8 <_->4. %10
+	<6>2. q4
+	r8 q4. r8 q4.
+	r8 <_-> <4> <3> r2
+	<6>2. q4
+	<7>8 <6> <7 5-> <6\\ \t> <6>4 <6! 4>8 <5 _+> %15
+	<5>4 q8 <6> <6 4>4 <5 _+>
+	r1
+	<[6+] 4+ 2>2. <[5+] _+>4 %18 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

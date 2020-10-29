@@ -1884,63 +1884,98 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "D U E T T O"
+	% 		number = "2.12"
+	% 		title = "Theures Wort aus Jeſu Munde"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "theureswort" "2.12" "Duetto" "Theures Wort aus Jesu Munde"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
+	% 					\partcombine \TheuresWortFlautoI \TheuresWortFlautoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\TheuresWortViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\TheuresWortViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\TheuresWortViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \TheuresWortSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \TheuresWortSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \TheuresWortAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \TheuresWortAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\TheuresWortOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \TheuresWortBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 120 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "D U E T T O"
-			number = "2.12"
-			title = "Theures Wort aus Jeſu Munde"
+			genre = "R E C I T A T I V O"
+			number = "2.13"
+			title = "Und Gott gebietet dem letzten Schmerz"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "theureswort" "2.12" "Duetto" "Theures Wort aus Jesu Munde"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #5
+			page-count = #1
+		}
+		\tocLabelLong "undgott" "2.13" "Recitativo" "Und Gott gebietet dem letzten Schmerz"
 		\score {
 			<<
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
-						\partcombine \TheuresWortFlautoI \TheuresWortFlautoII
-					>>
-				>>
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\TheuresWortViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\TheuresWortViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\TheuresWortViola
-					}
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \TheuresWortSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \UndGottSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \TheuresWortSopranoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \TheuresWortAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \TheuresWortAltoLyrics
+					\new Lyrics \lyricsto Soprano \UndGottSopranoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\TheuresWortOrgano
+						\UndGottOrgano
 					}
 				>>
-				\new FiguredBass { \TheuresWortBassFigures }
+				\new FiguredBass { \UndGottBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 120 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

@@ -1616,6 +1616,52 @@ TheuresWortSopranoLyrics = \lyricmode {
 	ab. %141 finis
 }
 
+UndGottSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoUndGott
+		r8 a' a a d a16 a a8 b
+		c4 r16 c c c es8 es es d
+		b b r4 r2
+		d4 h8 c d d d es
+		f f f d h! h r16 e e h %5
+		c4 r8 a e'4 r8 e,
+		a4 a8 h16 c h8 d d h
+		gis gis r e' c16. c32 c8 r4
+		r2 d4 d8 a
+		c c c b g4 r %10
+		r c \tempoUndGottB a8 a r c16 c
+		d8 c16 c f8 c d c f c
+		d8. g16 \appoggiatura f8 e8. f16 f4 r
+		r e e8 a, r a16 c
+		c8([ h16)] d d8([ cis16)] e d16.([ e32 \grace g f16)] e32([ d)] c8( h)]\trill %15
+		a a' g32([ f16.)] e32([ d16.)] c4( h)\trill
+		a r \tempoUndGottC r8 c c a
+		dis4 r8 e \appoggiatura e h4 r \bar "|" %18 finis
+	}
+}
+
+UndGottSopranoLyrics = \lyricmode {
+	Und Gott ge -- bie -- tet dem letz -- ten
+	Schmerz, der in des Hel -- den See -- le
+	wü -- tet.
+	Ach, wer ver -- mag die Zahl der
+	Lei -- den ganz zu faſ -- ſen, die auf ihn %5
+	ſtrömt? Mein Gott, mein
+	Gott, ach, wa -- rum haſt du mich ver --
+	la -- ßen? ſo wü -- tet er.
+	Nun kommt, von
+	Gott ge -- ſandt, der Tod. %10
+	Er be -- tet: Ich voll --
+	en -- de nun ganz das Werk, das ei -- ner
+	Welt das Heil er -- wirbt,
+	ruft: Va -- ter, mei -- nen
+	Geiſt geb ich in dei -- ne Hän -- %15
+	de, in dei -- ne Hän --
+	de; und neigt ſein
+	Haupt und ſtirbt. %18 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
