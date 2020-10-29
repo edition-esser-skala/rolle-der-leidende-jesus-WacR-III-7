@@ -1499,6 +1499,52 @@ TheuresWortViolinoI = {
 	}
 }
 
+ErbarmeGottViolinoI = {
+	\relative c' {
+		\clef treble
+		\key e \phrygian \time 3/4 \tempoErbarmeGott
+		\mvTr h'4\fE-\markup \remark "con sordino" e,8( h' e) e
+		e4 dis2
+		h4 e,8( h' d) d
+		d4( cis) c
+		h2\p e,4 %5
+		fis2.
+		g2 fis4
+		e2 dis4
+		e h c
+		d( g,) e' %10
+		d( g,) e'
+		d2 c4\trill
+		h r r
+		R2.
+		r4 r f'! %15
+		f( e) d
+		d( c) h8( g'!)
+		fis2 e4
+		R2.
+		h'4\f e,8( h' e) e %20
+		e4 dis2
+		h4 e,8( h' d) d
+		d4( cis) c
+		h2\p e,4
+		fis2. %25
+		g2 fis4
+		e2 dis4
+		e h c
+		d( g,) e'
+		d( g,) e' %30
+		d2 c4\trill
+		h r r
+		R2.
+		r4 r f'!
+		f( e) d %35
+		d( c) h8( g'!)
+		fis2 e4
+		R2.
+		\time 4/4 r2 %38.5 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

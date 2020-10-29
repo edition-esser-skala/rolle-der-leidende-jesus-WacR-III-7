@@ -764,6 +764,7 @@ tempoTheuresWort = \tempoMarkup "Allegretto"
 tempoUndGott = \tempoMarkup "[Tempo deest]"
 	tempoUndGottB = \tempoMarkup "[Arioso]"
 	tempoUndGottC = \tempoMarkup "[Recitativo]"
+tempoErbarmeGott = \tempoMarkup "[Tempo deest]"
 
 
 

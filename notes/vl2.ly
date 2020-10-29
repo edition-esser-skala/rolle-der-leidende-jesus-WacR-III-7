@@ -1498,3 +1498,49 @@ TheuresWortViolinoII = {
 		c c, r\fermata \bar "|." %152 finis
 	}
 }
+
+ErbarmeGottViolinoII = {
+	\relative c' {
+		\clef treble
+		\key e \phrygian \time 3/4 \tempoErbarmeGott
+		\mvTr g'2\fE-\markup \remark "con sordino" r4
+		fis a,8( fis' a) a
+		a4( gis2)
+		e4 a,8( e' a) a
+		a4(\p g!) e %5
+		e dis2
+		e dis4
+		e h a
+		g g a
+		h( g) c %10
+		h( g) c
+		h2 a4\trill
+		g4 r r
+		R2.
+		r4 r d' %15
+		d( c) h
+		h( a) \once \slurDashed g!8( h)
+		a2 g4
+		R2.
+		g'2\f r4 %20
+		fis a,8( fis' a) a
+		a4( gis2)
+		e4 a,8( e' a) a
+		a4(\p g!) e
+		e dis2 %25
+		e dis4
+		e h a
+		g g a
+		h( g) c
+		h( g) c %30
+		h2 a4\trill
+		g4 r r
+		R2.
+		r4 r d'
+		d( c) h %35
+		h( a) \once \slurDashed g!8( h)
+		a2 g4
+		R2.
+		\time 4/4 r2 %38.5 finis
+	}
+}

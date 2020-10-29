@@ -3590,6 +3590,94 @@ UndGottBassFigures = \figuremode {
 	<[6+] 4+ 2>2. <[5+] _+>4 %18 finis
 }
 
+ErbarmeGottOrgano = {
+	\relative c {
+		\clef bass
+		\key e \phrygian \time 3/4 \tempoErbarmeGott
+		e4\fE g e
+		h2 h4
+		e e, e'
+		a,2 a4
+		e'2.\p %5
+		h
+		e,4 g h
+		e g, h
+		e d! c
+		g2 r4 %10
+		g2 fis4
+		g h d
+		g2 r4
+		f!2 d4
+		gis,2. %15
+		a4 c e
+		a2 e4
+		e( dis) e
+		a,4 h2
+		e4\fE g e %20
+		h2 h4
+		e e, e'
+		a,2 a4
+		e'2.\p
+		h %25
+		e,4 g h
+		e g, h
+		e d! c
+		g2 r4
+		g2 fis4 %30
+		g h d
+		g2 r4
+		f!2 d4
+		gis,2.
+		a4 c e %35
+		a2 e4
+		e( dis) e
+		a,4 h2
+		\time 4/4 e2 %38.5 finis
+	}
+}
+
+ErbarmeGottBassFigures = \figuremode {
+	r2.
+	<5+ 4>4 <7 _+>2
+	<5 4>4 <7! _+>2
+	<4>4 <_+> <_!>
+	<4>4 <_!>2 %5
+	<5+ 4>4 <\t _+>2
+	<9+>4 <6> <7 5+ _+>
+	r <6> <5 _+>
+	<5 3> <\t \t> <8 6>
+	r2. %10
+	r2 <7>4
+	r <6> <7 _+>
+	r2.
+	<6 4>4 <7 5>2
+	<7 5>4 <6 4> <5 3> %15
+	<6 4 2> <6> <7 _+>
+	<4> <3> <_!>
+	<6 4 2+> <\t \t \t> <5 3>
+	<6\\ 5> <6 4> <5+ _+>
+	r2. %20
+	<5+ 4>4 <7 _+>2
+	<5 4>4 <7! _+>2
+	<4>4 <_+> <_!>
+	<4>4 <_!>2
+	<5+ 4>4 <\t _+>2 %25
+	<9+>4 <6> <7 5+ _+>
+	r <6> <5 _+>
+	<5 3> <\t \t> <8 6>
+	r2.
+	r2 <7>4 %30
+	r <6> <7 _+>
+	r2.
+	<6 4>4 <7 5>2
+	<7 5>4 <6 4> <5 3>
+	<6 4 2> <6> <7 _+> %35
+	<4> <3> <_!>
+	<6 4 2+> <\t \t \t> <5 3>
+	<6\\ 5> <6 4> <5+ _+>
+	r2 %38.5 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

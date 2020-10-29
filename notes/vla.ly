@@ -1488,3 +1488,39 @@ TheuresWortViola = {
 		c2 r4\fermata \bar "|." %152 finis
 	}
 }
+
+ErbarmeGottViola = {
+	\relative c' {
+		\clef alto
+		\key e \phrygian \time 3/4 \tempoErbarmeGott
+		e2\fE e4
+		h2 h4
+		e e, e'
+		a,2 a4
+		e'2.\p %5
+		h
+		h2 a4
+		g2 fis4
+		e d! c
+		g'2 r4 %10
+		g2 fis4
+		g2 d4
+		g2 r4
+		R2.*6 %19
+		e'2\fE e4 %20
+		h2 h4
+		e e, e'
+		a,2 a4
+		e'2.\p
+		h %25
+		h2 a4
+		g2 fis4
+		e d! c
+		g'2 r4
+		g2 fis4 %30
+		g2 d4
+		g2 r4
+		R2.*6 %38
+		\time 4/4 r2 %38.5 finis
+	}
+}

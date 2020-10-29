@@ -1626,6 +1626,157 @@ SelbstDerFeindeTenoreLyricsB = \lyricmode {
 	nahn. %8 finis
 }
 
+ErbarmeGottTenoreINotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key e \phrygian \time 3/4 \autoBeamOff \tempoErbarmeGott
+		R2.*4
+		h4 e e %5
+		e( dis) r
+		g h, dis
+		e2 r4
+		h2 c4
+		d( g) e %10
+		d2( c4)\trill
+		h2 r4
+		h( c) d
+		d( e) f!
+		f( e) d %15
+		\appoggiatura d c2 r4
+		r c h
+		a2( g4)
+		fis e( dis)
+		e2 r4 %20
+		R2.*3
+		h'4 e e %24
+		e( dis) r %25
+		g h, dis
+		e2 r4
+		h2 c4
+		d( g) e
+		d2( c4)\trill %30
+		h2 r4
+		h( c) d
+		d( e) f!
+		f( e) d
+		\appoggiatura d c2 r4 %35
+		r c h
+		a2( g4)
+		fis e( dis)
+		\time 4/4 e2 %38.5 finis
+	}
+}
+
+ErbarmeGottTenoreILyrics = \lyricmode {
+	Er -- bar -- me %5
+	dich, __
+	Gott, ü -- ber
+	mich,
+	Je -- ſus
+	ſchließt ſein %10
+	Le --
+	ben,
+	er __ ſtirbt
+	der __ Ver --
+	ſöh -- nung %15
+	Tod,
+	Heil der
+	Welt __
+	zu ge --
+	ben. %20
+
+	Er -- bar -- me %24
+	dich, __ %25
+	Gott, ü -- ber
+	mich,
+	ſieh mich
+	Sün -- der
+	be -- %30
+	ben,
+	laß __ durch
+	des __ Ver --
+	ſöh -- nungs
+	Tod, %35
+	Herr, mich
+	wie --
+	der le --
+	ben. %38.5 finis
+}
+
+ErbarmeGottTenoreIINotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key e \phrygian \time 3/4 \autoBeamOff \tempoErbarmeGott
+		R2.
+		R2.*4 %5
+		h4 fis' fis
+		fis( e) r
+		g h, dis
+		e2 r4
+		h2 c4 %10
+		d( g) e
+		d2( c4)
+		h r r
+		h( c) d
+		d( e) f! %15
+		f( e) d
+		\appoggiatura d c2 r4
+		r c h
+		a8 c16([ h)] g4( fis)
+		e2 r4 %20
+		R2.*4 %24
+		h'4 fis' fis %25
+		fis( e) r
+		g h, dis
+		e2 r4
+		h2 c4
+		d( g) e %30
+		d2( c4)
+		h r r
+		h( c) d
+		d( e) f!
+		f( e) d %35
+		\appoggiatura d c2 r4
+		r c h
+		a8 c16([ h)] g4( fis)
+		\time 4/4 e2 %38.5 finis
+	}
+}
+
+ErbarmeGottTenoreIILyrics = \lyricmode {
+	Er -- bar -- me %6
+	dich, __
+	Gott, ü -- ber
+	mich,
+	Je -- ſus %10
+	ſchließt ſein
+	Le --
+	ben,
+	er __ ſtirbt
+	der __ Ver -- %15
+	ſöh -- nung
+	Tod,
+	Heil der
+	Welt zu ge --
+	ben. %20 finis
+
+	Er -- bar -- me %25
+	dich, __
+	Gott, ü -- ber
+	mich,
+	ſieh mich
+	Sün -- der %30
+	be --
+	ben,
+	laß __ durch
+	des __ Ver --
+	ſöh -- nungs %35
+	Tod,
+	Herr, mich
+	wie -- der le --
+	ben. %38.5 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

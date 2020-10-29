@@ -194,3 +194,49 @@ WeinetNichtFagottoII = {
 		\time 3/8 R4.*49 \markDaCapo \bar "||" %87 finis
 	}
 }
+
+ErbarmeGottFagottoII = {
+	\relative c {
+		\clef bass
+		\key e \phrygian \time 3/4 \tempoErbarmeGott
+		R2.
+		fis4\fE a a
+		a( gis2)
+		e4 a a~
+		a\p g! g %5
+		fis fis' fis
+		fis( e) r
+		h e dis
+		e2 r4
+		h2 c4 %10
+		d( g) e
+		d2 c4\trill
+		h( a) h
+		h( c) d
+		\once \slurDashed d( e) f! %15
+		f( e) d
+		d( c) r
+		r c h
+		a g fis
+		e2\f r4 %20
+		fis a a
+		a( gis2)
+		e4 a a~
+		a\p g! g
+		fis fis' fis %25
+		fis( e) r
+		h e dis
+		e2 r4
+		h2 c4
+		d( g) e %30
+		d2 c4\trill
+		h( a) h
+		h( c) d
+		\once \slurDashed d( e) f!
+		f( e) d %35
+		d( c) r
+		r c h
+		a g fis
+		\time 4/4 e r %38.5 finis
+	}
+}

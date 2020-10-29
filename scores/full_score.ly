@@ -1943,39 +1943,98 @@
 	% 		\midi { \tempo 4 = 120 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "2.13"
+	% 		title = "Und Gott gebietet dem letzten Schmerz"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #5
+	% 		page-count = #1
+	% 	}
+	% 	\tocLabelLong "undgott" "2.13" "Recitativo" "Und Gott gebietet dem letzten Schmerz"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \UndGottSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \UndGottSopranoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\UndGottOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \UndGottBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "2.13"
-			title = "Und Gott gebietet dem letzten Schmerz"
+			genre = "A R I O S O"
+			number = "2.14"
+			title = "Erbarme dich, Gott, über mich"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #5
-			page-count = #1
-		}
-		\tocLabelLong "undgott" "2.13" "Recitativo" "Und Gott gebietet dem letzten Schmerz"
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "erbarmedich" "2.14" "Arioso" "Erbarme dich, Gott, über mich"
 		\score {
 			<<
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\set StaffGroup.instrumentName = \markup \center-column { "fag" "1, 2" }
+					\new Staff <<
+						\partcombine \ErbarmeGottFagottoI \ErbarmeGottFagottoII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\ErbarmeGottViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\ErbarmeGottViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\ErbarmeGottViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \UndGottSopranoNotes }
+						\set Staff.instrumentName = "T 1"
+						\new Voice = "TenoreI" { \dynamicUp \ErbarmeGottTenoreINotes }
 					}
-					\new Lyrics \lyricsto Soprano \UndGottSopranoLyrics
+					\new Lyrics \lyricsto TenoreI \ErbarmeGottTenoreILyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T 2"
+						\new Voice = "TenoreII" { \dynamicUp \ErbarmeGottTenoreIINotes }
+					}
+					\new Lyrics \lyricsto TenoreII \ErbarmeGottTenoreIILyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\UndGottOrgano
+						\ErbarmeGottOrgano
 					}
 				>>
-				\new FiguredBass { \UndGottBassFigures }
+				\new FiguredBass { \ErbarmeGottBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 4 = 90 }
 		}
 	}
 }
