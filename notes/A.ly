@@ -1594,6 +1594,73 @@ WirMuessenAltoLyrics = \lyricmode {
 	hen. %59 finis
 }
 
+DaStehstDuAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoDaStehstDu
+		r8 f f d d8. d16 d8 r16 b'
+		b4 f r f8 f
+		as as as g g r16 g c8 c
+		a a a b b f r4
+		r8 f f b b f r f16 g %5
+		as8 as as g es es r es
+		es([ d)] es([ g)] b b c des
+		c4 r c8 c c h16 c
+		g4 r \tempoDaStehstDuB r g
+		as8 f16([ e!)] f8 as g4 c %10
+		c8 h!16([ c)] d8 f, es4 r8 c'
+		h! g r d' es c r c
+		\appoggiatura b as4 c8 es d b r b
+		\appoggiatura as g4 b8 des c as as c
+		\appoggiatura c b4 g8 b \appoggiatura b as4 c %15
+		r8 c b as g b c b16([ as)]
+		g4 f\trill es r
+		R1
+		\tempoDaStehstDuC r8 a! a a a8. d,16 d4
+		r8 d' d a b4 r %20
+		g8 g g a b4 r8 b
+		b b b a f f r c'
+		c8. f,16 f4 r8 f a b
+		c c c es, d4 r16 d d es
+		f8 f f f as as as g %25
+		\tempoDaStehstDuD g4 r8 g as g r4
+		as8 g as g c r16 c c8 g
+		a8. a16 a8 r16 b f4 r
+		R1\fermataMarkup \bar "|." %29 finis
+	}
+}
+
+DaStehstDuAltoLyrics = \lyricmode {
+	Da ſtehſt du, Gol -- ga -- tha, ein
+	Al -- tar! Auch das
+	Op -- fer iſt ſchon da, das du, Welt --
+	rich -- ter, dir er -- ſe -- hen.
+	Und Je -- ſus naht ſich, in den %5
+	Op -- fer -- tod zu ge -- hen. Er
+	ſchwankt den Hü -- gel matt hin --
+	an, und ſie kreu -- zi -- gen
+	ihn. Wirf
+	un -- ter die -- ſes Kreuz, mein %10
+	Geiſt, dich gläu -- big hin, um --
+	faß es, um  -- faß es, hier,
+	hier iſt das Op -- fer, hier,
+	hier iſt das Op -- fer, deſ -- ſen
+	Blut, deſ -- ſen Blut dir, %15
+	dir zur Er -- lö -- ſung, zur Er --
+	lö -- ſung fließt.
+
+	Ihr Vä -- ter Iſ -- ra -- els,
+	ihr hör -- et den, %20
+	der nach eu -- rem Heil voll
+	hei -- ßer Huld ſich ſeh -- net; ihr
+	Kreu -- zi -- ger! ihr ſpot -- tet
+	ihn ins An -- ge -- ſicht. Er wen -- det
+	im Ge -- bet zu ſei -- nem Va -- ter
+	ſich: Er -- bar -- me,
+	Va -- ter, ih -- rer dich, ſie wiſ -- ſen,
+	was ſie thun, jetzt nicht.
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -1665,81 +1665,115 @@
 	% 		\midi { \tempo 4 = 60 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C O R O"
+	% 		number = "2.8"
+	% 		title = "Wir müßen durch viel Trübſal"
+	% 	}
+	% 	\tocLabelLong "wirmuessen" "2.8" "Coro" "Wir müßen durch viel Trübsal"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "ob"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WirMuessenOboeI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WirMuessenOboeII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WirMuessenViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WirMuessenViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WirMuessenViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \WirMuessenSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \WirMuessenSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \WirMuessenAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \WirMuessenAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \WirMuessenTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \WirMuessenTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WirMuessenBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WirMuessenBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WirMuessenOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WirMuessenBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 100 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C O R O"
-			number = "2.8"
-			title = "Wir müßen durch viel Trübſal"
+			genre = "R E C I T A T I V O"
+			number = "2.9"
+			title = "Da ſtehſt du, Golgatha, ein Altar!"
 		}
-		% \tocLabelLong "wirmuessen" "2.8" "Coro" "Wir müßen durch viel Trübsal"
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "dastehstdu" "2.9" "Recitativo" "Da stehst du, Golgatha, ein Altar!"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "ob"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\WirMuessenOboeI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\WirMuessenOboeII
-						}
-					>>
-				>>
-				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\WirMuessenViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\WirMuessenViolinoII
-						}
-					>>
-					\new Staff {
-						\set Staff.instrumentName = "vla"
-						\WirMuessenViola
-					}
-				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \WirMuessenSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \WirMuessenSopranoLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \WirMuessenAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \DaStehstDuAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \WirMuessenAltoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \WirMuessenTenoreNotes }
-					}
-					\new Lyrics \lyricsto Tenore \WirMuessenTenoreLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WirMuessenBassoNotes }
-					}
-					\new Lyrics \lyricsto Basso \WirMuessenBassoLyrics
+					\new Lyrics \lyricsto Alto \DaStehstDuAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WirMuessenOrgano
+						\DaStehstDuOrgano
 					}
 				>>
-				\new FiguredBass { \WirMuessenBassFigures }
+				\new FiguredBass { \DaStehstDuBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 100 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

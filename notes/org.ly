@@ -3060,6 +3060,74 @@ WirMuessenBassFigures = \figuremode {
 	r1 %59 finis
 }
 
+DaStehstDuOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDaStehstDu
+		b1~
+		b2 d~
+		d es
+		es r4 f
+		d1~ %5
+		d2 g,~
+		g~ g4 r
+		as'8 c as g fis2
+		r4 g \tempoDaStehstDuB c,8(\mp es) es( c)
+		f( as) as( f) es( c) \once \slurDashed c( es) %10
+		d4 g, c'8 g es c
+		g'( h!) h( g) c,( es) es( c)
+		f( as) \once \slurDashed as( f) b,( d) \once \slurDashed d( b)
+		es( g) \once \slurDashed g( es) as( c) \once \slurDashed c( as)
+		r g b g r f as f %15
+		d!4 r8 d es g as c
+		b4 b, es8( g) g( es)
+		c( es) es( c) a! a'16. b32 c16. b32 a16. g32
+		\tempoDaStehstDuC fis2 r
+		fis g~ %20
+		g g~
+		g a!~
+		a1~
+		a2 b,~
+		b1 %25
+		\tempoDaStehstDuD r8 es( d es) r es( d es)
+		r es( d es) e4 r
+		f2 r4 f
+		b,2 r\fermata \bar "|." %29 finis
+	}
+}
+
+DaStehstDuBassFigures = \figuremode {
+	r1
+	r2 <6->
+	<6- 5-> <5->4 <6>
+	<4! 2>1
+	<6-> %5
+	<[6- 5-]>2 <6- [_-]>
+	r1
+	<[5-]>2 <7- [_!]>
+	r2 <_->
+	<_-> <6> %10
+	<7 [5-]>4 <_!> <[_-]>2
+	<_!> <_->
+	<4->8 <6>4 <7- _->8 r2
+	<5- 4->8 <6- _->4 <7- 5->8 <5->2
+	r8 <6! _->4. r8 <_->4. %15
+	<6->2 <5->4 q
+	<6 4-> <5 3> <8 3>2 \bassFigureExtendersOn
+	q q8 \bassFigureExtendersOff r4.
+	<6 _!>1
+	<\t \t>2 <5 _-> %20
+	r2 <6! [\t]>
+	r <6>
+	r1
+	r
+	<8>2 <7-> %25
+	r8 <5-> <6- 5-> <5-> r q <6- 5-> <5->
+	r <5-> <6- 5-> <5> <6>2
+	<_!>1
+	r %29 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
