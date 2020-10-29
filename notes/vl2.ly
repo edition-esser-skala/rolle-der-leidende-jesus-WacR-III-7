@@ -1367,3 +1367,134 @@ SelbstDerFeindeViolinoII = {
 		d1\fermata \bar "|." %25 finis
 	}
 }
+
+TheuresWortViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoTheuresWort
+		e2\pE f16( d8.)
+		e2 e'16( c8.)
+		c2 h4
+		c g c
+		c2 h4 %5
+		c g r
+		g2 e4
+		d2 e4
+		d2 d4
+		c2 h4 %10
+		a r8 a'(-. a-. a-.)
+		g8.( c16 h8) h(-. h-. h-.)
+		a4 r8 a(-. a-. a-.)
+		g8.( c16 h8) h d4
+		c16( a8.) g4 fis\trill %15
+		g d'2
+		c16( a8.) g4 fis
+		g2 r4
+		R2.*17 %35
+		r8 d(\f e fis g a)
+		h4 h\p h16( gis8.)
+		a4 a a16( fis8.)
+		g4 h2
+		a2.~ %40
+		a4 g2~
+		g4 f!2
+		e4 a g
+		fis2 r4
+		r d e8 fis %45
+		g2 r4
+		r g a8 h
+		c4. d16( h) c8 d16( h)
+		c4 c, r
+		h'4. c16( a) h8 c16( a) %50
+		h4 g, r
+		a'4. h16( gis) a8 h16( gis)
+		a4 d, r
+		g8 a16( fis) g8 h4 a8~
+		a h16( gis) a8 c4 h8 %55
+		h2 g8( h)
+		h2 g8( h)
+		h4 a g
+		c16( h a8) g4 fis
+		fis a d, %60
+		R2.*2
+		a'4~\f a8 a(-. a-. a-.)
+		g8.( c16 h8) h(-. h-. h-.)
+		a4~\p a8 a(-. a-. a-.) %65
+		g8.( c16 h4) h8(-.\f h-.)
+		c16( a8.) g4 fis\trill
+		g d'2
+		\once \slurDashed c16( a8.) g4 fis\trillE
+		g2 r4 %70
+		g2\p fis4
+		g h e
+		e2 dis4
+		e h e
+		e2 dis4 %75
+		e h r
+		h( g) g
+		f!2 e4
+		e2 e4
+		d2 c4 %80
+		h r8 d'(-. d-. d-.)
+		a8.( d16 c8) c(-. c-. c-.)
+		h4 r8 h(-. h-. h-.)
+		a8.( d16 c8) c8 e4
+		d16( h8.) a4 gis\trill %85
+		a r r
+		R2.*12 %98
+		r8 g\p h h( c d)
+		e8.( f16) e4 e16( cis8.) %100
+		d8.( e16) d4 d16( h8.)
+		c4 c2~
+		c4 h2~
+		h4 a2~
+		a4 g!2 %105
+		a4 d c
+		h!2 r4
+		r g a8 h
+		c2 r4
+		r c b %110
+		a4. b16( g) a8 b16( g)
+		a4 f r
+		g4. a16( f) g8 a16( f)
+		g4 c, r
+		f4. g16( e) f8 g16( e) %115
+		f4 g, r
+		e'8 f16( d) e8 g4 f8~
+		f g16( e) f8 a4 g8
+		g2 c8( e)
+		e2 c8( e) %120
+		e4 d c
+		a8 f e4 d
+		c2 r4
+		h'4~\f h8 d(-. d-. d-.)
+		c8.( f16 e8) e(-. e-. e-.) %125
+		d4\p r8 d(-. d-. d-.)
+		c8.( f16 e8) e(-. e-. e-.)
+		d4 d c
+		h r r
+		g,2.~ %130
+		g2 d''4
+		c2.~
+		c4 h c
+		d c h
+		c8.( f16 e8) e(-. e-. e-.) %135
+		d4 r8 d(-. d-. d-.)
+		c8.( f16 e8) e(-. e-. e-.)
+		e2 c4
+		c2 r4
+		R2. %140
+		e,2\f f16( d8.)
+		e4 g c
+		c2 h4
+		c c8 d16( h) c8 d16( h)
+		c8 e4 d c8 %145
+		d4 d8 e16( cis) d8 e16( cis)
+		d8 f4 e d8
+		e4 e8 f16( d) e8 g
+		f16( d8.) c4 h\trill
+		c8.( f16 e4) c~ %150
+		c c h\trill
+		c c, r\fermata \bar "|." %152 finis
+	}
+}

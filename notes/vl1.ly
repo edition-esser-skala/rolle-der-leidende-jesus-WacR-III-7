@@ -1368,6 +1368,137 @@ SelbstDerFeindeViolinoI = {
 	}
 }
 
+TheuresWortViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoTheuresWort
+		c'2\pE d16( h8.)
+		c2 g'16( e8.)
+		d2 f4
+		e16( d c8) c4 e
+		d2 f4 %5
+		e16( d c8) c4 r
+		e( c) a
+		\appoggiatura a gis2 a4
+		d( h) g
+		\appoggiatura g fis2 g4 %10
+		a8.( d16 c8) c(-. c-. c-.)
+		h8.( e16 d8) d(-. d-. d-.)
+		a8.( d16 c8) c(-. c-. c-.)
+		h8.( e16 d8) d(-. d-.) g
+		e16( c8.) h4 a\trill %15
+		g f'!2
+		e16( c8.) h4 a\trill
+		g2 r4
+		R2.*17 %35
+		r8 fis(\f g a h c)
+		d4 d8(\p g) d16( h8.)
+		c4 c8( a') c,16( a8.)
+		h4 g'2~
+		g4 fis2~ %40
+		fis4 e2~
+		e4 d!2~
+		d4 c h
+		a2 r4
+		r d c %45
+		h2 r4
+		r g' f!
+		e4. f16( d) e8 f16( d)
+		e4 c, r
+		d'4. e16( c) d8 e16( c) %50
+		d4 g,, r
+		c'4. d16( h) c8 d16( h)
+		c4 d, r
+		h'8 c16( a) h8 d4 c8~
+		c d16( h) c8 e4 d8 %55
+		d2 h8( d)
+		d2 h8( d)
+		d4 fis g
+		e16( d c8) h4 a
+		d fis g %60
+		R2.*2
+		a,8.(\f d16 c8) c(-. c-. c-.)
+		h8.( e16 d8) d(-. d-. d-.)
+		a8.(\p d16 c8) c(-. c-. c-.) %65
+		h8.( e16 d8) g(-.\f g-. g-.)
+		\once \slurDashed e16( c8.) h4 a\trill
+		g f'!2
+		\once \slurDashed e16( c8.) h4 a\trill
+		g2 r4 %70
+		h2\p dis4
+		e2 h'16( g8.)
+		fis2 a4
+		g16( fis e8) e4 h'16( g8.)
+		fis2 a4 %75
+		g16( fis e8) e4 r
+		g( e) c
+		\appoggiatura c h2 c4
+		e( c) a
+		\appoggiatura a gis2 a4 %80
+		h8.( e16 d8) d(-. d-. d-.)
+		c8.( f16 e8) e(-. e-. e-.)
+		h8.( e16 d8) d(-. d-. d-.)
+		c8.( f16 e8) e(-. e-.) a
+		f16( d8.) c4 h\trill %85
+		a r r
+		R2.*12 %98
+		r8 g\p h d( e f)
+		g8.( a16) g8( c) g16( e8.) %100
+		f8.( g16) f8( d') f,16( d8.)
+		e4 e2
+		d2.~
+		d4 c2~
+		c4 b2 %105
+		a4 f' e
+		d2 r4
+		r g f
+		e2 r4
+		r c d8 e %110
+		f4. g16( e) f8 g16( e)
+		f4 f, r
+		e'4. f16( d) e8 f16( d)
+		e4 c, r
+		d'4. e16( c) d8 e16( c) %115
+		d4 g,, r
+		c'8 d16( h) c8 e4 d8~
+		d e16( c) d8 f4 e8
+		e2 e8( g)
+		g2 e8( g) %120
+		g4 h, c
+		d c h\trill
+		c2 r4
+		d8.(\f g16 f8) f(-. f-. f-.)
+		e8.( a16 g8) g(-. g-. g-.) %125
+		d8.(\p g16 f8) f(-. f-. f-.)
+		e8.( a16 g8) g(-. g-. g-.)
+		f8.( a32 g) f4 e
+		d r r
+		g,,2.~ %130
+		g2 f''4
+		e2.~
+		e4 a g
+		f e d
+		c8.( a'16 g8) g(-. g-. g-.) %135
+		d8.( g16 f8) f(-. f-. f-.)
+		e8.( a16 g8) g c(-. c-.)
+		c2 e,4
+		e2 r4
+		R2. %140
+		c2\f d16( h8.)
+		c2 g'16( e8.)
+		d2 f4
+		e e8 f16( d) e8 f16( d)
+		e8 g4 f e8 %145
+		f4 f8 g16( e) f8 g16( e)
+		f8 a4 g f8
+		g4 g8 a16( f) g8 b
+		a16( f8.) e4 d\trill
+		e8.( a16 g8) g(-. g-.) c %150
+		a16( f8.) e4 d\trill
+		c c, r\fermata \bar "|." %152 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

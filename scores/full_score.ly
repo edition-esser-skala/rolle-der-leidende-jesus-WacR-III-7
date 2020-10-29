@@ -1850,38 +1850,97 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "2.11"
+	% 		title = "Der Mitgekreuzigte zu ſeiner linken Hand"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #5
+	% 	}
+	% 	\tocLabelLong "dermitgekreuzigte" "2.11" "Recitativo" "Der Mitgekreuzigte zu seiner linken Hand"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \DerMitgekreuzigteBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \DerMitgekreuzigteBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\DerMitgekreuzigteOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \DerMitgekreuzigteBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "2.11"
-			title = "Der Mitgekreuzigte zu ſeiner linken Hand"
+			genre = "D U E T T O"
+			number = "2.12"
+			title = "Theures Wort aus Jeſu Munde"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #5
-		}
-		\tocLabelLong "dermitgekreuzigte" "2.11" "Recitativo" "Der Mitgekreuzigte zu seiner linken Hand"
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "theureswort" "2.12" "Duetto" "Theures Wort aus Jesu Munde"
 		\score {
 			<<
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
+						\partcombine \TheuresWortFlautoI \TheuresWortFlautoII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TheuresWortViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TheuresWortViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\TheuresWortViola
+					}
+				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \DerMitgekreuzigteBassoNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \TheuresWortSopranoNotes }
 					}
-					\new Lyrics \lyricsto Basso \DerMitgekreuzigteBassoLyrics
+					\new Lyrics \lyricsto Soprano \TheuresWortSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \TheuresWortAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \TheuresWortAltoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\DerMitgekreuzigteOrgano
+						\TheuresWortOrgano
 					}
 				>>
-				\new FiguredBass { \DerMitgekreuzigteBassFigures }
+				\new FiguredBass { \TheuresWortBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 4 = 120 }
 		}
 	}
 }

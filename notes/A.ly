@@ -1732,6 +1732,219 @@ SelbstDerFeindeAltoLyricsB = \lyricmode {
 	nahn. %8 finis
 }
 
+TheuresWortAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoTheuresWort
+		R2.*18 %18
+		g'2 a16([ fis8.)]
+		g2 d'16([ h8.)] %20
+		a2 c4
+		h16([ a g8)] g4 d'16([ h8.)]
+		a2 c4
+		h16([ a g8)] g4 r
+		h( g) e %25
+		\appoggiatura e dis2 e4
+		a( fis) d
+		\appoggiatura d cis2 d4
+		e8.([ a16] g4) g
+		fis8.([ h16] a4) r %30
+		e8.([ a16] g4) g
+		fis8.([ h16] a4) d
+		h16([ g8.)] fis4( e)\trill
+		d c'!2
+		h16([ g8.)] fis4( e)\trill %35
+		d2 r4
+		r h' h16([ gis8.)]
+		a4 a a16([ fis8.)]
+		g4 r r
+		r a2 %40
+		a8.([ h32 a)] g2~
+		g8.([ a32 g)] f!4 f
+		e( a) g
+		fis r r
+		r d8 d e fis %45
+		g2 f4
+		e g8 g a h
+		c4. d16[ h] c8[ d16 h]
+		c8 e4 d c8
+		h4. c16[ a] h8[ c16 a] %50
+		h8 d4 c h8
+		a4. h16[ gis] a8[ h16 gis]
+		a8 c4 h a8
+		g[ a16 fis] g8 h4 a8~
+		a[ h16 gis] a8 c4 h8 %55
+		h2.~
+		h~
+		h4 a g
+		c16([ h a8)] g4( fis)
+		fis a h %60
+		c16([ h a8)] g4( fis)
+		g2 r4
+		R2.*23 %85
+		a2 h16([ gis8.)]
+		a2 c4
+		h2 d4
+		c16([ h a8)] a4 c
+		h2 d4 %90
+		c16([ h a8)] a4 r
+		c( a) fis
+		\appoggiatura fis g2 d'4
+		d( h) f
+		\appoggiatura f e2 f4 %95
+		g8.([ c16] b4) b
+		a8.([ d16] c4) c
+		c( d,) c'
+		\appoggiatura c h!2 r4
+		r e e16([ cis8.)] %100
+		d2 d16([ h8.)]
+		c4 c c
+		c8.([ d32 c)] h2~
+		h8.([ c32 h)] a2~
+		a8.([ b32 a)] g!2~ %105
+		g8.([ a32 g)] f4 e
+		d d8 d e f!
+		g2 f4
+		e g8 g a b
+		c2 b4 %110
+		a4. b16[ g] a8[ b16 g]
+		a8 c4 b a8
+		g4. a16[ f] g8[ a16 f]
+		g8 b4 a g8
+		f4. g16[ e] f8[ g16 e] %115
+		f8 a4 g f8
+		e[ f16 d] e8 g4 f8
+		f[ g16 e] f8 a4 g8
+		g2.~
+		g~ %120
+		g4 h c
+		a8([ f)] e4 d\trill
+		c2 r4
+		R2.*2 %125
+		g'2 d'4
+		c2 e4
+		d d c
+		h r r
+		r g8 a h c %130
+		c4 h8 c d h
+		c2.~
+		c4 h c
+		a16([ g f8)] e4 d
+		c2 r4 %135
+		d'2 r4
+		c2 r4
+		r c c
+		c2.
+		h\trill %140
+		c2 r4
+		R2.*10 %151
+		R2.\fermataMarkup \bar "|." %152 finis
+	}
+}
+
+TheuresWortAltoLyrics = \lyricmode {
+	Theu -- res %19
+	Wort des %20
+	ew -- gen
+	Le -- bens, des
+	ew -- gen
+	Le -- bens,
+	ach, __ nun %25
+	äng -- ſtet
+	einſt ver --
+	ge -- bens
+	mei -- nen
+	Geiſt, __ %30
+	mei -- nen
+	Geiſt __ der
+	Tren -- nung
+	Schmerz, der
+	Tren -- nung %35
+	Schmerz.
+	Wenn der
+	Geiſt, wenn der
+	Geiſt
+	nun %40
+	ſchei -- _
+	_ den,
+	ſchei -- den
+	ſoll,
+	macht ihn die -- ſes %45
+	hoff -- nungs --
+	voll, macht ihn die -- ſes
+	hoff -- _ _
+	_ _ _ _
+	_ _ _ %50
+	_ _ _ _
+	_ _ _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ %55
+	_
+
+	_ nungs,
+	hof -- nungs --
+	voll, macht ihn %60
+	hoff -- nungs --
+	voll.
+
+	Los von %86
+	al -- ler
+	Furcht und
+	Pla -- ge, von
+	Furcht und %90
+	Pla -- ge
+	geh __ ich
+	an dem --
+	ſel -- ben
+	Ta -- ge, %95
+	Herr, __ in
+	dei -- nen
+	Him -- mel
+	ein.
+	Jauchzt, Er -- %100
+	löſ -- te,
+	jauchzt, denn das
+	Grab, __ _
+	_
+	_ %105
+	denn das
+	Grab ſtürzt nie eu -- er
+	Le -- ben
+	ab, ſtürzt nie eu -- er
+	Le -- ben, %110
+	Le -- _ _
+	_ _ _ _
+	_ _ _
+	_ _ _ _
+	_ _ _ %115
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _
+	_
+	%120
+	ben, eu --
+	er Le -- ben
+	ab,
+
+	jauchzt, Er -- %126
+	löſ -- te,
+	jauchzt, denn das
+	Grab
+	ſtürzt nie eu -- er %130
+	Le -- ben, nie eu -- er
+	Le --
+	ben, eu --
+	er __ Le -- ben
+	ab, %135
+	nie,
+	nie
+	eu -- er
+	Le --
+	ben %140
+	ab. %141 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

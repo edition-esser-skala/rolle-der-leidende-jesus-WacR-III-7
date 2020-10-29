@@ -760,6 +760,7 @@ tempoDerMitgekreuzigte = \tempoMarkup "[Tempo deest]"
 	tempoDerMitgekreuzigteB = \tempoMarkup "Arioso"
 	tempoDerMitgekreuzigteC = \tempoMarkup "Recitativo"
 	tempoDerMitgekreuzigteD = \tempoMarkup "Arioso"
+tempoTheuresWort = \tempoMarkup "Allegretto"
 
 
 

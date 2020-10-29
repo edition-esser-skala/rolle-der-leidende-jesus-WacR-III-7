@@ -1396,6 +1396,226 @@ SelbstDerFeindeSopranoLyricsB = \lyricmode {
 	nahn. %8 finis
 }
 
+TheuresWortSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoTheuresWort
+		c'2 d16([ h8.)]
+		c2 g'16([ e8.)]
+		d2 f4
+		e16([ d c8)] c4 g'16([ e8.)]
+		d2 f4 %5
+		e16([ d c8)] c4 r
+		e( c) a
+		\appoggiatura a gis2 a4
+		d( h) g
+		\appoggiatura g fis2 g4 %10
+		a8.([ d16] c4) c
+		h8.([ e16] d4) r
+		a8.([ d16] c4) c
+		h8.([ e16] d4) g
+		e16([ c8.)] h4( a)\trill %15
+		g f'!2
+		e16([ c8.)] h4( a)\trill
+		g2 r4
+		R2.*18 %36
+		r4 d' d16([ h8.)]
+		c4 c c16([ a8.)]
+		h4 g'2
+		g8.([ a32 g)] fis2~ %40
+		fis8.([ g32 fis)] e2~
+		e8.([ f!32 e)] d!2~
+		d8.([ e32 d)] c4 h
+		a a8 a h c
+		d2 c4 %45
+		h d8 d e f!
+		g2 f4
+		e4. f16[ d] e8[ f16 d]
+		e8 g4 f e8
+		d4. e16[ c] d8[ e16 c] %50
+		d8 f4 e d8
+		c4. d16[ h] c8[ d16 h]
+		c8 e4 d c8
+		h[ c16 a] h8 d4 c8~
+		c[ d16 h] c8 e4 d8 %55
+		\once \tieDashed d2.~
+		d~
+		d4 fis g
+		e16([ d c8)] h4( a)
+		d fis g %60
+		e16[( d c8]) h4( a)\trill
+		g2 r4
+		R2.*8 %70
+		e'2 fis16([ dis8.)]
+		e2 g4
+		fis2 a4
+		g16([ fis e8)] e4 r
+		fis2 a4 %75
+		g16([ fis e8)] e4 r
+		g( e) c
+		\appoggiatura c h2 c4
+		e( c) a
+		\appoggiatura a gis2 a4 %80
+		h8.([ e16] d4) d
+		c8.([ f16] e4) e
+		h8.([ e16] d4) d
+		c8.([ f16] e4) a
+		f16([ d8.)] c4( h)\trill %85
+		a2 r4
+		R2.*13 %99
+		r4 g' g16([ e8.)] %100
+		f2 f16([ d8.)]
+		e4 r r
+		r d d
+		d8.([ e32 d)] c2~
+		c8.([ d32 c)] b2 %105
+		a4( d) c
+		h! r r
+		r g8 g a h
+		c2 b4
+		a c8 c d e %110
+		f4. g16[ e] f8[ g16 e]
+		f8 a4 g f8
+		e4. f16[ d] e8[ f16 d]
+		e8 g4 f e8
+		d4. e16[ c] d8[ e16 c] %115
+		d8 f4 e d8
+		c[ d16 h] c8 e4 d8
+		d[ e16 c] d8 f4 e8
+		e2.~
+		e~ %120
+		e4 d c
+		a8([ d)] c4 h\trill
+		c2 r4
+		R2.*2 %125
+		d2 f4
+		e2 g4
+		f f e
+		d g,8 a h c
+		c4 h8 c d e %130
+		e4 d8 e f d
+		e2.~
+		e4 a g
+		f16([ e d8)] c4 h\trill
+		c2 r4 %135
+		f2 r4
+		e2 r4
+		r e e
+		e2.
+		d\trill %140
+		c2 r4
+		R2.*10 %151
+		R2.\fermataMarkup \bar "|." %152 finis
+	}
+}
+
+TheuresWortSopranoLyrics = \lyricmode {
+	Theu -- res
+	Wort aus
+	Je -- ſu
+	Mun -- de, aus
+	Je -- ſu %5
+	Mun -- de,
+	in __ der
+	letz -- ten
+	To -- des --
+	ſtun -- de %10
+	tröſ -- teſt
+	du, __
+	tröſ -- teſt
+	du __ mein
+	bre -- chend %15
+	Herz, mein
+	bre -- chend
+	Herz.
+
+	\xE Wenn der %37
+	Geiſt, wenn der
+	Geiſt \x nun
+	ſchei -- _ %40
+	_
+	_
+	_ den
+	ſoll, macht ihn die -- ſes
+	hoff -- nungs -- %45
+	voll, macht ihn die -- ſes
+	hoff -- nungs,
+	\xE hoff -- _ _
+	_ _ _ _
+	_ _ _ %50
+	_ _ _ _
+	_ _ _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ %55
+	_
+
+	_ nungs,
+	hof -- nungs --
+	voll, macht ihn %60
+	hoff -- nungs --
+	voll.
+
+	\x An dem %71
+	Ta -- ge,
+	da ich
+	ſter -- be,
+	da ich %75
+	ſter -- be,
+	ſoll __ ich,
+	Je -- ſus,
+	ſchon dein
+	Er -- be %80
+	in __ dem
+	be -- ßern,
+	in __ dem
+	be -- ßern
+	Le -- ben %85
+	ſeyn.
+
+	\xE Jauchzt, Er -- %100
+	löſ -- te,
+	jauchzt,
+	\x denn das
+	Grab, __ _
+	_ %105
+	denn __ das
+	Grab
+	ſtürzt nie eu -- er
+	Le -- ben
+	ab, ſtürzt nie eu -- er %110
+	Le -- _ _
+	_ _ _ _
+	_ _ _
+	_ _ _ _
+	_ _ _ %115
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _
+	_
+	%120
+	\xE ben, eu --
+	er Le -- ben
+	ab,
+
+	jauchzt, Er -- %126
+	löſ -- te,
+	jauchzt, denn das
+	Grab \x ſtürzt nie eu -- er
+	Le -- ben, nie eu -- er %130
+	Le -- ben, nie eu -- er
+	\xE Le --
+	ben, eu --
+	er __ Le -- ben
+	ab, %135
+	nie,
+	nie
+	eu -- er
+	Le --
+	ben %140
+	ab. %141 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

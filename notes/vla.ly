@@ -1329,7 +1329,7 @@ WirMuessenViola = {
 
 SelbstDerFeindeViola = {
 	\relative c' {
-		\clef treble
+		\clef alto
 		\key g \minor \time 4/4 \tempoSelbstDerFeinde
 		b2 c
 		d f!
@@ -1356,5 +1356,135 @@ SelbstDerFeindeViola = {
 		d es
 		d c
 		b1\fermata \bar "|." %25 finis
+	}
+}
+
+TheuresWortViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 3/4 \tempoTheuresWort
+		c4\pE c c
+		c g c
+		f d g
+		g e c
+		f d g %5
+		g e g
+		c,2 c4
+		h2 c4
+		h2 h4
+		a2 g4 %10
+		d'2 d4
+		g g, r
+		d'2 d4
+		g g, h
+		c d d %15
+		e r h
+		c d d
+		g,2 r4
+		R2.*18 %36
+		d'2\p r4
+		d2 r4
+		d2 r4
+		dis2. %40
+		e
+		h
+		c2 cis4
+		d2 c4
+		h h a %45
+		g f'! d
+		e e f8 g
+		c4 c, c
+		c r c
+		g' g, g %50
+		g r g'
+		d d d
+		d r d
+		g g, g'
+		g g, g' %55
+		r g d
+		r g d
+		r d d
+		c d d
+		r d d %60
+		c d2
+		g,8 h d g\fE h g
+		d2 d4
+		g g, r
+		d'2\pE d4 %65
+		g g, g'\fE
+		c, d d
+		e r h
+		c d d
+		g,8 g' h a g fis %70
+		e4\p e e
+		e g e
+		a, fis h
+		e g e
+		a, fis h %75
+		e, g h
+		e2 e4
+		d!2 c4
+		c2 c4
+		h2 a4 %80
+		e'2 e4
+		a a, r
+		e'2 e4
+		a a, c
+		d e e, %85
+		a r r
+		R2.*13 %99
+		g'4\p g, r %100
+		g' g, r
+		g c8 d e c
+		gis2.
+		a
+		e %105
+		f2 fis4
+		g4 g' f!
+		e2 d4
+		c b g
+		f a b8 c %110
+		f4 f, f
+		f r f'
+		c c c
+		c r c
+		g' g, g %115
+		g r g'
+		c, c, r
+		c' c, r
+		r c' g
+		r c g %120
+		r g g
+		f g g
+		c8 e\f d c h a
+		g2 g'4
+		c c, r %125
+		g'2\pE g4
+		c c, c
+		f2 fis4
+		g r r
+		g,2 r4 %130
+		g2 g4
+		r c g
+		c d e
+		f g g,
+		c2 r4 %135
+		g'2 r4
+		c,2 a4
+		fis2 fis4
+		g2 r4
+		R2. %140
+		c4\f c c
+		c e c
+		f d g
+		c c, r
+		c c c %145
+		c r r
+		c c c
+		c2 c4
+		f g g,
+		c2 e4 %150
+		f g g,
+		c2 r4\fermata \bar "|." %152 finis
 	}
 }
