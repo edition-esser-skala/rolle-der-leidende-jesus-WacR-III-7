@@ -1742,38 +1742,112 @@
 	% 		\midi { \tempo 2 = 100 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "R E C I T A T I V O"
+	% 		number = "2.9"
+	% 		title = "Da ſtehſt du, Golgatha, ein Altar!"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #23
+	% 		system-system-spacing.minimum-distance = #23
+	% 		systems-per-page = #4
+	% 	}
+	% 	\tocLabelLong "dastehstdu" "2.9" "Recitativo" "Da stehst du, Golgatha, ein Altar!"
+	% 	\score {
+	% 		<<
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \DaStehstDuAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \DaStehstDuAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\DaStehstDuOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \DaStehstDuBassFigures }
+	% 		>>
+	% 		% \layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "R E C I T A T I V O"
-			number = "2.9"
-			title = "Da ſtehſt du, Golgatha, ein Altar!"
+			genre = "C H O R A L"
+			number = "2.10"
+			title = "Selbſt der Feinde Heil zu ſuchen"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #23
-			system-system-spacing.minimum-distance = #23
-			systems-per-page = #4
-		}
-		\tocLabelLong "dastehstdu" "2.9" "Recitativo" "Da stehst du, Golgatha, ein Altar!"
+		\tocLabelLong "selbstderfeinde" "2.10" "Choral" "Selbst der Feinde Heil zu suchen"
 		\score {
 			<<
-				\new ChoirStaff <<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \SelbstDerFeindeOboeI \SelbstDerFeindeOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\SelbstDerFeindeViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\SelbstDerFeindeViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\SelbstDerFeindeViola
+					}
+				>>
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \SelbstDerFeindeSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsB
+
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \DaStehstDuAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \SelbstDerFeindeAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \DaStehstDuAltoLyrics
+					\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsA
+					\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \SelbstDerFeindeTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \SelbstDerFeindeBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsA
+					\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsB
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\DaStehstDuOrgano
+						\SelbstDerFeindeOrgano
 					}
 				>>
-				\new FiguredBass { \DaStehstDuBassFigures }
+				\new FiguredBass { \SelbstDerFeindeBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

@@ -1661,6 +1661,77 @@ DaStehstDuAltoLyrics = \lyricmode {
 	was ſie thun, jetzt nicht.
 }
 
+SelbstDerFeindeAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \autoBeamOff \tempoSelbstDerFeinde
+		d2 fis
+		g g
+		g g
+		g( fis)
+		d1\fermata %5
+		f!2 a
+		b b
+		b a \noBreak
+		f1\fermata \bar ":|."
+		b2 b \noBreak %10
+		b a
+		a g
+		f! f\fermata
+		f f
+		g g %15
+		g g
+		fis1\fermata
+		a2 fis
+		g fis
+		g es %20
+		d d\fermata
+		g a
+		g g
+		g fis
+		d1\fermata \bar "|." %25 finis
+	}
+}
+
+SelbstDerFeindeAltoLyricsA = \lyricmode {
+	Selbſt der
+	Fein -- de
+	Heil zu
+	ſu --
+	chen, %5
+	reiz auch
+	uns dies
+	Bey -- ſpiel
+	an.
+	Ih -- re %10
+	Schuld wollſt
+	du er --
+	la -- ßen,
+	das, o
+	Gott, iſt %15
+	un -- ſer
+	Flehn,
+	daß einſt
+	ſel -- ber,
+	die uns %20
+	haſ -- ſen,
+	dort mit
+	uns dein
+	Ant -- litz
+	ſehn. %25 finis
+}
+
+SelbstDerFeindeAltoLyricsB = \lyricmode {
+	Ja wir
+	wol -- len,
+	wenn ſie
+	flu -- chen,
+	mit Ge -- %5
+	bet zu
+	Gott uns
+	nahn. %8 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

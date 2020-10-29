@@ -3128,6 +3128,66 @@ DaStehstDuBassFigures = \figuremode {
 	r %29 finis
 }
 
+SelbstDerFeindeOrgano = {
+	\relative c {
+		\clef bass
+		\key g \minor \time 4/4 \tempoSelbstDerFeinde
+		g'2 g
+		g h,
+		c g
+		c d
+		g,1\fermata %5
+		d'2 c
+		b g'
+		es f \noBreak
+		b,1\fermata \bar ":|."
+		b'2 d, \noBreak %10
+		e fis
+		g c,
+		f! f,\fermata
+		es'! d
+		c g' %15
+		es es
+		d1\fermata
+		fis2 d
+		g a
+		b c, %20
+		d d\fermata
+		b' fis
+		g c,
+		d d
+		g,1\fermata \bar "|." %25 finis
+	}
+}
+
+SelbstDerFeindeBassFigures = \figuremode {
+	<5 3>2 <7+ 4 2>
+	<8 3> <6 5!>
+	<_-> q
+	<6 5> <_+>
+	r1 %5
+	<6 _!>2 <6>
+	r1
+	<6 5>
+	r
+	r2 <6> %10
+	<6 5> <6>
+	<9> <_!>
+	r1
+	<[2]>2 <6!>
+	r2 <_-> %15
+	<7> <6>
+	<_+>1
+	<6>2 <_+>
+	r <6\\>
+	<6> q %20
+	<_+>1
+	<6>2 q
+	r1
+	<6 4>2 <5 _+>
+	r1 %25 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

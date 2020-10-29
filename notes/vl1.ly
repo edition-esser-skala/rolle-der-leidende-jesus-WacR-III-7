@@ -1336,6 +1336,38 @@ WirMuessenViolinoI = {
 	}
 }
 
+SelbstDerFeindeViolinoI = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \tempoSelbstDerFeinde
+		g'2 a
+		b d
+		g,4 a b2
+		a1
+		g\fermata %5
+		b2 c
+		d d
+		c c \noBreak
+		b1\fermata \bar ":|."
+		d2 d \noBreak %10
+		c d
+		b c
+		a f\fermata
+		c' d
+		es d %15
+		d c
+		d1\fermata
+		a2 d
+		b a
+		g a %20
+		fis4 e d2\fermata
+		g a
+		b c
+		b a
+		g1\fermata \bar "|." %25 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

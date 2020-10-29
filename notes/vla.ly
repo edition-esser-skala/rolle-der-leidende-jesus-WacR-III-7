@@ -1326,3 +1326,35 @@ WirMuessenViola = {
 		d\fermata \bar "|." %59 finis
 	}
 }
+
+SelbstDerFeindeViola = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \tempoSelbstDerFeinde
+		b2 c
+		d f!
+		es d
+		es d4 c
+		b1\fermata %5
+		d2 es
+		f g
+		g f4 es \noBreak
+		d1\fermata \bar ":|."
+		f2 f \noBreak %10
+		g d
+		d e
+		c a\fermata
+		f' f
+		g g %15
+		g g,
+		a1\fermata
+		d2 fis
+		d c
+		d c %20
+		a a\fermata
+		d d
+		d es
+		d c
+		b1\fermata \bar "|." %25 finis
+	}
+}

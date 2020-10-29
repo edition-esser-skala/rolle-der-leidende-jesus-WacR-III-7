@@ -1335,3 +1335,35 @@ WirMuessenViolinoII = {
 		b\fermata \bar "|." %59 finis
 	}
 }
+
+SelbstDerFeindeViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \tempoSelbstDerFeinde
+		d2 fis
+		g g
+		g g
+		g fis
+		g1\fermata %5
+		f!2 a
+		b b
+		b a4.( g16 f) \noBreak
+		f1\fermata \bar ":|."
+		b2 b \noBreak %10
+		b a
+		a g
+		f! f\fermata
+		a h
+		c b %15
+		g g
+		fis1\fermata
+		a2 a
+		g fis
+		g es %20
+		d d\fermata
+		g a
+		g g
+		g fis
+		d1\fermata \bar "|." %25 finis
+	}
+}

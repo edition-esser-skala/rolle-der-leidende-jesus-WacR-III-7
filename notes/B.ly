@@ -1518,6 +1518,77 @@ WirMuessenBassoLyrics = \lyricmode {
 	hen. %59 finis
 }
 
+SelbstDerFeindeBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \minor \time 4/4 \autoBeamOff \tempoSelbstDerFeinde
+		g'2 g
+		g h,
+		c g'
+		c,( d)
+		g1\fermata %5
+		d2 c
+		b g'
+		es f \noBreak
+		b,1\fermata \bar ":|."
+		b'2 d, \noBreak %10
+		e fis
+		g c,
+		f! f\fermata
+		es! d
+		c g' %15
+		es es
+		d1\fermata
+		fis2 d
+		g a
+		b c, %20
+		d d\fermata
+		b' fis
+		g c,
+		d d
+		g1\fermata \bar "|." %25 finis
+	}
+}
+
+SelbstDerFeindeBassoLyricsA = \lyricmode {
+	Selbſt der
+	Fein -- de
+	Heil zu
+	ſu --
+	chen, %5
+	reiz auch
+	uns dies
+	Bey -- ſpiel
+	an.
+	Ih -- re %10
+	Schuld wollſt
+	du er --
+	la -- ßen,
+	das, o
+	Gott, iſt %15
+	un -- ſer
+	Flehn,
+	daß einſt
+	ſel -- ber,
+	die uns %20
+	haſ -- ſen,
+	dort mit
+	uns dein
+	Ant -- litz
+	ſehn. %25 finis
+}
+
+SelbstDerFeindeBassoLyricsB = \lyricmode {
+	Ja wir
+	wol -- len,
+	wenn ſie
+	flu -- chen,
+	mit Ge -- %5
+	bet zu
+	Gott uns
+	nahn. %8 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

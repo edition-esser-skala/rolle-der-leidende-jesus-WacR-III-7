@@ -1555,6 +1555,77 @@ WirMuessenTenoreLyrics = \lyricmode {
 	hen. %59 finis
 }
 
+SelbstDerFeindeTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \minor \time 4/4 \autoBeamOff \tempoSelbstDerFeinde
+		b2 c
+		d f!
+		es d
+		es( d4 c)
+		b1\fermata %5
+		d2 es
+		f g
+		g f4( es) \noBreak
+		d1\fermata \bar ":|."
+		f2 f \noBreak %10
+		g d
+		d e
+		c a\fermata
+		a h
+		c b %15
+		g g
+		a1\fermata
+		d2 d
+		d c
+		d c %20
+		a a\fermata
+		d d
+		d es
+		d c
+		b1\fermata \bar "|." %25 finis
+	}
+}
+
+SelbstDerFeindeTenoreLyricsA = \lyricmode {
+	Selbſt der
+	Fein -- de
+	Heil zu
+	ſu --
+	chen, %5
+	reiz auch
+	uns dies
+	Bey -- ſpiel
+	an.
+	Ih -- re %10
+	Schuld wollſt
+	du er --
+	la -- ßen,
+	das, o
+	Gott, iſt %15
+	un -- ſer
+	Flehn,
+	daß einſt
+	ſel -- ber,
+	die uns %20
+	haſ -- ſen,
+	dort mit
+	uns dein
+	Ant -- litz
+	ſehn. %25 finis
+}
+
+SelbstDerFeindeTenoreLyricsB = \lyricmode {
+	Ja wir
+	wol -- len,
+	wenn ſie
+	flu -- chen,
+	mit Ge -- %5
+	bet zu
+	Gott uns
+	nahn. %8 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

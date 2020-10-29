@@ -1325,6 +1325,77 @@ WirMuessenSopranoLyrics = \lyricmode {
 	hen. %59 finis
 }
 
+SelbstDerFeindeSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 4/4 \autoBeamOff \tempoSelbstDerFeinde
+		g'2 a
+		b d
+		g,4( a) b2
+		a1
+		g\fermata %5
+		b2 c
+		d d
+		c c \noBreak
+		b1\fermata \bar ":|."
+		d2 d \noBreak %10
+		c d
+		b c
+		a f\fermata
+		c' d
+		es d %15
+		d c
+		d1\fermata
+		a2 d
+		b a
+		g a %20
+		fis4( e) d2\fermata
+		g a
+		b c
+		b a
+		g1\fermata \bar "|." %25 finis
+	}
+}
+
+SelbstDerFeindeSopranoLyricsA = \lyricmode {
+	Selbſt der
+	Fein -- de
+	Heil zu
+	ſu --
+	chen, %5
+	reiz auch
+	uns dies
+	Bey -- ſpiel
+	an.
+	Ih -- re %10
+	Schuld wollſt
+	du er --
+	la -- ßen,
+	das, o
+	Gott, iſt %15
+	un -- ſer
+	Flehn,
+	daß einſt
+	ſel -- ber,
+	die uns %20
+	haſ -- ſen,
+	dort mit
+	uns dein
+	Ant -- litz
+	ſehn. %25 finis
+}
+
+SelbstDerFeindeSopranoLyricsB = \lyricmode {
+	Ja wir
+	wol -- len,
+	wenn ſie
+	flu -- chen,
+	mit Ge -- %5
+	bet zu
+	Gott uns
+	nahn. %8 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

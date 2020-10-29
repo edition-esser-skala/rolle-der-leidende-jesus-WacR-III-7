@@ -753,6 +753,7 @@ tempoDaStehstDu = \tempoMarkup "[Tempo deest]"
 	tempoDaStehstDuB = \tempoMarkup "Arioso"
 	tempoDaStehstDuC = \tempoMarkup "[Recitativo]"
 	tempoDaStehstDuD = \tempoMarkup "Arioso"
+tempoSelbstDerFeinde = \tempoMarkup "[Tempo deest]"
 
 
 
