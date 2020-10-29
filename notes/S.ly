@@ -1220,6 +1220,111 @@ TodesworteSopranoLyrics = \lyricmode {
 	ziehn. %42 finis
 }
 
+WirMuessenSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 2/2 \autoBeamOff \tempoWirMuessen
+		R1*7 %7
+		r2 d'~
+		d cis
+		d d, %10
+		r g
+		d'4 d d d
+		es2 d
+		c4 a c2
+		b4 g b2 %15
+		a4 b8 c b4( a)
+		g r g'2~
+		g f!
+		e1
+		d2 d4 d %20
+		d d2 cis8 cis
+		d2 r
+		R1*3 %25
+		r2 c
+		g'4 g g g
+		as2 g
+		f4 d f2
+		es4 c es2 %30
+		g4 g2 g4
+		g2( fis)
+		g r
+		R1*4 %37
+		r2 g,
+		c4 c c c
+		es2 d %40
+		c4 a c2
+		b4 g b2
+		\once \stemUp b4( a8[ b)] c4 b
+		b a d d
+		es2 d %45
+		R1
+		r2 d,
+		d'4 d d d
+		es2 d
+		c4 a c2 %50
+		b4 g b2
+		a4 a2 a4
+		g2 b~
+		b es~
+		es1 %55
+		d4 a b g
+		g1
+		fis
+		g\fermata \bar "|." %59 finis
+	}
+}
+
+WirMuessenSopranoLyrics = \lyricmode {
+	Durch __ %8
+	viel
+	Trüb -- ſal, %10
+	wir
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %15
+	Got -- tes ein -- ge --
+	hen, durch __
+	viel
+	Trüb --
+	ſal in das %20
+	Reich Got -- tes ein --
+	gehn,
+
+	wir %26
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %30
+	Got -- tes ein --
+	ge --
+	hen,
+
+	wir %38
+	mü -- ßen durch viel
+	Trüb -- ſal %40
+	in das Reich,
+	in das Reich
+	Got -- tes ein --
+	ge -- hen, durch viel
+	Trüb -- ſal, %45
+
+	wir
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich, %50
+	in das Reich
+	Got -- tes ein --
+	ge -- _
+	_
+	%55
+	_ _ hen, ein --
+	ge --
+	_
+	hen. %59 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

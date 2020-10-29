@@ -748,6 +748,7 @@ tempoTodesworte = \tempoMarkup "Allegro moderato"
 %2.6
 tempoUndJesus = \tempoMarkup "[Tempo deest]"
 tempoWeinetNicht = \tempoMarkup "Andante grazioso"
+tempoWirMuessen = \tempoMarkup "Allebrave"
 
 
 

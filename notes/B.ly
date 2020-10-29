@@ -1413,6 +1413,111 @@ TodesworteBassoLyrics = \lyricmode {
 	ziehn. %42 finis
 }
 
+WirMuessenBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \minor \time 2/2 \autoBeamOff \tempoWirMuessen
+		R1*12
+		r2 g'~
+		g fis
+		g g,4 r %15
+		r2 d'
+		g4 g g g
+		b2 a
+		g4 e g2
+		f4 d f2 %20
+		e4 f8 g f4( e)
+		d r d'2~
+		d4 c b2
+		a1
+		g2 g4 g %25
+		g2 f!4 f8 f
+		es4( d) c2
+		R1
+		r2 g'
+		c4 c c c %30
+		es2 d
+		c4 a c2
+		b4 g b2
+		a4 b8 c b4( a)
+		g f es( d) %35
+		c( h) c2
+		r c'~
+		c h
+		r4 c8([ b)] a!4 g
+		fis fis g2 %40
+		g fis4 fis
+		g2~ g8[ f es d]
+		c2 c4 cis
+		d2 d4 r
+		r2 d %45
+		d'4 d d d
+		es2 d
+		R1
+		r2 d,
+		d'4 d d d %50
+		es2 d
+		c4 a c2
+		b4( a) g f
+		es d c b'
+		a b a g %55
+		fis2 g4 g
+		d1~
+		d
+		g\fermata \bar "|." %59 finis
+	}
+}
+
+WirMuessenBassoLyrics = \lyricmode {
+	Durch __ %13
+	viel
+	Trüb -- ſal, %15
+	wir
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %20
+	Got -- tes ein -- ge --
+	hen, durch __
+	_ viel
+	Trüb --
+	ſal in das %25
+	Reich Got -- tes ein --
+	ge -- hen,
+
+	wir
+	mü -- ßen durch viel %30
+	Trüb -- ſal
+	in das Reich,
+	in das Reich
+	Got -- tes ein -- ge --
+	hen, durch viel %35
+	Trüb -- ſal,
+	durch __
+	viel,
+	viel Trüb -- ſal
+	in das Reich %40
+	Got -- tes ein --
+	ge --
+	_ hen, ein --
+	ge -- hen,
+	wir %45
+	mü -- ßen durch viel
+	Trüb -- ſal,
+
+	wir
+	mü -- ßen durch viel %50
+	Trüb -- ſal
+	in das Reich
+	Got -- tes ein --
+	ge -- _ _ _
+	_ _ _ _ %55
+	_ hen, ein --
+	ge --
+
+	hen. %59 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

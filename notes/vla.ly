@@ -1260,3 +1260,69 @@ WeinetNichtViola = {
 		R4.*4 \markDaCapo \bar "||" %87 finis
 	}
 }
+
+WirMuessenViola = {
+	\relative c' {
+		\clef alto
+		\key g \minor \time 2/2 \tempoWirMuessen
+		r2 g\fE
+		d'4 d d d
+		es2 d
+		c4 a c2
+		b4 g b2 %5
+		a4 b8 c b4 a
+		g r g'2~
+		g f!
+		e1
+		d2 d4 d %10
+		d2 c!~
+		c4 b8 a b4 g
+		c2 g'
+		es4 c d2
+		d4 b g g %15
+		c a d c
+		b c d2~
+		d4 d a a
+		b2 a4 a
+		a2 r4 a %20
+		g b a g
+		fis2 fis'
+		r g~
+		g fis
+		g g, %25
+		R1
+		r2 es'4 es
+		f2 es
+		d2. d4
+		c2 c4 c8 d %30
+		es2 d
+		r d
+		r4 d d d
+		c es d c
+		h2 c4 d %35
+		es2 es4 es
+		f2 es
+		d4 c d2
+		c8 h c4 r2
+		r d4 d %40
+		es1
+		d2 d4 d
+		es es es g
+		d2 r
+		r d, %45
+		d'4 d fis fis
+		g2 fis
+		R1
+		r2 d,
+		fis' fis4 fis%50
+		g2. d4
+		es es d2
+		d d
+		es2. d4
+		c d c b %55
+		a2 d
+		d1
+		d
+		d\fermata \bar "|." %59 finis
+	}
+}

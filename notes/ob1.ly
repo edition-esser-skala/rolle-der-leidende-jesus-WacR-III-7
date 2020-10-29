@@ -575,3 +575,55 @@ TodesworteOboeI = {
 		c r r\fermata \bar "|." %50 finis
 	}
 }
+
+WirMuessenOboeI = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 2/2 \tempoWirMuessen
+		R1*10 %10
+		r2 g'\fE
+		d'4 d d d
+		es2 d
+		c4 a c2
+		b4 g b2 %15
+		a4 b8 c b4 a
+		g r g'2~
+		g f!
+		e1
+		d2 d4 d %20
+		d d2 cis4
+		d2 r
+		R1*3 %25
+		r2 c
+		g'4 g g g
+		as2 g
+		f4 d f2
+		es4 c es2 %30
+		g4 g2 g4
+		g2 fis
+		g r
+		R1*4 %37
+		r2 g,
+		c4 c c c
+		es2 d %40
+		c4 a c2
+		b4 g b2~
+		b4 a8 b c4 b
+		b a d d
+		es2 d %45
+		R1
+		r2 d,
+		d'4 d d d
+		es2 d
+		c4 a c2 %50
+		b4 g b2
+		a4 a2 a4
+		g2 b~
+		b es~
+		es es %55
+		d4 a b g
+		g1
+		fis
+		g\fermata \bar "|." %59 finis
+	}
+}

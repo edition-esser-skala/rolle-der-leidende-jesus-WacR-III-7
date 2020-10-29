@@ -2932,6 +2932,134 @@ WeinetNichtBassFigures = \figuremode {
 	r %87 finis
 }
 
+WirMuessenOrgano = {
+	\relative c {
+		\clef "treble_8"
+		\key g \minor \time 2/2 \tempoWirMuessen
+		r2 g'\fE
+		d'4 d d d
+		es2 d
+		c4 a c2
+		b4 g b2 %5
+		a4 b8 c b4 a
+		g r g'2~
+		g f!
+		e1
+		d2 d4 d %10
+		d2 c!~
+		c4 b8 a b4 g
+		c2 \clef bass g~
+		g fis
+		g g,4 r %15
+		r2 d'
+		g4 g g g
+		b2 a
+		g4 e g2
+		f4 d f2 %20
+		e4 f8 g f4 e
+		d r d'2~
+		d4 c b2
+		a1
+		g2 g4 g %25
+		g2 f!4 f
+		es d c2
+		r4 h' c2
+		r g
+		c4 c c c %30
+		es2 d
+		c4 a c2
+		b4 g b2
+		a4 b8 c b4 a
+		g f es d %35
+		c h c2
+		r c'~
+		c h
+		r4 c8 b a!4 g
+		fis fis g2~ %40
+		g fis4 fis
+		g2 g8 f es d
+		c2 c4 cis
+		d2 d,4 r
+		r2 d' %45
+		d'4 d d d
+		es2 d
+		R1
+		r2 d,
+		d'4 d d d %50
+		es2 d
+		c4 a c2
+		b4 a g f
+		es d c b'
+		a b a g %55
+		fis2 g
+		d1
+		d,
+		g\fermata \bar "|." %59 finis
+	}
+}
+
+WirMuessenBassFigures = \figuremode {
+	r1
+	r
+	r
+	r
+	r %5
+	r2 <3>4 <\t>
+	<8>1
+	<3>2 <6>
+	<7> <6\\>
+	r1 %10
+	<4 2->2 <4>4 <3>
+	<5 2> <\t \t> <6>2
+	<9>4 <8>2.
+	<4 2>2 <6 5>
+	r1 %15
+	r2 <6 4>4 <5 _+>
+	r1
+	<6>2 <6 4>
+	<6! 5>2 <4+ 2>
+	<6>1 %20
+	<7>2 <6>4 <6\\>
+	<_+>1
+	<4 2->4 <\t \t> <6>2
+	<7> <6\\>
+	r1 %25
+	<4 2->2 <\t \t>
+	<6>4 <6!>2.
+	r4 <7->2.
+	r2 <7 _!>
+	r1 %30
+	<6>2 <6- 4>
+	<6 5> <4+ 2>
+	<6>1
+	<3>4 <4>8 <\t> <3>4 q
+	<_!> <\t> <6> <6!> %35
+	<5 3> <\t \t> <5 3>2
+	r <5 3>
+	<4 2> <6 5>
+	r <5 3>4 <\t \t>
+	<7>2 <_-> %40
+	<4 2!> <7>
+	r1
+	<7 5>2 <8 6>4 <7 5>
+	<6 4> <5 _+>2.
+	r2 <_+> %45
+	r1
+	<6\\>2 <_+>
+	r1
+	r2 <_+>
+	<7 _+>1 %50
+	<5 3>2 <6 4>
+	<6 5> <4+ 2>
+	<6>2 <5>
+	q q
+	<6\\ 5>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff <6 4> %55
+	<6>1
+	<6 4>
+	<5 _+>
+	r1 %59 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

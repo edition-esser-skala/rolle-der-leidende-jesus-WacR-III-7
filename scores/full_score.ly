@@ -1612,57 +1612,134 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I A"
+	% 		number = "2.7"
+	% 		title = "Weint nicht, ſagt der Menſchenfreund"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "weintnicht" "2.7" "Aria" "Weint nicht, sagt der Menschenfreund"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
+	% 					\partcombine \WeinetNichtFagottoI \WeinetNichtFagottoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = \markup \center-column { "vl" "[fl]" }
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WeinetNichtViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WeinetNichtViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WeinetNichtViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \WeinetNichtTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \WeinetNichtTenoreLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WeinetNichtOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WeinetNichtBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I A"
-			number = "2.7"
-			title = "Weint nicht, ſagt der Menſchenfreund"
+			genre = "C O R O"
+			number = "2.8"
+			title = "Wir müßen durch viel Trübſal"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "weintnicht" "2.7" "Aria" "Weint nicht, sagt der Menschenfreund"
+		% \tocLabelLong "wirmuessen" "2.8" "Coro" "Wir müßen durch viel Trübsal"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
-						\partcombine \WeinetNichtFagottoI \WeinetNichtFagottoII
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WirMuessenOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WirMuessenOboeII
+						}
 					>>
 				>>
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
-						\set GrandStaff.instrumentName = \markup \center-column { "vl" "[fl]" }
+						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\WeinetNichtViolinoI
+							\WirMuessenViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\WeinetNichtViolinoII
+							\WirMuessenViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\WeinetNichtViola
+						\WirMuessenViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \WeinetNichtTenoreNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \WirMuessenSopranoNotes }
 					}
-					\new Lyrics \lyricsto Tenore \WeinetNichtTenoreLyrics
+					\new Lyrics \lyricsto Soprano \WirMuessenSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \WirMuessenAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \WirMuessenAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \WirMuessenTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \WirMuessenTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WirMuessenBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \WirMuessenBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WeinetNichtOrgano
+						\WirMuessenOrgano
 					}
 				>>
-				\new FiguredBass { \WeinetNichtBassFigures }
+				\new FiguredBass { \WirMuessenBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 60 }
+			\midi { \tempo 2 = 100 }
 		}
 	}
 }

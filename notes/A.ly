@@ -1475,6 +1475,125 @@ TodesworteAltoLyrics = \lyricmode {
 	ziehn. %42 finis
 }
 
+WirMuessenAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \minor \time 2/2 \autoBeamOff \tempoWirMuessen
+		R1*5 %5
+		r2 d
+		g4 g g g
+		b2 a
+		g4 e g2
+		f4 d f2 %10
+		es!4 f8 g f4( es)
+		d r d'2~
+		d4 c b2
+		a1
+		g2 g4 g %15
+		g g2 fis8 fis
+		g4( a) b2
+		r d~
+		d cis
+		d d, %20
+		r g
+		d'4 d d d
+		es!2 d
+		c4 a c2
+		b4 g b2 %25
+		as4 as8 g as2
+		g r
+		r c~
+		c h
+		c c,4 r %30
+		c' c b!2
+		a4 a8 a a2
+		g r
+		R1
+		r2 c, %35
+		g'4 g g g
+		as2 g
+		f4 d f2
+		es4 c es2
+		c' b!4 b %40
+		a!1
+		g2 g
+		g4( fis8[ g)] a4 g
+		g fis fis fis
+		g2 fis %45
+		r d'4 d
+		cis2 d
+		r fis,4 fis
+		g2 fis
+		a4 a a2 %50
+		g4 g g2
+		g fis4 fis
+		\once \tieDashed g1~
+		g
+		fis2. g4 %55
+		a2 g4 d
+		d1~
+		d
+		d\fermata \bar "|." %59 finis
+	}
+}
+
+WirMuessenAltoLyrics = \lyricmode {
+	Wir %6
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %10
+	Got -- tes ein -- ge --
+	hen, durch __
+	_ viel
+	Trüb --
+	ſal in das %15
+	Reich Got -- tes ein --
+	ge -- hen,
+	durch __
+	viel
+	Trüb -- ſal, %20
+	wir
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %25
+	Got -- tes ein -- ge --
+	hen,
+	durch __
+	viel
+	Trüb -- ſal %30
+	in das Reich
+	Got -- tes ein -- ge --
+	hen,
+
+	wir %35
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich
+	Got -- tes ein -- %40
+	ge --
+	hen, Reich
+	Got -- tes ein --
+	ge -- hen, durch viel
+	Trüb -- ſal, %45
+	durch viel
+	Trüb -- ſal
+	durch viel
+	Trüb -- ſal
+	in das Reich, %50
+	in das Reich
+	Got -- tes ein --
+	ge --
+
+	_ _ %55
+	_ hen, ein --
+	ge --
+
+	hen. %59 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

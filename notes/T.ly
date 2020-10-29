@@ -1429,6 +1429,132 @@ WeinetNichtTenoreLyrics = \lyricmode {
 	ein. %86 finis
 }
 
+WirMuessenTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \minor \time 2/2 \autoBeamOff \tempoWirMuessen
+		r2 g
+		d'4 d d d
+		es2 d
+		c4 a c2
+		b4 g b2 %5
+		a4 b8 c b4( a)
+		g r g'2~
+		g f!
+		e1
+		d2 d4 d %10
+		d2 c!~
+		c4 b8[ a] b4 g
+		c2 g
+		R1
+		r2 r4 g %15
+		c a d c
+		b( c) d2
+		d4 d a2
+		b a4 a
+		a a r a %20
+		g b a g
+		fis2 fis'
+		r g~
+		g fis
+		g g, %25
+		R1
+		r2 es'4 es
+		f2 es
+		d2. d4
+		c2 c4 c8 d %30
+		es2 d
+		r d
+		r4 d d d
+		c es d( c)
+		h2 c4 d %35
+		es2 es4 es
+		f2 es
+		d4 c d2
+		c8([ h)] c4 r2
+		r d4 d %40
+		es1
+		d2 d4 d
+		es es es g
+		d2 d4 r
+		R1 %45
+		r2 fis4 fis
+		g2 fis
+		R1*2
+		fis2 fis %50
+		g d
+		es4 es d2
+		d d4 d
+		es2. d4
+		c d c b %55
+		a2 d4 b
+		b1
+		a
+		b\fermata \bar "|." %59 finis
+	}
+}
+
+WirMuessenTenoreLyrics = \lyricmode {
+	Wir
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich,
+	in das Reich %5
+	Got -- tes ein -- ge --
+	hen, durch __
+	viel
+	Trüb --
+	ſal in das %10
+	Reich Got --
+	_ tes ein --
+	ge -- hen,
+
+	wir %15
+	mü -- ßen durch viel
+	Trüb -- ſal
+	in das Reich
+	Got -- tes ein --
+	ge -- hen, wir %20
+	mü -- ßen durch viel
+	Trüb -- ſal,
+	durch __
+	viel
+	Trüb -- ſal, %25
+
+	durch viel
+	Trüb -- ſal
+	in das
+	Reich Got -- tes ein -- %30
+	ge -- hen,
+	wir
+	wir mü -- ßen
+	durch viel Trüb --
+	ſal in das %35
+	Reich, durch viel
+	Trüb -- ſal
+	in das Reich
+	Got -- tes,
+	durch viel %40
+	Trüb --
+	ſal in das
+	Reich Got -- tes ein --
+	ge -- hen,
+	%45
+	durch viel
+	Trüb -- ſal,
+
+	durch viel %50
+	Trüb -- ſal
+	in das Reich
+	Got -- tes ein --
+	ge -- _
+	_ _ _ _ %55
+	_ hen, ein --
+	ge --
+	_
+	hen. %59 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
