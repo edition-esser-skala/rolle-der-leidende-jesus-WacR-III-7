@@ -1589,6 +1589,48 @@ SelbstDerFeindeBassoLyricsB = \lyricmode {
 	nahn. %8 finis
 }
 
+DerMitgekreuzigteBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoDerMitgekreuzigte
+		r8 g' c h c8. c16 c8 g
+		e! e e f g4 r8 g
+		b b b a f f r16 f f g
+		a8 a r a16 b c8 c c a
+		fis fis r a a4 d, %5
+		c'8. c16 c8 a c c d a
+		\tempoDerMitgekreuzigteB b4 g g8 g g g
+		g4 c8 a \tempoDerMitgekreuzigteC r fis fis g
+		d4 r r r8 g
+		g d f! e! e4 r8 c %10
+		e e e f g g r g
+		c g g a b b b a
+		f f r4 c' c8 f,
+		\tempoDerMitgekreuzigteD a a a d \appoggiatura c h!4 r8 h
+		c g g c a4 r8 f %15
+		h! h h c \appoggiatura c g4 r \bar "|" %16 finis
+	}
+}
+
+DerMitgekreuzigteBassoLyrics = \lyricmode {
+	Der Mit -- ge -- kreu -- zig -- te zu
+	ſei -- ner lin -- ken Hand ver --
+	höhnt ihn auch im Ster -- ben, doch der zur
+	Rech -- ten, hin -- ge -- riſ -- ſen zum Ver --
+	der -- ben, ſonſt ed -- ler, %5
+	ſtra -- fet ihn und kehrt zu Je -- ſus
+	ſich: Herr, kommſt du in dein
+	Reich, ſpricht er, ſo denk an
+	mich. Ihr
+	Sün -- der, be -- tet an; im %10
+	letz -- ten Au -- gen -- bli -- cke führt
+	Je -- ſus ei -- nen Geiſt zu Gott zu --
+	rü -- cke. Ja, ſagt er,
+	ich ge -- den -- ke dein, heut
+	wirſt du noch mit mir im %15
+	Pa -- ra -- die -- ſe ſeyn. %16 finiss
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

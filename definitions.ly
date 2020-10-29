@@ -755,6 +755,12 @@ tempoDaStehstDu = \tempoMarkup "[Tempo deest]"
 	tempoDaStehstDuD = \tempoMarkup "Arioso"
 tempoSelbstDerFeinde = \tempoMarkup "[Tempo deest]"
 
+%2.11
+tempoDerMitgekreuzigte = \tempoMarkup "[Tempo deest]"
+	tempoDerMitgekreuzigteB = \tempoMarkup "Arioso"
+	tempoDerMitgekreuzigteC = \tempoMarkup "Recitativo"
+	tempoDerMitgekreuzigteD = \tempoMarkup "Arioso"
+
 
 
 partialFourth = \set Timing.measurePosition = #(ly:make-moment -1/4)

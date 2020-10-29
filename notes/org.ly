@@ -3188,6 +3188,48 @@ SelbstDerFeindeBassFigures = \figuremode {
 	r1 %25 finis
 }
 
+DerMitgekreuzigteOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDerMitgekreuzigte
+		e!1~
+		e
+		e2 a,~
+		a r
+		a fis'~ %5
+		fis1
+		\tempoDerMitgekreuzigteB g,8 g'16. a32 b8 g es es16. f32 g8 es
+		c c16. d32 es8 c \tempoDerMitgekreuzigteC d4 r
+		r d h!2~
+		h c~ %10
+		c1
+		e
+		a,
+		\tempoDerMitgekreuzigteD r8 f'16. g32 a8 f g d16. e32 f8 d
+		e c16. d32 e8 c f f16. g32 a8 f %15
+		g4 r r g \bar "|" %16 finis
+	}
+}
+
+DerMitgekreuzigteBassFigures = \figuremode {
+	<6>1
+	r
+	<5->2 <6>
+	r1
+	<6\\>2 <[6]> %5
+	<6 5>1
+	<_->2 <5->
+	<_->4 <6>8 <6 _-> <_+>2
+	r4 <_+> <6>2
+	<5!>1 %10
+	r
+	<6>2 <5->
+	<6>1
+	r4. <6>8 <4> <6!>4.
+	<6>1 %15
+	<_!> %16 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
