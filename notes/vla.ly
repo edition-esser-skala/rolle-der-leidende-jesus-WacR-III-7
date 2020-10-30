@@ -1613,3 +1613,30 @@ OTodViola = {
 		g4 r r2\fermata \bar "|." %21 finis
 	}
 }
+
+OTodWoIstViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 4/4 \tempoOTodWoIst
+		\partial 2 g'2 a g
+		g e
+		a g
+		g\fermata g
+		g a %5
+		h g
+		g2. f4
+		<e g,>2\fermata \bar ":|." g
+		g e
+		e e %10
+		e g!
+		g\fermata e
+		e e
+		c h
+		c f
+		g\fermata g
+		g a
+		h g
+		g2. f4
+		e1\fermata \bar "|."
+	}
+}

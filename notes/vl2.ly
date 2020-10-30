@@ -1633,3 +1633,30 @@ OTodViolinoII = {
 		q4 r r2\fermata \bar "|." %21 finis
 	}
 }
+
+OTodWoIstViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTodWoIst
+		\partial 2 e2 e c'
+		h c~
+		c h
+		c\fermata c
+		c c %5
+		h c
+		c h
+		c\fermata \bar ":|." c
+		c h
+		a gis %10
+		a4 h c2
+		h\fermata h
+		a g!
+		a d,
+		g h %15
+		c\fermata g
+		c c
+		d c
+		c h4 a
+		g1\fermata \bar "|." %20 finis
+	}
+}

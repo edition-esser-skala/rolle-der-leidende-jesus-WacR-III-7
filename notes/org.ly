@@ -3857,6 +3857,56 @@ OTodBassFigures = \figuremode {
 	r1 %21 finis
 }
 
+OTodWoIstOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoOTodWoIst
+		\partial 2 c'2 a e4 f
+		g2 a
+		f g
+		c,2\fermata c
+		c' a %5
+		g c
+		g1
+		c,2 \bar ":|." c
+		g' gis
+		a e %10
+		a e4 f
+		g2\fermata gis
+		a e
+		f f
+		e d %15
+		c\fermata e4 d
+		c2 a'
+		g c
+		g g,
+		c1\fermata \bar "|." %20 finis
+	}
+}
+
+OTodWoIstBassFigures = \figuremode {
+	r2 r <6>4 <\t>
+	r1
+	<6 5>
+	r
+	r2 <6> %5
+	r1
+	<4>2 <3>
+	r1
+	<6 4>2 <6 5>
+	r <_+> %10
+	r <6 _!>4 <\t \t>
+	r2 <6>
+	r <6>
+	r <4 2>
+	<6> q %15
+	r q4 q
+	r2 q
+	r1
+	<4>2 <3>
+	r1 %20 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

@@ -716,3 +716,30 @@ OTodOboeI = {
 		R1\fermataMarkup \bar "|." %21 finis
 	}
 }
+
+OTodWoIstOboeI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTodWoIst
+		\partial 2 c'2 c4 d e2
+		d c
+		d d
+		e\fermata c
+		e f %5
+		g e
+		d1
+		c2\fermata \bar ":|." e
+		e d
+		c h %10
+		c4 d e2
+		d\fermata e
+		c c
+		c g
+		c d %15
+		e\fermata c4 d
+		e2 f
+		g e
+		d1
+		c\fermata \bar "|." %20 finis
+	}
+}

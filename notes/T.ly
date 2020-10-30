@@ -1880,6 +1880,67 @@ OTodTenoreLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
+OTodWoIstTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodWoIst
+		\partial 2 e2 e c
+		h c
+		c h
+		c\fermata e
+		c c %5
+		d c
+		c( h)
+		c\fermata \bar ":|." c
+		c h
+		e e %10
+		e g!
+		g\fermata e
+		e c
+		a h
+		c h %15
+		c\fermata c
+		c c
+		d c
+		c( h4 a)
+		g1\fermata \bar "|." %20 finis
+	}
+}
+
+OTodWoIstTenoreLyricsA = \lyricmode {
+	O Tod, wo
+	iſt dein
+	Sta -- chel
+	nun, wo
+	iſt dein %5
+	Sieg, o
+	Höl --
+	le? Er,
+	Je -- ſus
+	Chri -- ſtus, %10
+	ſieht ins
+	Grab, wir
+	ſin -- ken
+	ſo wie
+	er hi -- %15
+	nab, er
+	ging zu
+	Gott, wir
+	fol --
+	gen. %20 finis
+}
+
+OTodWoIstTenoreLyricsB = \lyricmode {
+	Auf uns wird
+	Got -- tes
+	Frie -- den
+	ruhn an
+	die -- ſer %5
+	Le -- bens --
+	ſchwel --
+	le. %8 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

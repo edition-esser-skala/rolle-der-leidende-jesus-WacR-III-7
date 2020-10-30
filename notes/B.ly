@@ -1811,6 +1811,67 @@ OTodBassoLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
+OTodWoIstBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodWoIst
+		\partial 2 c'2 a e4( f)
+		g2 a
+		f g
+		c,2\fermata c
+		c' a %5
+		g c
+		g1
+		c,2 \bar ":|." c
+		g' gis
+		a e %10
+		a e4( f)
+		g2\fermata gis
+		a e
+		f f
+		e d %15
+		c\fermata e4( d)
+		c2 a'
+		g c
+		g1
+		c,\fermata \bar "|." %20 finis
+	}
+}
+
+OTodWoIstBassoLyricsA = \lyricmode {
+	O Tod, wo
+	iſt dein
+	Sta -- chel
+	nun, wo
+	iſt dein %5
+	Sieg, o
+	Höl --
+	le? Er,
+	Je -- ſus
+	Chri -- ſtus, %10
+	ſieht ins
+	Grab, wir
+	ſin -- ken
+	ſo wie
+	er hi -- %15
+	nab, er
+	ging zu
+	Gott, wir
+	fol --
+	gen. %20 finis
+}
+
+OTodWoIstBassoLyricsB = \lyricmode {
+	Auf uns wird
+	Got -- tes
+	Frie -- den
+	ruhn an
+	die -- ſer %5
+	Le -- bens --
+	ſchwel --
+	le. %8 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

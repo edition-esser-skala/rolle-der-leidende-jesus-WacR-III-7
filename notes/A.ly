@@ -2048,6 +2048,67 @@ OTodAltoLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
+OTodWoIstAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodWoIst
+		\partial 2 g'2 a g
+		g e
+		a g
+		g\fermata g
+		g a %5
+		h g
+		g2.( f4)
+		e2\fermata \bar ":|." g
+		g e
+		a gis %10
+		a4( h) c2
+		h\fermata h
+		a g
+		f d
+		g f %15
+		g\fermata g
+		g a
+		h g
+		g2.( f4)
+		e1\fermata \bar "|." %20 finis
+	}
+}
+
+OTodWoIstAltoLyricsA = \lyricmode {
+	O Tod, wo
+	iſt dein
+	Sta -- chel
+	nun, wo
+	iſt dein %5
+	Sieg, o
+	Höl --
+	le? Er,
+	Je -- ſus
+	Chri -- ſtus, %10
+	ſieht ins
+	Grab, wir
+	ſin -- ken
+	ſo wie
+	er hi -- %15
+	nab, er
+	ging zu
+	Gott, wir
+	fol --
+	gen. %20 finis
+}
+
+OTodWoIstAltoLyricsB = \lyricmode {
+	Auf uns wird
+	Got -- tes
+	Frie -- den
+	ruhn an
+	die -- ſer %5
+	Le -- bens --
+	ſchwel --
+	le. %8 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
