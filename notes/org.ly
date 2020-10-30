@@ -3955,13 +3955,66 @@ OTodCBassFigures = \figuremode {
 	r1 %21 finis
 }
 
-% Organo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+FreuetEuchOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoFreuetEuch
+		c2 g'
+		c g
+		a e
+		f f,
+		c'1\fermata %5
+		a'2 g
+		c a
+		g g, \noBreak
+		c1\fermata \bar ":|."
+		c'2 a \noBreak %10
+		g a4 h
+		c2 f,
+		e1\fermata
+		c2 c'
+		f, c %15
+		d e4 f
+		g1\fermata
+		c2 e,
+		f g
+		a g %20
+		c,1
+		f\fermata
+		e2 c
+		d e4 f
+		g2 c %25
+		g1
+		c,\fermata \bar "|." %27 FINIS
+	}
+}
+
+FreuetEuchBassFigures = \figuremode {
+	r1
+	r
+	r
+	<9>2 <8>
+	r1 %5
+	r
+	r2 <6>
+	<6 4> <5 3>
+	r1
+	r2 <6> %10
+	r <6>4 <\t>
+	r2 <6>
+	<_+>1
+	<5! 3>
+	r %15
+	<7>4 <6> q <\t>
+	r1
+	r2 <6 5->
+	r <6>
+	r1 %20
+	r
+	r
+	<6>
+	<7>4 <6> q <\t>
+	r1 %25
+	<4>2 <3>
+	r1 %27 FINIS
+}

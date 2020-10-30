@@ -1686,3 +1686,37 @@ OTodCViolinoII = {
 		q2 r\fermata \bar "|." %21 finis
 	}
 }
+
+FreuetEuchViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoFreuetEuch
+		g'2 h
+		c h
+		a g
+		g f8 e f4
+		e1\fermata %5
+		e2 g
+		g c
+		c h \noBreak
+		c1\fermata \bar ":|."
+		c2 c \noBreak %10
+		h c
+		c a
+		gis1\fermata
+		e2 e'
+		f e %15
+		d c
+		h1\fermata
+		c2 b
+		a h
+		c h %20
+		c1
+		a\fermata
+		c2 e
+		d c
+		h c %25
+		c h4 a8 g
+		g1\fermata \bar "|." %27 FINIS
+	}
+}

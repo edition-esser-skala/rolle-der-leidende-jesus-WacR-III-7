@@ -1666,3 +1666,37 @@ OTodCViola = {
 		c2 r\fermata \bar "|." %21 finis
 	}
 }
+
+FreuetEuchViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 4/4 \tempoFreuetEuch
+		e2 g
+		g g
+		e e
+		c1
+		c\fermata %5
+		c2 h
+		c f
+		g f \noBreak
+		e1\fermata \bar ":|."
+		g2 f \noBreak %10
+		d a'
+		g f4 a,
+		h1\fermata
+		c2 c'
+		c c %15
+		c4 h c2
+		g1\fermata
+		g2 c,
+		c g'
+		e g %20
+		g1
+		f\fermata
+		g2 c
+		c4 h c2
+		g g %25
+		g2. f4
+		e1\fermata \bar "|." %27 FINIS
+	}
+}

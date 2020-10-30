@@ -1854,13 +1854,78 @@ OTodCSopranoLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
-% SopranoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% SopranoLyrics = \lyricmode {
-%
-% }
+FreuetEuchSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoFreuetEuch
+		c'2 d
+		e d
+		c h
+		a1
+		g\fermata %5
+		c2 d
+		e f
+		e d \noBreak
+		c1\fermata \bar ":|."
+		e2 f \noBreak %10
+		g f
+		e d
+		e1\fermata
+		g!2 g
+		a g %15
+		f e
+		d1\fermata
+		e2 g
+		f e
+		c d %20
+		e1
+		c\fermata
+		e2 g
+		f e
+		d e %25
+		d1
+		c\fermata \bar "|." %27 FINIS
+	}
+}
+
+FreuetEuchSopranoLyricsA = \lyricmode {
+	Freu -- et
+	euch, er --
+	löß -- te
+	See --
+	len, %5
+	fühlt nun
+	die Un --
+	ſterb -- lich --
+	keit.
+	Sagt dem %10
+	Mitt -- ler
+	da -- für
+	Dank,
+	er ſey
+	eu -- er %15
+	Lob -- ge --
+	ſang,
+	bis ihr
+	mit des
+	Him -- mels %20
+	Chö --
+	ren
+	ihn ver --
+	klä -- ret
+	wer -- det %25
+	eh --
+	ren. %27 FINIS
+}
+
+FreuetEuchSopranoLyricsB = \lyricmode {
+	Wer kann
+	eu -- re
+	Freu -- den
+	zäh --
+	len %5
+	durch den
+	Raum der
+	E -- wig --
+	keit? %9 FINIS
+}

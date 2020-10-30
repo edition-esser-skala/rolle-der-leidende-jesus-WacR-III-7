@@ -2137,13 +2137,78 @@ OTodCAltoLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
-% AltoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+FreuetEuchAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoFreuetEuch
+		g'2 h
+		c h
+		a g
+		g( f8[ e] f4)
+		e1\fermata %5
+		e2 g
+		g f
+		g f \noBreak
+		e1\fermata \bar ":|."
+		g2 a \noBreak %10
+		h a
+		g a
+		gis1\fermata
+		e2 c'
+		c c %15
+		c4( h) c2
+		h1\fermata
+		c2 b
+		a g
+		e g %20
+		g1
+		a\fermata
+		g2 c
+		c4( h) c2
+		h c %25
+		c( h4 a8[ g)]
+		g1\fermata \bar "|." %27 FINIS
+	}
+}
+
+FreuetEuchAltoLyricsA = \lyricmode {
+	Freu -- et
+	euch, er --
+	löß -- te
+	See --
+	len, %5
+	fühlt nun
+	die Un --
+	ſterb -- lich --
+	keit.
+	Sagt dem %10
+	Mitt -- ler
+	da -- für
+	Dank,
+	er ſey
+	eu -- er %15
+	Lob -- ge --
+	ſang,
+	bis ihr
+	mit des
+	Him -- mels %20
+	Chö --
+	ren
+	ihn ver --
+	klä -- ret
+	wer -- det %25
+	eh --
+	ren. %27 FINIS
+}
+
+FreuetEuchAltoLyricsB = \lyricmode {
+	Wer kann
+	eu -- re
+	Freu -- den
+	zäh --
+	len %5
+	durch den
+	Raum der
+	E -- wig --
+	keit? %9 FINIS
+}

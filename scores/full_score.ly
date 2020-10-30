@@ -2321,91 +2321,165 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C O R O"
+	% 		number = "2.19"
+	% 		title = "O Tod und Grab, wo iſt dein Sieg?"
+	% 	}
+	% 	\tocLabelLong "otodc" "2.19" "Coro" "O Tod und Grab, wo ist dein Sieg?"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "ob"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\OTodCOboeI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\OTodCOboeII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup \center-column { "clno (C)" "1, 2" }
+	% 					\partcombine \OTodCClarinoI \OTodCClarinoII
+	% 				>>
+	% 			>>
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = \markup \center-column { "timp" "C–G" }
+	% 				\OTodCTimpani
+	% 			}
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\OTodCViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\OTodCViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\OTodCViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \OTodCSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \OTodCSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \OTodCAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \OTodCAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \OTodCTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \OTodCTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \OTodCBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \OTodCBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\OTodCOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \OTodCBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C O R O"
-			number = "2.19"
-			title = "O Tod und Grab, wo iſt dein Sieg?"
+			genre = "S C H L U S S C H O R A L"
+			number = "2.20"
+			title = "Freuet euch, erlößte Seelen"
 		}
-		\tocLabelLong "otodc" "2.19" "Coro" "O Tod und Grab, wo ist dein Sieg?"
+		\tocLabelLong "freueteuch" "2.20" "Schlusschoral" "Freuet euch, erlößte Seelen"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "ob"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\OTodCOboeI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\OTodCOboeII
-						}
-					>>
-				>>
-				\new StaffGroup <<
 					\new Staff <<
-						\set Staff.instrumentName = \markup \center-column { "clno (C)" "1, 2" }
-						\partcombine \OTodCClarinoI \OTodCClarinoII
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \FreuetEuchOboeI \FreuetEuchOboeII
 					>>
 				>>
-				\new Staff {
-					\set Staff.instrumentName = \markup \center-column { "timp" "C–G" }
-					\OTodCTimpani
-				}
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\OTodCViolinoI
+							\FreuetEuchViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\OTodCViolinoII
+							\FreuetEuchViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\OTodCViola
+						\FreuetEuchViola
 					}
 				>>
-				\new ChoirStaff <<
+				\new ChoirStaff \with { \twoStanzaDistance } <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \OTodCSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \FreuetEuchSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \OTodCSopranoLyrics
+					\new Lyrics \lyricsto Soprano \FreuetEuchSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \FreuetEuchSopranoLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \OTodCAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \FreuetEuchAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \OTodCAltoLyrics
+					\new Lyrics \lyricsto Alto \FreuetEuchAltoLyricsA
+					\new Lyrics \lyricsto Alto \FreuetEuchAltoLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \OTodCTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \FreuetEuchTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \OTodCTenoreLyrics
+					\new Lyrics \lyricsto Tenore \FreuetEuchTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \FreuetEuchTenoreLyricsB
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \OTodCBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \FreuetEuchBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \OTodCBassoLyrics
+					\new Lyrics \lyricsto Basso \FreuetEuchBassoLyricsA
+					\new Lyrics \lyricsto Basso \FreuetEuchBassoLyricsB
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\OTodCOrgano
+						\FreuetEuchOrgano
 					}
 				>>
-				\new FiguredBass { \OTodCBassFigures }
+				\new FiguredBass { \FreuetEuchBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

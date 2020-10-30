@@ -1900,13 +1900,78 @@ OTodCBassoLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
-% BassoNotes = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+FreuetEuchBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoFreuetEuch
+		c2 g'
+		c g
+		a e
+		f1
+		c\fermata %5
+		a'2 g
+		c a
+		g g, \noBreak
+		c1\fermata \bar ":|."
+		c'2 a \noBreak %10
+		g a4( h)
+		c2 f,
+		e1\fermata
+		c2 c'
+		f, c %15
+		d e4( f)
+		g1\fermata
+		c2 e,
+		f g
+		a g %20
+		c,1
+		f\fermata
+		e2 c
+		d e4( f)
+		g2 c %25
+		g1
+		c,\fermata \bar "|." %27 FINIS
+	}
+}
+
+FreuetEuchBassoLyricsA = \lyricmode {
+	Freu -- et
+	euch, er --
+	löß -- te
+	See --
+	len, %5
+	fühlt nun
+	die Un --
+	ſterb -- lich --
+	keit.
+	Sagt dem %10
+	Mitt -- ler
+	da -- für
+	Dank,
+	er ſey
+	eu -- er %15
+	Lob -- ge --
+	ſang,
+	bis ihr
+	mit des
+	Him -- mels %20
+	Chö --
+	ren
+	ihn ver --
+	klä -- ret
+	wer -- det %25
+	eh --
+	ren. %27 FINIS
+}
+
+FreuetEuchBassoLyricsB = \lyricmode {
+	Wer kann
+	eu -- re
+	Freu -- den
+	zäh --
+	len %5
+	durch den
+	Raum der
+	E -- wig --
+	keit? %9 FINIS
+}

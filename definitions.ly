@@ -773,6 +773,7 @@ tempoIchDanke = \tempoMarkup "[Tempo deest]"
 tempoOTod = \tempoMarkup "Con spirito"
 tempoOTodWoIst = \tempoMarkup "[Tempo deest]"
 tempoOTodC = \tempoMarkup "[Con spirito]"
+tempoFreuetEuch = \tempoMarkup "[Tempo deest]"
 
 
 

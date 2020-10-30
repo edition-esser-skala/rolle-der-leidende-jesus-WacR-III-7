@@ -770,3 +770,37 @@ OTodCOboeII = {
 		R1\fermataMarkup \bar "|." %21 finis
 	}
 }
+
+FreuetEuchOboeII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoFreuetEuch
+		c'2 d
+		e d
+		c h
+		a1
+		g\fermata %5
+		c2 d
+		e f
+		e d \noBreak
+		c1\fermata \bar ":|."
+		e2 f \noBreak %10
+		g f
+		e d
+		e1\fermata
+		g!2 g
+		a g %15
+		f e
+		d1\fermata
+		e2 g
+		f e
+		c d %20
+		e1
+		c\fermata
+		e2 g
+		f e
+		d e %25
+		d1
+		c\fermata \bar "|." %27 FINIS
+	}
+}

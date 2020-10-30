@@ -1992,13 +1992,78 @@ OTodCTenoreLyrics = \lyricmode {
 	ge -- ben. %20 finis
 }
 
-% TenoreNotes = {
-% 	\relative c' {
-% 		\clef "treble_8"
-%
-% 	}
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+FreuetEuchTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoFreuetEuch
+		e2 g
+		g g
+		e e
+		c1
+		c\fermata %5
+		c2 h
+		c c
+		c h \noBreak
+		g1\fermata \bar ":|."
+		c2 c\noBreak %10
+		d c
+		c a
+		h1\fermata
+		c2 e
+		f e %15
+		d g
+		g1\fermata
+		g2 c,
+		c h
+		a h %20
+		c1
+		c\fermata
+		c2 e
+		d g
+		g g %25
+		g2.( f4)
+		e1\fermata \bar "|." %27 FINIS
+	}
+}
+
+FreuetEuchTenoreLyricsA = \lyricmode {
+	Freu -- et
+	euch, er --
+	löß -- te
+	See --
+	len, %5
+	fühlt nun
+	die Un --
+	ſterb -- lich --
+	keit.
+	Sagt dem %10
+	Mitt -- ler
+	da -- für
+	Dank,
+	er ſey
+	eu -- er %15
+	Lob -- ge --
+	ſang,
+	bis ihr
+	mit des
+	Him -- mels %20
+	Chö --
+	ren
+	ihn ver --
+	klä -- ret
+	wer -- det %25
+	eh --
+	ren. %27 FINIS
+}
+
+FreuetEuchTenoreLyricsB = \lyricmode {
+	Wer kann
+	eu -- re
+	Freu -- den
+	zäh --
+	len %5
+	durch den
+	Raum der
+	E -- wig --
+	keit? %9 FINIS
+}
