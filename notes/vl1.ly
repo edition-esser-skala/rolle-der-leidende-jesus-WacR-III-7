@@ -1661,6 +1661,32 @@ OTodWoIstViolinoI = {
 	}
 }
 
+OTodCViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTodC
+		R1*3
+		r4 r8 g'\mf c c,16. e'32 e8 c,16. g''32
+		g16.( c32 g4) f8\p e4  d\trill %5
+		c8 c'16.[\f e,32] f8\trill g16. d32 e4-! r
+		r f,8.(\f a16) c4\p c,
+		f a16.\f g32 fis16. e32 d4 r
+		r g,8.(\f h16) d4\p d
+		g, r8 g'\pocoF c c,16. e'32 e8 c,16. g''32 %10
+		g16.( c32 g4) g,8\p c c,16. e'32 e8 c,16. g''32
+		g16.( c32 g4) f8 e4 d\trill
+		c8 c'\f c e, e4 \tuplet 3/2 8 { d16([ e f)] e( f g) }
+		f8 d' d f, f4 \tuplet 3/2 8 { e16([ f g)] f( g a) }
+		g8 c16. g32 a8 c16. a32 g8 c16. g32 a8 c16. a32 %15
+		g8 c16. e,32 f4~ f16 d' d, f e g a, f'
+		e4 d\trill c8 c'16. e,32 f16.([\trill e64 f)] g16. d32
+		e8 c'16. g32 a8 c16. a32 g8 c16. g32 a8 c16. a32
+		g8 c16. e,32 f4~ f16 d' d, f e g a, f'
+		e4 d\trill c8 <c e, g,> q q %20
+		q2 r\fermata \bar "|." %21 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

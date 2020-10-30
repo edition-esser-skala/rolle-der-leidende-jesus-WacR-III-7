@@ -71,3 +71,28 @@ OTodTimpani = {
 		c4 r r2\fermata \bar "|." %21 finis
 	}
 }
+
+
+OTodCTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoOTodC
+		R1*3
+		r8 g16.\mfE g32 g4 r8 c r c
+		r c16 c c4 r2 %5
+		r4 r8 g\fE c4 r
+		R1*3
+		r8 g16\pocoFE g g4 c r %10
+		r8 c16 c c8 g\pE c4 r
+		R1
+		c4\fE r r8 g16 g g8 g
+		g4 r r8 c16 c c8 c
+		c4 r8 c16. c32 c4 r8 c16. c32 %15
+		c4 r r2
+		g4 g8 g c4 r
+		c r r2
+		R1
+		g4 g8 g c c16 g c8 c %20
+		c2 r\fermata \bar "|." %21 finis
+	}
+}

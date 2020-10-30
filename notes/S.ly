@@ -1826,6 +1826,34 @@ OTodWoIstSopranoLyricsB = \lyricmode {
 	le. %8 finis
 }
 
+OTodCSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodC
+		R1*12 %12
+		r8 \mvTr e'\fE^\tutti e e e4( d8) r
+		r f f f f4( e8) r
+		r g f f e g f f %15
+		e g f4~ f8 d e f
+		e4( d)\trill c r
+		r8 c c c c c c c
+		c c f4~ f8 d e f
+		e4( d)\trill c r %20
+		R1\fermata \bar "|." %21 finis
+	}
+}
+
+OTodCSopranoLyrics = \lyricmode {
+	\xE Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg durch Je -- ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

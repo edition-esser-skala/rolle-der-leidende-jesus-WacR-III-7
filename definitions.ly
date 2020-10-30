@@ -772,6 +772,7 @@ tempoWeintNichtIhr = \tempoMarkup "[Tempo deest]"
 tempoIchDanke = \tempoMarkup "[Tempo deest]"
 tempoOTod = \tempoMarkup "Con spirito"
 tempoOTodWoIst = \tempoMarkup "[Tempo deest]"
+tempoOTodC = \tempoMarkup "[Con spirito]"
 
 
 
@@ -789,6 +790,8 @@ markDaCapo = {
 \include "notes/fag2.ly"
 \include "notes/cor1.ly"
 \include "notes/cor2.ly"
+\include "notes/clno1.ly"
+\include "notes/clno2.ly"
 \include "notes/timp.ly"
 \include "notes/vl1.ly"
 \include "notes/vl2.ly"

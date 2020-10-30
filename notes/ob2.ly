@@ -753,3 +753,20 @@ OTodWoIstOboeII = {
 		c\fermata \bar "|." %20 finis
 	}
 }
+
+OTodCOboeII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTodC
+		R1*12 %12
+		r8 c'\fE c c c4 \tuplet 3/2 8 { h16[ c d] c d e }
+		d8 d d d d4 \tuplet 3/2 8 { c16[ d e] d e f }
+		e8 e c f e e c f %15
+		e c~ c d16 c h4 c8 d
+		c4 h\trill c r
+		r8 e c f e e c f
+		e c~ c d16 c h4 c8 d
+		c4 h\trill c r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}

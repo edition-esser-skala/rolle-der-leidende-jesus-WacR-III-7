@@ -1660,3 +1660,29 @@ OTodWoIstViolinoII = {
 		g1\fermata \bar "|." %20 finis
 	}
 }
+
+OTodCViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTodC
+		R1*3
+		r4 r8 g'\mf e c16. c'32 c8 c,
+		e' e4 d8\p c4 h\trill %5
+		c8 c'16.[\f e,32] f8\trill g16. d32 e4-! r
+		r f,8.(\f a16) c4\p c,
+		f a16.\f g32 fis16. e32 d4 r
+		r g,8.(\f h16) d4\p d
+		g, r8 g'\pocoF e c16. c'32 c8 c,16. e'32 %10
+		e4 r8 g,\p g e16. c'32 c8 c,16. e'32
+		e8 e4 d8 c4 h\trill
+		c8 e\f g c, c4 \tuplet 3/2 8 { h16([ c d)] c( d e) }
+		d8 f f d d4 \tuplet 3/2 8 { c16([ d e)] d( e f) }
+		e8 c'16. g32 a8 c16. a32 g8 c16. g32 a8 c16. a32 %15
+		g8 c16. e,32 f4~ f16 d' d, f e g a, d
+		c4 h\trill c8 c'16. e,32 f16.([\trill e64 f)] g16. d32
+		e8 c'16. g32 a8 c16. a32 g8 c16. g32 a8 c16. a32
+		g8 c16. e,32 f4~ f16 d' d, f e g a, d
+		c4 h\trill c8 <c e, g,> q q %20
+		q2 r\fermata \bar "|." %21 finis
+	}
+}

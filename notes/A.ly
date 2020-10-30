@@ -2109,6 +2109,34 @@ OTodWoIstAltoLyricsB = \lyricmode {
 	le. %8 finis
 }
 
+OTodCAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodC
+		R1*12 %12
+		r8 \mvTr c'\fE^\tutti c c c4( h8) r
+		r d d d d4( c8) r
+		r c a a g g a a %15
+		g c c([ d16 c] h8) h c d
+		c4( h)\trill c r
+		r8 g a a g g a a
+		g c c([ d16 c] h8) h c d
+		c4( h)\trill c r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodCAltoLyrics = \lyricmode {
+	\xE Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg durch \x Je -- ſum \xE hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

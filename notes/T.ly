@@ -1941,6 +1941,57 @@ OTodWoIstTenoreLyricsB = \lyricmode {
 	le. %8 finis
 }
 
+OTodCTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodC
+		r4 r8 \mvTr c\pE^\solo g'4 r8 c,
+		g4~ g8 r c4 e8 d16([ c)]
+		f4 r d fis8 e16([ d)]
+		g4 r8 g, c4 e
+		g4. f8 \once \slurDashed e16([ d c8)] d4\trill %5
+		c r r8 c e d16([ c)]
+		f4 r c c
+		f, r r8 d' fis e16([ d)]
+		g4 r d d
+		g, r8 g c4 e %10
+		g r8 g, c4 e
+		g4. f8 \once \slurDashed e16([ d c8)] d4\trillE
+		c8 \mvTr g'\fE^\tutti g g g4~ g8 r
+		r g g g g4~ g8 r
+		r e c c c e c c %15
+		c c d d d g, c a
+		g4( f') e r
+		r8 e c f e e c f
+		e e d4~ d8 g, c a
+		g4( f') e r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodCTenoreLyrics = \lyricmode {
+	O Tod und
+	Grab, __ wo iſt dein
+	Sieg? Wo iſt dein
+	Sieg? Nun tri -- um --
+	phiert das Le -- _ %5
+	ben. Wo iſt dein
+	Sieg? Tod und
+	Grab, wo iſt dein
+	Sieg, Tod und
+	Grab? Nun tri -- um -- %10
+	phiert, nun tri -- um --
+	phiert das Le -- _
+	ben. \xE Gott ſey ge -- dankt, __
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch \x Je -- ſum \xE hat ge --
+	ge -- ben. %20 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

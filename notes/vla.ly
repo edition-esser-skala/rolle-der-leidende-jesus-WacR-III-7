@@ -1640,3 +1640,29 @@ OTodWoIstViola = {
 		e1\fermata \bar "|."
 	}
 }
+
+OTodCViola = {
+	\relative c' {
+		\clef alto
+		\key c \major \time 4/4 \tempoOTodC
+		R1*3
+		r4 g'16.\mfE f32 e16. d32 c4 c
+		r8 c e f\pE g4 g, %5
+		c8 c'4\fE h8 c4-! r
+		r f,,\fE c'\pE c,
+		f a'16.\fE g32 fis16. e32 d4 r
+		r g,\fE d'\pE d
+		g, g'16.\pocoFE f!32 e16. d32 c4 c %10
+		r8 c e g\pE e c r4
+		r8 c e f g4 g,
+		c8 g'\f g g g[ g,] g r
+		r g' g g g[ c,] c r
+		r16 c c d32 e f16 f a f c' c, c d32 e f16 f a f %15
+		c' c, e c d d f d g8 g g a
+		g4 f e8 c'4 h8
+		c16 c, c d32 e f16 f a f c' c, c d32 e f16 f a f
+		c' c, e c d d f d g8 g g a
+		g4 f e8 e16 c g c g e %20
+		c2 r\fermata \bar "|." %21 finis
+	}
+}

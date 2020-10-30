@@ -1872,6 +1872,34 @@ OTodWoIstBassoLyricsB = \lyricmode {
 	le. %8 finis
 }
 
+OTodCBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoOTodC
+		R1*12 %12
+		r8 \mvTr c'\fE^\tutti c c g4~ g8 r
+		r g h g c4~ c8 r
+		r c f, f c' c f, f %15
+		c' c d f, g g c f,
+		g2 c,4 r
+		r8 c' f, f c c' f, f
+		c c' d f, g g c f,
+		g2 c,4 r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodCBassoLyrics = \lyricmode {
+	Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass
