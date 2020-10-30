@@ -1273,1141 +1273,1141 @@
 	% 		\midi { \tempo 2 = 90 }
 	% 	}
 	% }
-	% \bookpart {
-	% 	\paper { evenHeaderMarkup = {} oddHeaderMarkup = {} }
-	% 	\partTitle "II" "Z W E Y T E R   T H E I L"
-	% 	\tocLabel "zweytertheil" "2" "Zweyter Theil"
-	% 	\partMark
-	% 	\pageBreak
-	% 	\markup \null
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "A C C O M P A G N A T O"
-	% 		number = "2.1"
-	% 		title = "Wer iſt der Mann"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #35
-	% 		system-system-spacing.minimum-distance = #35
-	% 		systems-per-page = #2
-	% 	}
-	% 	\tocLabelLong "weristder" "2.1" "Accompagnato" "Wer ist der Mann"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\WerIstDerViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\WerIstDerViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\WerIstDerViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\WerIstDerOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \WerIstDerBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "A R I A"
-	% 		number = "2.2"
-	% 		title = "Gott, du donnerſt zu den Sündern"
-	% 	}
-	% 	\paper { systems-per-page = #2 }
-	% 	\tocLabelLong "gottdudonnerst" "2.2" "Aria" "Gott, du donnerst zu den Sündern"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
-	% 					\partcombine \GottDuDonnerstOboeI \GottDuDonnerstOboeII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\GottDuDonnerstViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\GottDuDonnerstViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\GottDuDonnerstViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \GottDuDonnerstBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \GottDuDonnerstBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\GottDuDonnerstOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \GottDuDonnerstBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 120 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C H O R A L"
-	% 		number = "2.3"
-	% 		title = "Ach Seele, ſchau um welchen Preis"
-	% 	}
-	% 	\tocLabelLong "achseele" "2.3" "Choral" "Ach Seele, schau um welchen Preis"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-	% 					\partcombine \AchSeeleOboeI \AchSeeleOboeII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\AchSeeleViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\AchSeeleViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\AchSeeleViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \AchSeeleSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsA
-	% 				\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \AchSeeleAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsA
-	% 				\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \AchSeeleTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsA
-	% 				\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \AchSeeleBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsA
-	% 				\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsB
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\AchSeeleOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \AchSeeleBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 2 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "R E C I T A T I V O"
-	% 		number = "2.4"
-	% 		title = "Der Tag bricht an, der feſtliche"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #23
-	% 		system-system-spacing.minimum-distance = #23
-	% 		systems-per-page = #4
-	% 	}
-	% 	\tocLabelLong "dertagbricht" "2.4" "Recitativo" "Der Tag bricht an, der festliche"
-	% 	\score {
-	% 		<<
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \DerTagBrichtBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \DerTagBrichtBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\DerTagBrichtOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \DerTagBrichtBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C O R O"
-	% 		number = "2.5"
-	% 		title = "Juda, Todesworte ſprichſt du aus"
-	% 	}
-	% 	\tocLabelLong "todesworte" "2.5" "Coro" "Juda, Todesworte sprichst du aus"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff <<
-	% 					\set GrandStaff.instrumentName = "ob"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\TodesworteOboeI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\TodesworteOboeII
-	% 					}
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "cor (E♭)" "1, 2" }
-	% 					\set Staff.soloText = \markup \medium \remark "cor 1"
-	% 					\transpose c es
-	% 					\partcombine \TodesworteCornoI \TodesworteCornoII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\TodesworteViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\TodesworteViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\TodesworteViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \TodesworteSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \TodesworteSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \TodesworteAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \TodesworteAltoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \TodesworteTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \TodesworteTenoreLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \TodesworteBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \TodesworteBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\TodesworteOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \TodesworteBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 100 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "R E C I T A T I V O"
-	% 		number = "2.6"
-	% 		title = "Und Jeſus wird gegeißelt"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #23
-	% 		system-system-spacing.minimum-distance = #23
-	% 		systems-per-page = #4
-	% 	}
-	% 	\tocLabelLong "undjesus" "2.6" "Recitativo" "Und Jesus wird gegeißelt"
-	% 	\score {
-	% 		<<
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \UndJesusTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \UndJesusTenoreLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\UndJesusOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \UndJesusBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "A R I A"
-	% 		number = "2.7"
-	% 		title = "Weint nicht, ſagt der Menſchenfreund"
-	% 	}
-	% 	\paper { systems-per-page = #2 }
-	% 	\tocLabelLong "weintnicht" "2.7" "Aria" "Weint nicht, sagt der Menschenfreund"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
-	% 					\partcombine \WeinetNichtFagottoI \WeinetNichtFagottoII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = \markup \center-column { "vl" "[fl]" }
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\WeinetNichtViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\WeinetNichtViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\WeinetNichtViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \WeinetNichtTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \WeinetNichtTenoreLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\WeinetNichtOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \WeinetNichtBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 60 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C O R O"
-	% 		number = "2.8"
-	% 		title = "Wir müßen durch viel Trübſal"
-	% 	}
-	% 	\tocLabelLong "wirmuessen" "2.8" "Coro" "Wir müßen durch viel Trübsal"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff <<
-	% 					\set GrandStaff.instrumentName = "ob"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\WirMuessenOboeI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\WirMuessenOboeII
-	% 					}
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\WirMuessenViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\WirMuessenViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\WirMuessenViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \WirMuessenSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \WirMuessenSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \WirMuessenAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \WirMuessenAltoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \WirMuessenTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \WirMuessenTenoreLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \WirMuessenBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \WirMuessenBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\WirMuessenOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \WirMuessenBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 2 = 100 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "R E C I T A T I V O"
-	% 		number = "2.9"
-	% 		title = "Da ſtehſt du, Golgatha, ein Altar!"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #23
-	% 		system-system-spacing.minimum-distance = #23
-	% 		systems-per-page = #4
-	% 	}
-	% 	\tocLabelLong "dastehstdu" "2.9" "Recitativo" "Da stehst du, Golgatha, ein Altar!"
-	% 	\score {
-	% 		<<
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \DaStehstDuAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \DaStehstDuAltoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\DaStehstDuOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \DaStehstDuBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C H O R A L"
-	% 		number = "2.10"
-	% 		title = "Selbſt der Feinde Heil zu ſuchen"
-	% 	}
-	% 	\tocLabelLong "selbstderfeinde" "2.10" "Choral" "Selbst der Feinde Heil zu suchen"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-	% 					\partcombine \SelbstDerFeindeOboeI \SelbstDerFeindeOboeII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\SelbstDerFeindeViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\SelbstDerFeindeViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\SelbstDerFeindeViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \SelbstDerFeindeSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsA
-	% 				\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \SelbstDerFeindeAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsA
-	% 				\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \SelbstDerFeindeTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsA
-	% 				\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \SelbstDerFeindeBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsA
-	% 				\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsB
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\SelbstDerFeindeOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \SelbstDerFeindeBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 2 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "R E C I T A T I V O"
-	% 		number = "2.11"
-	% 		title = "Der Mitgekreuzigte zu ſeiner linken Hand"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #23
-	% 		system-system-spacing.minimum-distance = #23
-	% 		systems-per-page = #5
-	% 	}
-	% 	\tocLabelLong "dermitgekreuzigte" "2.11" "Recitativo" "Der Mitgekreuzigte zu seiner linken Hand"
-	% 	\score {
-	% 		<<
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \DerMitgekreuzigteBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \DerMitgekreuzigteBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\DerMitgekreuzigteOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \DerMitgekreuzigteBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "D U E T T O"
-	% 		number = "2.12"
-	% 		title = "Theures Wort aus Jeſu Munde"
-	% 	}
-	% 	\paper { systems-per-page = #2 }
-	% 	\tocLabelLong "theureswort" "2.12" "Duetto" "Theures Wort aus Jesu Munde"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup \with { \smallGroupDistance } <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
-	% 					\partcombine \TheuresWortFlautoI \TheuresWortFlautoII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup \with { \smallGroupDistance } <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\TheuresWortViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\TheuresWortViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\TheuresWortViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \TheuresWortSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \TheuresWortSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \TheuresWortAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \TheuresWortAltoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\TheuresWortOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \TheuresWortBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 120 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "R E C I T A T I V O"
-	% 		number = "2.13"
-	% 		title = "Und Gott gebietet dem letzten Schmerz"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #23
-	% 		system-system-spacing.minimum-distance = #23
-	% 		systems-per-page = #5
-	% 		page-count = #1
-	% 	}
-	% 	\tocLabelLong "undgott" "2.13" "Recitativo" "Und Gott gebietet dem letzten Schmerz"
-	% 	\score {
-	% 		<<
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \UndGottSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \UndGottSopranoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\UndGottOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \UndGottBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "A R I O S O"
-	% 		number = "2.14"
-	% 		title = "Erbarme dich, Gott, über mich"
-	% 	}
-	% 	\paper { systems-per-page = #2 }
-	% 	\tocLabelLong "erbarmedich" "2.14" "Arioso" "Erbarme dich, Gott, über mich"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup \with { \smallGroupDistance } <<
-	% 				\set StaffGroup.instrumentName = \markup \center-column { "fag" "1, 2" }
-	% 				\new Staff <<
-	% 					\partcombine \ErbarmeGottFagottoI \ErbarmeGottFagottoII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup \with { \smallGroupDistance } <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\ErbarmeGottViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\ErbarmeGottViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\ErbarmeGottViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T 1"
-	% 					\new Voice = "TenoreI" { \dynamicUp \ErbarmeGottTenoreINotes }
-	% 				}
-	% 				\new Lyrics \lyricsto TenoreI \ErbarmeGottTenoreILyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T 2"
-	% 					\new Voice = "TenoreII" { \dynamicUp \ErbarmeGottTenoreIINotes }
-	% 				}
-	% 				\new Lyrics \lyricsto TenoreII \ErbarmeGottTenoreIILyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\ErbarmeGottOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \ErbarmeGottBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "A C C O M P A G N A T O"
-	% 		number = "2.15"
-	% 		title = "Weint nicht, ihr Freunde Jeſu!"
-	% 	}
-	% 	\paper {
-	% 		system-system-spacing.basic-distance = #35
-	% 		system-system-spacing.minimum-distance = #35
-	% 		systems-per-page = #2
-	% 	}
-	% 	\tocLabelLong "weintnichtihr" "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jesu!"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\WeintNichtIhrViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\WeintNichtIhrViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\WeintNichtIhrViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\WeintNichtIhrOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \WeintNichtIhrBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 70 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C H O R A L"
-	% 		number = "2.16"
-	% 		title = "Ich danke dir von Herzen"
-	% 	}
-	% 	\tocLabelLong "ichdanke" "2.16" "Choral" "Ich danke dir von Herzen"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-	% 					\partcombine \IchDankeOboeI \IchDankeOboeII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\IchDankeViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\IchDankeViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\IchDankeViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \IchDankeSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \IchDankeSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \IchDankeAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \IchDankeAltoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \IchDankeTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \IchDankeTenoreLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \IchDankeBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \IchDankeBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\IchDankeOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \IchDankeBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 2 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C O R O"
-	% 		number = "2.17"
-	% 		title = "O Tod und Grab, wo iſt dein Sieg?"
-	% 	}
-	% 	\tocLabelLong "otod" "2.17" "Coro" "O Tod und Grab, wo ist dein Sieg?"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff <<
-	% 					\set GrandStaff.instrumentName = "ob"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\OTodOboeI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\OTodOboeII
-	% 					}
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "cor (G)" "1, 2" }
-	% 					% \transpose c g,
-	% 					\partcombine \OTodCornoI \OTodCornoII
-	% 				>>
-	% 			>>
-	% 			\new Staff {
-	% 				\set Staff.instrumentName = \markup \center-column { "timp" "G–D" }
-	% 				% \transpose c g,
-	% 				\OTodTimpani
-	% 			}
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\OTodViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\OTodViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\OTodViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \OTodSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \OTodSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \OTodAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \OTodAltoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \OTodTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \OTodTenoreLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \OTodBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \OTodBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\OTodOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \OTodBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C H O R A L"
-	% 		number = "2.18"
-	% 		title = "O Tod, wo iſt dein Stachel nun"
-	% 	}
-	% 	\tocLabelLong "otodwoist" "2.18" "Choral" "O Tod, wo ist dein Stachel nun"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-	% 					\partcombine \OTodWoIstOboeI \OTodWoIstOboeII
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\OTodWoIstViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\OTodWoIstViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\OTodWoIstViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff \with { \twoStanzaDistance } <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \OTodWoIstSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \OTodWoIstSopranoLyricsA
-	% 				\new Lyrics \lyricsto Soprano \OTodWoIstSopranoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \OTodWoIstAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \OTodWoIstAltoLyricsA
-	% 				\new Lyrics \lyricsto Alto \OTodWoIstAltoLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \OTodWoIstTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \OTodWoIstTenoreLyricsA
-	% 				\new Lyrics \lyricsto Tenore \OTodWoIstTenoreLyricsB
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \OTodWoIstBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \OTodWoIstBassoLyricsA
-	% 				\new Lyrics \lyricsto Basso \OTodWoIstBassoLyricsB
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\OTodWoIstOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \OTodWoIstBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 2 = 90 }
-	% 	}
-	% }
-	% \bookpart {
-	% 	\header {
-	% 		genre = "C O R O"
-	% 		number = "2.19"
-	% 		title = "O Tod und Grab, wo iſt dein Sieg?"
-	% 	}
-	% 	\tocLabelLong "otodc" "2.19" "Coro" "O Tod und Grab, wo ist dein Sieg?"
-	% 	\score {
-	% 		<<
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff <<
-	% 					\set GrandStaff.instrumentName = "ob"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\OTodCOboeI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\OTodCOboeII
-	% 					}
-	% 				>>
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff <<
-	% 					\set Staff.instrumentName = \markup \center-column { "clno (C)" "1, 2" }
-	% 					\partcombine \OTodCClarinoI \OTodCClarinoII
-	% 				>>
-	% 			>>
-	% 			\new Staff {
-	% 				\set Staff.instrumentName = \markup \center-column { "timp" "C–G" }
-	% 				\OTodCTimpani
-	% 			}
-	% 			\new StaffGroup <<
-	% 				\new GrandStaff \with { \smallGroupDistance } <<
-	% 					\set GrandStaff.instrumentName = "vl"
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "1"
-	% 						\OTodCViolinoI
-	% 					}
-	% 					\new Staff {
-	% 						\set Staff.instrumentName = "2"
-	% 						\OTodCViolinoII
-	% 					}
-	% 				>>
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "vla"
-	% 					\OTodCViola
-	% 				}
-	% 			>>
-	% 			\new ChoirStaff <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "S"
-	% 					\new Voice = "Soprano" { \dynamicUp \OTodCSopranoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Soprano \OTodCSopranoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "A"
-	% 					\new Voice = "Alto" { \dynamicUp \OTodCAltoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Alto \OTodCAltoLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "T"
-	% 					\new Voice = "Tenore" { \dynamicUp \OTodCTenoreNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Tenore \OTodCTenoreLyrics
-	%
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = "B"
-	% 					\new Voice = "Basso" { \dynamicUp \OTodCBassoNotes }
-	% 				}
-	% 				\new Lyrics \lyricsto Basso \OTodCBassoLyrics
-	% 			>>
-	% 			\new StaffGroup <<
-	% 				\new Staff {
-	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-	% 					% \transpose c c,
-	% 					\OTodCOrgano
-	% 				}
-	% 			>>
-	% 			\new FiguredBass { \OTodCBassFigures }
-	% 		>>
-	% 		\layout { }
-	% 		\midi { \tempo 4 = 90 }
-	% 	}
-	% }
+	\bookpart {
+		\paper { evenHeaderMarkup = {} oddHeaderMarkup = {} }
+		\partTitle "II" "Z W E Y T E R   T H E I L"
+		\tocLabel "zweytertheil" "2" "Zweyter Theil"
+		\partMark
+		\pageBreak
+		\markup \null
+	}
+	\bookpart {
+		\header {
+			genre = "A C C O M P A G N A T O"
+			number = "2.1"
+			title = "Wer iſt der Mann"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #35
+			system-system-spacing.minimum-distance = #35
+			systems-per-page = #2
+		}
+		\tocLabelLong "weristder" "2.1" "Accompagnato" "Wer ist der Mann"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WerIstDerViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WerIstDerViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WerIstDerViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\WerIstDerOrgano
+					}
+				>>
+				\new FiguredBass { \WerIstDerBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "A R I A"
+			number = "2.2"
+			title = "Gott, du donnerſt zu den Sündern"
+		}
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "gottdudonnerst" "2.2" "Aria" "Gott, du donnerst zu den Sündern"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+						\partcombine \GottDuDonnerstOboeI \GottDuDonnerstOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\GottDuDonnerstViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\GottDuDonnerstViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\GottDuDonnerstViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \GottDuDonnerstBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \GottDuDonnerstBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\GottDuDonnerstOrgano
+					}
+				>>
+				\new FiguredBass { \GottDuDonnerstBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 120 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C H O R A L"
+			number = "2.3"
+			title = "Ach Seele, ſchau um welchen Preis"
+		}
+		\tocLabelLong "achseele" "2.3" "Choral" "Ach Seele, schau um welchen Preis"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \AchSeeleOboeI \AchSeeleOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\AchSeeleViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\AchSeeleViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\AchSeeleViola
+					}
+				>>
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \AchSeeleSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \AchSeeleSopranoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \AchSeeleAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsA
+					\new Lyrics \lyricsto Alto \AchSeeleAltoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \AchSeeleTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \AchSeeleTenoreLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \AchSeeleBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsA
+					\new Lyrics \lyricsto Basso \AchSeeleBassoLyricsB
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\AchSeeleOrgano
+					}
+				>>
+				\new FiguredBass { \AchSeeleBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 2 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "R E C I T A T I V O"
+			number = "2.4"
+			title = "Der Tag bricht an, der feſtliche"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "dertagbricht" "2.4" "Recitativo" "Der Tag bricht an, der festliche"
+		\score {
+			<<
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \DerTagBrichtBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \DerTagBrichtBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\DerTagBrichtOrgano
+					}
+				>>
+				\new FiguredBass { \DerTagBrichtBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C O R O"
+			number = "2.5"
+			title = "Juda, Todesworte ſprichſt du aus"
+		}
+		\tocLabelLong "todesworte" "2.5" "Coro" "Juda, Todesworte sprichst du aus"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TodesworteOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TodesworteOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "cor (E♭)" "1, 2" }
+						\set Staff.soloText = \markup \medium \remark "cor 1"
+						\transpose c es
+						\partcombine \TodesworteCornoI \TodesworteCornoII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TodesworteViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TodesworteViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\TodesworteViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \TodesworteSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \TodesworteSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \TodesworteAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \TodesworteAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \TodesworteTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \TodesworteTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \TodesworteBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \TodesworteBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\TodesworteOrgano
+					}
+				>>
+				\new FiguredBass { \TodesworteBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 100 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "R E C I T A T I V O"
+			number = "2.6"
+			title = "Und Jeſus wird gegeißelt"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "undjesus" "2.6" "Recitativo" "Und Jesus wird gegeißelt"
+		\score {
+			<<
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \UndJesusTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \UndJesusTenoreLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\UndJesusOrgano
+					}
+				>>
+				\new FiguredBass { \UndJesusBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "A R I A"
+			number = "2.7"
+			title = "Weint nicht, ſagt der Menſchenfreund"
+		}
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "weintnicht" "2.7" "Aria" "Weint nicht, sagt der Menschenfreund"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fag" "1, 2" }
+						\partcombine \WeinetNichtFagottoI \WeinetNichtFagottoII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = \markup \center-column { "vl" "[fl]" }
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WeinetNichtViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WeinetNichtViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WeinetNichtViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \WeinetNichtTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \WeinetNichtTenoreLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\WeinetNichtOrgano
+					}
+				>>
+				\new FiguredBass { \WeinetNichtBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 60 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C O R O"
+			number = "2.8"
+			title = "Wir müßen durch viel Trübſal"
+		}
+		\tocLabelLong "wirmuessen" "2.8" "Coro" "Wir müßen durch viel Trübsal"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WirMuessenOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WirMuessenOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WirMuessenViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WirMuessenViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WirMuessenViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \WirMuessenSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \WirMuessenSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \WirMuessenAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \WirMuessenAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \WirMuessenTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \WirMuessenTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WirMuessenBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \WirMuessenBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\WirMuessenOrgano
+					}
+				>>
+				\new FiguredBass { \WirMuessenBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 2 = 100 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "R E C I T A T I V O"
+			number = "2.9"
+			title = "Da ſtehſt du, Golgatha, ein Altar!"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #4
+		}
+		\tocLabelLong "dastehstdu" "2.9" "Recitativo" "Da stehst du, Golgatha, ein Altar!"
+		\score {
+			<<
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \DaStehstDuAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \DaStehstDuAltoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\DaStehstDuOrgano
+					}
+				>>
+				\new FiguredBass { \DaStehstDuBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C H O R A L"
+			number = "2.10"
+			title = "Selbſt der Feinde Heil zu ſuchen"
+		}
+		\tocLabelLong "selbstderfeinde" "2.10" "Choral" "Selbst der Feinde Heil zu suchen"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \SelbstDerFeindeOboeI \SelbstDerFeindeOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\SelbstDerFeindeViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\SelbstDerFeindeViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\SelbstDerFeindeViola
+					}
+				>>
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \SelbstDerFeindeSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \SelbstDerFeindeSopranoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \SelbstDerFeindeAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsA
+					\new Lyrics \lyricsto Alto \SelbstDerFeindeAltoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \SelbstDerFeindeTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \SelbstDerFeindeTenoreLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \SelbstDerFeindeBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsA
+					\new Lyrics \lyricsto Basso \SelbstDerFeindeBassoLyricsB
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\SelbstDerFeindeOrgano
+					}
+				>>
+				\new FiguredBass { \SelbstDerFeindeBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 2 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "R E C I T A T I V O"
+			number = "2.11"
+			title = "Der Mitgekreuzigte zu ſeiner linken Hand"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #5
+		}
+		\tocLabelLong "dermitgekreuzigte" "2.11" "Recitativo" "Der Mitgekreuzigte zu seiner linken Hand"
+		\score {
+			<<
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \DerMitgekreuzigteBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \DerMitgekreuzigteBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\DerMitgekreuzigteOrgano
+					}
+				>>
+				\new FiguredBass { \DerMitgekreuzigteBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "D U E T T O"
+			number = "2.12"
+			title = "Theures Wort aus Jeſu Munde"
+		}
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "theureswort" "2.12" "Duetto" "Theures Wort aus Jesu Munde"
+		\score {
+			<<
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "fl" "1, 2" }
+						\partcombine \TheuresWortFlautoI \TheuresWortFlautoII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\TheuresWortViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\TheuresWortViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\TheuresWortViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \TheuresWortSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \TheuresWortSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \TheuresWortAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \TheuresWortAltoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\TheuresWortOrgano
+					}
+				>>
+				\new FiguredBass { \TheuresWortBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 120 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "R E C I T A T I V O"
+			number = "2.13"
+			title = "Und Gott gebietet dem letzten Schmerz"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #23
+			system-system-spacing.minimum-distance = #23
+			systems-per-page = #5
+			page-count = #1
+		}
+		\tocLabelLong "undgott" "2.13" "Recitativo" "Und Gott gebietet dem letzten Schmerz"
+		\score {
+			<<
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \UndGottSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \UndGottSopranoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\UndGottOrgano
+					}
+				>>
+				\new FiguredBass { \UndGottBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "A R I O S O"
+			number = "2.14"
+			title = "Erbarme dich, Gott, über mich"
+		}
+		\paper { systems-per-page = #2 }
+		\tocLabelLong "erbarmedich" "2.14" "Arioso" "Erbarme dich, Gott, über mich"
+		\score {
+			<<
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\set StaffGroup.instrumentName = \markup \center-column { "fag" "1, 2" }
+					\new Staff <<
+						\partcombine \ErbarmeGottFagottoI \ErbarmeGottFagottoII
+					>>
+				>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\ErbarmeGottViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\ErbarmeGottViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\ErbarmeGottViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "T 1"
+						\new Voice = "TenoreI" { \dynamicUp \ErbarmeGottTenoreINotes }
+					}
+					\new Lyrics \lyricsto TenoreI \ErbarmeGottTenoreILyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T 2"
+						\new Voice = "TenoreII" { \dynamicUp \ErbarmeGottTenoreIINotes }
+					}
+					\new Lyrics \lyricsto TenoreII \ErbarmeGottTenoreIILyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\ErbarmeGottOrgano
+					}
+				>>
+				\new FiguredBass { \ErbarmeGottBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "A C C O M P A G N A T O"
+			number = "2.15"
+			title = "Weint nicht, ihr Freunde Jeſu!"
+		}
+		\paper {
+			system-system-spacing.basic-distance = #35
+			system-system-spacing.minimum-distance = #35
+			systems-per-page = #2
+		}
+		\tocLabelLong "weintnichtihr" "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jesu!"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\WeintNichtIhrViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\WeintNichtIhrViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\WeintNichtIhrViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\WeintNichtIhrOrgano
+					}
+				>>
+				\new FiguredBass { \WeintNichtIhrBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 70 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C H O R A L"
+			number = "2.16"
+			title = "Ich danke dir von Herzen"
+		}
+		\tocLabelLong "ichdanke" "2.16" "Choral" "Ich danke dir von Herzen"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \IchDankeOboeI \IchDankeOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\IchDankeViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\IchDankeViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\IchDankeViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \IchDankeSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \IchDankeSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \IchDankeAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \IchDankeAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \IchDankeTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \IchDankeTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \IchDankeBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \IchDankeBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\IchDankeOrgano
+					}
+				>>
+				\new FiguredBass { \IchDankeBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 2 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C O R O"
+			number = "2.17"
+			title = "O Tod und Grab, wo iſt dein Sieg?"
+		}
+		\tocLabelLong "otod" "2.17" "Coro" "O Tod und Grab, wo ist dein Sieg?"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "cor (G)" "1, 2" }
+						% \transpose c g,
+						\partcombine \OTodCornoI \OTodCornoII
+					>>
+				>>
+				\new Staff {
+					\set Staff.instrumentName = \markup \center-column { "timp" "G–D" }
+					% \transpose c g,
+					\OTodTimpani
+				}
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\OTodViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \OTodSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \OTodSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \OTodAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \OTodAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \OTodTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \OTodTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \OTodBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \OTodBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\OTodOrgano
+					}
+				>>
+				\new FiguredBass { \OTodBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C H O R A L"
+			number = "2.18"
+			title = "O Tod, wo iſt dein Stachel nun"
+		}
+		\tocLabelLong "otodwoist" "2.18" "Choral" "O Tod, wo ist dein Stachel nun"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \OTodWoIstOboeI \OTodWoIstOboeII
+					>>
+				>>
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodWoIstViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodWoIstViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\OTodWoIstViola
+					}
+				>>
+				\new ChoirStaff \with { \twoStanzaDistance } <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \OTodWoIstSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \OTodWoIstSopranoLyricsA
+					\new Lyrics \lyricsto Soprano \OTodWoIstSopranoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \OTodWoIstAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \OTodWoIstAltoLyricsA
+					\new Lyrics \lyricsto Alto \OTodWoIstAltoLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \OTodWoIstTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \OTodWoIstTenoreLyricsA
+					\new Lyrics \lyricsto Tenore \OTodWoIstTenoreLyricsB
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \OTodWoIstBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \OTodWoIstBassoLyricsA
+					\new Lyrics \lyricsto Basso \OTodWoIstBassoLyricsB
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\OTodWoIstOrgano
+					}
+				>>
+				\new FiguredBass { \OTodWoIstBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 2 = 90 }
+		}
+	}
+	\bookpart {
+		\header {
+			genre = "C O R O"
+			number = "2.19"
+			title = "O Tod und Grab, wo iſt dein Sieg?"
+		}
+		\tocLabelLong "otodc" "2.19" "Coro" "O Tod und Grab, wo ist dein Sieg?"
+		\score {
+			<<
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodCOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodCOboeII
+						}
+					>>
+				>>
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "clno (C)" "1, 2" }
+						\partcombine \OTodCClarinoI \OTodCClarinoII
+					>>
+				>>
+				\new Staff {
+					\set Staff.instrumentName = \markup \center-column { "timp" "C–G" }
+					\OTodCTimpani
+				}
+				\new StaffGroup <<
+					\new GrandStaff \with { \smallGroupDistance } <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodCViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodCViolinoII
+						}
+					>>
+					\new Staff {
+						\set Staff.instrumentName = "vla"
+						\OTodCViola
+					}
+				>>
+				\new ChoirStaff <<
+					\new Staff {
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \OTodCSopranoNotes }
+					}
+					\new Lyrics \lyricsto Soprano \OTodCSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \OTodCAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \OTodCAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \OTodCTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \OTodCTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \OTodCBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \OTodCBassoLyrics
+				>>
+				\new StaffGroup <<
+					\new Staff {
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+						% \transpose c c,
+						\OTodCOrgano
+					}
+				>>
+				\new FiguredBass { \OTodCBassFigures }
+			>>
+			\layout { }
+			\midi { \tempo 4 = 90 }
+		}
+	}
 	\bookpart {
 		\header {
 			genre = "S C H L U S S C H O R A L"

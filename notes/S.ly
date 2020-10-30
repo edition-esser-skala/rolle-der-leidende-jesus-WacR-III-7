@@ -1839,7 +1839,7 @@ OTodCSopranoNotes = {
 		r8 c c c c c c c
 		c c f4~ f8 d e f
 		e4( d)\trill c r %20
-		R1\fermata \bar "|." %21 finis
+		R1\fermataMarkup \bar "|." %21 finis
 	}
 }
 
