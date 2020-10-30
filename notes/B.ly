@@ -1631,6 +1631,60 @@ DerMitgekreuzigteBassoLyrics = \lyricmode {
 	Pa -- ra -- die -- ſe ſeyn. %16 finiss
 }
 
+WeintNichtIhrBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoWeintNichtIhr
+			\set Score.currentBarNumber = #2
+		h'8 h h g e e r4 %2
+		g8 r16 g g8 e a a a e
+		fis fis r a16 a d4 r8 d,
+		fis fis16 fis fis8 g a a h r16 c %5
+		h8 r16 h h8 g cis4 cis8 d
+		d a r4 r2
+		a4. a8 \appoggiatura g4 fis2
+		a4 a8 h c fis, fis g
+		d4 r \tempoWeintNichtIhrB r2 %10
+		r r8 d d d
+		g4 r r r16 h h g
+		c8 g r c, e e e e
+		a4 r8 a cis cis cis h16 a
+		d4 r r r8 a %15
+		c! c c h h4 r
+		r r8 d, g g g16 g g a
+		h8 r16 h d8 h gis r16 gis gis8 a
+		a r16 a c8 e e a, r e16 fis
+		g8 g g fis fis4 r8 d' %20
+		e,4 \appoggiatura g8 fis4 g r8 d'
+		e g, d fis g4 r
+		r2 \bar "|" \time 4/4 %23 finis
+	}
+}
+
+WeintNichtIhrBassoLyrics = \lyricmode {
+	nicht, ihr Freun -- de Je -- ſu! %2
+	Seht, des Rich -- ters An -- ge -- ſicht ſpricht
+	Gna -- de. Schau -- et auf, es
+	wen -- det der En -- gel -- chor ſich weg, und %5
+	ſingt: Es iſt voll -- en -- det, das
+	Op -- fer!
+	Got -- tes Ruh
+	ſtrömt nun vom Kreuz den Sün -- dern
+	zu. %10
+	Die Er -- de
+	bebt, die Fel -- ſen
+	ſprin -- gen, die Grä -- ber thun ſich
+	auf, die Tod -- ten drin -- gen ans
+	Licht, des %15
+	Tem -- pels Vor -- hang reißt.
+	Es ſchau -- et der er -- ſtaun -- te
+	Geiſt mit frey -- em Blick den Gna -- den --
+	thron, durch Höh und Tie -- fen hallt der
+	En -- gel Ju -- bel -- ton: Es %20
+	iſt voll -- bracht, es
+	iſt, es iſt voll -- bracht! %22 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

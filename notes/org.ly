@@ -3632,7 +3632,7 @@ ErbarmeGottOrgano = {
 		a2 e4
 		e( dis) e
 		a,4 h2
-		\time 4/4 e2 %38.5 finis
+		\time 4/4 e2 r \bar "|" %39 finis
 	}
 }
 
@@ -3675,7 +3675,62 @@ ErbarmeGottBassFigures = \figuremode {
 	<4> <3> <_!>
 	<6 4 2+> <\t \t \t> <5 3>
 	<6\\ 5> <6 4> <5+ _+>
-	r2 %38.5 finis
+	r1 %39 finis
+}
+
+WeintNichtIhrOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoWeintNichtIhr
+			\set Score.currentBarNumber = #2
+		r2 e~ %2
+		e cis
+		d1~
+		d %5
+		g2 r
+		r4 a d,2~
+		d d~
+		d c
+		r4 h8 d \tempoWeintNichtIhrB g,4\fE h16( d) h( d) %10
+		g,( g') g( d) h( d) h( d) g,4 r
+		r8 g'16( d) h( d) h( d) g, g32 a h[ c d e] f!8 r
+		e16 d32 e f[ g a h] c8 r r2
+		cis,16 a32 h cis[ d e fis] g8 r r2
+		fis16 d32 e fis[ g a h] c!16 c32 h a[ g fis e] d4 r %15
+		r2 g,8 r g'16 fis32 e d[ c h a]
+		g16. f'32 f16. f32 f4~ f2~\p
+		f2 e
+		c cis~
+		cis4 r d8 d'16.\f c32 h8 g\p %20
+		c,4 d e r8 h
+		c4 d g,\p g
+		g d \bar "|" \time 4/4 %23 finis
+	}
+}
+
+WeintNichtIhrBassFigures = \figuremode {
+	r1 %2
+	r2 <6>
+	<_+>1
+	r %5
+	r2 <4+ 2>
+	<[_+]> <_+>
+	r1
+	r2 <4+ 2>
+	r4 <6>8 <_+> r2 %10
+	r1
+	r2. <2>4
+	<6>1
+	<6>4 <4+ 2>2.
+	<6>4 <4+ 2> <7 _+>2 %15
+	r1
+	r16. <2>32 r2..
+	r2 <7 _+>
+	<6>2 <\t>
+	<5> <_+>4 <6> %20
+	<9 7>8 <8 6> <6 4> <5 _+> <5>4. <6>8
+	r4 <_+>2.
+	r4 <6 4>8 <5 3> %23 finis
 }
 
 % Organo = {

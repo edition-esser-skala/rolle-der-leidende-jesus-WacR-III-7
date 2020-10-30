@@ -765,6 +765,8 @@ tempoUndGott = \tempoMarkup "[Tempo deest]"
 	tempoUndGottB = \tempoMarkup "[Arioso]"
 	tempoUndGottC = \tempoMarkup "[Recitativo]"
 tempoErbarmeGott = \tempoMarkup "[Tempo deest]"
+tempoWeintNichtIhr = \tempoMarkup "[Tempo deest]"
+	tempoWeintNichtIhrB = \tempoMarkup "Moderato"
 
 
 

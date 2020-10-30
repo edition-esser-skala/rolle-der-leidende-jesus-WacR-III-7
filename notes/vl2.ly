@@ -1541,6 +1541,29 @@ ErbarmeGottViolinoII = {
 		h( a) \once \slurDashed g!8( h)
 		a2 g4
 		R2.
-		\time 4/4 r2 %38.5 finis
+		\time 4/4 R1  \bar "|" %39 finis
+	}
+}
+
+WeintNichtIhrViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoWeintNichtIhr
+			\set Score.currentBarNumber = #2
+		R1*8 %9
+		r2 \tempoWeintNichtIhrB g4\fE h16( d) h( d) %10
+		g,( g') g( d) h( d) h( d) g,( g') g(\p d) h( d) h( d)
+		g,( g') g(\f d) h( d) h( d) g, g32 a h[ c d e] f!8 r
+		e16 d32 e f[ g a h] c8 r r2
+		cis,16 a32 h cis[ d e fis] g8 r r2
+		fis16 d32 e fis[ g a h] c!16 c32 h a[ g fis e] d4 r %15
+		r2 g'16 fis32 e d[ c h a] g16 fis32 e d[ c h a]
+		g16. g'32 g16. g32 g4~ g2~\p
+		g2 gis
+		a1~
+		a4 r r8 <fis' a, d,> <g h, d,> \noBeam h,~\p %20
+		h c16( a) \once \slurDashed g8( fis)\trill g( a h) r
+		g r r a, g h4 c16( a)
+		g8 h4 a8 \bar "|" \time 4/4 %23 finis
 	}
 }

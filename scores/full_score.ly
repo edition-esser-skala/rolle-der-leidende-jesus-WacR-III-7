@@ -1978,63 +1978,114 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A R I O S O"
+	% 		number = "2.14"
+	% 		title = "Erbarme dich, Gott, über mich"
+	% 	}
+	% 	\paper { systems-per-page = #2 }
+	% 	\tocLabelLong "erbarmedich" "2.14" "Arioso" "Erbarme dich, Gott, über mich"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\set StaffGroup.instrumentName = \markup \center-column { "fag" "1, 2" }
+	% 				\new Staff <<
+	% 					\partcombine \ErbarmeGottFagottoI \ErbarmeGottFagottoII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\ErbarmeGottViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\ErbarmeGottViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\ErbarmeGottViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T 1"
+	% 					\new Voice = "TenoreI" { \dynamicUp \ErbarmeGottTenoreINotes }
+	% 				}
+	% 				\new Lyrics \lyricsto TenoreI \ErbarmeGottTenoreILyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T 2"
+	% 					\new Voice = "TenoreII" { \dynamicUp \ErbarmeGottTenoreIINotes }
+	% 				}
+	% 				\new Lyrics \lyricsto TenoreII \ErbarmeGottTenoreIILyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\ErbarmeGottOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \ErbarmeGottBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A R I O S O"
-			number = "2.14"
-			title = "Erbarme dich, Gott, über mich"
+			genre = "A C C O M P A G N A T O"
+			number = "2.15"
+			title = "Weint nicht, ihr Freunde Jeſu!"
 		}
-		\paper { systems-per-page = #2 }
-		\tocLabelLong "erbarmedich" "2.14" "Arioso" "Erbarme dich, Gott, über mich"
+		\paper {
+			system-system-spacing.basic-distance = #35
+			system-system-spacing.minimum-distance = #35
+			systems-per-page = #2
+		}
+		\tocLabelLong "weintnichtihr" "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jesu!"
 		\score {
 			<<
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\set StaffGroup.instrumentName = \markup \center-column { "fag" "1, 2" }
-					\new Staff <<
-						\partcombine \ErbarmeGottFagottoI \ErbarmeGottFagottoII
-					>>
-				>>
-				\new StaffGroup \with { \smallGroupDistance } <<
+				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\ErbarmeGottViolinoI
+							\WeintNichtIhrViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\ErbarmeGottViolinoII
+							\WeintNichtIhrViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\ErbarmeGottViola
+						\WeintNichtIhrViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "T 1"
-						\new Voice = "TenoreI" { \dynamicUp \ErbarmeGottTenoreINotes }
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
 					}
-					\new Lyrics \lyricsto TenoreI \ErbarmeGottTenoreILyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "T 2"
-						\new Voice = "TenoreII" { \dynamicUp \ErbarmeGottTenoreIINotes }
-					}
-					\new Lyrics \lyricsto TenoreII \ErbarmeGottTenoreIILyrics
+					\new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\ErbarmeGottOrgano
+						\WeintNichtIhrOrgano
 					}
 				>>
-				\new FiguredBass { \ErbarmeGottBassFigures }
+				\new FiguredBass { \WeintNichtIhrBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 4 = 70 }
 		}
 	}
 }

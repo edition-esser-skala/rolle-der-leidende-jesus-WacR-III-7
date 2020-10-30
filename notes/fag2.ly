@@ -237,6 +237,6 @@ ErbarmeGottFagottoII = {
 		d( c) r
 		r c h
 		a g fis
-		\time 4/4 e r %38.5 finis
+		\time 4/4 e r r2 \bar "|" %39 finis
 	}
 }

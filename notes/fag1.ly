@@ -236,6 +236,6 @@ ErbarmeGottFagottoI = {
 		r c h
 		a2 g4
 		fis e dis\trill
-		\time 4/4 e \pd r %38.5 finis
+		\time 4/4 e \pd r r2  \bar "|" %39 finis
 	}
 }

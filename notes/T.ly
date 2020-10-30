@@ -1663,7 +1663,7 @@ ErbarmeGottTenoreINotes = {
 		r c h
 		a2( g4)
 		fis e( dis)
-		\time 4/4 e2 %38.5 finis
+		\time 4/4 e4 r8 \clef bass e^\markup \remark "Basso" g4 r8 g  \bar "|" %39 finis
 	}
 }
 
@@ -1700,7 +1700,7 @@ ErbarmeGottTenoreILyrics = \lyricmode {
 	Herr, mich
 	wie --
 	der le --
-	ben. %38.5 finis
+	ben. Weint nicht, weint %39 finis
 }
 
 ErbarmeGottTenoreIINotes = {
@@ -1739,7 +1739,7 @@ ErbarmeGottTenoreIINotes = {
 		\appoggiatura d c2 r4
 		r c h
 		a8 c16([ h)] g4( fis)
-		\time 4/4 e2 %38.5 finis
+		\time 4/4 e4 r r2  \bar "|" %39 finis
 	}
 }
 
@@ -1774,7 +1774,7 @@ ErbarmeGottTenoreIILyrics = \lyricmode {
 	Tod,
 	Herr, mich
 	wie -- der le --
-	ben. %38.5 finis
+	ben. %39 finis
 }
 
 % TenoreNotes = {
