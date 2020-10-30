@@ -1777,6 +1777,81 @@ ErbarmeGottTenoreIILyrics = \lyricmode {
 	ben. %39 finis
 }
 
+IchDankeTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \major \time 4/4 \autoBeamOff \tempoIchDanke
+		r2 d
+		c h
+		c d
+		d1
+		d2\fermata h %5
+		e e
+		e dis
+		e1\fermata
+		r2 d
+		c h %10
+		c d
+		d1
+		d2\fermata h
+		e e
+		e dis %15
+		e1\fermata
+		r2 e
+		d d
+		c c
+		d1 %20
+		h\fermata
+		r2 h
+		h e
+		e e
+		e\fermata e %25
+		d d
+		d d
+		d( cis)
+		d\fermata fis
+		e d %30
+		d d
+		d1~
+		d\fermata \bar "|." %33 finis
+	}
+}
+
+IchDankeTenoreLyrics = \lyricmode {
+	Ich
+	dan -- ke
+	dir von
+	Her --
+	zen, o %5
+	Je -- ſu,
+	lieb -- ſter
+	Freund,
+	für
+	dei -- ne %10
+	To -- des --
+	ſchmert --
+	zen, wie
+	gut haſt
+	du’s ge -- %15
+	meint.
+	Ach
+	gib, daß
+	ich mich
+	hal -- %20
+	te
+	zu
+	dir und
+	dei -- ner
+	Treu, und %25
+	wenn ich
+	einſt er --
+	kal --
+	te, in
+	dir mein %30
+	En -- de
+	ſey. __ %32 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

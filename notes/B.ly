@@ -1685,6 +1685,81 @@ WeintNichtIhrBassoLyrics = \lyricmode {
 	iſt, es iſt voll -- bracht! %22 finis
 }
 
+IchDankeBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \autoBeamOff \tempoIchDanke
+		r2 g'
+		e4( c) g'2
+		a4( a,) h( c)
+		d1
+		g2\fermata dis %5
+		e g
+		a h
+		e,1\fermata
+		r2 g
+		e4( c) g'2 %10
+		a4( a,) h( c)
+		d1
+		g2\fermata dis
+		e g
+		a h %15
+		e,1\fermata
+		r2 cis
+		d g
+		c a
+		g1 %20
+		g\fermata
+		r2 f
+		e gis
+		a a,
+		e'\fermata e %25
+		h' fis
+		g d
+		a'1
+		d,2\fermata dis
+		e4( fis) g2 %30
+		d d
+		g1~
+		g\fermata \bar "|." %33 finis
+	}
+}
+
+IchDankeBassoLyrics = \lyricmode {
+	Ich
+	dan -- ke
+	dir von
+	Her --
+	zen, o %5
+	Je -- ſu,
+	lieb -- ſter
+	Freund,
+	für
+	dei -- ne %10
+	To -- des --
+	ſchmert --
+	zen, wie
+	gut haſt
+	du’s ge -- %15
+	meint.
+	Ach
+	gib, daß
+	ich mich
+	hal -- %20
+	te
+	zu
+	dir und
+	dei -- ner
+	Treu, und %25
+	wenn ich
+	einſt er --
+	kal --
+	te, in
+	dir mein %30
+	En -- de
+	ſey. __ %32 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

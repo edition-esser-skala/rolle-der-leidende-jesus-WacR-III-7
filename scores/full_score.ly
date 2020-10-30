@@ -2037,55 +2037,125 @@
 	% 		\midi { \tempo 4 = 90 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "A C C O M P A G N A T O"
+	% 		number = "2.15"
+	% 		title = "Weint nicht, ihr Freunde Jeſu!"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #35
+	% 		system-system-spacing.minimum-distance = #35
+	% 		systems-per-page = #2
+	% 	}
+	% 	\tocLabelLong "weintnichtihr" "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jesu!"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\WeintNichtIhrViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\WeintNichtIhrViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\WeintNichtIhrViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\WeintNichtIhrOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \WeintNichtIhrBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "2.15"
-			title = "Weint nicht, ihr Freunde Jeſu!"
+			genre = "C H O R A L"
+			number = "2.16"
+			title = "Ich danke dir von Herzen"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #35
-			system-system-spacing.minimum-distance = #35
-			systems-per-page = #2
-		}
-		\tocLabelLong "weintnichtihr" "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jesu!"
+		\tocLabelLong "ichdanke" "2.16" "Choral" "Ich danke dir von Herzen"
 		\score {
 			<<
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+						\partcombine \IchDankeOboeI \IchDankeOboeII
+					>>
+				>>
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\WeintNichtIhrViolinoI
+							\IchDankeViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\WeintNichtIhrViolinoII
+							\IchDankeViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\WeintNichtIhrViola
+						\IchDankeViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \IchDankeSopranoNotes }
 					}
-					\new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
+					\new Lyrics \lyricsto Soprano \IchDankeSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \IchDankeAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \IchDankeAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \IchDankeTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \IchDankeTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \IchDankeBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \IchDankeBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\WeintNichtIhrOrgano
+						\IchDankeOrgano
 					}
 				>>
-				\new FiguredBass { \WeintNichtIhrBassFigures }
+				\new FiguredBass { \IchDankeBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }

@@ -3733,6 +3733,82 @@ WeintNichtIhrBassFigures = \figuremode {
 	r4 <6 4>8 <5 3> %23 finis
 }
 
+IchDankeOrgano = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoIchDanke
+		g2 g'
+		e4 c g2
+		a h4 c
+		d1
+		g2\fermata dis %5
+		e g
+		a h
+		e,1\fermata
+		r2 g
+		e4 c g2 %10
+		a h4 c
+		d1
+		g2\fermata dis
+		e g
+		a h %15
+		e,1\fermata
+		r2 cis
+		d g
+		c a
+		g1 %20
+		g,\fermata
+		r2 f'
+		e gis
+		a a,
+		e'\fermata e %25
+		h' fis
+		g d
+		a' a,
+		d\fermata dis
+		e4 fis g2 %30
+		d d
+		g d
+		g,1\fermata \bar "|." %33 finis
+	}
+}
+
+IchDankeBassFigures = \figuremode {
+	r1
+	<6>
+	<7>4 <6> q <\t>
+	<4>2 <3>
+	r <6> %5
+	r q
+	<6 5> <_+>
+	r1
+	r1
+	<6> %10
+	<7>4 <6> q <\t>
+	<4>2 <3>
+	r <6>
+	r q
+	<6 5> <_+> %15
+	r1
+	r2 <6 5>
+	r1
+	r2 <6\\>
+	r1 %20
+	r
+	r2 <4 3>
+	<_+> <6 5>
+	<9> <8>
+	<_!>1 %25
+	r2 <6>
+	r1
+	<4>2 <_+>
+	r <6 5>
+	<6>4 <\t>2. %30
+	<4>2 <3>
+	<5 3>1 \bassFigureExtendersOn
+	q \bassFigureExtendersOff %33 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

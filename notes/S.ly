@@ -1662,6 +1662,81 @@ UndGottSopranoLyrics = \lyricmode {
 	Haupt und ſtirbt. %18 finis
 }
 
+IchDankeSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoIchDanke
+		r2 h'
+		e d
+		c h
+		a1
+		h2\fermata fis' %5
+		g g
+		fis fis
+		e1\fermata
+		r2 h
+		e d %10
+		c h
+		a1
+		h2\fermata fis'
+		g g
+		fis fis %15
+		e1\fermata
+		r2 g
+		fis d
+		e fis
+		g1 %20
+		d\fermata
+		r2 d
+		e d
+		c c
+		h\fermata g' %25
+		fis a
+		g fis
+		e1
+		fis2\fermata h,
+		c h %30
+		a d
+		h1~
+		h\fermata \bar "|." %25 finis
+	}
+}
+
+IchDankeSopranoLyrics = \lyricmode {
+	Ich
+	dan -- ke
+	dir von
+	Her --
+	zen, o %5
+	Je -- ſu,
+	lieb -- ſter
+	Freund,
+	für
+	dei -- ne %10
+	To -- des --
+	ſchmert --
+	zen, wie
+	gut haſt
+	du’s ge -- %15
+	meint.
+	Ach
+	gib, daß
+	ich mich
+	hal -- %20
+	te
+	zu
+	dir und
+	dei -- ner
+	Treu, und %25
+	wenn ich
+	einſt er --
+	kal --
+	te, in
+	dir mein %30
+	En -- de
+	ſey. __ %32 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

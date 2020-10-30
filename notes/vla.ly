@@ -1547,3 +1547,43 @@ WeintNichtIhrViola = {
 		g d \bar "|" \time 4/4 %23 finis
 	}
 }
+
+IchDankeViola = {
+	\relative c' {
+		\clef alto
+		\key g \major \time 4/4 \tempoIchDanke
+		g2 g'
+		g g
+		g4 fis g2
+		d1
+		d2\fermata h %5
+		e h'
+		c h4 a
+		g1\fermata
+		r2 g
+		g g %10
+		g4 fis g2
+		d1
+		d2\fermata h
+		e h'
+		c h4 a %15
+		g1\fermata
+		r2 a
+		a g
+		g a
+		d,1 %20
+		g\fermata
+		r2 a
+		h e,
+		e e
+		e\fermata e %25
+		d d
+		d d
+		a1
+		a2\fermata a'
+		g d %30
+		d d
+		d1~
+		d\fermata \bar "|." %25 finis
+	}
+}

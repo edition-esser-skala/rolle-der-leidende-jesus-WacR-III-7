@@ -768,6 +768,9 @@ tempoErbarmeGott = \tempoMarkup "[Tempo deest]"
 tempoWeintNichtIhr = \tempoMarkup "[Tempo deest]"
 	tempoWeintNichtIhrB = \tempoMarkup "Moderato"
 
+%2.16
+tempoIchDanke = \tempoMarkup "[Tempo deest]"
+
 
 
 partialFourth = \set Timing.measurePosition = #(ly:make-moment -1/4)

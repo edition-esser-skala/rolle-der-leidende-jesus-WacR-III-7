@@ -1567,3 +1567,43 @@ WeintNichtIhrViolinoII = {
 		g8 h4 a8 \bar "|" \time 4/4 %23 finis
 	}
 }
+
+IchDankeViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoIchDanke
+		g2 h'
+		c h
+		a g
+		g fis
+		g\fermata h %5
+		h h
+		e dis
+		e1\fermata
+		r2 h
+		c h %10
+		a g
+		g fis
+		g\fermata h
+		h h
+		e dis %15
+		e1\fermata
+		r2 e
+		d h
+		c c
+		h1 %20
+		h\fermata
+		r2 a
+		gis h~
+		h a
+		g!\fermata h %25
+		h a
+		h a4 d
+		d2 cis
+		d\fermata fis,
+		g g %30
+		g fis
+		g1~
+		g\fermata \bar "|." %33 finis
+	}
+}

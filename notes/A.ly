@@ -1945,6 +1945,81 @@ TheuresWortAltoLyrics = \lyricmode {
 	ab. %141 finis
 }
 
+IchDankeAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoIchDanke
+		r2 g'
+		g g
+		g4( fis) g2
+		g( fis)
+		g\fermata h %5
+		h h
+		c h4( a)
+		g1\fermata
+		r2 g
+		g g %10
+		g4( fis) g2
+		g( fis)
+		g\fermata h
+		h h
+		c h4( a) %15
+		g1\fermata
+		r2 a
+		a h
+		g a
+		h1 %20
+		g\fermata
+		r2 a
+		gis h
+		h a
+		g!\fermata h %25
+		h a
+		h a
+		a1
+		a2\fermata a
+		g g %30
+		g fis
+		g1~
+		g\fermata \bar "|." %33 finis
+	}
+}
+
+IchDankeAltoLyrics = \lyricmode {
+	Ich
+	dan -- ke
+	dir von
+	Her --
+	zen, o %5
+	Je -- ſu,
+	lieb -- ſter
+	Freund,
+	für
+	dei -- ne %10
+	To -- des --
+	ſchmert --
+	zen, wie
+	gut haſt
+	du’s ge -- %15
+	meint.
+	Ach
+	gib, daß
+	ich mich
+	hal -- %20
+	te
+	zu
+	dir und
+	dei -- ner
+	Treu, und %25
+	wenn ich
+	einſt er --
+	kal --
+	te, in
+	dir mein %30
+	En -- de
+	ſey. __ %32 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
