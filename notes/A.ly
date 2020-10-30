@@ -2020,6 +2020,34 @@ IchDankeAltoLyrics = \lyricmode {
 	ſey. __ %32 finis
 }
 
+OTodAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoOTod
+		R1*12 %12
+		r8 \mvTr g'\fE^\tutti g g g4( fis8) r
+		r a a a a4( g8) r
+		r h g c h h g c %15
+		h g g([ a16 g] fis8) fis g a
+		g4( fis)\trill g r
+		r8 h g c h h g c
+		h g g([ a16 g] fis8) fis g a
+		g4( fis) g r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodAltoLyrics = \lyricmode {
+	\xE Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg \x durch Je -- ſum \xE hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

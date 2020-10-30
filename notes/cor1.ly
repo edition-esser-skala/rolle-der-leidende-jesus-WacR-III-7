@@ -211,3 +211,27 @@ TodesworteCornoI = {
 		e r r\fermata \bar "|." %50 finis
 	}
 }
+
+OTodCornoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTod
+		R1*3
+		r4 g'8\mfE g16 g c4 e
+		g4. f8\pE e4 d %5
+		c r8 d16\fE d e4 r
+		R1*3
+		r4 g,8\pocoFE g16. g32 g4 r %10
+		r8 g c d\pE e4 r
+		r8 e16. f32 g8 f e4 d\trill
+		c4 r8 e\fE e4 d8 r
+		r4 r8 d d4 e8 r
+		r c16. c32 c4 r8 c16. c32 c4 %15
+		r8 c d4~ d8 d e f
+		e4 d c r8 d16. d32
+		e8 c16. c32 c4 c c
+		c r r8 d e f
+		e4 d c8 g g g %20
+		g4 r r2\fermata \bar "|." %21 finis
+	}
+}

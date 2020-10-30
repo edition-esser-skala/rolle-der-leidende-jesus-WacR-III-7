@@ -709,3 +709,20 @@ IchDankeOboeII = {
 		h\fermata \bar "|." %25 finis
 	}
 }
+
+OTodOboeII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoOTod
+		R1*12 %12
+		r8 g'\fE g g g4 \tuplet 3/2 8 { fis16([ g a)] g( a h) }
+		a8 a a a a4 \tuplet 3/2 8 { g16([ a h)] a( h c) }
+		h8 h g c h h g c %15
+		h g~ g a16 g fis4 g8 a
+		g4 fis\trill g r
+		r8 h g c h h g c
+		h g~ g a16 g fis4 g8 a
+		g4 fis\trill g r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}

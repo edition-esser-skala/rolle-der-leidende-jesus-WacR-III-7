@@ -47,3 +47,27 @@ JerusalemTimpani = {
 		R1\fermataMarkup \bar "|."
 	}
 }
+
+OTodTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoOTod
+		R1*3
+		r8 g16\mfE g g8 g c4 c8 c16 c
+		c4 r r g8\pE g16 g %5
+		c4 r8 g\fE c4 r
+		R1*3
+		r8 g16\pocoFE g g8 g c4 r %10
+		r8 c16 c c8 g\pE c4 r
+		r8 c16 c c4 g g
+		c r r8 g16\fE g g8 g
+		g4 r r8 c16 c c8 c
+		c4 r8 c16 c c4 r8 c16 c %15
+		c4 r r8 g16 g c4
+		g g8 g c4 r8 g
+		c4 r c r
+		c r r8 g c4
+		r g c8 c16 c c8 c %20
+		c4 r r2\fermata \bar "|." %21 finis
+	}
+}

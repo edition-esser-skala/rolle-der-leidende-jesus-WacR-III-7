@@ -1607,3 +1607,29 @@ IchDankeViolinoII = {
 		g\fermata \bar "|." %33 finis
 	}
 }
+
+OTodViolinoII = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoOTod
+		R1*3
+		r4 r8 d\mf g g,16. h'32 h8 g,16. d''32
+		h16.( d32 h4) a8\p g4 fis\trill %5
+		g8 g'16.[\f h,32] c16.([\trill h64 c)] a'16. c,32 h4-! r
+		r \mvTr c,8.\f-\tenuto e16 g4\p g,
+		c e16.\f d32 cis16. h32 a4 r
+		r d8.\f fis16\p a4 a,
+		d r8 d\pocoF h g16. g'32 g8 g,16. h'32 %10
+		d16.( g32 d4) d,8\p g g,16. h'32 h8 g,16. d''32
+		h8 h4 a8 g4 fis\trill
+		g8 h\f d g, g4 \tuplet 3/2 8 { fis16([ g a)] g( a h) }
+		a8 c c a a4 \tuplet 3/2 8 { g16([ a h)] a( h c) }
+		h8 g'16. d32 e8 c'16. e,32 d8 g16. d32 e8 c'16. e,32 %15
+		d8 g16. h,32 c4~ c16 a' c, a h g' e a,
+		g4 fis\trill g8 g'16. h,32 c8\trill a'16. c,32
+		h8 g'16. d32 e8 c'16. e,32 d8 g16. d32 e8 c'16. e,32
+		d8 g16. h,32 c4~ c16 a' a, c h g' e a,
+		g4 fis\trill g8 <g, d' h' g'> q q %20
+		q4 r r2\fermata \bar "|." %21 finis
+	}
+}

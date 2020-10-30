@@ -1587,3 +1587,29 @@ IchDankeViola = {
 		d\fermata \bar "|." %25 finis
 	}
 }
+
+OTodViola = {
+	\relative c' {
+		\clef alto
+		\key g \major \time 4/4 \tempoOTod
+		R1*3
+		r4 d16.\mf c32 h16. a32 g4 g'8 g,
+		g' g, h c\p d4 c %5
+		h8 g'4\fE fis8 g4 r
+		r c,8.\fE e16 g4\pE g,
+		c e16.\f d32 cis16. h32 a4 r
+		r d\fE a'\pE a,
+		d d16.\pocoFE c!32 h16. a32 g4 g %10
+		g'8 g, h d\p h g g' g,
+		g' g, h c d4 d,
+		g8 d'\f d d d[ d,] d r
+		r fis'16. e32 d8 d d[ g,] g r
+		r16 g' g a32 h c16 c, e c g' g g a32 h c16 c, e c %15
+		g' g h g a a, c a d8 d d e
+		d4 c h8 g'4 fis8
+		g16 g g a32 h c16 c, e c g' g g a32 h c16 c, e c
+		g' g h g a a, c e d8 d d e
+		d4 c h16 g' h g d g d h %20
+		g4 r r2\fermata \bar "|." %21 finis
+	}
+}

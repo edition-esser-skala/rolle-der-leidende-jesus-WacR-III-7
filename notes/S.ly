@@ -1737,6 +1737,34 @@ IchDankeSopranoLyrics = \lyricmode {
 	ſey. __ %32 finis
 }
 
+OTodSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \autoBeamOff \tempoOTod
+		R1*12 %12
+		r8 \mvTr h'\fE^\tutti h h h4( a8) r
+		r c c c c4( h8) r
+		r d e e d g e e %15
+		d g c,4~ c8 a h c
+		h4( a)\trill g r
+		r8 d' e e d g e e
+		d g c,4~ c8 a h c
+		h4( a)\trill g r %20
+		R1\fermataMarkup \bar "|."
+	}
+}
+
+OTodSopranoLyrics = \lyricmode {
+	\xE Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg \x durch Je -- \xE ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch \x Je -- ſum \xE hat ge --
+	ge -- ben. %20 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

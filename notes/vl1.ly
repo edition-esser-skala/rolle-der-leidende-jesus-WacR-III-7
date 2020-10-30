@@ -1608,6 +1608,32 @@ IchDankeViolinoI = {
 	}
 }
 
+OTodViolinoI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoOTod
+		R1*3
+		r4 r8 d\mf g g,16. h'32 h8 g,16. d''32
+		d16.( g32 d4) c8\p h4 a\trill %5
+		g8 g'16.[\f h,32] c16.([\trill h64 c)] a'16. c,32 h4-! r
+		r \mvTr c,8.\f-\tenuto e16 g4\p g,
+		c e16.\f d32 cis16. h32 a4 r
+		r d8.\f fis16\p a4 a,
+		d r8 d\pocoF g g,16. h'32 h8 g,16. d''32 %10
+		d16.( g32 d4) d,8\p g g,16. h'32 h8 g,16. d''32
+		d16.( g32 d4) c8 h4 a\trill
+		g8 g'\f g h, h4 \tuplet 3/2 8 { a16([ h c)] h( c d) }
+		c8 a' a c, c4 \tuplet 3/2 8 { h16([ c d)] c( d e) }
+		d8 g16. d32 e8 c'16. e,32 d8 g16. d32 e8 c'16. e,32 %15
+		d8 g16. h,32 c4~ c16 a' c, a h g' e c
+		h4 a\trill g8 g'16. h,32 c8\trill a'16. c,32
+		h8 g'16. d32 e8 c'16. e,32 d8 g16. d32 e8 c'16. e,32
+		d8 g16. h,32 c4~ c16 a' a, c h g' e c
+		h4 a\trill g8 <g, d' h' g'> q q %20
+		q4 r r2\fermata \bar "|." %21 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

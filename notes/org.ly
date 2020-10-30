@@ -3809,6 +3809,54 @@ IchDankeBassFigures = \figuremode {
 	q \bassFigureExtendersOff %33 finis
 }
 
+OTodOrgano = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoOTod
+		R1*3
+		r4 \mvTrr d16.\mf-\soloE c32 h16. a32 g4 g'8 g,
+		g' g, h c\p d4 d, %5
+		g8 h'\f a d, g4-! r
+		r c,\f g'\p g,
+		c e16.\f d32 cis16. h32 a4 r
+		r d\f a'\p a,
+		d d16.\pocoF c!32 h16. a32 g4 g'8 g, %10
+		g' g, h d\p h g g' g,
+		g' g, h c d4 d,
+		g8 \mvTr g'16.\f-\tuttiE a32 h8 g d'[ d,] d r
+		r d16. e32 fis8 d g[ g,] g r
+		r16 g' g a32 h c16 c, e c g' g g a32 h c16 c, e c %15
+		g' g h g a a, c a d8 d g c,
+		d4 d, g8 h' a d,
+		g16 g g a32 h c16 c, e c g' g g a32 h c16 c, e c
+		g' g h g a a, c a d8 d g c,
+		d4 d, g16 g' h g d g d h %20
+		g4 r r2\fermata \bar "|." %21 finis
+	}
+}
+
+OTodBassFigures = \figuremode {
+	r1*3
+	r1
+	r4 <6>8 q <6 4>4 <5 3> %5
+	r8 <6> <7> q r2
+	r1
+	r
+	r
+	r %10
+	r4 <6>8 <3> <6>2
+	r4 <6>8 q <6 4>4 <5 3>
+	r <6> <6 4> <5 3>
+	r8 <7> <6 5>4 <9 4> <8 3>
+	r1 %15
+	r4 <7> q4. <6>8
+	<6 4>4 <5 3>4. <6>8 <7> q
+	r1
+	r4 <7> q4. <6>8
+	<6 4>4 <5 3>2. %20
+	r1 %21 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

@@ -770,6 +770,7 @@ tempoWeintNichtIhr = \tempoMarkup "[Tempo deest]"
 
 %2.16
 tempoIchDanke = \tempoMarkup "[Tempo deest]"
+tempoOTod = \tempoMarkup "Con spirito"
 
 
 

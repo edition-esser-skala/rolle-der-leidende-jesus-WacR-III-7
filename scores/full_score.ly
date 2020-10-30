@@ -2088,74 +2088,163 @@
 	% 		\midi { \tempo 4 = 70 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		genre = "C H O R A L"
+	% 		number = "2.16"
+	% 		title = "Ich danke dir von Herzen"
+	% 	}
+	% 	\tocLabelLong "ichdanke" "2.16" "Choral" "Ich danke dir von Herzen"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
+	% 					\partcombine \IchDankeOboeI \IchDankeOboeII
+	% 				>>
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff \with { \smallGroupDistance } <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\IchDankeViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\IchDankeViolinoII
+	% 					}
+	% 				>>
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "vla"
+	% 					\IchDankeViola
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \IchDankeSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \IchDankeSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \IchDankeAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \IchDankeAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \IchDankeTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \IchDankeTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \IchDankeBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \IchDankeBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\IchDankeOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \IchDankeBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 90 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			genre = "C H O R A L"
-			number = "2.16"
-			title = "Ich danke dir von Herzen"
+			genre = "C O R O"
+			number = "2.17"
+			title = "O Tod und Grab, wo iſt dein Sieg?"
 		}
-		\tocLabelLong "ichdanke" "2.16" "Choral" "Ich danke dir von Herzen"
+		% \tocLabelLong "otod" "2.17" "Coro" "O Tod und Grab, wo ist dein Sieg?"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "ob" "1, 2" } }
-						\partcombine \IchDankeOboeI \IchDankeOboeII
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "ob"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OTodOboeI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OTodOboeII
+						}
 					>>
 				>>
+				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup \center-column { "cor (G)" "1, 2" }
+						% \transpose c g,
+						\partcombine \OTodCornoI \OTodCornoII
+					>>
+				>>
+				\new Staff {
+					\set Staff.instrumentName = \markup \center-column { "timp" "G–D" }
+					% \transpose c g,
+					\OTodTimpani
+				}
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\IchDankeViolinoI
+							\OTodViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\IchDankeViolinoII
+							\OTodViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "vla"
-						\IchDankeViola
+						\OTodViola
 					}
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \IchDankeSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \OTodSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \IchDankeSopranoLyrics
+					\new Lyrics \lyricsto Soprano \OTodSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \IchDankeAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \OTodAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \IchDankeAltoLyrics
+					\new Lyrics \lyricsto Alto \OTodAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \IchDankeTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \OTodTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \IchDankeTenoreLyrics
+					\new Lyrics \lyricsto Tenore \OTodTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \IchDankeBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \OTodBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \IchDankeBassoLyrics
+					\new Lyrics \lyricsto Basso \OTodBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\IchDankeOrgano
+						\OTodOrgano
 					}
 				>>
-				\new FiguredBass { \IchDankeBassFigures }
+				\new FiguredBass { \OTodBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 90 }
+			\midi { \tempo 4 = 90 }
 		}
 	}
 }

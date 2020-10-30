@@ -699,3 +699,20 @@ IchDankeOboeI = {
 		h\fermata \bar "|." %25 finis
 	}
 }
+
+OTodOboeI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoOTod
+		R1*12 %12
+		r8 h'\fE h h h4 \tuplet 3/2 8 { a16([ h c)] h( c d) }
+		c8 c c c c4 \tuplet 3/2 8 { h16([ c d)] c( d e) }
+		d8 d e e d g e e %15
+		d g c,4~ c8 a h c
+		h4 a\trill g r
+		r8 d' e e d g e e
+		d g c,4~ c8 a h c
+		h4 a\trill g r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}

@@ -1760,6 +1760,57 @@ IchDankeBassoLyrics = \lyricmode {
 	ſey. __ %32 finis
 }
 
+OTodBassoNotes = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \autoBeamOff \tempoOTod
+		r4 r8 \mvTr g'\pE^\solo d'4. g,8
+		d4~ d8 r g4 h8 a16([ g)]
+		c4 r a cis8 h16([ a)]
+		d4 r8 d, g4 h
+		d4. c8 h16([ a g8)] a4\trill %5
+		g r r8 g h a16([ g)]
+		c4 r g g
+		c, r r8 a' cis h16([ a)]
+		d4 r a a
+		d, r8 d g4 h %10
+		d r8 d, g4 h
+		d4. c8 h16([ a g8)] a4\trill
+		g8 \mvTr g\fE^\tutti h g d4~ d8
+		r r d fis d g4~ g8 r
+		r g c c g h c c %15
+		g h a c, d d g c,
+		d2 g4 r
+		r8 g c c, g' g c c
+		g h a c, d d g c,
+		d2 g4 r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodBassoLyrics = \lyricmode {
+	O Tod und
+	Grab, __ wo iſt dein
+	Sieg? Wo iſt dein
+	Sieg? Nun tri -- um --
+	phiert das Le -- _ %5
+	ben. Wo iſt dein
+	Sieg? Tod und
+	Grab, wo iſt dein
+	Sieg, Tod und
+	Grab? Nun tri -- um -- %10
+	phiert, nun tri -- um --
+	phiert das Le -- _
+	ben. Gott ſey ge -- dankt, __
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

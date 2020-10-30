@@ -1852,6 +1852,34 @@ IchDankeTenoreLyrics = \lyricmode {
 	ſey. __ %32 finis
 }
 
+OTodTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key g \major \time 4/4 \autoBeamOff \tempoOTod
+		R1*12 %12
+		r8 \mvTr d\fE^\tutti d d d4~ d8 r
+		r d d d d4~ d8 r
+		r g g g g g g g %15
+		g d c e d d d e
+		d4( c) h r
+		r8 g' g g g g g g
+		g h, c e d d d e
+		d4( c) h r %20
+		R1\fermataMarkup \bar "|." %21 finis
+	}
+}
+
+OTodTenoreLyrics = \lyricmode {
+	\xE Gott ſey ge -- dankt, __ %13
+	Gott ſey ge -- dankt, __
+	der uns den Sieg, der uns den %15
+	Sieg \x durch Je -- ſum, \xE Je -- ſum hat ge --
+	ge -- ben,
+	Gott ſey ge -- dankt, der uns den
+	Sieg durch Je -- ſum, Je -- ſum hat ge --
+	ge -- ben. %20 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

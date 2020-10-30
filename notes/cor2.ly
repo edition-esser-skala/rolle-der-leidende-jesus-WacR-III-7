@@ -198,3 +198,27 @@ TodesworteCornoII = {
 		c r r\fermata \bar "|." %50 finis
 	}
 }
+
+OTodCornoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoOTod
+		R1*3
+		r4 g'8\mfE g16 g e4 c'
+		e4. d8\pE c4 g %5
+		e r8 g16\fE g c4 r
+		R1*3
+		r4 g8\pocoFE g16. g32 e4 r %10
+		r8 e e g\pE c4 r
+		r8 c c d c4 g
+		c, r8 c'\fE c4 g8 r
+		r4 r8 g g4 c8 r
+		r c16. c32 c4 r8 c16. c32 c4 %15
+		r8 c d4~ d8 g, c d
+		c4 g e r8 g16. g32
+		c8 c16. c32 c4 c c
+		c r r8 g c d
+		c4 g e8 e e e %20
+		e4 r r2\fermata \bar "|." %21 finis
+	}
+}
