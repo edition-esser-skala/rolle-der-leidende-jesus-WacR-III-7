@@ -1083,9 +1083,9 @@ AchSeeleViola = {
 		d\fermata b %5
 		c d
 		e c
-		c2. b4
+		c2. b4 \noBreak
 		a1\fermata \bar ":|."
-		r2 a %10
+		r2 a \noBreak %10
 		c c
 		d c
 		c b

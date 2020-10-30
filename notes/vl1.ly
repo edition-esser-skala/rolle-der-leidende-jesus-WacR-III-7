@@ -1097,9 +1097,9 @@ AchSeeleViolinoI = {
 		a\fermata g %5
 		a b
 		c a
-		g1
+		g1 \noBreak
 		f\fermata \bar ":|."
-		r2 f %10
+		r2 f \noBreak %10
 		g a
 		b g
 		a g
