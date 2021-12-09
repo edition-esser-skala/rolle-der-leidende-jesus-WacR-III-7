@@ -1,446 +1,341 @@
-% (c) 2020 by Wolfgang Esser-Skala.
-% This file is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-% To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-
-\version "2.18.0"
+\version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-	indent = 1\cm
-	top-margin = 1.5\cm
-	system-separator-markup = ##f
-	system-system-spacing =
-    #'((basic-distance . 18)
-       (minimum-distance . 18)
-       (padding . -100)
-       (stretchability . 0))
-
-	top-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-	top-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -100)
-       (stretchability . 0))
-
-	markup-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-	systems-per-page = #9
-}
-
-#(set-global-staff-size 17.82)
-
-\layout {
-	\context {
-		\Staff
-		instrumentName = "vl 2"
-	}
-}
+#(define option-instrument-name "vl 2")
+\include "score_settings/one-staff.ly"
 
 \book {
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "1.1"
-			title = "O, meine Seel, ermuntre dich"
-		}
-		\paper {
-			indent = 2\cm
-			systems-per-page = #3
-		}
-		\score {
-			<<
-				\new Staff {
-					\set Staff.instrumentName = "Violino II"
-					\OMeineSeelViolinoII
-				}
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "1.2"
-			title = "Der Herr neiget den Himmel"
-		}
-		\paper { systems-per-page = #7 }
-		\score {
-			<<
-				\new Staff { \DerHerrNeigetViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "1.3"
-			title = "Jerusalem! Welch eine Nacht"
-		}
-		\paper { systems-per-page = #7 }
-		\score {
-			<<
-				\new Staff { \JerusalemViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "1.4"
-			title = "Gerechter! Welche Qual erſchrecket"
-		}
-		\paper { systems-per-page = #7 }
-		\score {
-			<<
-				\new Staff { \GerechterViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "1.5"
-			title = "O Labyrinth! der der Natur gebot"
-		}
-		\score {
-			<<
-				\new Staff { \LabyrinthViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "1.6"
-			title = "Singt, ihr Himmel, Gott iſt Liebe"
-		}
-		\score {
-			<<
-				\new Staff { \SingtIhrViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "1.7"
-			title = "Liebe, die du mich zum Bilde"
-		}
-		\paper { systems-per-page = #2 }
-		\score {
-			<<
-				\new Staff { \LiebeDieViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "1.9"
-			title = "Wachet, ſtehet im Glauben"
-		}
-		\score {
-			<<
-				\new Staff { \WachetStehetViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "1.10"
-			title = "Herr, ermuntre du uns Schwachen"
-		}
-		\score {
-			<<
-				\new Staff { \HerrErmuntreViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "1.11"
-			title = "Wie iſt der Menſch ſo ſchwach!"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \WieIstViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "1.13"
-			title = "Wer durchſchaut, wie wunderbar"
-		}
-		\score {
-			<<
-				\new Staff { \WerDurchschautViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "1.15"
-			title = "Gott, mit Blicken deiner Gnade"
-		}
-		\score {
-			<<
-				\new Staff { \GottMitBlickenViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "1.17"
-			title = "Lamm, das von verruchten Zungen"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \LammDasViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "1.19"
-			title = "Mein iſt die Unſterblichkeit"
-		}
-		\score {
-			<<
-				\new Staff { \MeinIstDieViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "1.20"
-			title = "Chriſtus hat dem Tode die Macht genommen"
-		}
-		\score {
-			<<
-				\new Staff { \ChristusHatDemViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "1.21"
-			title = "Wenn dort, Herr Jeſu, wird vor deinem Throne"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \WennDortViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "2.1"
-			title = "Wer iſt der Mann"
-		}
-		\score {
-			<<
-				\new Staff { \WerIstDerViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "2.2"
-			title = "Gott, du donnerſt zu den Sündern"
-		}
-		\score {
-			<<
-				\new Staff { \GottDuDonnerstViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "2.3"
-			title = "Ach Seele, ſchau um welchen Preis"
-		}
-		\paper { systems-per-page = #4 }
-		\score {
-			<<
-				\new Staff { \AchSeeleViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "2.5"
-			title = "Juda, Todesworte ſprichſt du aus"
-		}
-		\paper { page-count = #1 }
-		\score {
-			<<
-				\new Staff { \TodesworteViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I A"
-			number = "2.7"
-			title = "Weint nicht, ſagt der Menſchenfreund"
-		}
-		\score {
-			<<
-				\new Staff { \WeinetNichtViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "2.8"
-			title = "Wir müßen durch viel Trübſal"
-		}
-		\score {
-			<<
-				\new Staff { \WirMuessenViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "2.10"
-			title = "Selbſt der Feinde Heil zu ſuchen"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \SelbstDerFeindeViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "D U E T T O"
-			number = "2.12"
-			title = "Theures Wort aus Jeſu Munde"
-		}
-		\score {
-			<<
-				\new Staff { \TheuresWortViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A R I O S O"
-			number = "2.14"
-			title = "Erbarme dich, Gott, über mich"
-		}
-		\paper { systems-per-page = #6 }
-		\score {
-			<<
-				\new Staff { \ErbarmeGottViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "A C C O M P A G N A T O"
-			number = "2.15"
-			title = "Weint nicht, ihr Freunde Jeſu!"
-		}
-		\paper { systems-per-page = #5 }
-		\score {
-			<<
-				\new Staff { \WeintNichtIhrViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "2.16"
-			title = "Ich danke dir von Herzen"
-		}
-		\paper { systems-per-page = #4 }
-		\score {
-			<<
-				\new Staff { \IchDankeViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "2.17"
-			title = "O Tod und Grab, wo iſt dein Sieg?"
-		}
-		\paper { systems-per-page = #7 }
-		\score {
-			<<
-				\new Staff { \OTodViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C H O R A L"
-			number = "2.18"
-			title = "O Tod, wo iſt dein Stachel nun"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \OTodWoIstViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "C O R O"
-			number = "2.19"
-			title = "O Tod und Grab, wo iſt dein Sieg?"
-		}
-		\paper { systems-per-page = #7 }
-		\score {
-			<<
-				\new Staff { \OTodCViolinoII }
-			>>
-		}
-	}
-	\bookpart {
-		\header {
-			genre = "S C H L U S S C H O R A L"
-			number = "2.20"
-			title = "Freuet euch, erlößte Seelen"
-		}
-		\paper { systems-per-page = #3 }
-		\score {
-			<<
-				\new Staff { \FreuetEuchViolinoII }
-			>>
-		}
-	}
+  \bookpart {
+    \section "1.1" "Choral" "O, meine Seel, ermuntre dich"
+    \addTocEntry
+    \paper {
+      indent = 2\cm
+      systems-per-page = #3
+    }
+    \score {
+      <<
+        \new Staff {
+          \set Staff.instrumentName = "Violino II"
+          \OMeineSeelViolinoII
+        }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.2" "Coro" "Der Herr neiget den Himmel"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \DerHerrNeigetViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.3" "Accompagnato" "Jerusalem! Welch eine Nacht"
+    \addTocEntry
+    \paper { systems-per-page = #5 }
+    \score {
+      <<
+        \new ChoirStaff <<
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \JerusalemAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \JerusalemAltoLyrics
+        >>
+        \new Staff { \JerusalemViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.4" "Aria" "Gerechter! Welche Qual erſchrecket"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \GerechterViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.5" "Accompagnato" "O Labyrinth! der der Natur gebot"
+    \addTocEntry
+    \paper { systems-per-page = #5 }
+    \score {
+      <<
+        \new ChoirStaff <<
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \LabyrinthBassoNotes }
+          }
+          \new Lyrics \lyricsto Basso \LabyrinthBassoLyrics
+        >>
+        \new Staff { \LabyrinthViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.6" "Coro" "Singt, ihr Himmel, Gott iſt Liebe"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \SingtIhrViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.7" "Choral" "Liebe, die du mich zum Bilde"
+    \addTocEntry
+    \paper { systems-per-page = #2 }
+    \score {
+      <<
+        \new Staff { \LiebeDieViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.9" "Coro" "Wachet, ſtehet im Glauben"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \WachetStehetViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.10" "Aria" "Herr, ermuntre du uns Schwachen"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \HerrErmuntreViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.11" "Choral" "Wie iſt der Menſch ſo ſchwach!"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \WieIstViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.13" "Aria" "Wer durchſchaut, wie wunderbar"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \WerDurchschautViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.15" "Aria" "Gott, mit Blicken deiner Gnade"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \GottMitBlickenViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.17" "Choral" "Lamm, das von verruchten Zungen"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \LammDasViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.19" "Aria" "Mein iſt die Unſterblichkeit"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \MeinIstDieViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.20" "Coro" "Chriſtus hat dem Tode die Macht genommen"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \ChristusHatDemViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "1.21" "Choral" "Wenn dort, Herr Jeſu, wird vor deinem Throne"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \WennDortViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.1" "Accompagnato" "Wer iſt der Mann"
+    \addTocEntry
+    \paper { systems-per-page = #5 }
+    \score {
+      <<
+        \new ChoirStaff <<
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \WerIstDerAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \WerIstDerAltoLyrics
+        >>
+        \new Staff { \WerIstDerViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.2" "Aria" "Gott, du donnerſt zu den Sündern"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \GottDuDonnerstViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.3" "Choral" "Ach Seele, ſchau um welchen Preis"
+    \addTocEntry
+    \paper { systems-per-page = #4 }
+    \score {
+      <<
+        \new Staff { \AchSeeleViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.5" "Coro" "Juda, Todesworte ſprichſt du aus"
+    \addTocEntry
+    \paper { page-count = #1 }
+    \score {
+      <<
+        \new Staff { \TodesworteViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.7" "Aria" "Weint nicht, ſagt der Menſchenfreund"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \WeinetNichtViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.8" "Coro" "Wir müßen durch viel Trübſal"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \WirMuessenViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.10" "Choral" "Selbſt der Feinde Heil zu ſuchen"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \SelbstDerFeindeViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.12" "Duetto" "Theures Wort aus Jeſu Munde"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \TheuresWortViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.14" "Arioso" "Erbarme dich, Gott, über mich"
+    \addTocEntry
+    \paper { systems-per-page = #6 }
+    \score {
+      <<
+        \new Staff { \ErbarmeGottViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.15" "Accompagnato" "Weint nicht, ihr Freunde Jeſu!"
+    \addTocEntry
+    \paper { systems-per-page = #4 }
+    \score {
+      <<
+        \new ChoirStaff <<
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \WeintNichtIhrBassoNotes }
+          }
+          \new Lyrics \lyricsto Basso \WeintNichtIhrBassoLyrics
+        >>
+        \new Staff { \WeintNichtIhrViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.16" "Choral" "Ich danke dir von Herzen"
+    \addTocEntry
+    \paper { systems-per-page = #4 }
+    \score {
+      <<
+        \new Staff { \IchDankeViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.17" "Coro" "O Tod und Grab, wo iſt dein Sieg?"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \OTodViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.18" "Choral" "O Tod, wo iſt dein Stachel nun"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \OTodWoIstViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.19" "Coro" "O Tod und Grab, wo iſt dein Sieg?"
+    \addTocEntry
+    \paper { systems-per-page = #7 }
+    \score {
+      <<
+        \new Staff { \OTodCViolinoII }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2.20" "Schlußchoral" "Freuet euch, erlößte Seelen"
+    \addTocEntry
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new Staff { \FreuetEuchViolinoII }
+      >>
+    }
+  }
 }

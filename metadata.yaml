@@ -1,17 +1,23 @@
-composer: Rolle, Johann Heinrich
+composer:
+  last: Rolle
+  first: Johann Heinrich
 title: Der leidende Jesus
+subtitle: Passions-Cantate
 id: WacR III:7
 genre: passion
-scoring: S, A, 2 T, B (solo), S, A, T, B (coro), 2 fl, 2 ob, 2 fag, 2 cor (D/Es/G), 2 clno (C), timp(C–G/G–D), 2 vl, vla, b, org
+scoring: S, A, 2 T, B (solo), S, A, T, B (coro), 2 fl, 2 ob, 2 fag, 2 cor (D/\flat E/G),\\2 clno (C), timp (C–G/G–D), 2 vl, vla, b, org
+license: cc-by-nc-sa-4.0
 sources:
-  1:
+  B1:
     siglum: D-B
     shelfmark: Mus.ms 18709/1
-    type: manuscript copy
     date: ca. 1780
     rism: 452501861
     url: http://resolver.staatsbibliothek-berlin.de/SBB000281F600000000
-github: rolle-der-leidende-jesus-WacR-III-7
+    license: CC BY-NC-SA 4.0
+    principal: true
 imslp: Der_leidende_Jesus_(Rolle,_Johann_Heinrich)
-notes:
-
+extra_abbreviations:
+  fond:
+parts:
+  ottoni: Corno I, II in D/\flat E/G\\Clarino I, II in C\\Timpani in C–G/G–D

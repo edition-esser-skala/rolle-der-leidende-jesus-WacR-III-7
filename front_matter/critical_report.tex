@@ -1,1009 +1,652 @@
-\documentclass[parskip=full]{scrreprt}
-
-\RedeclareSectionCommand[pagestyle=plain,afterskip=10pt plus 1pt]{chapter}
-\setkomafont{chapter}{\mdseries\headingfont\fontsize{40}{40}\selectfont\color{black!80}}
-\setkomafont{pageheadfoot}{\normalsize}
-
-\def\pnumbox#1{#1\hspace*{8cm}}
-\def\gobble#1{}
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entryformat=\itshape,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\itshape
-]{tocline}{part}
-
-% use commented values if there are no parts
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox
-]{tocline}{section}
-
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=-\parskip,
-  entrynumberformat=\gobble,
-  entryformat=\ltseries,
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\ltseries
-]{tocline}{subsection}
-
-\usepackage{polyglossia}
-\setdefaultlanguage{english}
-
-\usepackage{fontspec}
-
-\setmainfont{Source Sans Pro}[
-  ItalicFont = Source Sans Pro Italic,
-  BoldFont = Source Sans Pro Bold,
-  BoldItalicFont = Source Sans Pro Bold Italic,
-  FontFace = {lt}{n}{Source Sans Pro Light},
-  FontFace = {lt}{it}{Source Sans Pro Light Italic},
-  FontFace = {sb}{n}{Source Sans Pro Semibold},
-  FontFace = {sb}{it}{Source Sans Pro Semibold Italic},
-  Numbers = Proportional,
-  Ligatures = Common
-]
-\DeclareRobustCommand{\ltseries}{\fontseries{lt}\selectfont}
-\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
-\DeclareTextFontCommand{\textlt}{\ltseries}
-\DeclareTextFontCommand{\textsb}{\sbseries}
-
-\newfontfamily\headingfont{Fredericka the Great}
-
-\usepackage[pass]{geometry}
-\newgeometry{twoside,inner=20mm,outer=40mm,top=20mm,bottom=40mm}
-
-\usepackage{url}
-\urlstyle{same}
-
-\usepackage{microtype}
-\microtypesetup{verbose=silent}
-
-\usepackage{booktabs,array,longtable}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-
-\usepackage{graphicx}
-
-\usepackage{xcolor}
-\definecolor{oldred}{rgb}{.8313,0,0}
-
-\usepackage{pdfpages}
-
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
-\clearscrheadfoot
-\cfoot[\thepage]{\thepage}
-\pagenumbering{roman}
-
-\usepackage{enumitem}
-\setlist[description]{%
-	labelindent=2em,%
-	labelwidth=6.5em,%
-	leftmargin=8.5em,%
-	labelsep=0pt,
-	first=\ltseries,%
-	font=\normalfont\itshape\ltseries%
-}
-\def\lyrefitem#1{\item[\lyref{#1}]}
-
-
-\makeatletter
-
-\def\@firstofthree#1#2#3{#1}
-\def\@secondofthree#1#2#3{#2}
-\def\@thirdofthree#1#2#3{#3}
-\def\@firstoffour#1#2#3#4{#1}
-\def\@secondoffour#1#2#3#4{#2}
-\def\@thirdoffour#1#2#3#4{#3}
-\def\@fourthoffour#1#2#3#4{#4}
-\def\Dotfill{\leavevmode\cleaders\hb@xt@ .75em{\hss .\hss }\hfill \kern \z@}
-
-\def\lyrefnumber#1{\expandafter\@setref\csname r@#1\endcsname\@firstofthree{#1}}
-\def\lyreftitle#1{\expandafter\@setref\csname r@#1\endcsname\@secondofthree{#1}}
-\def\lyrefpage#1{\expandafter\@setref\csname r@#1\endcsname\@thirdofthree{#1}}
-
-\def\lyrefgenrenumber#1{\expandafter\@setref\csname r@#1\endcsname\@firstoffour{#1}}
-\def\lyrefgenregenre#1{\expandafter\@setref\csname r@#1\endcsname\@secondoffour{#1}}
-\def\lyrefgenretitle#1{\expandafter\@setref\csname r@#1\endcsname\@thirdoffour{#1}}
-\def\lyrefgenrepage#1{\expandafter\@setref\csname r@#1\endcsname\@fourthoffour{#1}}
-
-\def\lyrefpart#1{%
-	\begingroup%
-	\makebox[0pt][l]{\sbseries\color{oldred}\lyrefnumber{#1}}\hspace*{2em}%
-	\makebox[0pt][l]{\sbseries\lyreftitle{#1}}\hspace*{6.5em}%
-	\hfill\sbseries\lyrefpage{#1}%
-	\endgroup%
-}
-\def\lyrefsection#1{%
-	\begingroup%
-	\makebox[0pt][l]{\color{oldred}\lyrefgenrenumber{#1}}\hspace*{2em}%
-	\makebox[0pt][l]{\ltseries\lyrefgenregenre{#1}}\hspace*{6.5em}%
-	\lyrefgenretitle{#1}\Dotfill\lyrefgenrepage{#1}%
-	\endgroup%
-}
-\InputIfFileExists{../out/lilypond.ref}{}{\InputIfFileExists{../lilypond.ref}{}{}}
-
-
-\newcommand\fancytitlehead{
-	\headingfont%
-	\fontsize{80}{80}\selectfont\textcolor{black!80}{\@ifundefined{@shortname}{\@lastname}{\@shortname}.}\\[15pt]%
-	\fontsize{50}{50}\selectfont\@ifundefined{@shorttitle}{\@title}{\@shorttitle}.%
-}
-
-
-\def\firstname#1{\def\@firstname{#1}}
-\def\lastname#1{\def\@lastname{#1}}
-\def\shortname#1{\def\@shortname{#1}}
-\def\shorttitle#1{\def\@shorttitle{#1}}
-\def\namesuffix#1{\def\@namesuffix{#1}}
-\def\instrumentation#1{\def\@instrumentation{#1}}
-\def\parts#1{\def\@parts{#1}}
-
-\firstname{\relax}
-\lastname{\relax}
-\namesuffix{\relax}
-\instrumentation{\relax}
-\parts{\relax}
-
-
-\def\maketitle{%
-\begin{titlepage}%
-	\Large%
-	{\@titlehead}%
-	\vfill%
-	{\strut\@firstname}\\%
-	{\sbseries\color{oldred}\strut\@lastname}\\%
-	{\strut\@namesuffix}%
-	\vfill%
-	{\sbseries\@title}\\%
-	{\@subtitle}\\[\baselineskip]%
-	{\itshape\@instrumentation}%
-	\vfill%
-	{\itshape\@parts}\hspace*{\fill}\raisebox{0pt}[0pt][0pt]{\includegraphics{ees_logo}}%
-\end{titlepage}%
-}
-
-
-\newif\iftemplate\templatetrue
-\newif\ifprintreport\printreportfalse
-\directlua{
-scores = {
-  fl1 = "Flauto I",
-  fl2 = "Flauto II",
-  ob1 = "Oboe I",
-  ob2 = "Oboe II",
-  fag1 = "Fagotto I",
-  fag2 = "Fagotto II",
-  ottoni = "Corno I, II in D/Es/G\string\\newline Clarino I, II in C\string\\newline Timpani in C–G/G–D",
-  vl1 = "Violino I",
-  vl2 = "Violino II",
-  vla = "Viola",
-  soli = "Soli",
-  coro = "Coro",
-  org = "Organo",
-  b = "Bassi",
-  full_score = "Full Score"
-}
-
-last_arg = arg[\string#arg]
-texio.write("Last argument: " .. last_arg)
-if not (scores[last_arg] == nil) then
-  tex.print("\string\\def\string\\lypdfname{" .. last_arg .. "}")
-  tex.print("\string\\parts{" .. scores[last_arg] .. "}")
-  if (last_arg == "full_score") then
-    tex.print("\string\\printreporttrue")
-  end
-end
-}
-
-
-\@ifundefined{lypdfname}{%
-  \templatefalse
-  \printreporttrue
-  \parts{Draft}
-}{\templatetrue}
-
-\makeatother
-
-
-
-
-
+\documentclass[shorttitlesize=55,tocstyle=ref-genre]{ees}
 
 \begin{document}
-\frenchspacing
 
-\titlehead{\fancytitlehead}
-\firstname{Johann Heinrich}
-\lastname{Rolle}
-\title{Der leidende Jesus}
-\subtitle{Passions-Cantate\\WacR III:7\\(D-B Mus.ms 18709/1)}
-\instrumentation{S, A, 2 T, B (solo), S, A, T, B (coro),\\2 fl, 2 ob, 2 fag, 2 cor, 2 clno, timp, 2 vl, vla, b, org}
-\maketitle
+\eesTitlePage
 
-
-\thispagestyle{empty}
-
-\vspace*{\fill}
-
-\raisebox{-4mm}{\includegraphics{byncsaeu}}\hspace*{1em}Wolfgang Esser-Skala, 2020
-
-© 2020 by Wolfgang Esser-Skala. This edition is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}.
-
-Music engraving by LilyPond 2.18.0 (\url{http://www.lilypond.org}).\\
-Front matter typeset with Source Sans Pro and Fredericka the Great.
-
-\textit{First version, October 2020}
-
-\vspace*{2cm}
-
-\ifprintreport
-\chapter*{Critical Report.}
-
-This edition bases upon a copy in the Königliche Bibliothek zu Berlin, which has been digitized by the Staatsbibliothek zu Berlin – Preußischer Kulturbesitz. The digital version of the manuscript is available at \url{http://resolver.staatsbibliothek-berlin.de/SBB000281F600000000} (siglum Mus.ms. 18709/1).
-
-In general, this edition closely follows the manuscript. Any changes that were introduced by the editor are indicated by italic type (lyrics, dynamics and directions), parentheses (expressive marks and bass figures) or dashes (slurs and ties). Accidentals are used according to modern conventions. Asterisks denote changes that are clarified in the detailed remarks below.\footnote{Abbreviations: A, alto; B, bass; b, basses; clno, clarion; cor, horn; fag, bassoon; fl, flute; Ms, manuscript; ob, oboe; org, organ; r, rest; S, soprano; T, tenor; timp, timpani; vl, violin; vla, viola.}
-
-\bigskip
-
-\begin{longtable}{lll L{10cm}}
-	\toprule
-	\itshape Mov. & \itshape Bar & \itshape Staff & \itshape Note \\
-	\midrule \endhead
-	1.3  & 20  & A     & 1st quarter in Ms: g′4 \\
-	1.6  & 109 & org   & bar in Ms: G2–r4 \\
-	1.10 & 52  & T     & grace note missing in Ms \\
-	1.11 & 25f & T     & bars in Ms: c′2–g2–a2–f′2 \\
-	1.21 & –   & –     & instruments missing in Ms \\
-	2.1  & 67  & org   & 1st quarter in Ms: A4 \\
-	2.5  & 44  & cor 1 & bar in Ms: e′2–r4 \\
-	2.7  & –   & –     & Flute staves are empty in the Ms; they might play unison with vl 1, 2 (possibly only if the latter instruments play forte). \\
-	\bottomrule
-\end{longtable}
-
+\def\eesCommentaryAfterToe{
 Bass figures appear in the following movements (bars in parentheses): 1.1, 1.3, 1.5 (1), 1.7, 1.8, 1.10~(94), 1.11, 1.12 (2, 18, 26), 1.14 (3, 6, 9), 1.16 (1, 2, 15, 17), 1.18 (11, 16, 17), 1.21, 2.1 (18, 20, 22, 59, 60, 79), 2.3 (5, 24), 2.4 (8, 16, 17, 20, 28), 2.6, 2.9 (3, 4, 6, 8, 11, 21), 2.10 (1–3, 14, 17), 2.11 (5), 2.13~(1–3, 8, 18), 2.15 (4–9, 18), 2.18 (14), and 2.20 (4, 13). The remaining bass figures were added by the editor.
-
-This edition has been compiled and checked with utmost diligence. Nevertheless, errors and mistakes cannot be totally excluded. Please report any errors and mistakes to \url{wolfgang@esser-skala.at} or create an issue or pull request on the edition’s GitHub page \url{https://github.com/skafdasschaf/rolle-der-leidende-jesus-WacR-III-7}. Your help will be greatly appreciated.
-
-\bigskip
-\textit{Salzburg, October 2020\\
-Wolfgang Esser-Skala}
-
-\cleardoublepage
-\chapter*{Contents.}
-
-\lyrefpart{erstertheil}
-
-\lyrefsection{omeineseel}
-
-\begin{description}
-	\item[Coro]
-	O, meine Seel, ermuntre dich,\\
-	daß ganz auf Jesu Leiden sich\\
-	voll Andacht Herz und Auge lenkt,\\
-	und Himmelswonne dann dich tränkt.
-
-	Anbetend folge nun ihm nach,\\
-	von Hohn zu Hohn, von Schmach zu Schmach,\\
-	bis zu dem Kreuz, daran er stirbt\\
-	und Sündern Gottes Huld erwirbt.
-
-	Dann sage: Jesu, du mein Heil,\\
-	ich bin dein Eigenthum und Theil,\\
-	wie du mein bist, so bleib ich dein,\\
-	und will mich ganz dir ewig weyhn.
-\end{description}
-
-\lyrefsection{derherrneiget}
-
-\begin{description}
-	\item[Coro]
-	Der Herr neiget den Himmel und fähret herab.\\
-	Dunkel ist unter seinen Füßen,\\
-	und in finstern Wolken ist er verborgen.\\\relax
-	[Ps. 18:10, 12]
-\end{description}
-
-\lyrefsection{jerusalem}
-
-\begin{description}
-	\item[Alto]
-	Jerusalem! Jerusalem!\\
-	Welch eine Nacht senkt über dich\\
-	vom Himmel sich hernieder!\\
-	Kommt Gott, der zum Gericht erwacht,\\
-	und fodert der Propheten Blut\\
-	von deinen Händen wieder?\\
-	Steigt er zum Weltgericht herab von seinem Thron,\\
-	der Oelberg erbebet, es rauschet der Kidron,\\
-	von fern her rauscht der Donnerton.\\
-	Wo ist der größte der Propheten, dein Jesus?\\
-	Fleh ihn an, dich zu verteten.\\
-	Wo find ich ihn, den meine Seele liebt?\\
-	Hör ich ihn dort betrübt\\
-	aus jener Mitternacht her klagen?\\
-	Er ists.\\
-	Mit welchen dunkeln Plagen\\
-	hat ihn sein Gott geschlagen!
-\end{description}
-
-\lyrefsection{gerechter}
-
-\begin{description}
-	\item[Alto]
-	Gerechter! Welche Qual erschrecket\\
-	den eingebeugten Heldenmuth!\\
-	Du bist statt Schweiß mit Blut bedecket,\\
-	und Thränen fließen in dein Blut.\\
-	Ach, weint der Heiligste selbst Zähren,\\
-	faßt Schrecken ihn und banger Schmerz,\\
-	wer wird mir Sünder Trost gewähren,\\
-	wer gießet Ruh in dieses Herz?\\
-	Wie soll ich vor dem Richter stehn,\\
-	vor dem mein Jesus will vergehn?
-\end{description}
-
-\lyrefsection{labyrinth}
-
-\begin{description}
-	\item[Basso]
-	O Labyrinth! der der Natur gebot,\\
-	vor dem der Sturmwind schwieg,\\
-	der dir, o Tod, allmächtig, seinen Raub entrißen,\\
-	liegt hier, von Finsternissen\\
-	umschattet und von Angst gedrängt,\\
-	und leidet, was die Seele nicht gedenkt,\\
-	und jammert Todestöne.\\
-	Ach! wer erhellt mir diese dunkle Sonne?\\
-	Mein Jesus, meiner Seelen Freund,\\
-	was ist es, daß dein Auge weint?\\
-	Heb aus dem Staube dich.\\
-	Ein Blick von dir, nur einer, lehre mich,\\
-	dies Todesjammern, dies Zagen\\
-	verstehn und zu ertragen.\\
-	Er höret mich: sanft ist sein Blick\\
-	und ruft das Leben mir zurück.\\
-	Sein Auge spricht: Die Arbeit dieser Nacht\\
-	hat mir der Menschen Schuld gemacht.
-\end{description}
-
-\lyrefsection{singtihr}
-
-\begin{description}
-	\item[Coro]
-	Singt, ihr Himmel, Gott ist Liebe,\\
-	wunderbarlich ist sein Rath.\\
-	Sing, o Erde, Gott ist Liebe,\\
-	bey der Thaten größten That.\\
-	Ihr Geschlechter der Erlösten,\\
-	dem, der leidet, uns zu trösten,\\
-	laßt uns ewig dankbar seyn.\\
-	Jedes Herz, das ihn verkennet,\\
-	nicht für ihn und Tugend brennet,\\
-	faß einst ewig diese Pein.
-\end{description}
-
-\lyrefsection{liebedie}
-
-\begin{description}
-	\item[Coro]
-	Liebe, die du mich zum Bilde\\
-	deiner Gottheit hast gemacht,\\
-	Liebe, die du mich so milde\\
-	nach dem Fall mit Heil bedacht,\\
-	Liebe, dir ergeb ich mich,\\
-	dein zu bleiben ewiglich.
-\end{description}
-
-\lyrefsection{nochherrscht}
-
-\begin{description}
-	\item[Tenore]
-	Noch herrscht um ihn ein schauervolles Schweigen.\\
-	Kein Laut ertönt.\\
-	Wo seid ihr, Zeugen der Wunder, die er that?\\
-	Wo seid ihr? Seid ihr entflohn?\\
-	Vergaß ein jeder schon den Schwur,\\
-	sein Leben hin für den Göttlichen zu geben?\\
-	Wie hatt’ er euch so lieb!\\
-	Itzt wendet sich der Liebende\\
-	und suchet, Simon, dich, und euch, Zebedäiden.\\
-	Mit diesem Trost, nur euch zu sehn, zufrieden,\\
-	naht er sich euch.\\
-	Sie schlummern, und er spricht:\\
-	Ach Simon, du vermagst es nicht,\\
-	auch eine Stunde nur mit mir zu wachen!\\
-	Zwar willig ist der Geist,\\
-	doch drückt den Schwachen das Fleisch zur Erd herab!\\
-	Ach, wacht und betet, daß ihr singt\\
-	und nicht der Anfechtung erliegt.
-\end{description}
-
-\lyrefsection{wachetstehet}
-
-\begin{description}
-	\item[Coro]
-	Wachet, stehet im Glauben,\\
-	seid männlich und seid stark.\\\relax
-	[1 Cor 16:13]
-\end{description}
-
-\lyrefsection{herrermuntre}
-
-\begin{description}
-	\item[Tenore]
-	Herr, ermuntre du uns Schwachen,\\
-	daß wir wachen,\\
-	daß der Geist sich zu dir schwingt,\\
-	kämpft und ringt.\\
-	Zeig unsrem Glauben jene Höhe,\\
-	wo wir gekrönt einst vor dir stehn,\\
-	wenn wir hier wachend dich gefunden,\\
-	dir nachgekämpft und überwunden,\\
-	und wo der Engel Lied den singt,\\
-	der wacht und ringt.
-\end{description}
-
-\lyrefsection{wieist}
-
-\begin{description}
-	\item[Coro]
-	Wie ist der Mensch so schwach!\\
-	So viel sein Muth versprach,\\
-	doch liegt er da im Staube.\\
-	Erloschen ist sein Glaube,\\
-	sein kühner Muth gedämpfet.\\
-	Ach, Christus wacht und kämpfet.
-\end{description}
-
-\lyrefsection{docherverlaesst}
-
-\begin{description}
-	\item[Basso]
-	Doch er verläßt die Schlummernden\\
-	und eilt aufs neu, in das Gericht zu gehn,\\
-	denn immer noch, ich staune,\\
-	tönt ihm in seinem Ohr\\
-	des Weltgerichts Posaune.\\
-	Noch immer richtet der Richter der Welt den,\\
-	der als Mittler zwischen Gott\\
-	und das Geschlecht der Menschen sich stellt.\\
-	Empfindungen, stark wie der Tod, erschüttern ihn.\\
-	Die Erd erbebet wieder,\\
-	die Nacht hängt schrecklicher vom Oelberg nieder.\\
-	Und du, der du in Gottes Unschuld prangst,\\
-	ringst mit des ewgen Todes Angst.\\
-	Doch schau, ein Blitz zertheilet die Nacht,\\
-	ein Seraph eilet herab und singt ein Lied\\
-	von deinem Vater dir,\\
-	der huldvoll auf dich sieht,\\
-	und stärket dich.
-\end{description}
-
-\lyrefsection{werdurchschaut}
-
-\begin{description}
-	\item[Basso]
-	Wer durchschaut, wie wunderbar\\
-	Gott ist in seinen Werken!\\
-	Ach! ein Engel muß sogar\\
-	den Herrn der Welten stärken.\\
-	Wenn ich einst von hinnen scheide,\\
-	singen Engel mir zur Ruh.\\
-	Nun eilst du zu unsrer Freude\\
-	Gottes Vaterarmen zu.
-\end{description}
-
-\lyrefsection{gestaerkterhebt}
-
-\begin{description}
-	\item[Alto]
-	Gestärkt erhebt mein Jesus sich\\
-	und geht der Schaar entgegen,\\
-	die ihn voll Mordlust sucht,\\
-	durch dich, Ischarioth geführt.\\
-	Bekümmert seiner Freunde wegen\\
-	spricht er: Wen suchet ihr?\\
-	und Allmacht ist sein Blick.\\
-	Schnell stürzt die Schaar zurück\\
-	und sinkt und liegt,\\
-	wie auf dem Schlachtfeld Todte liegen.\\
-	Doch die Betäubung weicht,\\
-	sie schauen voll Vergnügen\\
-	bey ihrer Fackeln Schein\\
-	nach dem Verräther hin,\\
-	der tritt zu ihm und küßet ihn.\\
-	Und Jesus blickt voll Mitleid,\\
-	voller Ruh auf ihn, und sagt:\\
-	Juda, verräthest du des Menschen Sohn\\
-	mit einem Kuß?\\
-	So sanft sucht er ihn,\\
-	an des Abgrunds Stufen,\\
-	zur Reu zurück zu rufen.
-\end{description}
-
-\lyrefsection{gottmitblicken}
-
-\begin{description}
-	\item[Alto]
-	Gott, mit Blicken deiner Gnade,\\
-	hilf, daß ich vom Lasterpfade\\
-	bald den Fuß zurücke zieh,\\
-	meines Vaters Stimme höre,\\
-	wieder reuend zu ihm kehre\\
-	und des Abgrunds Tiefe flieh.\\
-	Dann nimm den Reuenden\\
-	mit Vaterblicken an.
-\end{description}
-
-\lyrefsection{siebinden}
-
-\begin{description}
-	\item[Tenore]
-	Sie binden ihn; er reicht der Schaar\\
-	die Hände willig dar,\\
-	indeß die kleine Zahl der Freunde sich zerstreuet.\\
-	Mit Höllenfreuden freuet sich Kaiphas,\\
-	setzt auf den Richtstuhl sich,\\
-	und richtet dich, der du voll Ruh\\
-	den Blick zum Himmel lenkest,\\
-	nur Gott, die Ewigkeit und die Erlösten denkest.\\
-	Der Heiligste steht in der Sünder Gericht,\\
-	hört die erkauften Zeugen nicht,\\
-	der Lästerung, des Spottes Stimme nicht,\\
-	und schweigt.
-\end{description}
-
-\lyrefsection{lammdas}
-
-\begin{description}
-	\item[Coro]
-	Lamm, das von verruchten Zungen\\
-	frech verhöhnet dennoch schwieg!\\
-	Stiller Muth bey Lästerungen,\\
-	welch ein edelmüthger Sieg!\\
-	Muß ich gleichen Grimm empfinden,\\
-	lehre mich gelaßen seyn,\\
-	und will sich mein Zorn entzünden,\\
-	flöß mir deine Sanftmuth ein.
-\end{description}
-
-\lyrefsection{dochkaiphas}
-
-\begin{description}
-	\item[Soprano]
-	Doch Kaiphas, ergrimmt durch dieses Schweigen,\\
-	reißt wütend sich hervor,\\
-	und schon glüht ihm die Wang:\\
-	Schweigst du zu dem, was diese zeugen? ruft er:\\
-	Sprich, bey dem Ewigen beschwör ich dich,\\
-	sprich, bist du Gottes Sohn?\\
-	Und Jesus würdigt ihn, zu sagen: Ich bins.\\
-	Von diesen Tagen, von nun an wirds geschehn,\\
-	daß ihr des Menschen Sohn zur Rechten Gottes sehn\\
-	und kommend in den Wolken werdet sehen,\\
-	wenn er daher wird zum Gerichte gehen.
-\end{description}
-
-\lyrefsection{meinistdie}
-
-\begin{description}
-	\item[Soprano]
-	Mein ist die Unsterblichkeit,\\
-	die Unsterblichkeit ist mein.\\
-	Jauchze deinem Leben, Seele,\\
-	Gott wird Ewigkeit dir zur Dauer geben.\\
-	Wenn euch wird das nahe Grab erschrecken,\\
-	Todesbläße eure Wangen decken,\\
-	wenn einst diese Hütte sinkt,\\
-	schaut nach jenen Wolken dann, ihr Frommen,\\
-	auf denselben wird der Richter kommen,\\
-	wenn er euch ins Leben winkt.
-\end{description}
-
-\lyrefsection{christushatdem}
-
-\begin{description}
-	\item[Coro]
-	Christus hat dem Tode die Macht genommen\\
-	und das Leben und ein unvergängliches Wesen\\
-	ans Licht gebracht.\\\relax
-	[2 Tim 1:10]
-\end{description}
-
-\lyrefsection{wenndort}
-
-\begin{description}
-	\item[Coro]
-	Wenn dort, Herr Jesu, wird vor deinem Throne\\
-	auf meinem Haupte stehn die Ehrenkrone,\\
-	da will ich dir, wenn alles wird wohlklingen,\\
-	Lob und Dank singen.
-\end{description}
-
-\lyrefpart{zweytertheil}
-
-\lyrefsection{weristder}
-
-\begin{description}
-	\item[Alto]
-	Wer ist der Mann, der unter jenen Knechten\\
-	der Grausamkeit entschloßen steht,\\
-	mit ihnen eifrig scheint zu rechten?\\
-	Sie rufen: Seht! auch dieser war ein Galiläer,\\
-	wir sahn ihn bey dem Nazaräer.\\
-	Bist du es, Simon?\\
-	Ach, du wirst ihn nicht verkennen, den Göttlichen;\\
-	nein, so unedel bist du nicht!\\
-	O weh! er schwört und spricht:\\
-	Ich kenne diesen Menschen nicht.\\
-	Und Jesus blickt ihn an,\\
-	voll Ruh, voll Ernst und Schmerzen,\\
-	ein Dolch dringt mit dem Blick zu Petri Herzen.\\
-	Er wendet sich, und geht hinaus,\\
-	und weinet bitterlich und klagt:\\
-	Mein Freund, mein Freund!\\
-	Ach, was that ich?\\
-	Geliebt, gewarnt von dir,\\
-	verläugnet dich dein Simon.\\
-	Tödtend drang sein Blick in mein Gebein.\\
-	Ich fühl, ich fühle Todespein,\\
-	du Göttlicher, wirst nun mich auch nicht kennen,\\
-	vor deinem Vater nicht, vor Engeln mich nicht nennen.\\
-	Ja, nenne mich nur nicht, ich habs verdient,\\
-	verstoß mich im Gericht!\\
-	Rauscht, ihr Schrecken dieser Nacht,\\
-	rauschet mir Tod und Verderben.\\
-	Fluch hab ich auf mein Haupt gebracht,\\
-	ach, könnt ich sterben!\\
-	Mein Vater, dieses Herz erbebt,\\
-	dies Auge weint, erbarm, o Vater,\\
-	erbarm dich meiner.\\
-	Viel sündigen an ihm,\\
-	der Reue Pfeil fühl keiner wie ich,\\
-	er gräbet Tod mir ein!\\
-	Ach laß mich, eh er stirbt,\\
-	laß mich ihn sehen,\\
-	von ihm Verzeihung zu erflehen.\\
-	Dann, wenn er sterbend mir verzeiht,\\
-	dann soll, so lang der Herr zu leben mir gebeut,\\
-	vor allen Menschen dieser Mund ihn nennen,\\
-	ihn für den theuren, besten, göttlichsten erkennen,\\
-	dann wein ich auf sein Grab.\\
-	So jammert er, und fühlt der heißen Reue Pein,\\
-	Gott, Mittler, ach, erbarme du dich sein.
-\end{description}
-
-\lyrefsection{gottdudonnerst}
-
-\begin{description}
-	\item[Basso]
-	Gott, du donnerst zu den Sündern\\
-	deinen Fluch vom Richterstuhl\\
-	bis hinab zum Feuerpfuhl.\\
-	Ach, wenn meine Zähren fließen,\\
-	wenn die Reu mein Herz zerrißen,\\
-	wenn das strafende Gewissen\\
-	auf euch gießet Höllenpein,\\
-	ach, Herr, höre dann mein Schreyn,\\
-	gib mir Trost, die Angst zu lindern.
-\end{description}
-
-\lyrefsection{achseele}
-
-\begin{description}
-	\item[Coro]
-	Ach Seele, schau um welchen Preis\\
-	dein Heiland dich erkaufet.\\
-	Für dich rang er im Todesschweiß,\\
-	für dich im Blut getaufet.\\
-	Ach Seele, sorge, daß dich nie\\
-	die Sünd in ihre Netze zieh,\\
-	o Menschenfurcht erschüttre.\\
-	Reizt dich die Welt, ach höre nicht,\\
-	schau hin ins furchtbare Gericht,\\
-	das Jesum traf, und zittre.
-\end{description}
-
-\lyrefsection{dertagbricht}
-
-\begin{description}
-	\item[Basso]
-	Der Tag bricht an, der festliche,\\
-	der große Tag, gesendet von der Liebe.\\
-	Entflammet von dem Triebe der Rach und Wuth,\\
-	versammelte der Priester Haufe sich.\\
-	Erfüllet mir Verderben rief er:\\
-	Auf Golgatha, am Kreuze soll er sterben.\\
-	Triumphvoll reißen sie ihn zu Pilatus Richtstuhl fort.\\
-	Den feigen Römer schreckt der Kläger Wort\\
-	und ihr Geschrey, davon das Richthaus bebet:\\
-	Wenn durch dein Mitleid dieser Jesus lebet,\\
-	bist du des Kaisers Feind.\\
-	Ihm sinkt der Muth, doch ruft er noch:\\
-	Ich bin unschuldig an dem Blut des Frommen.\\
-	Da ertönt das Schreckenswort der Sünder:\\
-	Über uns komme sein Blut und über unsre Kinder.
-\end{description}
-
-\lyrefsection{todesworte}
-
-\begin{description}
-	\item[Coro]
-	Juda, Todesworte sprichst du aus,\\
-	erbebst du nicht, Juda!\\
-	Horch, dir jauchzt des Abgrunds Pforte,\\
-	Engel wenden ihr Gesicht,\\
-	sie verlaßen dich und fliehn.\\
-	Weh dir Israel, Rom wird dein Wort vollziehn.
-\end{description}
-
-\lyrefsection{undjesus}
-
-\begin{description}
-	\item[Tenore]
-	Und Jesus wird gegeißelt.\\
-	Nun träget er sein Kreuz,\\
-	mit ihm der Menschen Sünden.\\
-	Die weichern Töchter Zions folgen\\
-	und empfinden sein Leiden,\\
-	und ein Zährenstrom fließt\\
-	von der Frommen Angesicht.\\
-	Er sieht sich tröstend um, und spricht:\\
-	Ihr Töchter Zions, weinet nicht.
-\end{description}
-
-\lyrefsection{weintnicht}
-
-\begin{description}
-	\item[Tenore]
-	Weint nicht, sagt der Menschenfreund\\
-	Zions Töchtern, die ihn klagen.\\
-	Weint nicht, sagt der Menschenfreund\\
-	uns in kummervollen Tagen.\\
-	Der schmale Weg zur Herrlichkeit\\
-	ist mit Blumen nicht bestreut.\\
-	Steil ist der Pfad und rauh die Bahn,\\
-	nur mühsam klimmen wir hinan,\\
-	Wege, die den Sinn erfreun,\\
-	laden zum Entschlummern ein.
-\end{description}
-
-\lyrefsection{wirmuessen}
-
-\begin{description}
-	\item[Coro]
-	Wir müßen durch viel Trübsal\\
-	in das Reich Gottes eingehen.\\\relax
-	[Acts 14:22]
-\end{description}
-
-\lyrefsection{dastehstdu}
-
-\begin{description}
-	\item[Alto]
-	Da stehst du, Golgatha, ein Altar!\\
-	Auch das Opfer ist schon da,\\
-	das du, Weltrichter, dir ersehen.\\
-	Und Jesus naht sich, in den Opfertod zu gehen.\\
-	Er schwankt den Hügel matt hinan,\\
-	und sie kreuzigen ihn.\\
-	Wirf unter dieses Kreuz, mein Geist,\\
-	dich gläubig hin, umfaß es, hier ist das Opfer,\\
-	dessen Blut dir zur Erlösung fließt.\\
-	Ihr Väter Israels, ihr höret den,\\
-	der nach eurem Heil voll heißer Huld sich sehnet;\\
-	ihr Kreuziger! ihr spottet ihn ins Angesicht.\\
-	Er wendet im Gebet zu seinem Vater sich:\\
-	Erbarme, Vater, ihrer dich,\\
-	sie wissen, was sie thun, jetzt nicht.
-\end{description}
-
-
-\lyrefsection{selbstderfeinde}
-
-\begin{description}
-	\item[Coro]
-	Selbst der Feinde Heil zu suchen,\\
-	reiz auch uns dies Beyspiel an.\\
-	Ja wir wollen, wenn sie fluchen,\\
-	mit Gebet zu Gott uns nahn.\\
-	Ihre Schuld wollst du erlaßen,\\
-	das, o Gott, ist unser Flehn,\\
-	daß einst selber, die uns hassen,\\
-	dort mit uns dein Antlitz sehn.
-\end{description}
-
-\lyrefsection{dermitgekreuzigte}
-
-\begin{description}
-	\item[Basso]
-	Der Mitgekreuzigte zu seiner linken Hand\\
-	verhöhnt ihn auch im Sterben,\\
-	doch der zur Rechten, hingerissen zum Verderben,\\
-	sonst edler, strafet ihn und kehrt zu Jesus sich:\\
-	Herr, kommst du in dein Reich,\\
-	spricht er, so denk an mich.\\
-	Ihr Sünder, betet an; im letzten Augenblicke\\
-	führt Jesus einen Geist zu Gott zurücke.\\
-	Ja, sagt er, ich gedenke dein,\\
-	heut wirst du noch mit mir im Paradiese seyn.
-\end{description}
-
-
-\lyrefsection{theureswort}
-
-\begin{description}
-	\item[Soprano]
-	Theures Wort aus Jesu Munde,\\
-	in der letzten Todesstunde\\
-	tröstest du mein brechend Herz.
-	
-	\item[Alto]
-	Theures Wort des ewgen Lebens,\\
-	ach, nun ängstet einst vergebens\\
-	meinen Geist der Trennung Schmerz.
-	
-	\item[both]
-	Wenn der Geist nun scheiden soll,\\
-	macht ihn dieses hoffnungsvoll.
-	
-	\item[Soprano]
-	An dem Tage, da ich sterbe,\\
-	soll ich, Jesus, schon dein Erbe\\
-	in dem beßern Leben seyn.
-	
-	\item[Alto]
-	Los von aller Furcht und Plage\\
-	geh ich an demselben Tage,\\
-	Herr, in deinen Himmel ein.
-	
-	\item[both]
-	Jauchzt, Erlöste, denn das Grab\\
-	stürzt nie euer Leben ab.
-\end{description}
-
-
-\lyrefsection{undgott}
-
-\begin{description}
-	\item[Soprano]
-	Und Gott gebietet dem letzten Schmerz,\\
-	der in des Helden Seele wütet.\\
-	Ach, wer vermag die Zahl der Leiden\\
-	ganz zu fassen, die auf ihn strömt?\\
-	Mein Gott, mein Gott,\\
-	ach, warum hast du mich verlaßen?\\
-	so wütet er.\\
-	Nun kommt, von Gott gesandt, der Tod.\\
-	Er betet: Ich vollende nun ganz das Werk,\\
-	das einer Welt das Heil erwirbt,\\
-	ruft: Vater, meinen Geist geb ich in deine Hände;\\
-	und neigt sein Haupt und stirbt.
-\end{description}
-
-
-\lyrefsection{erbarmedich}
-
-\begin{description}
-	\item[Tenore I, II]
-	Erbarme dich, Gott, über mich,\\
-	Jesus schließt sein Leben,\\
-	er stirbt der Versöhnung Tod,\\
-	Heil der Welt zu geben.
-	
-	Erbarme dich, Gott, über mich,\\
-	sieh mich Sünder beben,\\
-	laß durch des Versöhnungs Tod,\\
-	Herr, mich wieder leben.
-\end{description}
-
-
-\lyrefsection{weintnichtihr}
-
-\begin{description}
-	\item[Basso]
-	Weint nicht, ihr Freunde Jesu!\\
-	Seht, des Richters Angesicht spricht Gnade.\\
-	Schauet auf, es wendet der Engelchor sich weg, und singt:\\
-	Es ist vollendet, das Opfer!\\
-	Gottes Ruh strömt nun vom Kreuz den Sündern zu.\\
-	Die Erde bebt, die Felsen springen,\\
-	die Gräber thun sich auf,\\
-	die Todten dringen ans Licht,\\
-	des Tempels Vorhang reißt.\\
-	Es schauet der erstaunte Geist\\
-	mit freyem Blick den Gnadenthron,\\
-	durch Höh und Tiefen hallt der Engel Jubelton:\\
-	Es ist vollbracht!
-\end{description}
-
-
-\lyrefsection{ichdanke}
-
-\begin{description}
-	\item[Coro]
-	Ich danke dir von Herzen,\\
-	o Jesu, liebster Freund,\\
-	für deine Todesschmertzen,\\
-	wie gut hast du’s gemeint.\\
-	Ach gib, daß ich mich halte\\
-	zu dir und deiner Treu,\\
-	und wenn ich einst erkalte,\\
-	in dir mein Ende sey.
-\end{description}
-
-
-\lyrefsection{otod}
-
-\begin{description}
-	\item[Basso]
-	O Tod und Grab, wo ist dein Sieg?\\
-	Nun triumphiert das Leben.
-	
-	\item[Coro]
-	Gott sey gedankt, der uns den Sieg\\
-	durch Jesum hat gegeben.
-\end{description}
-
-
-\lyrefsection{otodwoist}
-
-\begin{description}
-	\item[Coro]
-	O Tod, wo ist dein Stachel nun,\\
-	wo ist dein Sieg, o Hölle?\\
-	Auf uns wird Gottes Frieden ruhn\\
-	an dieser Lebensschwelle.\\
-	Er, Jesus Christus, sieht ins Grab,\\
-	wir sinken so wie er hinab,\\
-	er ging zu Gott, wir folgen.
-\end{description}
-
-
-\lyrefsection{otodc}
-
-\begin{description}
-	\item[Tenore]
-	O Tod und Grab, wo ist dein Sieg?\\
-	Nun triumphiert das Leben.
-	
-	\item[Coro]
-	Gott sey gedankt, der uns den Sieg\\
-	durch Jesum hat gegeben.
-\end{description}
+}
+
+\eesCriticalReport{
+  1.3  & 20  & A     & 1st \quarterNote\ in \B1: g′4 \\
+  1.6  & 109 & org   & bar in \B1: G2–\crotchetRest \\
+  1.10 & 52  & T     & grace note missing in \B1 \\
+  1.11 & 25f & T     & bars in \B1: c′2–g2–a2–f′2 \\
+  1.21 & –   & –     & instruments missing in \B1 \\
+  2.1  & 67  & org   & 1st \quarterNote\ in \B1: A4 \\
+  2.5  & 44  & cor 1 & bar in \B1: e′2–\crotchetRest \\
+  2.7  & –   & –     & Flute staves are empty in \B1; they might play unison with vl 1, 2 (possibly only if the latter instruments play forte). \\
+}
+
+\eesToc{
+\part{erstertheil}
+
+\begin{movement}{omeineseel}
+  \voice[Coro]
+  O, meine Seel, ermuntre dich,\\
+  daß ganz auf Jeſu Leiden ſich\\
+  voll Andacht Herz und Auge lenkt,\\
+  und Himmelswonne dann dich tränkt.
+
+  Anbetend folge nun ihm nach,\\
+  von Hohn zu Hohn, von Schmach zu Schmach,\\
+  bis zu dem Kreuz, daran er ſtirbt\\
+  und Sündern Gottes Huld erwirbt.
+
+  Dann ſage: Jeſu, du mein Heil,\\
+  ich bin dein Eigenthum und Theil,\\
+  wie du mein biſt, ſo bleib ich dein,\\
+  und will mich ganz dir ewig weyhn.
+\end{movement}
+
+\begin{movement}{derherrneiget}
+  \voice[Coro]
+  Der Herr neiget den Himmel und fähret herab.\\
+  Dunkel iſt unter ſeinen Füßen,\\
+  und in finſtern Wolken iſt er verborgen.\\
+  (\bibleverse{Ps}(18:10,12))
+\end{movement}
+
+\begin{movement}{jerusalem}
+  \voice[Alto]
+  Jeruſalem! Jeruſalem!\\
+  Welch eine Nacht ſenkt über dich\\
+  vom Himmel ſich hernieder!\\
+  Kommt Gott, der zum Gericht erwacht,\\
+  und fodert der Propheten Blut\\
+  von deinen Händen wieder?\\
+  Steigt er zum Weltgericht herab von ſeinem Thron,\\
+  der Oelberg erbebet, es rauſchet der Kidron,\\
+  von fern her rauſcht der Donnerton.\\
+  Wo iſt der größte der Propheten, dein Jeſus?\\
+  Fleh ihn an, dich zu verteten.\\
+  Wo find ich ihn, den meine Seele liebt?\\
+  Hör ich ihn dort betrübt\\
+  aus jener Mitternacht her klagen?\\
+  Er iſts.\\
+  Mit welchen dunkeln Plagen\\
+  hat ihn ſein Gott geſchlagen!
+\end{movement}
+
+\begin{movement}{gerechter}
+  \voice[Alto]
+  Gerechter! Welche Qual erſchrecket\\
+  den eingebeugten Heldenmuth!\\
+  Du biſt ſtatt Schweiß mit Blut bedecket,\\
+  und Thränen fließen in dein Blut.\\
+  Ach, weint der Heiligſte ſelbſt Zähren,\\
+  faßt Schrecken ihn und banger Schmerz,\\
+  wer wird mir Sünder Troſt gewähren,\\
+  wer gießet Ruh in dieſes Herz?\\
+  Wie ſoll ich vor dem Richter ſtehn,\\
+  vor dem mein Jeſus will vergehn?
+\end{movement}
+
+\begin{movement}{labyrinth}
+  \voice[Basso]
+  O Labyrinth! der der Natur gebot,\\
+  vor dem der Sturmwind ſchwieg,\\
+  der dir, o Tod, allmächtig, ſeinen Raub entrißen,\\
+  liegt hier, von Finſterniſſen\\
+  umſchattet und von Angſt gedrängt,\\
+  und leidet, was die Seele nicht gedenkt,\\
+  und jammert Todestöne.\\
+  Ach! wer erhellt mir dieſe dunkle Sonne?\\
+  Mein Jeſus, meiner Seelen Freund,\\
+  was iſt es, daß dein Auge weint?\\
+  Heb aus dem Staube dich.\\
+  Ein Blick von dir, nur einer, lehre mich,\\
+  dies Todesjammern, dies Zagen\\
+  verſtehn und zu ertragen.\\
+  Er höret mich: ſanft iſt ſein Blick\\
+  und ruft das Leben mir zurück.\\
+  Sein Auge ſpricht: Die Arbeit dieſer Nacht\\
+  hat mir der Menſchen Schuld gemacht.
+\end{movement}
+
+\begin{movement}{singtihr}
+  \voice[Coro]
+  Singt, ihr Himmel, Gott iſt Liebe,\\
+  wunderbarlich iſt ſein Rath.\\
+  Sing, o Erde, Gott iſt Liebe,\\
+  bey der Thaten größten That.\\
+  Ihr Geſchlechter der Erlöſten,\\
+  dem, der leidet, uns zu tröſten,\\
+  laßt uns ewig dankbar ſeyn.\\
+  Jedes Herz, das ihn verkennet,\\
+  nicht für ihn und Tugend brennet,\\
+  faß einſt ewig dieſe Pein.
+\end{movement}
+
+\begin{movement}{liebedie}
+  \voice[Coro]
+  Liebe, die du mich zum Bilde\\
+  deiner Gottheit haſt gemacht,\\
+  Liebe, die du mich ſo milde\\
+  nach dem Fall mit Heil bedacht,\\
+  Liebe, dir ergeb ich mich,\\
+  dein zu bleiben ewiglich.
+\end{movement}
+
+\begin{movement}{nochherrscht}
+  \voice[Tenore]
+  Noch herrſcht um ihn ein ſchauervolles Schweigen.\\
+  Kein Laut ertönt.\\
+  Wo ſeid ihr, Zeugen der Wunder, die er that?\\
+  Wo ſeid ihr? Seid ihr entflohn?\\
+  Vergaß ein jeder ſchon den Schwur,\\
+  ſein Leben hin für den Göttlichen zu geben?\\
+  Wie hatt’ er euch ſo lieb!\\
+  Itzt wendet ſich der Liebende\\
+  und ſuchet, Simon, dich, und euch, Zebedäiden.\\
+  Mit dieſem Troſt, nur euch zu ſehn, zufrieden,\\
+  naht er ſich euch.\\
+  Sie ſchlummern, und er ſpricht:\\
+  Ach Simon, du vermagſt es nicht,\\
+  auch eine Stunde nur mit mir zu wachen!\\
+  Zwar willig iſt der Geiſt,\\
+  doch drückt den Schwachen das Fleiſch zur Erd herab!\\
+  Ach, wacht und betet, daß ihr ſingt\\
+  und nicht der Anfechtung erliegt.
+\end{movement}
+
+\begin{movement}{wachetstehet}
+  \voice[Coro]
+  Wachet, ſtehet im Glauben,\\
+  ſeid männlich und ſeid ſtark.\\
+  (\bibleverse{ICor}(16:13))
+\end{movement}
+
+\begin{movement}{herrermuntre}
+  \voice[Tenore]
+  Herr, ermuntre du uns Schwachen,\\
+  daß wir wachen,\\
+  daß der Geiſt ſich zu dir ſchwingt,\\
+  kämpft und ringt.\\
+  Zeig unſrem Glauben jene Höhe,\\
+  wo wir gekrönt einſt vor dir ſtehn,\\
+  wenn wir hier wachend dich gefunden,\\
+  dir nachgekämpft und überwunden,\\
+  und wo der Engel Lied den ſingt,\\
+  der wacht und ringt.
+\end{movement}
+
+\begin{movement}{wieist}
+  \voice[Coro]
+  Wie iſt der Menſch ſo ſchwach!\\
+  So viel ſein Muth verſprach,\\
+  doch liegt er da im Staube.\\
+  Erloſchen iſt ſein Glaube,\\
+  ſein kühner Muth gedämpfet.\\
+  Ach, Chriſtus wacht und kämpfet.
+\end{movement}
+
+\begin{movement}{docherverlaesst}
+  \voice[Basso]
+  Doch er verläßt die Schlummernden\\
+  und eilt aufs neu, in das Gericht zu gehn,\\
+  denn immer noch, ich ſtaune,\\
+  tönt ihm in ſeinem Ohr\\
+  des Weltgerichts Poſaune.\\
+  Noch immer richtet der Richter der Welt den,\\
+  der als Mittler zwiſchen Gott\\
+  und das Geſchlecht der Menſchen ſich ſtellt.\\
+  Empfindungen, ſtark wie der Tod, erſchüttern ihn.\\
+  Die Erd erbebet wieder,\\
+  die Nacht hängt ſchrecklicher vom Oelberg nieder.\\
+  Und du, der du in Gottes Unſchuld prangſt,\\
+  ringſt mit des ewgen Todes Angſt.\\
+  Doch ſchau, ein Blitz zertheilet die Nacht,\\
+  ein Seraph eilet herab und ſingt ein Lied\\
+  von deinem Vater dir,\\
+  der huldvoll auf dich ſieht,\\
+  und ſtärket dich.
+\end{movement}
+
+\begin{movement}{werdurchschaut}
+  \voice[Basso]
+  Wer durchſchaut, wie wunderbar\\
+  Gott iſt in ſeinen Werken!\\
+  Ach! ein Engel muß ſogar\\
+  den Herrn der Welten ſtärken.\\
+  Wenn ich einſt von hinnen ſcheide,\\
+  ſingen Engel mir zur Ruh.\\
+  Nun eilſt du zu unſrer Freude\\
+  Gottes Vaterarmen zu.
+\end{movement}
+
+\begin{movement}{gestaerkterhebt}
+  \voice[Alto]
+  Geſtärkt erhebt mein Jeſus ſich\\
+  und geht der Schaar entgegen,\\
+  die ihn voll Mordluſt ſucht,\\
+  durch dich, Iſcharioth geführt.\\
+  Bekümmert ſeiner Freunde wegen\\
+  ſpricht er: Wen ſuchet ihr?\\
+  und Allmacht iſt ſein Blick.\\
+  Schnell ſtürzt die Schaar zurück\\
+  und ſinkt und liegt,\\
+  wie auf dem Schlachtfeld Todte liegen.\\
+  Doch die Betäubung weicht,\\
+  ſie ſchauen voll Vergnügen\\
+  bey ihrer Fackeln Schein\\
+  nach dem Verräther hin,\\
+  der tritt zu ihm und küßet ihn.\\
+  Und Jeſus blickt voll Mitleid,\\
+  voller Ruh auf ihn, und ſagt:\\
+  Juda, verrätheſt du des Menſchen Sohn\\
+  mit einem Kuß?\\
+  So ſanft ſucht er ihn,\\
+  an des Abgrunds Stufen,\\
+  zur Reu zurück zu rufen.
+\end{movement}
+
+\begin{movement}{gottmitblicken}
+  \voice[Alto]
+  Gott, mit Blicken deiner Gnade,\\
+  hilf, daß ich vom Laſterpfade\\
+  bald den Fuß zurücke zieh,\\
+  meines Vaters Stimme höre,\\
+  wieder reuend zu ihm kehre\\
+  und des Abgrunds Tiefe flieh.\\
+  Dann nimm den Reuenden\\
+  mit Vaterblicken an.
+\end{movement}
+
+\begin{movement}{siebinden}
+  \voice[Tenore]
+  Sie binden ihn; er reicht der Schaar\\
+  die Hände willig dar,\\
+  indeß die kleine Zahl der Freunde ſich zerſtreuet.\\
+  Mit Höllenfreuden freuet ſich Kaiphas,\\
+  ſetzt auf den Richtſtuhl ſich,\\
+  und richtet dich, der du voll Ruh\\
+  den Blick zum Himmel lenkeſt,\\
+  nur Gott, die Ewigkeit und die Erlöſten denkeſt.\\
+  Der Heiligſte ſteht in der Sünder Gericht,\\
+  hört die erkauften Zeugen nicht,\\
+  der Läſterung, des Spottes Stimme nicht,\\
+  und ſchweigt.
+\end{movement}
 
 \clearpage
-\lyrefsection{freueteuch}
+\begin{movement}{lammdas}
+  \voice[Coro]
+  Lamm, das von verruchten Zungen\\
+  frech verhöhnet dennoch ſchwieg!\\
+  Stiller Muth bey Läſterungen,\\
+  welch ein edelmüthger Sieg!\\
+  Muß ich gleichen Grimm empfinden,\\
+  lehre mich gelaßen ſeyn,\\
+  und will ſich mein Zorn entzünden,\\
+  flöß mir deine Sanftmuth ein.
+\end{movement}
 
-\begin{description}
-	\item[Coro]
-	Freuet euch, erlößte Seelen,\\
-	fühlt nun die Unsterblichkeit.\\
-	Wer kann eure Freuden zählen\\
-	durch den Raum der Ewigkeit?\\
-	Sagt dem Mittler dafür Dank,\\
-	er sey euer Lobgesang,\\
-	bis ihr mit des Himmels Chören\\
-	ihn verkläret werdet ehren.
-\end{description}
+\begin{movement}{dochkaiphas}
+  \voice[Soprano]
+  Doch Kaiphas, ergrimmt durch dieſes Schweigen,\\
+  reißt wütend ſich hervor,\\
+  und ſchon glüht ihm die Wang:\\
+  Schweigſt du zu dem, was dieſe zeugen? ruft er:\\
+  Sprich, bey dem Ewigen beſchwör ich dich,\\
+  ſprich, biſt du Gottes Sohn?\\
+  Und Jeſus würdigt ihn, zu ſagen: Ich bins.\\
+  Von dieſen Tagen, von nun an wirds geſchehn,\\
+  daß ihr des Menſchen Sohn zur Rechten Gottes ſehn\\
+  und kommend in den Wolken werdet ſehen,\\
+  wenn er daher wird zum Gerichte gehen.
+\end{movement}
 
-\cleardoublepage
-\fi
+\begin{movement}{meinistdie}
+  \voice[Soprano]
+  Mein iſt die Unſterblichkeit,\\
+  die Unſterblichkeit iſt mein.\\
+  Jauchze deinem Leben, Seele,\\
+  Gott wird Ewigkeit dir zur Dauer geben.\\
+  Wenn euch wird das nahe Grab erſchrecken,\\
+  Todesbläße eure Wangen decken,\\
+  wenn einſt dieſe Hütte ſinkt,\\
+  ſchaut nach jenen Wolken dann, ihr Frommen,\\
+  auf denſelben wird der Richter kommen,\\
+  wenn er euch ins Leben winkt.
+\end{movement}
 
-\iftemplate
-\includepdf[pages=-]{../out/\lypdfname.pdf}
-\fi
+\begin{movement}{christushatdem}
+  \voice[Coro]
+  Chriſtus hat dem Tode die Macht genommen\\
+  und das Leben und ein unvergängliches Weſen\\
+  ans Licht gebracht.\\
+  (\bibleverse{IITim}(1:10))
+\end{movement}
+
+\begin{movement}{wenndort}
+  \voice[Coro]
+  Wenn dort, Herr Jeſu, wird vor deinem Throne\\
+  auf meinem Haupte ſtehn die Ehrenkrone,\\
+  da will ich dir, wenn alles wird wohlklingen,\\
+  Lob und Dank ſingen.
+\end{movement}
+
+\part{zweytertheil}
+
+\begin{movement}{weristder}
+  \voice[Alto]
+  Wer iſt der Mann, der unter jenen Knechten\\
+  der Grauſamkeit entſchloßen ſteht,\\
+  mit ihnen eifrig ſcheint zu rechten?\\
+  Sie rufen: Seht! auch dieſer war ein Galiläer,\\
+  wir ſahn ihn bey dem Nazaräer.\\
+  Biſt du es, Simon?\\
+  Ach, du wirſt ihn nicht verkennen, den Göttlichen;\\
+  nein, ſo unedel biſt du nicht!\\
+  O weh! er ſchwört und ſpricht:\\
+  Ich kenne dieſen Menſchen nicht.\\
+  Und Jeſus blickt ihn an,\\
+  voll Ruh, voll Ernſt und Schmerzen,\\
+  ein Dolch dringt mit dem Blick zu Petri Herzen.\\
+  Er wendet ſich, und geht hinaus,\\
+  und weinet bitterlich und klagt:\\
+  Mein Freund, mein Freund!\\
+  Ach, was that ich?\\
+  Geliebt, gewarnt von dir,\\
+  verläugnet dich dein Simon.\\
+  Tödtend drang ſein Blick in mein Gebein.\\
+  Ich fühl, ich fühle Todespein,\\
+  du Göttlicher, wirſt nun mich auch nicht kennen,\\
+  vor deinem Vater nicht, vor Engeln mich nicht nennen.\\
+  Ja, nenne mich nur nicht, ich habs verdient,\\
+  verſtoß mich im Gericht!\\
+  Rauſcht, ihr Schrecken dieſer Nacht,\\
+  rauſchet mir Tod und Verderben.\\
+  Fluch hab ich auf mein Haupt gebracht,\\
+  ach, könnt ich ſterben!\\
+  Mein Vater, dieſes Herz erbebt,\\
+  dies Auge weint, erbarm, o Vater,\\
+  erbarm dich meiner.\\
+  Viel ſündigen an ihm,\\
+  der Reue Pfeil fühl keiner wie ich,\\
+  er gräbet Tod mir ein!\\
+  Ach laß mich, eh er ſtirbt,\\
+  laß mich ihn ſehen,\\
+  von ihm Verzeihung zu erflehen.\\
+  Dann, wenn er ſterbend mir verzeiht,\\
+  dann ſoll, ſo lang der Herr zu leben mir gebeut,\\
+  vor allen Menſchen dieſer Mund ihn nennen,\\
+  ihn für den theuren, beſten, göttlichſten erkennen,\\
+  dann wein ich auf ſein Grab.\\
+  So jammert er, und fühlt der heißen Reue Pein,\\
+  Gott, Mittler, ach, erbarme du dich ſein.
+\end{movement}
+
+\begin{movement}{gottdudonnerst}
+  \voice[Basso]
+  Gott, du donnerſt zu den Sündern\\
+  deinen Fluch vom Richterſtuhl\\
+  bis hinab zum Feuerpfuhl.\\
+  Ach, wenn meine Zähren fließen,\\
+  wenn die Reu mein Herz zerrißen,\\
+  wenn das ſtrafende Gewiſſen\\
+  auf euch gießet Höllenpein,\\
+  ach, Herr, höre dann mein Schreyn,\\
+  gib mir Troſt, die Angſt zu lindern.
+\end{movement}
+
+\begin{movement}{achseele}
+  \voice[Coro]
+  Ach Seele, ſchau um welchen Preis\\
+  dein Heiland dich erkaufet.\\
+  Für dich rang er im Todesſchweiß,\\
+  für dich im Blut getaufet.\\
+  Ach Seele, ſorge, daß dich nie\\
+  die Sünd in ihre Netze zieh,\\
+  o Menſchenfurcht erſchüttre.\\
+  Reizt dich die Welt, ach höre nicht,\\
+  ſchau hin ins furchtbare Gericht,\\
+  das Jeſum traf, und zittre.
+\end{movement}
+
+\begin{movement}{dertagbricht}
+  \voice[Basso]
+  Der Tag bricht an, der feſtliche,\\
+  der große Tag, geſendet von der Liebe.\\
+  Entflammet von dem Triebe der Rach und Wuth,\\
+  verſammelte der Prieſter Haufe ſich.\\
+  Erfüllet mir Verderben rief er:\\
+  Auf Golgatha, am Kreuze ſoll er ſterben.\\
+  Triumphvoll reißen ſie ihn zu Pilatus Richtſtuhl fort.\\
+  Den feigen Römer ſchreckt der Kläger Wort\\
+  und ihr Geſchrey, davon das Richthaus bebet:\\
+  Wenn durch dein Mitleid dieſer Jeſus lebet,\\
+  biſt du des Kaiſers Feind.\\
+  Ihm ſinkt der Muth, doch ruft er noch:\\
+  Ich bin unſchuldig an dem Blut des Frommen.\\
+  Da ertönt das Schreckenswort der Sünder:\\
+  Über uns komme ſein Blut und über unſre Kinder.
+\end{movement}
+
+\clearpage
+\begin{movement}{todesworte}
+  \voice[Coro]
+  Juda, Todesworte ſprichſt du aus,\\
+  erbebſt du nicht, Juda!\\
+  Horch, dir jauchzt des Abgrunds Pforte,\\
+  Engel wenden ihr Geſicht,\\
+  ſie verlaßen dich und fliehn.\\
+  Weh dir Iſrael, Rom wird dein Wort vollziehn.
+\end{movement}
+
+\begin{movement}{undjesus}
+  \voice[Tenore]
+  Und Jeſus wird gegeißelt.\\
+  Nun träget er ſein Kreuz,\\
+  mit ihm der Menſchen Sünden.\\
+  Die weichern Töchter Zions folgen\\
+  und empfinden ſein Leiden,\\
+  und ein Zährenſtrom fließt\\
+  von der Frommen Angeſicht.\\
+  Er ſieht ſich tröſtend um, und ſpricht:\\
+  Ihr Töchter Zions, weinet nicht.
+\end{movement}
+
+\begin{movement}{weintnicht}
+  \voice[Tenore]
+  Weint nicht, ſagt der Menſchenfreund\\
+  Zions Töchtern, die ihn klagen.\\
+  Weint nicht, ſagt der Menſchenfreund\\
+  uns in kummervollen Tagen.\\
+  Der ſchmale Weg zur Herrlichkeit\\
+  iſt mit Blumen nicht beſtreut.\\
+  Steil iſt der Pfad und rauh die Bahn,\\
+  nur mühſam klimmen wir hinan,\\
+  Wege, die den Sinn erfreun,\\
+  laden zum Entſchlummern ein.
+\end{movement}
+
+\begin{movement}{wirmuessen}
+  \voice[Coro]
+  Wir müßen durch viel Trübſal\\
+  in das Reich Gottes eingehen.\\
+  (\bibleverse{Acts}(14:22))
+\end{movement}
+
+\begin{movement}{dastehstdu}
+  \voice[Alto]
+  Da ſtehſt du, Golgatha, ein Altar!\\
+  Auch das Opfer iſt ſchon da,\\
+  das du, Weltrichter, dir erſehen.\\
+  Und Jeſus naht ſich, in den Opfertod zu gehen.\\
+  Er ſchwankt den Hügel matt hinan,\\
+  und ſie kreuzigen ihn.\\
+  Wirf unter dieſes Kreuz, mein Geiſt,\\
+  dich gläubig hin, umfaß es, hier iſt das Opfer,\\
+  deſſen Blut dir zur Erlöſung fließt.\\
+  Ihr Väter Iſraels, ihr höret den,\\
+  der nach eurem Heil voll heißer Huld ſich ſehnet;\\
+  ihr Kreuziger! ihr ſpottet ihn ins Angeſicht.\\
+  Er wendet im Gebet zu ſeinem Vater ſich:\\
+  Erbarme, Vater, ihrer dich,\\
+  ſie wiſſen, was ſie thun, jetzt nicht.
+\end{movement}
+
+\begin{movement}{selbstderfeinde}
+  \voice[Coro]
+  Selbſt der Feinde Heil zu ſuchen,\\
+  reiz auch uns dies Beyſpiel an.\\
+  Ja wir wollen, wenn ſie fluchen,\\
+  mit Gebet zu Gott uns nahn.\\
+  Ihre Schuld wollſt du erlaßen,\\
+  das, o Gott, iſt unſer Flehn,\\
+  daß einſt ſelber, die uns haſſen,\\
+  dort mit uns dein Antlitz ſehn.
+\end{movement}
+
+\begin{movement}{dermitgekreuzigte}
+  \voice[Basso]
+  Der Mitgekreuzigte zu ſeiner linken Hand\\
+  verhöhnt ihn auch im Sterben,\\
+  doch der zur Rechten, hingeriſſen zum Verderben,\\
+  ſonſt edler, ſtrafet ihn und kehrt zu Jeſus ſich:\\
+  Herr, kommſt du in dein Reich,\\
+  ſpricht er, ſo denk an mich.\\
+  Ihr Sünder, betet an; im letzten Augenblicke\\
+  führt Jeſus einen Geiſt zu Gott zurücke.\\
+  Ja, ſagt er, ich gedenke dein,\\
+  heut wirſt du noch mit mir im Paradieſe ſeyn.
+\end{movement}
+
+\begin{movement}{theureswort}
+  \voice[Soprano]
+  Theures Wort aus Jeſu Munde,\\
+  in der letzten Todesſtunde\\
+  tröſteſt du mein brechend Herz.
+
+  \voice[Alto]
+  Theures Wort des ewgen Lebens,\\
+  ach, nun ängſtet einſt vergebens\\
+  meinen Geiſt der Trennung Schmerz.
+
+  \voice[both]
+  Wenn der Geiſt nun ſcheiden ſoll,\\
+  macht ihn dieſes hoffnungsvoll.
+
+  \voice[Soprano]
+  An dem Tage, da ich ſterbe,\\
+  ſoll ich, Jeſus, ſchon dein Erbe\\
+  in dem beßern Leben ſeyn.
+
+  \voice[Alto]
+  Los von aller Furcht und Plage\\
+  geh ich an demſelben Tage,\\
+  Herr, in deinen Himmel ein.
+
+  \voice[both]
+  Jauchzt, Erlöſte, denn das Grab\\
+  ſtürzt nie euer Leben ab.
+\end{movement}
+
+\begin{movement}{undgott}
+  \voice[Soprano]
+  Und Gott gebietet dem letzten Schmerz,\\
+  der in des Helden Seele wütet.\\
+  Ach, wer vermag die Zahl der Leiden\\
+  ganz zu faſſen, die auf ihn ſtrömt?\\
+  Mein Gott, mein Gott,\\
+  ach, warum haſt du mich verlaßen?\\
+  ſo wütet er.\\
+  Nun kommt, von Gott geſandt, der Tod.\\
+  Er betet: Ich vollende nun ganz das Werk,\\
+  das einer Welt das Heil erwirbt,\\
+  ruft: Vater, meinen Geiſt geb ich in deine Hände;\\
+  und neigt ſein Haupt und ſtirbt.
+\end{movement}
+
+\begin{movement}{erbarmedich}
+  \voice[Tenore I, II]
+  Erbarme dich, Gott, über mich,\\
+  Jeſus ſchließt ſein Leben,\\
+  er ſtirbt der Verſöhnung Tod,\\
+  Heil der Welt zu geben.
+
+  Erbarme dich, Gott, über mich,\\
+  ſieh mich Sünder beben,\\
+  laß durch des Verſöhnungs Tod,\\
+  Herr, mich wieder leben.
+\end{movement}
+
+\begin{movement}{weintnichtihr}
+  \voice[Basso]
+  Weint nicht, ihr Freunde Jeſu!\\
+  Seht, des Richters Angeſicht ſpricht Gnade.\\
+  Schauet auf, es wendet der Engelchor ſich weg, und ſingt:\\
+  Es iſt vollendet, das Opfer!\\
+  Gottes Ruh ſtrömt nun vom Kreuz den Sündern zu.\\
+  Die Erde bebt, die Felſen ſpringen,\\
+  die Gräber thun ſich auf,\\
+  die Todten dringen ans Licht,\\
+  des Tempels Vorhang reißt.\\
+  Es ſchauet der erſtaunte Geiſt\\
+  mit freyem Blick den Gnadenthron,\\
+  durch Höh und Tiefen hallt der Engel Jubelton:\\
+  Es iſt vollbracht!
+\end{movement}
+
+\begin{movement}{ichdanke}
+  \voice[Coro]
+  Ich danke dir von Herzen,\\
+  o Jeſu, liebſter Freund,\\
+  für deine Todesſchmertzen,\\
+  wie gut haſt du’s gemeint.\\
+  Ach gib, daß ich mich halte\\
+  zu dir und deiner Treu,\\
+  und wenn ich einſt erkalte,\\
+  in dir mein Ende ſey.
+\end{movement}
+
+\begin{movement}{otod}
+  \voice[Basso]
+  O Tod und Grab, wo iſt dein Sieg?\\
+  Nun triumphiert das Leben.
+
+  \voice[Coro]
+  Gott ſey gedankt, der uns den Sieg\\
+  durch Jeſum hat gegeben.
+\end{movement}
+
+\begin{movement}{otodwoist}
+  \voice[Coro]
+  O Tod, wo iſt dein Stachel nun,\\
+  wo iſt dein Sieg, o Hölle?\\
+  Auf uns wird Gottes Frieden ruhn\\
+  an dieſer Lebensſchwelle.\\
+  Er, Jeſus Chriſtus, ſieht ins Grab,\\
+  wir ſinken ſo wie er hinab,\\
+  er ging zu Gott, wir folgen.
+\end{movement}
+
+\begin{movement}{otodc}
+  \voice[Tenore]
+  O Tod und Grab, wo iſt dein Sieg?\\
+  Nun triumphiert das Leben.
+
+  \voice[Coro]
+  Gott ſey gedankt, der uns den Sieg\\
+  durch Jeſum hat gegeben.
+\end{movement}
+
+\begin{movement}{freueteuch}
+  \voice[Coro]
+  Freuet euch, erlößte Seelen,\\
+  fühlt nun die Unſterblichkeit.\\
+  Wer kann eure Freuden zählen\\
+  durch den Raum der Ewigkeit?\\
+  Sagt dem Mittler dafür Dank,\\
+  er ſey euer Lobgeſang,\\
+  bis ihr mit des Himmels Chören\\
+  ihn verkläret werdet ehren.
+\end{movement}
+}
+
+\eesScore
 
 \end{document}
